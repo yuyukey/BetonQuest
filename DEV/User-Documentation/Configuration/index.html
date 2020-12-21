@@ -1,0 +1,1929 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="BetonQuest Organisation">
+      
+      
+        <link rel="canonical" href="https://betonquest.org/old/User-Documentation/Configuration/">
+      
+      
+        
+      
+      
+        <link rel="search" type="application/opensearchdescription+xml" href="../../search.xml" title="BetonQuest Search">
+      
+      <link rel="shortcut icon" href="../../media/design/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7+insiders-1.13.1">
+    
+    
+      
+        <title>🔧 Configuration - BetonQuest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9526ea36.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.47d7edde.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../webCode/css/superFences.css">
+    
+      <link rel="stylesheet" href="../../webCode/css/centered.css">
+    
+      <link rel="stylesheet" href="../../webCode/css/contentAreaFullWidth.css">
+    
+      <link rel="stylesheet" href="../../webCode/css/admonition.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-164568470-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    
+      <script>var palette=JSON.parse(localStorage.getItem("__palette")||"{}");if(void 0!==palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configuration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://betonquest.org/old" title="BetonQuest" class="md-header-nav__button md-logo" aria-label="BetonQuest">
+      
+  <img src="../../media/design/BQIcon1k.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            BetonQuest
+          </span>
+        </div>
+        <div class="md-header-nav__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔧  Configuration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header-nav__options">
+      
+        
+          
+          
+          
+          <button class="md-header-nav__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 01-1 1H9a1 1 0 01-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7M9 21v-1h6v1a1 1 0 01-1 1h-4a1 1 0 01-1-1m3-17a5 5 0 00-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 00-5-5z"/></svg>
+          </button>
+        
+          
+          
+          
+          <button class="md-header-nav__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7M9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/></svg>
+          </button>
+        
+      
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+      <div class="md-search__suggest" data-md-component="search-suggest"></div>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BetonQuest on GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Learn-Beton/Welcome/" class="md-tabs__link">
+        Learn Beton
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Reference/" class="md-tabs__link md-tabs__link--active">
+        User Documentation
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Developer-Documentation/Contributing-Guidelines/" class="md-tabs__link">
+        Developer Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Contributing/Contributing/" class="md-tabs__link">
+        Contributing
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://betonquest.org/old" title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest">
+      
+  <img src="../../media/design/BQIcon1k.png" alt="logo">
+
+    </a>
+    BetonQuest
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BetonQuest on GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" data-md-state="indeterminate" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Welcome! 👋
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../For-Owners/" class="md-nav__link">
+      For Owners
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../For-Questers/" class="md-nav__link">
+      For Questers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Features/" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" data-md-state="indeterminate" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Learn Beton
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Learn Beton" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Learn Beton
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Welcome/" class="md-nav__link">
+      Welcome!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" data-md-state="indeterminate" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Getting Started
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Getting Started" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Setting-up-a-local-test-server/" class="md-nav__link">
+      Setting up a local test server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Installing-BetonQuest/" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Setting-up-the-editor/" class="md-nav__link">
+      Setting up the editor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Quick-Start-Tutorial/" class="md-nav__link">
+      Quick Start Tutorial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Frequently-Asked-Questions/" class="md-nav__link">
+      Frequently Asked Questions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Tips-and-tricks/" class="md-nav__link">
+      Tips and tricks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      User Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        User Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" data-md-state="indeterminate" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      General
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="General" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        General
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Reference/" class="md-nav__link">
+      📚   Reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Conversations/" class="md-nav__link">
+      💬  Conversations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" data-md-state="indeterminate" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Types
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Types" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Types
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Objectives-List/" class="md-nav__link">
+      ✔️ Objectives List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Events-List/" class="md-nav__link">
+      ⚙️ Events List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Conditions-List/" class="md-nav__link">
+        ❓    Conditions List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Compatibility/" class="md-nav__link">
+      🤝 Compatibility List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Variables-List/" class="md-nav__link">
+      🔮   Variables List
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" data-md-state="indeterminate" type="checkbox" id="nav-3-3" checked>
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Notifications:
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Notifications:" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Notifications:
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Notification-Settings/" class="md-nav__link">
+      🔊   Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Notification-IO%27s-%26-Categories/" class="md-nav__link">
+      🏷️   IO's & Categories
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" checked>
+    
+    <label class="md-nav__link" for="nav-3-4">
+      Technical:
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Technical:" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        Technical:
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Commands-and-permissions/" class="md-nav__link">
+      🔒 Permissions & Commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Updating-and-Backups/" class="md-nav__link">
+      📥 Updating
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        🔧  Configuration
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      🔧  Configuration
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config-options" class="md-nav__link">
+    Config Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Config Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mysql-database" class="md-nav__link">
+    MySQL Database
+  </a>
+  
+    <nav class="md-nav" aria-label="MySQL Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrating-a-database-from-sqlite-to-mysql-and-back" class="md-nav__link">
+    Migrating a database from SQLite to MySQL and back
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-language" class="md-nav__link">
+    Default Language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal-slots" class="md-nav__link">
+    Journal slots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citizens-identifier" class="md-nav__link">
+    Citizens identifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citizens-left-click" class="md-nav__link">
+    Citizens left click
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citizens-interact-limit" class="md-nav__link">
+    Citizens interact limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-end-distance" class="md-nav__link">
+    Conversation End Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-conversation-style" class="md-nav__link">
+    Default conversation style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-chat-interceptor" class="md-nav__link">
+    Default Chat interceptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-chat-display-options" class="md-nav__link">
+    Conversation Chat Display options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-delay" class="md-nav__link">
+    Combat Delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-pullback-message" class="md-nav__link">
+    Conversation pullback message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-package-name" class="md-nav__link">
+    Default Package name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjusting-the-backpack-to-the-keepinventory-gamerule" class="md-nav__link">
+    Adjusting the backpack to the KeepInventory gamerule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quest-items-break-behaviour" class="md-nav__link">
+    Quest Items break behaviour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sounds" class="md-nav__link">
+    Sounds
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-command-banlist" class="md-nav__link">
+    Conversation Command Banlist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibility-hooks" class="md-nav__link">
+    Compatibility Hooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal" class="md-nav__link">
+    Journal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal-colors" class="md-nav__link">
+    Journal Colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-colors" class="md-nav__link">
+    Conversation Colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CHANGELOG/" class="md-nav__link">
+      🗃️ Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Developer Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developer Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Developer Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/Contributing-Guidelines/" class="md-nav__link">
+      Contributing Guidelines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/API/" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/Releasing/" class="md-nav__link">
+      Releasing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/Versioning/" class="md-nav__link">
+      Versioning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" data-md-state="indeterminate" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1" data-md-state="indeterminate" type="checkbox" id="nav-5-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1">
+      General
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="General" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        <span class="md-nav__icon md-icon"></span>
+        General
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Contributing/" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" data-md-state="indeterminate" type="checkbox" id="nav-5-2" checked>
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Docs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Docs" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon"></span>
+        Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Documentation/Setup/" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Documentation/Guidelines/" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" data-md-state="indeterminate" type="checkbox" id="nav-5-3" checked>
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Sponsorships
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Sponsorships" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon"></span>
+        Sponsorships
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Sponsors/" class="md-nav__link">
+      Patreon
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config-options" class="md-nav__link">
+    Config Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Config Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mysql-database" class="md-nav__link">
+    MySQL Database
+  </a>
+  
+    <nav class="md-nav" aria-label="MySQL Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrating-a-database-from-sqlite-to-mysql-and-back" class="md-nav__link">
+    Migrating a database from SQLite to MySQL and back
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-language" class="md-nav__link">
+    Default Language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal-slots" class="md-nav__link">
+    Journal slots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citizens-identifier" class="md-nav__link">
+    Citizens identifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citizens-left-click" class="md-nav__link">
+    Citizens left click
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citizens-interact-limit" class="md-nav__link">
+    Citizens interact limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-end-distance" class="md-nav__link">
+    Conversation End Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-conversation-style" class="md-nav__link">
+    Default conversation style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-chat-interceptor" class="md-nav__link">
+    Default Chat interceptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-chat-display-options" class="md-nav__link">
+    Conversation Chat Display options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-delay" class="md-nav__link">
+    Combat Delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-pullback-message" class="md-nav__link">
+    Conversation pullback message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-package-name" class="md-nav__link">
+    Default Package name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjusting-the-backpack-to-the-keepinventory-gamerule" class="md-nav__link">
+    Adjusting the backpack to the KeepInventory gamerule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quest-items-break-behaviour" class="md-nav__link">
+    Quest Items break behaviour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sounds" class="md-nav__link">
+    Sounds
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-command-banlist" class="md-nav__link">
+    Conversation Command Banlist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibility-hooks" class="md-nav__link">
+    Compatibility Hooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal" class="md-nav__link">
+    Journal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal-colors" class="md-nav__link">
+    Journal Colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-colors" class="md-nav__link">
+    Conversation Colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/documentation/User-Documentation/Configuration.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">🔗</a></h1>
+<p>The configuration of BetonQuest is mainly done in the <code>config.yml</code> file. All of its options are described on this page.
+There is also additional information about backups, updates and database transfers.
+If you fail to understand options just keep their default values. You can always change them when
+you have gained a more complete understanding of this plugin. </p>
+<h2 id="config-options">Config Options<a class="headerlink" href="#config-options" title="Permanent link">🔗</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Do not touch <code>version:</code> option! It may corrupt your files!</strong></p>
+</div>
+<h3 id="mysql-database">MySQL Database<a class="headerlink" href="#mysql-database" title="Permanent link">🔗</a></h3>
+<h4 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">🔗</a></h4>
+<p>In order to use a MySQL Database for saving all the data you need to fill out the mysql config section.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mysql</span><span class="p">:</span>
+  <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>   <span class="c1">#Set this to true.</span>
+  <span class="nt">host</span><span class="p">:</span> <span class="s">&#39;&#39;</span>        <span class="c1">#This is the IP of your MySQL server. If it runs on the same machine as your server use localhost or 127.0.0.1 </span>
+  <span class="nt">port</span><span class="p">:</span> <span class="s">&#39;&#39;</span>        <span class="c1">#This is the port your MySQL server runs on.</span>
+  <span class="nt">user</span><span class="p">:</span> <span class="s">&#39;&#39;</span>        <span class="c1">#The name of the database user that BetonQuest will use.</span>
+  <span class="nt">pass</span><span class="p">:</span> <span class="s">&#39;&#39;</span>        <span class="c1">#The password of that user.</span>
+  <span class="nt">base</span><span class="p">:</span> <span class="s">&#39;&#39;</span>        <span class="c1">#The database that BetonQuest will write to.</span>
+  <span class="nt">prefix</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">betonquest_</span>  <span class="c1">#The table prefix of BetonQuests data in the database.</span>
+</code></pre></div>
+</td></tr></table></p>
+<h4 id="migrating-a-database-from-sqlite-to-mysql-and-back">Migrating a database from SQLite to MySQL and back<a class="headerlink" href="#migrating-a-database-from-sqlite-to-mysql-and-back" title="Permanent link">🔗</a></h4>
+<p>Follow these few simple steps to migrate your database easily:</p>
+<ol>
+<li>Create a backup with <strong>/q backup</strong> command.</li>
+<li>Extract database backup from it.</li>
+<li>Turn the server off.</li>
+<li>Place the <em>database-backup.yml</em> file inside the plugin's directory.</li>
+<li>Edit which database type you want to use by setting the <code>enabled</code> option in the <code>mysql</code> section to true or false.</li>
+<li>Start the server.</li>
+<li>Check for errors.</li>
+<li>If there are no errors, enjoy your migrated database.</li>
+<li>If there are any errors, post them to the developer or try to fix them if you know how.</li>
+</ol>
+<h3 id="default-language">Default Language<a class="headerlink" href="#default-language" title="Permanent link">🔗</a></h3>
+<p><code>language:</code> is the default translation of the plugin for every new player. Currently, there are 9 languages available: 
+English (en), Polish (pl), German (de), French (fr), Spanish (es), Chinese (cn), Dutch (nl), Italian (it) and Hungarian (hu).</p>
+<h3 id="updating">Updating<a class="headerlink" href="#updating" title="Permanent link">🔗</a></h3>
+<p>The <code>update</code> section controls the Auto-Updater. It has the following settings:</p>
+<ul>
+<li><code>enabled</code> (default <code>true</code>). Enables or disables the Updater. If set to false, it is not possible to update with the updater and no version checks are executed.</li>
+<li><code>strategy</code> (default <code>MINOR</code>). The update strategy is the most important feature of the Auto-Updater. An explanation is available <a href="../Updating-and-Backups/">here</a>.</li>
+<li><code>automatic</code> (default <code>true</code>). If true the updater will download new Versions automatically. Otherwise, the updater
+    will only download new versions when the update command is executed.</li>
+</ul>
+<h3 id="journal-slots">Journal slots<a class="headerlink" href="#journal-slots" title="Permanent link">🔗</a></h3>
+<p><code>default_journal_slot</code> is the inventory slot in which the journal will appear after using the <code>/journal</code> command.
+BetonQuest will try to move items out of the way if the slot is occupied. If the inventory is full the journal will not
+be added. You can disable this behaviour by setting the option to <code>-1</code>. BetonQuest will then just use any free slot.</p>
+<h3 id="citizens-identifier">Citizens identifier<a class="headerlink" href="#citizens-identifier" title="Permanent link">🔗</a></h3>
+<p><code>citizens_npcs_by_name</code> sets whether NPCs from Citizens 2 should be identified in main.yml by their name instead of
+their id. This is a dangerous setting as two different NPC's at the opposite edges of your world that share the same
+name by accident will trigger the same quest.</p>
+<h3 id="citizens-left-click">Citizens left click<a class="headerlink" href="#citizens-left-click" title="Permanent link">🔗</a></h3>
+<p><code>acceptNPCLeftClick</code> activates that a conversation with an NPC can also be started by left clicking the NPC and not only
+by right clicking the NPC.</p>
+<h3 id="citizens-interact-limit">Citizens interact limit<a class="headerlink" href="#citizens-interact-limit" title="Permanent link">🔗</a></h3>
+<p><code>npcInteractionLimit</code> prevents NPC / BetonQuest conversation click spamming. The time's unit is milliseconds. Default
+value: <code>500</code></p>
+<h3 id="conversation-end-distance">Conversation End Distance<a class="headerlink" href="#conversation-end-distance" title="Permanent link">🔗</a></h3>
+<p><code>max_npc_distance</code> is the distance you need to walk away from the NPC for the conversation to end (in the case of using
+chat-based conversation interface).</p>
+<h3 id="default-conversation-style">Default conversation style<a class="headerlink" href="#default-conversation-style" title="Permanent link">🔗</a></h3>
+<p><code>default_conversation_IO</code> is a comma-separated list of conversation interfaces with the first valid one used.
+Read <a href="../Conversations/">this page</a> for more information about conversation interfaces.</p>
+<h3 id="default-chat-interceptor">Default Chat interceptor<a class="headerlink" href="#default-chat-interceptor" title="Permanent link">🔗</a></h3>
+<p><code>default_interceptor</code> is a comma-separated list of chat interceptors with the first valid one used.
+Read <a href="../Conversations/">this page</a> for more information about chat interceptors.</p>
+<h3 id="conversation-chat-display-options">Conversation Chat Display options<a class="headerlink" href="#conversation-chat-display-options" title="Permanent link">🔗</a></h3>
+<p><code>display_chat_after_conversation</code> this will prevent all chat messages from displaying during a conversation and it will show them once it's finished.</p>
+<h3 id="combat-delay">Combat Delay<a class="headerlink" href="#combat-delay" title="Permanent link">🔗</a></h3>
+<p><code>combat_delay</code> is a delay (in seconds) the player must wait before starting a conversation after combat.</p>
+<h3 id="conversation-pullback-message">Conversation pullback message<a class="headerlink" href="#conversation-pullback-message" title="Permanent link">🔗</a></h3>
+<p><code>notify_pullback</code> will display a message every time the player is pulled back by the <code>stop</code> option in conversations (in the case of chat-based conversations).
+It notifies players that they are in a conversation, and the pullback is not a bug.</p>
+<h3 id="default-package-name">Default Package name<a class="headerlink" href="#default-package-name" title="Permanent link">🔗</a></h3>
+<p><code>default_package</code> is a name of the package that should be used when a package is not specified in /q command. This is for your convenience.</p>
+<h3 id="adjusting-the-backpack-to-the-keepinventory-gamerule">Adjusting the backpack to the KeepInventory gamerule<a class="headerlink" href="#adjusting-the-backpack-to-the-keepinventory-gamerule" title="Permanent link">🔗</a></h3>
+<p><code>remove_items_after_respawn</code> option should be turned on if "keepInventory" gamerule is not being used. 
+It prevents other plugins from duplicating quest items after death.</p>
+<p>When a player dies, their quest items are removed from drops and stored in the backpack, but some plugins may try to
+restore all items to the player (for example WorldGuard custom flag keep-inventory).
+That is why BetonQuest removes the quest items that are in a player's inventory after they respawn again, to be sure they were not readded. 
+The "keepInventory" gamerule, however, works differently - the items are never dropped, so they cannot be added to backpack. 
+Removing them from the inventory would destroy them forever. Sadly, Bukkit does not allow for gamerule checking, so it is up to you to decide.</p>
+<p>Once again, if you have "keepInventory" gamerule true, this setting has to be false and vice versa.</p>
+<h3 id="quest-items-break-behaviour">Quest Items break behaviour<a class="headerlink" href="#quest-items-break-behaviour" title="Permanent link">🔗</a></h3>
+<p><code>quest_items_unbreakable</code> controls whether quest items can be broken by using them.
+This was used in the past when the <code>unbreakable</code> tag couldn't be added to items.
+Turn it off and make your quest items unbreakable by vanilla means.</p>
+<h3 id="sounds">Sounds<a class="headerlink" href="#sounds" title="Permanent link">🔗</a></h3>
+<p>This section defines what sounds will be played on these occasions:</p>
+<ul>
+<li><code>start</code> and <code>end</code> refer to start and end points of conversations.</li>
+<li><code>journal</code> is played upon updating the journal.</li>
+<li><code>update</code> is played when there is a changelog file, used to draw your attention.</li>
+<li><code>full</code> is played when the player executes <code>/journal</code> but his inventory is full.</li>
+</ul>
+<p>A list of all possible sounds for the latest Minecraft version can be found <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html">here</a>.</p>
+<h3 id="conversation-command-banlist">Conversation Command Banlist<a class="headerlink" href="#conversation-command-banlist" title="Permanent link">🔗</a></h3>
+<p><code>cmd_blacklist</code> is a list of commands that cannot be used during a conversation. Remember that you can only type single words (command names) here!</p>
+<h3 id="compatibility-hooks">Compatibility Hooks<a class="headerlink" href="#compatibility-hooks" title="Permanent link">🔗</a></h3>
+<p><code>hook</code> controls compatibility with other plugins. You can turn off each hook here.</p>
+<h3 id="journal">Journal<a class="headerlink" href="#journal" title="Permanent link">🔗</a></h3>
+<p><code>journal</code> controls various settings of the journal:</p>
+<ul>
+<li><code>chars_per_page</code> is the number of characters before a page break. If it is set too high, the text on a journal page can overflow and become invisible.
+   <strong>This was replaced by <code>chars_per_line</code> and <code>lines_per_page</code> and is only required if you don't like the new behaviour.</strong></li>
+<li><code>chars_per_line</code> is the number of characters before a line break.
+   If it is set too high, the text on a journal page can overflow and become invisible.
+   If this is not set, BQ will fall back on the old page wrapping behaviour configured through <code>chars_per_page</code>.</li>
+<li><code>lines_per_page</code> is the number of lines before a new page. If it is set too high, the text on a journal page can overflow and become invisible. 
+   This is only required if <code>chars_per_line</code> is set.</li>
+<li><code>one_entry_per_page</code> makes each entry take a single page. Note that it will not expand to other pages even if it overflows, so keep your entries short.</li>
+<li><code>reversed_order</code> controls the chronological order of entries in the journal. By default, the entries are ordered from newest to oldest.
+   It is reversible, but this will force players to click through many pages to get to the most recent entry.</li>
+<li><code>hide_date</code> hides the date of each entry. Set it to true if you don't want this functionality.</li>
+<li><code>full_main_page</code> makes the main page always take a full page. If a lot of information is being displayed, it is advised to make this true.
+   If you use the main page only for small notifications, set it to false, so the entries can follow immediately.</li>
+<li><code>show_separator</code> shows a separator between journal entries (default: true). Customize the separator in <code>messages.yml</code> with the key <code>journal_separator</code>.</li>
+</ul>
+<h3 id="journal-colors">Journal Colors<a class="headerlink" href="#journal-colors" title="Permanent link">🔗</a></h3>
+<p><code>journal_colors</code> controls the colors used in the journal. It takes color codes without the <code>&amp;</code> character.</p>
+<ul>
+<li><code>date.day</code> is the day number</li>
+<li><code>date.hour</code> is the hour number</li>
+<li><code>line</code> is the delimiter between entries</li>
+<li><code>text</code> is the text of the entry</li>
+</ul>
+<h3 id="conversation-colors">Conversation Colors<a class="headerlink" href="#conversation-colors" title="Permanent link">🔗</a></h3>
+<p><code>conversation_colors</code> controls the colors of the conversation. It takes <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html">color names</a>. 
+If you want to add a font style (bold, italic etc.) do so after placing a comma.</p>
+<ul>
+<li><code>npc</code> is the name of the NPC</li>
+<li><code>player</code> is the name of the player</li>
+<li><code>text</code> is the NPC's text</li>
+<li><code>answer</code> is the text of player's answer (after choosing it)</li>
+<li><code>number</code> is the option number</li>
+<li><code>option</code> is the text of an option</li>
+<li><code>date_format</code> is the Java <a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">date format</a> used in journal dates.
+   It needs to have a space between the day and hour.</li>
+<li><code>debug</code> is responsible for logging the plugin's activity to <em>debug.log</em> file in <em>logs</em> directory. Turning this on can slow your server down.
+   However, if you experience any errors, turn this on and let the plugin gather the data and send logs to the developer.
+   Note that the first run of the plugin will be logged anyway, just as a precaution.</li>
+<li><code>conversation_IO_config</code> manages settings for individual conoversation IO's:<ul>
+<li><code>chest</code> manages settings for the chest conversation IO<ul>
+<li><code>show_number</code> will show the player number option if true (default: true)</li>
+<li><code>show_npc_text</code> will show the npc text in every player option if true (default: true)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class='timeago' datetime='1608591474000' locale='en'></span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Updating-and-Backups/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                📥 Updating
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../CHANGELOG/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                🗃️ Changelog
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © 2020  BetonQuest Organisation. GPLv3
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs Insiders
+          </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://discord.gg/rK6mfHq" target="_blank" rel="noopener" title="discord.gg" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://patreon.com/betonquest" target="_blank" rel="noopener" title="patreon.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/BetonQuest/BetonQuest" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://betonquest.org/old" target="_blank" rel="noopener" title="betonquest.org" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://spigotmc.org/resources/betonquest.2117/" target="_blank" rel="noopener" title="spigotmc.org" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 256h-38.61c-15.71-13.44-35.46-23.07-57.39-28v-47.56l-32-3.38-32 3.38V228c-21.93 5-41.68 14.6-57.39 28H16a16 16 0 00-16 16v96a16 16 0 0016 16h92.79C129.38 421.73 173 448 224 448s94.62-26.27 115.21-64H352a32 32 0 0132 32 32 32 0 0032 32h64a32 32 0 0032-32 160 160 0 00-160-160zM81.59 159.91l142.41-15 142.41 15c9.42 1 17.59-6.81 17.59-16.8v-30.22c0-10-8.17-17.8-17.59-16.81L256 107.74V80a16 16 0 00-16-16h-32a16 16 0 00-16 16v27.74L81.59 96.08C72.17 95.09 64 102.9 64 112.89v30.22c0 9.99 8.17 17.8 17.59 16.8z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.49293c47.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f4f0c901.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.0f64ce30.min.js"
+          }, typeof search !== "undefined" && search),
+          version: {"method": "mike"}
+        })
+      </script>
+      
+    
+  
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.0-beta.2/timeago.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.0-beta.2/timeago.locales.min.js"></script>
+          <script>
+            var nodes = document.querySelectorAll('.timeago');
+            var locale = nodes[0].getAttribute('locale');
+            timeago.render(nodes, locale);
+          </script>
+        </body>
+</html>
