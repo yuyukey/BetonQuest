@@ -20,7 +20,7 @@
         <link rel="search" type="application/opensearchdescription+xml" href="../../search.xml" title="BetonQuest Search">
       
       <link rel="shortcut icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7+insiders-1.13.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2+insiders-1.13.2">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9526ea36.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1e469661.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.47d7edde.min.css">
@@ -1358,8 +1358,7 @@
                 
                 <h1 id="tips-and-tricks">Tips and tricks<a class="headerlink" href="#tips-and-tricks" title="Permanent link">🔗</a></h1>
 <h2 id="can-i-assign-multiple-conversation-files-to-one-npc">Can I assign multiple conversation files to one NPC?<a class="headerlink" href="#can-i-assign-multiple-conversation-files-to-one-npc" title="Permanent link">🔗</a></h2>
-<p>No. You can use cross-conversation-pointers though.
-<a href="https://betonquest.github.io/BetonQuest/versions/dev/User-Documentation/Conversations/#cross-conversation-pointers">https://betonquest.github.io/BetonQuest/versions/dev/User-Documentation/Conversations/#cross-conversation-pointers</a></p>
+<p>No. You can use <a href="../../User-Documentation/Conversations/#cross-conversation-pointers">cross-conversation-pointers</a> though.</p>
 <h2 id="can-i-delete-all-tags-from-a-player-at-once">Can I delete all tags from a player at once?<a class="headerlink" href="#can-i-delete-all-tags-from-a-player-at-once" title="Permanent link">🔗</a></h2>
 <p>No. You either need to run all <code>/q t del PLAYER PACKAGE.TAG</code> commands or you can use <code>/q purge PLAYER</code> to reset an entire player profile.
 If you want this as a scripted part of your quest however:
@@ -1387,7 +1386,9 @@ objective start (name)</p>
 <div class="highlight"><pre><span></span><code>%math.calc:0-objective.PickWheat1.left-objective.PickWheat2.left-objective.PickWheat3.left-objective.PickWheat4.left&#39;
 </code></pre></div></p>
 <h2 id="how-to-match-different-items-with-just-one-condition">How to match different items with just one condition?<a class="headerlink" href="#how-to-match-different-items-with-just-one-condition" title="Permanent link">🔗</a></h2>
-<p>If you want a player to have e.g. <code>potato + poisonous_potato = 64</code> in his inventory you can make a special item in your items.yml file that matches items based of their names. More specifically, you can have a <em>Block Selector</em> that is a <em>regex</em>.  <a href="https://betonquest.github.io/BetonQuest/versions/dev/User-Documentation/Reference/#block-selectors">https://betonquest.github.io/BetonQuest/versions/dev/User-Documentation/Reference/#block-selectors</a>
+<p>If you want a player to have e.g. <code>potato + poisonous_potato = 64</code> in his inventory you can make a special item in your 
+items.yml file that matches items based of their names. 
+More specifically, you can have a <a href="../../User-Documentation/Reference/#block-selectors"><em>Block Selector</em></a> that is a <em>regex</em>.
 It would look like this in the example:
 <div class="highlight"><pre><span></span><code><span class="c1">#items.yml</span>
 <span class="nt">anyPotato</span><span class="p">:</span> <span class="s">&quot;.*potato.*&quot;</span>
@@ -1441,7 +1442,7 @@ Best practise is to define all options like this: <code>myOptionName: "myData"</
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1607535381000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1608644438000' locale='en'></span>
     
   </small>
 </div>
@@ -1568,7 +1569,7 @@ Best practise is to define all options like this: <code>myOptionName: "myData"</
     </div>
     
       <script src="../../assets/javascripts/vendor.49293c47.min.js"></script>
-      <script src="../../assets/javascripts/bundle.f4f0c901.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.1af29490.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
