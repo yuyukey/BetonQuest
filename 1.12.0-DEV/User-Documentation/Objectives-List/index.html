@@ -1695,7 +1695,7 @@
 </code></pre></div>
 </div>
 <h2 id="fishing-fish">Fishing: <code>fish</code><a class="headerlink" href="#fishing-fish" title="Permanent link">🔗</a></h2>
-<p>Requires the player to catch a fish. It doesn't have to be a fish, it can also be a treasure or junk. The first argument is <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html">material</a> name of the item to catch, optionally with data value after a colon. Second argument must be amount of fish to catch. You can also add <code>notify</code> argument if you want to display progress, optionally with the notification interval after colon.</p>
+<p>Requires the player to catch a fish. It doesn't have to be a fish, it can also be a treasure or junk. The first argument is a <code>block selector</code> name of the item to catch, optionally with data value after a colon. Second argument must be amount of fish to catch. You can also add <code>notify</code> argument if you want to display progress, optionally with the notification interval after colon.</p>
 <p>Fishing has the same properties as mob kill objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1838,7 +1838,7 @@ optionally with the notification interval after a colon.</p>
 </code></pre></div>
 </div>
 <h2 id="smelting-smelt">Smelting: <code>smelt</code><a class="headerlink" href="#smelting-smelt" title="Permanent link">🔗</a></h2>
-<p>To complete this objective player must smelt specified item. Note that you must define item as output from furnace, not the ingredient. This one does not support data values (it doesn’t have to). First argument is material name. Next is amount (integer).</p>
+<p>To complete this objective player must smelt specified item. Note that you must define item as output from furnace, not the ingredient. This one does not support data values (it doesn’t have to). First argument is a <code>block selector</code>. Next is amount (integer).</p>
 <p>Smelting has the same properties as crafting objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1893,7 +1893,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1608309691000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1608814399000' locale='en'></span>
     
   </small>
 </div>
