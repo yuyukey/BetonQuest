@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.23bbd741.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.93fbc7be.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.fed55ee1.min.css">
@@ -73,7 +73,7 @@
   
     
     
-      <script>var palette=JSON.parse(localStorage.getItem("__palette")||"{}");if(void 0!==palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=JSON.parse(localStorage.getItem("__palette"));if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -97,23 +97,23 @@
   
 
 <header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-header-nav__button md-logo" aria-label="BetonQuest">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest">
       
   <img src="../../media/design/BQIcon1k.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             BetonQuest
           </span>
         </div>
-        <div class="md-header-nav__topic" data-md-component="header-topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Releasing
@@ -122,20 +122,20 @@
         </div>
       </div>
     </div>
-    <div class="md-header-nav__options">
+    <div class="md-header__options">
       
         
           
           
           
-          <button class="md-header-nav__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" data-md-state="hidden">
+          <button class="md-header__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" data-md-state="hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 01-1 1H9a1 1 0 01-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7M9 21v-1h6v1a1 1 0 01-1 1h-4a1 1 0 01-1-1m3-17a5 5 0 00-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 00-5-5z"/></svg>
           </button>
         
           
           
           
-          <button class="md-header-nav__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" data-md-state="hidden">
+          <button class="md-header__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" data-md-state="hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7M9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/></svg>
           </button>
         
@@ -143,7 +143,7 @@
       
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
+      <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
@@ -156,9 +156,12 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
       <div class="md-search__suggest" data-md-component="search-suggest"></div>
     </form>
     <div class="md-search__output">
@@ -175,7 +178,7 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source">
   <div class="md-source__icon md-icon">
@@ -349,7 +352,6 @@
       
 
 
-
   
   <li class="md-nav__item md-nav__item--nested">
     
@@ -373,7 +375,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../.." class="md-nav__link">
       Welcome! 👋
@@ -384,7 +385,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -399,7 +399,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../For-Questers/" class="md-nav__link">
       For Questers
@@ -410,7 +409,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -428,7 +426,6 @@
       
       
       
-
 
 
   
@@ -454,7 +451,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Learn-Beton/Welcome/" class="md-nav__link">
       Welcome!
@@ -465,7 +461,6 @@
           
           
           
-
 
 
   
@@ -493,7 +488,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Learn-Beton/Getting-Started/Setting-up-a-local-test-server/" class="md-nav__link">
       Setting up a local test server
@@ -504,7 +498,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -519,7 +512,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Learn-Beton/Getting-Started/Setting-up-the-editor/" class="md-nav__link">
       Setting up the editor
@@ -530,7 +522,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -550,7 +541,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Learn-Beton/Frequently-Asked-Questions/" class="md-nav__link">
       Frequently Asked Questions
@@ -561,7 +551,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -579,7 +568,6 @@
       
       
       
-
 
 
   
@@ -603,7 +591,6 @@
           
           
           
-
 
 
   
@@ -631,7 +618,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Reference/" class="md-nav__link">
       📚   Reference
@@ -642,7 +628,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -660,7 +645,6 @@
           
           
           
-
 
 
   
@@ -688,7 +672,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Objectives-List/" class="md-nav__link">
       ✔️ Objectives List
@@ -699,7 +682,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -714,7 +696,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Conditions-List/" class="md-nav__link">
         ❓    Conditions List
@@ -727,7 +708,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Compatibility/" class="md-nav__link">
       🤝 Compatibility List
@@ -738,7 +718,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -756,7 +735,6 @@
           
           
           
-
 
 
   
@@ -784,7 +762,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Notification-Settings/" class="md-nav__link">
       🔊   Settings
@@ -795,7 +772,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -813,7 +789,6 @@
           
           
           
-
 
 
   
@@ -841,7 +816,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Commands-and-permissions/" class="md-nav__link">
       🔒 Permissions & Commands
@@ -852,7 +826,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -867,7 +840,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../User-Documentation/Configuration/" class="md-nav__link">
       🔧  Configuration
@@ -878,7 +850,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -901,7 +872,6 @@
       
       
       
-
 
   
 
@@ -929,7 +899,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../Contributing-Guidelines/" class="md-nav__link">
       Contributing Guidelines
@@ -942,7 +911,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../API/" class="md-nav__link">
       API
@@ -953,7 +921,6 @@
           
           
           
-
 
   
 
@@ -1020,7 +987,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../Versioning/" class="md-nav__link">
       Versioning
@@ -1036,7 +1002,6 @@
       
       
       
-
 
 
   
@@ -1060,7 +1025,6 @@
           
           
           
-
 
 
   
@@ -1088,7 +1052,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Contributing/Contributing/" class="md-nav__link">
       Contributing
@@ -1104,7 +1067,6 @@
           
           
           
-
 
 
   
@@ -1132,7 +1094,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Contributing/Documentation/Setup/" class="md-nav__link">
       Setup
@@ -1143,7 +1104,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -1161,7 +1121,6 @@
           
           
           
-
 
 
   
@@ -1187,7 +1146,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -1318,40 +1276,38 @@ Now copy the template from below into the file.</p>
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../API/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../API/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              API
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                API
-              </div>
+          </div>
+        </a>
+      
+      
+        <a href="../Versioning/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Versioning
             </div>
-          </a>
-        
-        
-          <a href="../Versioning/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Versioning
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1425,7 +1381,7 @@ Now copy the template from below into the file.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.49293c47.min.js"></script>
-      <script src="../../assets/javascripts/bundle.1ba7a0c7.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.59dfdd61.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.23bbd741.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.93fbc7be.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.fed55ee1.min.css">
@@ -73,7 +73,7 @@
   
     
     
-      <script>var palette=JSON.parse(localStorage.getItem("__palette")||"{}");if(void 0!==palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=JSON.parse(localStorage.getItem("__palette"));if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -97,23 +97,23 @@
   
 
 <header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-header-nav__button md-logo" aria-label="BetonQuest">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest">
       
   <img src="../../../media/design/BQIcon1k.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             BetonQuest
           </span>
         </div>
-        <div class="md-header-nav__topic" data-md-component="header-topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Quick Start Tutorial
@@ -122,20 +122,20 @@
         </div>
       </div>
     </div>
-    <div class="md-header-nav__options">
+    <div class="md-header__options">
       
         
           
           
           
-          <button class="md-header-nav__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" data-md-state="hidden">
+          <button class="md-header__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" data-md-state="hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 01-1 1H9a1 1 0 01-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7M9 21v-1h6v1a1 1 0 01-1 1h-4a1 1 0 01-1-1m3-17a5 5 0 00-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 00-5-5z"/></svg>
           </button>
         
           
           
           
-          <button class="md-header-nav__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" data-md-state="hidden">
+          <button class="md-header__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" data-md-state="hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7M9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/></svg>
           </button>
         
@@ -143,7 +143,7 @@
       
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
+      <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
@@ -156,9 +156,12 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
       <div class="md-search__suggest" data-md-component="search-suggest"></div>
     </form>
     <div class="md-search__output">
@@ -175,7 +178,7 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source">
   <div class="md-source__icon md-icon">
@@ -349,7 +352,6 @@
       
 
 
-
   
   <li class="md-nav__item md-nav__item--nested">
     
@@ -373,7 +375,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../.." class="md-nav__link">
       Welcome! 👋
@@ -384,7 +385,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -399,7 +399,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../For-Questers/" class="md-nav__link">
       For Questers
@@ -410,7 +409,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -428,7 +426,6 @@
       
       
       
-
 
   
 
@@ -456,7 +453,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Welcome/" class="md-nav__link">
       Welcome!
@@ -467,7 +463,6 @@
           
           
           
-
 
   
 
@@ -497,7 +492,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../Setting-up-a-local-test-server/" class="md-nav__link">
       Setting up a local test server
@@ -508,7 +502,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -523,7 +516,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../Setting-up-the-editor/" class="md-nav__link">
       Setting up the editor
@@ -534,7 +526,6 @@
           
           
           
-
 
   
 
@@ -636,7 +627,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../Frequently-Asked-Questions/" class="md-nav__link">
       Frequently Asked Questions
@@ -647,7 +637,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -665,7 +654,6 @@
       
       
       
-
 
 
   
@@ -689,7 +677,6 @@
           
           
           
-
 
 
   
@@ -717,7 +704,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Reference/" class="md-nav__link">
       📚   Reference
@@ -728,7 +714,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -746,7 +731,6 @@
           
           
           
-
 
 
   
@@ -774,7 +758,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Objectives-List/" class="md-nav__link">
       ✔️ Objectives List
@@ -785,7 +768,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -800,7 +782,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Conditions-List/" class="md-nav__link">
         ❓    Conditions List
@@ -813,7 +794,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Compatibility/" class="md-nav__link">
       🤝 Compatibility List
@@ -824,7 +804,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -842,7 +821,6 @@
           
           
           
-
 
 
   
@@ -870,7 +848,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Notification-Settings/" class="md-nav__link">
       🔊   Settings
@@ -881,7 +858,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -899,7 +875,6 @@
           
           
           
-
 
 
   
@@ -927,7 +902,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Commands-and-permissions/" class="md-nav__link">
       🔒 Permissions & Commands
@@ -938,7 +912,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -953,7 +926,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../User-Documentation/Configuration/" class="md-nav__link">
       🔧  Configuration
@@ -964,7 +936,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -987,7 +958,6 @@
       
       
       
-
 
 
   
@@ -1013,7 +983,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../Developer-Documentation/Contributing-Guidelines/" class="md-nav__link">
       Contributing Guidelines
@@ -1024,7 +993,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -1039,7 +1007,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../Developer-Documentation/Releasing/" class="md-nav__link">
       Releasing
@@ -1050,7 +1017,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -1068,7 +1034,6 @@
       
       
       
-
 
 
   
@@ -1092,7 +1057,6 @@
           
           
           
-
 
 
   
@@ -1120,7 +1084,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../Contributing/Contributing/" class="md-nav__link">
       Contributing
@@ -1136,7 +1099,6 @@
           
           
           
-
 
 
   
@@ -1164,7 +1126,6 @@
           
 
 
-
   <li class="md-nav__item">
     <a href="../../../Contributing/Documentation/Setup/" class="md-nav__link">
       Setup
@@ -1175,7 +1136,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -1193,7 +1153,6 @@
           
           
           
-
 
 
   
@@ -1219,7 +1178,6 @@
           
           
           
-
 
 
   <li class="md-nav__item">
@@ -1337,8 +1295,8 @@
                 
                 <p>This section will teach you the very basics of BetonQuest.</p>
 <h2 id="checking-out-the-default-example-quest">Checking out the "default" example quest.<a class="headerlink" href="#checking-out-the-default-example-quest" title="Permanent link">🔗</a></h2>
-<p>Let's start by checking out the build in example quest. You can find it in the BetonQuest directory that has been generated in your plugins folder.
-The folder you are looking for is named "<em>default</em>".</p>
+<p>Let's start by checking out the build in example quest. You can find it in the BetonQuest directory that has been
+generated in your plugins folder. The folder you are looking for is named "<em>default</em>".</p>
 <p>Open it up and find a file called <em>main.yml</em>. It contains a lot of options, but you only need to look at this section:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">npcs</span><span class="p">:</span>
@@ -1349,36 +1307,39 @@ You will need to change the <code>'0'</code> to the ID of the Citizens NPC you w
 You obtain a NPC's ID by selecting it with <strong>/npc sel</strong> while looking at it and then running <strong>/npc id</strong>. <br />
 Execute <strong>/q reload</strong> and right-click the NPC.</p>
 <p>The conversation should start. If it did not, check if you correctly assigned the ID. Ask the Innkeeper for some quests.
-He will tell you to cut some trees. If you want, type <strong>/journal</strong> to get the journal and see a new entry. Now, don't try to place any wood blocks.
-BetonQuest will detect that and increase the number of blocks to destroy. Just go and find some trees that you can cut down. 
-Now you can return to Innkeeper and give him the wood. You will receive the reward.</p>
+He will tell you to cut some trees. If you want, type <strong>/journal</strong> to get the journal and see a new entry.
+Now, don't try to place any wood blocks. BetonQuest will detect that and increase the number of blocks to destroy.
+Just go and find some trees that you can cut down. Now you can return to the Innkeeper and give him the wood.
+You will receive the reward.</p>
 <h2 id="using-events-and-conditions">Using events and conditions<a class="headerlink" href="#using-events-and-conditions" title="Permanent link">🔗</a></h2>
 <p>Now that you know how a (very) simple quest looks like time to start learning how to write something similar. 
 Let's start with events. We won't do conversations just now, since they heavily use events and conditions, 
 so you need to know them first. You can read complete reference to events in the <a href="../../../User-Documentation/Reference/#events">Reference chapter</a>.
 Do that now or just continue with this tutorial.</p>
 <h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">🔗</a></h3>
-<p>Let's just open <em>events.yml</em> file inside the <em>default</em> package. At the end add a new line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;message</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
+<p>Let's just open <em>events.yml</em> file inside the <em>default</em> package. Add a new line at the bottom:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
 </code></pre></div>
 </td></tr></table>
 <p>This is an event instruction. BetonQuest will use it to determine what type of event it is and what exactly should it do. 
-<code>mega</code> is the name, <code>message</code> is the events type and <code>Hello world!</code> tells the message event what it needs to display. In this case,
-if you run <code>mega</code> event, it will display to you <code>Hello world!</code> message. Now save the file, issue <strong>/q reload</strong> command
-and run the event with <strong>/q e {name} mega</strong> command (<code>q</code> is shortcut for <code>quest</code>, <code>e</code> is shortcut for <code>event</code>, <code>{name}</code>
-is your Minecraft name without the brackets and <code>mega</code> is the name of the event we've just created). It should show you white <code>Hello world!</code> message in the chat.</p>
-<p>Let's create another event, more complicated one. <code>teleport</code> seems complicated enough. As you can read in the <a href="../../../User-Documentation/Events-List/">Events list</a>,
-it needs a single argument, the location. Press F3 and check out your current location (it's shown on the left, three numbers, <code>x</code>, <code>y</code> and <code>z</code>).
+<code>mega</code> is the name, <code>notify</code> is the events type and <code>Hello world!</code> tells the message event what it needs to display.
+In this case, if you run <code>mega</code> event, it will display to you <code>Hello world!</code> message. Now save the file,
+issue <strong>/q reload</strong> command and run the event with <strong>/q e {name} default.mega</strong> command (<code>q</code> is shortcut for <code>quest</code>,
+<code>e</code> is shortcut for <code>event</code>, <code>{name}</code> is your Minecraft name without the brackets, <code>default</code> is the package/quest
+and <code>mega</code> is the name of the event we've just created). It should show you white <code>Hello world!</code> message in the chat.</p>
+<p>Let's create another event, more complicated one. <code>teleport</code> seems complicated enough.
+As you can read in the <a href="../../../User-Documentation/Events-List/">Events list</a>, it needs a single argument, the location.
+Press F3 and check out your current location (it's shown on the left, three numbers, <code>x</code>, <code>y</code> and <code>z</code>).
 Now add in <em>events.yml</em> another line:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">tp</span><span class="p">:</span> <span class="s">&quot;teleport</span><span class="nv"> </span><span class="s">100;200;300;world&quot;</span>
 </code></pre></div>
 </td></tr></table>
 <p>and replace <code>100</code> with your <code>x</code> coordinate, <code>200</code> with <code>y</code> and <code>300</code> with <code>z</code>. <code>world</code> needs to be replaced with your 
 current world's name. Save the file, reload the plugin (<strong>/q reload</strong>) and run this event with a command described
- before.
-It should teleport you to the location you have specified.</p>
+before. It should teleport you to the location you have specified.</p>
 <p>Congratulations, you have just created your first events. Go ahead and do some experiments with other event types. 
-You can find them in <a href="../../../User-Documentation/Events-List/">Events list</a> chapter. Once you're done let's start learning conditions.</p>
+You can find them in <a href="../../../User-Documentation/Events-List/">Events list</a> chapter.
+Once you're done let's start learning conditions.</p>
 <h3 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">🔗</a></h3>
 <p>Open the <em>conditions.yml</em> file and add a new line:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5&quot;</span>
@@ -1391,8 +1352,8 @@ checking if the player is near that location (you should change the location to 
 so you don't have to run around the world). Note that at the end of location argument there is an additional number, <code>5</code>.
 This is the maximum distance you can be away from the location to meet the condition. Alright, save the file and reload the plugin.</p>
 <p>Now walk to the location you have defined in the condition. Try to stand on the exact block corresponding to that location. 
-Issue <strong>/q c {name} mega</strong> command (<code>c</code> is shortcut for <code>condition</code>). It should show you "checking condition blah blah
-blah: <strong>true</strong>". We're focusing on that last word, <strong>true</strong>. This means that you're meeting the condition: you're standing withing
+Issue <strong>/q c {name} default.mega</strong> command (<code>c</code> is shortcut for <code>condition</code>). It should show you "Condition blah blah
+blah: <strong>true</strong>". We're focusing on that last word, <strong>true</strong>. This means that you're meeting the condition: you're standing within
 5 block radius of the location. Now move 2 blocks away and issue that command again. You should still be meeting the condition. 
 Walk 4 more blocks away and try now. It should show <strong>false</strong>. You are now outside of that 5 block radius. Get it? Great.</p>
 <p>Now I'll show you the simplest use of those conditions. Open the <em>events.yml</em> file again, and at the end of <code>mega</code> 
@@ -1416,18 +1377,19 @@ of the event, otherwise it will get confusing really fast. Example:</p>
 </code></pre></div>
 </div>
 </div>
-<p>Now <code>sayHello</code> event will run only if it meets <code>isAtSpawn</code> condition. Reload the plugin, walk outside of the 5 block radius and try to run <code>sayHello</code> event.
-Puff, nothing happens. It's because you're not meeting <code>isAtSpawn</code> condition. Walk into the radius again and try to run that event now.
-It should happily display the <code>Hello world!</code> message.</p>
-<p>It's very nice that we can add such conditions, but the problem is: what if you wanted to display the message only if the player is <em>outside</em> the radius?
-Don't worry, you don't have to specify <code>inverted_location</code> condition or anything like that. You can simply negate the condition.
-Negation makes the condition behave in the exact opposite way, in this case it <code>isAtSpawn</code> will be met only if the player is outside of the 5 block radius,
-and it won't be met if he's inside. Open the <em>events.yml</em> and add an exclamation mark before the <code>isAtSpawn</code> condition, so it looks like this:</p>
+<p>Now <code>sayHello</code> event will run only if it meets <code>isAtSpawn</code> condition. Reload the plugin, walk outside of the 5 block
+radius and try to run <code>sayHello</code> event. Puff, nothing happens. It's because you're not meeting <code>isAtSpawn</code> condition.
+Walk into the radius again and try to run that event now. It should happily display the <code>Hello world!</code> message.</p>
+<p>It's very nice that we can add such conditions, but the problem is: what if you wanted to display the message only if  the
+player is <em>outside</em> the radius? Don't worry, you don't have to specify <code>inverted_location</code> condition or anything like that.
+You can simply negate the condition. Negation makes the condition behave in the exact opposite way, in this case it
+<code>isAtSpawn</code> will be met only if the player is outside of the 5 block radius, and it won't be met if he's inside.
+Open the <em>events.yml</em> and add an exclamation mark before the <code>isAtSpawn</code> condition, so it looks like this:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;message</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:!isAtSpawn&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<p>This means "display message <code>Hello world!</code> if the <code>isAtSpawn</code> condition is <em>not met</em>". Save the file, reload the plugin and run the event
-inside and outside of the radius to see how it works.</p>
+<p>This means "display message <code>Hello world!</code> if the <code>isAtSpawn</code> condition is <em>not met</em>". Save the file, reload the plugin
+and run the event inside and outside of the radius to see how it works.</p>
 <h2 id="basic-tags">Basic tags<a class="headerlink" href="#basic-tags" title="Permanent link">🔗</a></h2>
 <p>Now that you know how to use events and conditions I'll show you what tags are. Create new events:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -1435,32 +1397,52 @@ inside and outside of the radius to see how it works.</p>
 <span class="nt">del_beton_tag</span><span class="p">:</span> <span class="s">&quot;tag</span><span class="nv"> </span><span class="s">del</span><span class="nv"> </span><span class="s">beton&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<p>It's a good practice to give your events names that describe what they are doing. Imagine you have 100 events, <code>foo24</code>, <code>bar65</code>, <code>baz12</code> etc.
-You would get lost pretty quickly. So, <code>add_beton_tag</code> event here simply adds <code>beton</code> tag to the player, <code>del_beton_tag</code> removes it. Save the file,
-reload the plugin and run this event. Nothing happens... or does it? Issue <strong>/q t {name}</strong> command (<code>t</code> is shortcut for <code>tags</code>).
-It should show you a list with few entries. Right now focus on <code>default.beton</code>, the rest are used by the default quest for Innkeeper.
-Alright, <code>default</code> is the name of the package in which the tag is, and <code>beton</code> is the name of the tag, as defined in <code>add_beton_tag</code> event.
-Now run <code>del_beton_tag</code> event. Guess what, <code>default.beton</code> disappeared from the list! And that's it, you know how to add and remove tags. Pretty useless.</p>
-<p>Nothing could be more wrong. Tags are one the most powerful things in BetonQuest. They just need to be used with <code>tag</code> condition. Open <em>conditions.yml</em> and add</p>
+<p>It's a good practice to give your events names that describe what they are doing. Imagine you have 100 events, <code>foo24</code>,
+<code>bar65</code>, <code>baz12</code> etc. You would get lost pretty quickly. So, <code>add_beton_tag</code> event here simply adds <code>beton</code> tag to the
+player, <code>del_beton_tag</code> removes it. Save the file, reload the plugin and run this event. Nothing happens... or does it?
+Issue <strong>/q t {name}</strong> command (<code>t</code> is shortcut for <code>tags</code>). It should show you a list with few entries.
+Right now focus on <code>default.beton</code>, the rest are used by the default quest for Innkeeper. Alright, <code>default</code> is the name
+of the package in which the tag is, and <code>beton</code> is the name of the tag, as defined in <code>add_beton_tag</code> event.
+Now run <code>del_beton_tag</code> event. Guess what, <code>default.beton</code> disappeared from the list! And that's it, you know how to
+add and remove tags. Pretty useless.</p>
+<p>Nothing could be more wrong. Tags are one the most powerful things in BetonQuest. They just need to be used with <code>tag</code>
+condition. Open <em>conditions.yml</em> and add</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">has_beton_tag</span><span class="p">:</span> <span class="s">&quot;tag</span><span class="nv"> </span><span class="s">beton&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<p>line. As you can imagine, <code>tag</code> is the type of condition (the same as <code>tag</code> event, but these are not the same things - one is an event, the other one is a condition) and <code>beton</code> is the name of the tag. You don't have to specify <code>default.beton</code>, but you can if you want. Now save, reload and check it with a command. It should show <strong>false</strong>, since you have removed the tag with <code>del_beton_tag</code> event. Add it again with <code>add_beton_tag</code> event and check the <code>has_beton_tag</code> condition again. Now it will show <strong>true</strong>.</p>
-<p>Now you probably understand how powerful this system is. You could for example set a tag on the first time the player talks with an NPC, and if the NPC sees that tag next time they talk, he will tell something different, like "welcome back".</p>
+<p>line. As you can imagine, <code>tag</code> is the type of condition (the same as <code>tag</code> event, but these are not the same things - one
+is an event, the other one is a condition) and <code>beton</code> is the name of the tag. You don't have to specify <code>default.beton</code>,
+but you can if you want. Now save, reload and check it with a command. It should show <strong>false</strong>, since you have removed
+the tag with <code>del_beton_tag</code> event. Add it again with <code>add_beton_tag</code> event and check the <code>has_beton_tag</code> condition again.
+Now it will show <strong>true</strong>.</p>
+<p>Now you probably understand how powerful this system is. You could for example set a tag on the first time the player
+talks with an NPC, and if the NPC sees that tag next time they talk, he will tell something different, like "welcome back".</p>
 <h2 id="creating-objectives">Creating objectives<a class="headerlink" href="#creating-objectives" title="Permanent link">🔗</a></h2>
 <p>Time to write some objectives! Open the <em>objectives.yml</em> file and add a new line:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">kill_creepers</span><span class="p">:</span> <span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">CREEPER</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">events:bar</span><span class="nv"> </span><span class="s">conditions:has_beton_tag&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<p>Now let's analyze it. <code>kill_creepers</code> is a name of the objective. <code>mobkill</code> is a type. In this case, to complete the objective the player will have to kill some mobs.
-<code>creeper</code> is a type of the mob, so we know that these mobs will have to be Creepers. <code>3</code> is the amount. It means that the player has to kill 3 Creepers.
-<code>events:bar</code> means than once the player kills those Creepers, the <code>bar</code> event will be run (it's the teleportation event).
+<p>Now let's analyze it. <code>kill_creepers</code> is a name of the objective. <code>mobkill</code> is a type. In this case, to complete the
+objective the player will have to kill some mobs. <code>creeper</code> is a type of the mob, so we know that these mobs will have
+to be Creepers. <code>3</code> is the amount. It means that the player has to kill 3 Creepers. <code>events:bar</code> means than once the
+player kills those Creepers, the <code>bar</code> event will be run (it's the teleportation event, but we renamed it).
 <code>conditions:has_beton_tag</code> tells us that the player will have to have <code>beton</code> tag while killing Creepers to complete the objective.
-Save it, reload the plugin and issue <strong>/q o {name} add kill_creepers</strong> command (<code>o</code> is for <code>objective</code>, <code>add</code> tells the plugin to add an objective).</p>
-<p>Now you can check if you actually have this objective with <strong>/q o {name}</strong> command, it will show you all your active objectives. It should show <code>default.kill_creepers</code>. Alright, remove (yes, remove!) the <code>beton</code> tag from you and find some Creepers to kill. Once you killes 3 of them you will notice that nothing happened. It's because <code>has_beton_tag</code> condtion is not met, so the objective does not count your progress. Now add the tag again and kill another Creepers. When the third is dead you should be teleported to the location defined in <code>bar</code> event.</p>
-<p>Congratulations, now you know how to use objectives. You should experiment with other types now, since objectives will be used very often in your quests. Once you're done check out the <em>Writing your first conversation</em> chapter to use your knowledge to write your fisrt conversation.</p>
+Save it, reload the plugin and issue <strong>/q o {name} add default.kill_creepers</strong> command (<code>o</code> is for <code>objective</code>, <code>add</code>
+tells the plugin to add an objective).</p>
+<p>Now you can check if you actually have this objective with <strong>/q o {name}</strong> command, it will show you all your active
+objectives. It should show <code>default.kill_creepers</code>. Alright, remove (yes, remove!) the <code>beton</code> tag from you and find
+some Creepers to kill. Once you killes 3 of them you will notice that nothing happened. It's because <code>has_beton_tag</code>
+condtion is not met, so the objective does not count your progress. Now add the tag again and kill another Creepers.
+When the third is dead you should be teleported to the location defined in <code>bar</code> event.</p>
+<p>Congratulations, now you know how to use objectives. You should experiment with other types now, since objectives will
+be used very often in your quests. Once you're done check out the <em>Writing your first conversation</em> chapter to use your
+knowledge to write your fisrt conversation.</p>
 <h2 id="writing-your-first-conversation">Writing your first conversation<a class="headerlink" href="#writing-your-first-conversation" title="Permanent link">🔗</a></h2>
-<p>Now that you have seen BetonQuest in action and understood events, conditions and objectives, it's time for writing your first conversation. There's a <em>conversations</em> directory inside the default package. It contains a single file, <em>innkeeper.yml</em>. This is the conversation with Innkeeper, the one who asks you to cut some trees. Open it, we'll use that for reference. Now create a new file, let's say <em>miner.yml</em>. Now type (don't copy-paste it, you'll learn better while typing) that into the file:</p>
+<p>Now that you have seen BetonQuest in action and understood events, conditions and objectives, it's time for writing your
+first conversation. There's a <em>conversations</em> directory inside the default package. It contains a single file,
+<em>innkeeper.yml</em>. This is the conversation with Innkeeper, the one who asks you to cut some trees. Open it, we'll use
+that for reference. Now create a new file, let's say <em>miner.yml</em>. Now type
+(don't copy-paste it, you'll learn better while typing) that into the file:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1474,12 +1456,14 @@ Save it, reload the plugin and issue <strong>/q o {name} add kill_creepers</stro
 </td></tr></table>
 <p>It's the most basic conversation possible. The NPC named <code>Miner</code> upon starting the conversation will use <code>greeting</code> option,
 which means he will say <code>Hi there, traveler!</code>. Then the conversation will end, because there are no player options defined.
-Now you need to link the conversation with an NPC. You do that in the <em>main.yml</em> file. Open it now. As you can see,
-conversation is linked to <code>Innkeeper</code> word. It's the one you have put on the sign, remember? Now, add another line under the Innkeeper:
-<code>Miner: miner.yml</code>, save the file and reload the server. This will link our new conversation with the NPC named "Miner".
-Construct a new NPC on the server, give him a sign with "Miner" name and click on the head.</p>
+Now you need to link the conversation with an NPC. For that you now need to create or select another NPC.
+Then you link your conversation to the npc in the <em>main.yml</em> file. Open it now. As you can see the previous NPC
+conversation is linked to <code>Innkeeper</code> word. Now add another line under the Innkeeper:
+<code>'1': miner</code>, save the file and reload the server. This will link our new conversation with the NPC with the id "1".
+Now click on that NPC.</p>
 <p>Guess what, the conversation finished right after it started. 
-The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the conversation file and edit it (again, manually, no copy-paste!) so the options look like this:</p>
+The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the conversation file and edit it
+(again, manually, no copy-paste!) so the options look like this:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1499,8 +1483,11 @@ The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the
     <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">I need to go, sorry.</span>
 </code></pre></div>
 </td></tr></table>
-<p>When you save the file, reload the plugin and start the conversation again you will notice that there are two options for you to choose: <code>Hello!</code> and <code>I need to go, sorry.</code> Choosing any of them will end the conversation, because these options did not specify any pointers.</p>
-<p>Now add a new NPC option, for example <code>weather</code> with text <code>Nice weather.</code> and make <code>hello</code> player option point to it. When you save&amp;reload, the Miner should say <code>Nice weather.</code> when you tell him <code>Hello!</code>. I think you get how it works.</p>
+<p>When you save the file, reload the plugin and start the conversation again you will notice that there are two options
+for you to choose: <code>Hello!</code> and <code>I need to go, sorry.</code> Choosing any of them will end the conversation, because these
+options did not specify any pointers.</p>
+<p>Now add a new NPC option, for example <code>weather</code> with text <code>Nice weather.</code> and make <code>hello</code> player option point to it.
+When you save&amp;reload, the Miner should say <code>Nice weather.</code> when you tell him <code>Hello!</code>. I think you get how it works.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1526,8 +1513,13 @@ The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the
     <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">I need to go, sorry.</span>
 </code></pre></div>
 </td></tr></table>
-<p>Now, every time you talk to the Miner, he will say the same thing. It would be nice if the second time you talk to him he knew your name. We can do that with tags. Define a <code>meet_miner</code> event and <code>has_met_miner</code> condition. When you talk to the Miner for the first time, he will check if you have met him. If not, he will meet you (with that event) and next time you talk, the condition will be passed and he will use your name.</p>
-<p>Now, rename <code>greeting</code> NPC option to <code>first_greeting</code>. Add <code>meet_miner</code> event and negated <code>has_met_miner</code> condition (negated because this option should only show if the player has not met the Miner yet). You will need to surround the condition with <code>''</code>, because strings cannot start with exclamation marks in YAML. It should look like this:</p>
+<p>Now, every time you talk to the Miner, he will say the same thing. It would be nice if the second time you talk to him
+he knew your name. We can do that with tags. Define a <code>meet_miner</code> event and <code>has_met_miner</code> condition. When you talk
+to the Miner for the first time, he will check if you have met him. If not, he will meet you (with that event) and next
+time you talk, the condition will be passed and he will use your name.</p>
+<p>Now, rename <code>greeting</code> NPC option to <code>first_greeting</code>. Add <code>meet_miner</code> event and negated <code>has_met_miner</code> condition
+(negated because this option should only show if the player has not met the Miner yet). You will need to surround the
+condition with <code>''</code>, because strings cannot start with exclamation marks in YAML. It should look like this:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1543,19 +1535,27 @@ The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the
     <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello, bye</span> 
 </code></pre></div>
 </td></tr></table>
-<p>This means: <code>first_greeting</code> should be used if the player <strong>does not</strong> pass <code>has_met_miner</code> condition (meaning he doesn't have a tag because he haven't talked to the NPC yet). When this option is used, it will fire <code>meet_miner</code> event and display <code>hello</code> and <code>bye</code> options. Alright, but what happens if the player met the Miner and now negated <code>has_met_miner</code> condition doesn't work? NPC will try to use next option defined in <code>first</code> setting. There is none yet, so let's add it.</p>
+<p>This means: <code>first_greeting</code> should be used if the player <strong>does not</strong> pass <code>has_met_miner</code> condition (meaning he
+doesn't have a tag because he haven't talked to the NPC yet). When this option is used, it will fire <code>meet_miner</code> event
+and display <code>hello</code> and <code>bye</code> options. Alright, but what happens if the player met the Miner and now negated
+<code>has_met_miner</code> condition doesn't work? NPC will try to use next option defined in <code>first</code> setting. There is none yet,
+so let's add it.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting, regular_greeting</span>
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting,regular_greeting</span>
 <span class="nt">NPC_options</span><span class="p">:</span>
   <span class="nt">regular_greeting</span><span class="p">:</span>
     <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi %player%!</span>
     <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello, bye</span>
 </code></pre></div>
 </td></tr></table>
-<p>This option does not have any conditions, so if the <code>first_greeting</code> fails, the NPC will always choose this one. Now take a look at the <code>%player%</code> thing. It's a variable. In this place it will show your name. There are more than this one, they are described in <em>Reference</em> chapter. Alright, save&amp;reload and start the conversation. If you did everything correctly, the Miner should greet you as a "traveler", and the second time you talk to him, he should greet you with your Minecraft name.</p>
+<p>This option does not have any conditions, so if the <code>first_greeting</code> fails, the NPC will always choose this one.
+Now take a look at the <code>%player%</code> thing. It's a variable. In this place it will show your name. There are more than this
+one, they are described in <em>Reference</em> chapter. Alright, save&amp;reload and start the conversation. If you did everything
+correctly, the Miner should greet you as a "traveler", and the second time you talk to him, he should greet you with
+your Minecraft name.</p>
 <p>Here's the whole conversation you created, so you can check if you understood everything correctly:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1574,7 +1574,7 @@ The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the
 15
 16
 17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting, regular_greeting</span>
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting,regular_greeting</span>
 <span class="nt">NPC_options</span><span class="p">:</span>
   <span class="nt">first_greeting</span><span class="p">:</span>
     <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi there, traveler!</span>
@@ -1595,9 +1595,9 @@ The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the
 </code></pre></div>
 </td></tr></table>
 <p>Now you should experiment some more with this conversation, you can help yourself by looking at the
-<a href="https://github.com/BetonQuest/BetonQuest/blob/master/src/main/resources/default/defaultConversation.yml" target="_blank">innkeeper.yml</a> file.
-Try to understand how that conversation works step by step. As the excercise you should complete the Miner NPC, so he asks you to mine some iron ore,
-then smelt it in the furnace, next craft an armor with it and return to him wearing this armor.</p>
+<a href="https://github.com/BetonQuest/BetonQuest/blob/master/src/main/resources/default/conversations/innkeeper.yml" target="_blank">innkeeper.yml</a> file.
+Try to understand how that conversation works step by step. As the excercise you should complete the Miner NPC, so he
+asks you to mine some iron ore, then smelt it in the furnace, next craft an armor with it and return to him wearing this armor.</p>
 <p>You might want to check out the <a href="../../../User-Documentation/Reference/">Reference</a> chapter to see how to handle items in 
 your quests and how to add entries to the journal. If you want to use Citizens NPCs instead of the ones made with clay 
 you will find information you need in that chapter too. To find out more about events, conditions, objectives and variables,
@@ -1610,7 +1610,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1596479943000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1609354672000' locale='en'></span>
     
   </small>
 </div>
@@ -1630,40 +1630,38 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../Setting-up-the-editor/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Setting-up-the-editor/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Setting up the editor
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Setting up the editor
-              </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../Frequently-Asked-Questions/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Frequently Asked Questions
             </div>
-          </a>
-        
-        
-          <a href="../../Frequently-Asked-Questions/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Frequently Asked Questions
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1737,7 +1735,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
     </div>
     
       <script src="../../../assets/javascripts/vendor.49293c47.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.1ba7a0c7.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/bundle.59dfdd61.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
