@@ -1636,13 +1636,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hiding-players" class="md-nav__link">
-    Hiding Player's
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#force-visibility-update" class="md-nav__link">
     Force Visibility update
   </a>
@@ -3348,13 +3341,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hiding-players" class="md-nav__link">
-    Hiding Player's
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#force-visibility-update" class="md-nav__link">
     Force Visibility update
   </a>
@@ -4324,38 +4310,9 @@ It allows you to assign conditions to specific NPC IDs like so:</p>
   <span class="nt">127</span><span class="p">:</span> <span class="s">&#39;!questStarted&#39;</span>
 </code></pre></div>
 <p>The interval the conditions are checked in can be configured in the <a href="../Configuration/#npc-hider-interval">config.yml</a>.</p>
-<h3 id="hiding-players">Hiding Player's<a class="headerlink" href="#hiding-players" title="Permanent link">🔗</a></h3>
-<video controls loop
-  src="../../media/content/User-Documentation/Compatibility/PlayerHider.mp4"
-  width="780">
-  Sorry, your browser doesn't support embedded videos.
-</video>
-
-<p>You can also hide players for specific players. If the <code>source_player</code> meets the conditions 
-every player that meets the <code>target_player</code> conditions is completely hidden for him. 
-This is really helpful if you want a lonely place on your server, 
-or your quests break when multiple players can see or affect each other.
-You can configure the interval which checks the conditions in the <a href="../Configuration/#player-hider-interval">config.yml</a>.</p>
-<p>Special behaviour:</p>
-<ul>
-<li>A player that meets the <code>source_player</code>conditions can't be pushed anymore by other players. </li>
-<li>By leaving the e.g. <code>source_player</code> argument empty it will match all players.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nt">player_hider</span><span class="p">:</span>
-  <span class="nt">example_hider</span><span class="p">:</span>  <span class="c1">#All players in a special region cannot see any other players in that region.</span>
-    <span class="nt">source_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span>
-    <span class="nt">target_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span>
-  <span class="nt">another_hider</span><span class="p">:</span> <span class="c1">#No one can see any players inside a secret room.</span>
-    <span class="c1">#The source_player argument is left out to match all players.    </span>
-    <span class="nt">target_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_secretRoom</span>
-  <span class="nt">empty_hider</span><span class="p">:</span> <span class="c1">#in_Lobby is a world condition. Therefore, the lobby world appears empty for everyone that is in it.</span>
-    <span class="nt">source_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_Lobby</span>
-    <span class="c1">#The target_player argument is left out to match all players.</span>
-</code></pre></div>
 <h3 id="force-visibility-update">Force Visibility update<a class="headerlink" href="#force-visibility-update" title="Permanent link">🔗</a></h3>
 <p>You can run the <code>updatevisibility</code> event to manually update the visibility. This is useful for performance optimizations
-on large servers if used together with the <a href="../Configuration/#player-hider-interval">player hider interval</a>
-and <a href="../Configuration/#npc-hider-interval">npc hider interval</a> set to high values.</p>
+on large servers if used together with the <a href="../Configuration/#npc-hider-interval">npc hider interval</a> set to high values.</p>
 <h3 id="conversation-io-menu">Conversation IO: <code>menu</code><a class="headerlink" href="#conversation-io-menu" title="Permanent link">🔗</a></h3>
 <p>ProtocolLib also enables a conversation IO that makes use of a chat menu system.</p>
 <video controls loop
@@ -4580,7 +4537,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1609099571000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1609864753000' locale='en'></span>
     
   </small>
 </div>
