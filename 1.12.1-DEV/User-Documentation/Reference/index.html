@@ -17,7 +17,7 @@
         
       
       <link rel="shortcut icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7+insiders-1.17.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8+insiders-1.17.0">
     
     
       
@@ -2090,7 +2090,14 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 <li><code>firework</code> - this is almost the same as fireworks. You can only specify a single effect and the <code>power</code> argument has no effects.</li>
 </ul>
 <h2 id="backpack">Backpack<a class="headerlink" href="#backpack" title="Permanent link">🔗</a></h2>
-<p>Sometimes you'll want some items to be persistent over death. If the player has lost them the quest would be broken. You can add a apecific line to item's lore to make it persistent (<code>&amp;2Quest_Item</code> by default, <code>_</code> is a space in item's definition). Note that this must be a whole new line in the lore! Such item wouldn't be dropped on death, instead it would be placed in player's backpack. <strong>Example</strong>: <code class="highlight"><span class="nt">important_sword</span><span class="p">:</span> <span class="s">&#39;DIAMOND_SWORD</span><span class="nv"> </span><span class="s">name:Sword_for_destroying__The_Concrete</span><span class="nv"> </span><span class="s">lore:Made_of_pure_Mithril;&amp;2Quest_Item&#39;</span></code></p>
+<p>Sometimes you'll want some items to be persistent over death. The quest could be broken if the player loses them.
+Such an item wouldn't be dropped (on death), instead it would be placed in the player's backpack.</p>
+<p>You can add a specific line to an item's lore to make it persistent. It's <code>&amp;2Quest_Item</code> (<code>_</code> is a space in an item's definition) if your default language is english.
+The translation of the line can be found in <em>messages.yml</em> if a different default language is configured. It's also possible to change the translation. </p>
+<p>Note that this must be an entirely new line in the lore!  <br />
+<strong>Example</strong>:
+<div class="highlight"><pre><span></span><code><span class="nt">important_sword</span><span class="p">:</span> <span class="s">&quot;DIAMOND_SWORD</span><span class="nv"> </span><span class="s">name:Sword_for_destroying__The_Concrete</span><span class="nv"> </span><span class="s">lore:Made_of_pure_Mithril;&amp;2Quest_Item&quot;</span>
+</code></pre></div></p>
 <p>To open your backpack just type <strong>/j</strong> command. The inventory window will open, displaying your stored items. The first slot is always the journal, and if you get it, the slot will stay empty. You can transfer quest items back and forth between inventories by clicking on them. Left click will transfer just one item, right click will try to transfer all items. Normal items cannot be stored into the backpack, so it's not an infinite inventory.</p>
 <p>If you will ever have more than one page of quest items, the buttons will appear. You can customize those buttons by creating <code>previous_button</code> and <code>next_button</code> items in <em>items.yml</em> file. Their name will be overwritten with the one defined in <em>messages.yml</em>.</p>
 <p>Quest items cannot be dropped in any way other than using them. This way you can create a quest for eating cookies by giving the player a stack of cookies flagged as quest items and not continuing until there are no more cookies in his inventory/backpack. The player cannot drop the cookies, so he must eat every one of them to complete the quest.</p>
@@ -2202,7 +2209,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1609864753000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1612553808000' locale='en'></span>
     
   </small>
 </div>
@@ -2326,8 +2333,8 @@ You can configure the interval which checks the conditions in the <a href="../Co
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.2d9b50f1.min.js"></script>
-      <script src="../../assets/javascripts/bundle.b7273581.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.191088e8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d4cf0930.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
