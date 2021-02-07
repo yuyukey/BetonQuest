@@ -7,17 +7,13 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <meta name="author" content="BetonQuest Organisation">
-      
-      
         <link rel="canonical" href="https://betonquest.github.io/BetonQuest/User-Documentation/Commands-and-permissions/">
       
       
-        
+        <meta name="author" content="BetonQuest Organisation">
       
       <link rel="shortcut icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8+insiders-1.17.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
     
     
       
@@ -25,10 +21,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.10cb3b3f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.697e47cb.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
         
       
     
@@ -36,9 +32,9 @@
     
       
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto",;--md-code-font-family:"Roboto Mono",}</style>
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
@@ -70,11 +66,8 @@
     
     
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal">
+      
   
-    
-    
-      <script>var palette=JSON.parse(localStorage.getItem("__palette"));if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -90,60 +83,32 @@
       
     </div>
     
-      
-
-
-
-  
-
-<header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-header-nav__button md-logo" aria-label="BetonQuest">
       
   <img src="../../media/design/BQIcon1k.png" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header-nav__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             BetonQuest
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             
               🔒 Permissions & Commands
             
           </span>
         </div>
-      </div>
-    </div>
-    <div class="md-header__options">
-      
-        
-          
-          
-          
-          <button class="md-header__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 01-1 1H9a1 1 0 01-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7M9 21v-1h6v1a1 1 0 01-1 1h-4a1 1 0 01-1-1m3-17a5 5 0 00-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 00-5-5z"/></svg>
-          </button>
-        
-          
-          
-          
-          <button class="md-header__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7M9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/></svg>
-          </button>
-        
-      
       
     </div>
     
-      <label class="md-header__button md-icon" for="__search">
+      <label class="md-header-nav__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
@@ -151,18 +116,14 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-        </button>
-      </nav>
-      <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -178,7 +139,7 @@
 </div>
     
     
-      <div class="md-header__source">
+      <div class="md-header-nav__source">
         
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source">
   <div class="md-source__icon md-icon">
@@ -192,25 +153,29 @@
       </div>
     
   </nav>
-  
+</header>
     
+    <div class="md-container" data-md-component="container">
       
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   
   
-
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        Home
-      </a>
+      
+        <a href="../.." class="md-tabs__link">
+          Home
+        </a>
+      
     </li>
   
 
@@ -218,15 +183,12 @@
         
   
   
-
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="../../Learn-Beton/Welcome/" class="md-tabs__link">
-        Learn Beton
-      </a>
+      
+        <a href="../../Learn-Beton/Welcome/" class="md-tabs__link">
+          Learn Beton
+        </a>
+      
     </li>
   
 
@@ -235,21 +197,15 @@
   
   
     
-  
-
-
-  
-  
-  
     
-
-  
   
   
     <li class="md-tabs__item">
-      <a href="../Reference/" class="md-tabs__link md-tabs__link--active">
-        User Documentation
-      </a>
+      
+        <a href="../Reference/" class="md-tabs__link">
+          User Documentation
+        </a>
+      
     </li>
   
 
@@ -259,15 +215,12 @@
         
   
   
-
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="../../Developer-Documentation/Contributing-Guidelines/" class="md-tabs__link">
-        Developer Documentation
-      </a>
+      
+        <a href="../../Developer-Documentation/Contributing-Guidelines/" class="md-tabs__link">
+          Developer Documentation
+        </a>
+      
     </li>
   
 
@@ -275,15 +228,12 @@
         
   
   
-
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="../../Contributing/Contributing/" class="md-tabs__link">
-        Contributing
-      </a>
+      
+        <a href="../../Contributing/Contributing/" class="md-tabs__link">
+          Contributing
+        </a>
+      
     </li>
   
 
@@ -291,31 +241,16 @@
     </ul>
   </div>
 </nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
         
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
             
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
-
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://betonquest.github.io/BetonQuest/" title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest">
       
@@ -344,654 +279,520 @@
       
       
 
-  
-  
-  
+
+  <li class="md-nav__item md-nav__item--nested">
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" data-md-state="indeterminate" type="checkbox" id="nav-1" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-1">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Home" data-md-level="1">
-        <label class="md-nav__title" for="nav-1">
-          <span class="md-nav__icon md-icon"></span>
-          Home
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        👋 Welcome!
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" data-md-state="indeterminate" type="checkbox" id="nav-1-2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-1-2">
-          Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Overview" data-md-level="2">
-        <label class="md-nav__title" for="nav-1-2">
-          <span class="md-nav__icon md-icon"></span>
-          Overview
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Features/" class="md-nav__link">
-        ✨ Features
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../For-Owners/" class="md-nav__link">
-        👔  For Owners
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../For-Questers/" class="md-nav__link">
-        🎨 For Questers
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" data-md-state="indeterminate" type="checkbox" id="nav-2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-2">
-          Learn Beton
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Learn Beton" data-md-level="1">
-        <label class="md-nav__title" for="nav-2">
-          <span class="md-nav__icon md-icon"></span>
-          Learn Beton
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Welcome/" class="md-nav__link">
-        👋 Welcome!
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" data-md-state="indeterminate" type="checkbox" id="nav-2-2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-2-2">
-          Getting Started
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Getting Started" data-md-level="2">
-        <label class="md-nav__title" for="nav-2-2">
-          <span class="md-nav__icon md-icon"></span>
-          Getting Started
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Getting-Started/Setting-up-a-local-test-server/" class="md-nav__link">
-        💻 Setting up a local test server
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Getting-Started/Installing-BetonQuest/" class="md-nav__link">
-        📥 Installing BetonQuest
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Getting-Started/Setting-up-the-editor/" class="md-nav__link">
-        ✒️ Setting up the editor
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Getting-Started/YAML-for-questers/" class="md-nav__link">
-        📑 YAML for questers
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Getting-Started/Quick-Start-Tutorial/" class="md-nav__link">
-        ⏱️   Quick Start Tutorial
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" data-md-state="indeterminate" type="checkbox" id="nav-2-3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-2-3">
-          ❓ Frequently Asked Questions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="❓ Frequently Asked Questions" data-md-level="2">
-        <label class="md-nav__title" for="nav-2-3">
-          <span class="md-nav__icon md-icon"></span>
-          ❓ Frequently Asked Questions
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Learn-Beton/Frequently-Asked-Questions/" class="md-nav__link">
-        🤔  General FAQ
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-3">
-          User Documentation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="User Documentation" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
-          <span class="md-nav__icon md-icon"></span>
-          User Documentation
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" data-md-state="indeterminate" type="checkbox" id="nav-3-1" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-3-1">
-          General
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="General" data-md-level="2">
-        <label class="md-nav__title" for="nav-3-1">
-          <span class="md-nav__icon md-icon"></span>
-          General
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Reference/" class="md-nav__link">
-        📚   Reference
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Conversations/" class="md-nav__link">
-        💬  Conversations
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" data-md-state="indeterminate" type="checkbox" id="nav-3-2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-3-2">
-          Types
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Types" data-md-level="2">
-        <label class="md-nav__title" for="nav-3-2">
-          <span class="md-nav__icon md-icon"></span>
-          Types
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Objectives-List/" class="md-nav__link">
-        ✔️ Objectives List
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Events-List/" class="md-nav__link">
-        ⚙️ Events List
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Conditions-List/" class="md-nav__link">
-          ❓    Conditions List
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Compatibility/" class="md-nav__link">
-        🤝 Compatibility List
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Variables-List/" class="md-nav__link">
-        🔮   Variables List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" data-md-state="indeterminate" type="checkbox" id="nav-3-3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-3-3">
-          Notifications
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Notifications" data-md-level="2">
-        <label class="md-nav__title" for="nav-3-3">
-          <span class="md-nav__icon md-icon"></span>
-          Notifications
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Notification-Settings/" class="md-nav__link">
-        🔊   Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Notification-IO%27s-%26-Categories/" class="md-nav__link">
-        🏷️   IO's & Categories
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-3-4">
-          Technical
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Technical" data-md-level="2">
-        <label class="md-nav__title" for="nav-3-4">
-          <span class="md-nav__icon md-icon"></span>
-          Technical
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
+    <label class="md-nav__link" for="nav-1">
+      Home
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="👋 Welcome!" class="md-nav__link">
+      👋 Welcome!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Overview
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Overview" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        <span class="md-nav__icon md-icon"></span>
+        Overview
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Features/" title="✨ Features" class="md-nav__link">
+      ✨ Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../For-Owners/" title="👔 For Owners" class="md-nav__link">
+      👔  For Owners
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../For-Questers/" title="🎨 For Questers" class="md-nav__link">
+      🎨 For Questers
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          🔒 Permissions & Commands
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Learn Beton
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Learn Beton" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Learn Beton
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Welcome/" title="👋 Welcome!" class="md-nav__link">
+      👋 Welcome!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Getting Started
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Getting Started" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Setting-up-a-local-test-server/" title="💻 Setting up a local test server" class="md-nav__link">
+      💻 Setting up a local test server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Installing-BetonQuest/" title="📥 Installing BetonQuest" class="md-nav__link">
+      📥 Installing BetonQuest
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Setting-up-the-editor/" title="✒️ Setting up the editor" class="md-nav__link">
+      ✒️ Setting up the editor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/YAML-for-questers/" title="📑 YAML for questers" class="md-nav__link">
+      📑 YAML for questers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Getting-Started/Quick-Start-Tutorial/" title="⏱️ Quick Start Tutorial" class="md-nav__link">
+      ⏱️   Quick Start Tutorial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      ❓ Frequently Asked Questions
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="❓ Frequently Asked Questions" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        ❓ Frequently Asked Questions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn-Beton/Frequently-Asked-Questions/" title="🤔 General FAQ" class="md-nav__link">
+      🤔  General FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      User Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        User Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      General
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="General" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        General
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Reference/" title="📚 Reference" class="md-nav__link">
+      📚   Reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Conversations/" title="💬 Conversations" class="md-nav__link">
+      💬  Conversations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Types
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Types" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Types
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Objectives-List/" title="✔️ Objectives List" class="md-nav__link">
+      ✔️ Objectives List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Events-List/" title="⚙️ Events List" class="md-nav__link">
+      ⚙️ Events List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Conditions-List/" title="❓ Conditions List" class="md-nav__link">
+        ❓    Conditions List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Compatibility/" title="🤝 Compatibility List" class="md-nav__link">
+      🤝 Compatibility List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Variables-List/" title="🔮 Variables List" class="md-nav__link">
+      🔮   Variables List
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Notifications
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Notifications" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Notifications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Notification-Settings/" title="🔊 Settings" class="md-nav__link">
+      🔊   Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Notification-IO%27s-%26-Categories/" title="🏷️ IO's & Categories" class="md-nav__link">
+      🏷️   IO's & Categories
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" checked>
+    
+    <label class="md-nav__link" for="nav-3-4">
+      Technical
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Technical" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        Technical
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
         🔒 Permissions & Commands
-      </a>
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="🔒 Permissions & Commands" class="md-nav__link md-nav__link--active">
+      🔒 Permissions & Commands
+    </a>
+    
       
-        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1035,319 +836,254 @@
     </ul>
   
 </nav>
-      
-    </li>
-  
+    
+  </li>
 
-            
+        
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
-      </a>
-    </li>
-  
+          
+          
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Configuration/" class="md-nav__link">
-        🔧  Configuration
-      </a>
-    </li>
-  
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CHANGELOG/" class="md-nav__link">
-        🗃️ Changelog
-      </a>
-    </li>
-  
+  <li class="md-nav__item">
+    <a href="../Updating-and-Backups/" title="📥 Updating" class="md-nav__link">
+      📥 Updating
+    </a>
+  </li>
 
-            
+        
           
-        </ul>
-      </nav>
-    </li>
-  
+          
+          
 
-            
+
+  <li class="md-nav__item">
+    <a href="../Configuration/" title="🔧 Configuration" class="md-nav__link">
+      🔧  Configuration
+    </a>
+  </li>
+
+        
           
-        </ul>
-      </nav>
-    </li>
-  
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CHANGELOG/" title="🗃️ Changelog" class="md-nav__link">
+      🗃️ Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
 
     
       
       
       
 
-  
-  
-  
+
+  <li class="md-nav__item md-nav__item--nested">
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-4">
-          Developer Documentation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Developer Documentation" data-md-level="1">
-        <label class="md-nav__title" for="nav-4">
-          <span class="md-nav__icon md-icon"></span>
-          Developer Documentation
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Developer Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developer Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Developer Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Developer-Documentation/Contributing-Guidelines/" class="md-nav__link">
-        📚 Contributing Guidelines
-      </a>
-    </li>
-  
+          
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Developer-Documentation/API/" class="md-nav__link">
-        ⚙️ API
-      </a>
-    </li>
-  
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Developer-Documentation/Releasing/" class="md-nav__link">
-        🏭 Releasing
-      </a>
-    </li>
-  
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/Contributing-Guidelines/" title="📚 Contributing Guidelines" class="md-nav__link">
+      📚 Contributing Guidelines
+    </a>
+  </li>
 
-            
+        
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Developer-Documentation/Versioning/" class="md-nav__link">
-        🏷️ Versioning
-      </a>
-    </li>
-  
+          
+          
 
-            
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/API/" title="⚙️ API" class="md-nav__link">
+      ⚙️ API
+    </a>
+  </li>
+
+        
           
-        </ul>
-      </nav>
-    </li>
-  
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/Releasing/" title="🏭 Releasing" class="md-nav__link">
+      🏭 Releasing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/Versioning/" title="🏷️ Versioning" class="md-nav__link">
+      🏷️ Versioning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
 
     
       
       
       
 
-  
-  
-  
+
+  <li class="md-nav__item md-nav__item--nested">
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" data-md-state="indeterminate" type="checkbox" id="nav-5" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-5">
-          Contributing
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Contributing" data-md-level="1">
-        <label class="md-nav__title" for="nav-5">
-          <span class="md-nav__icon md-icon"></span>
-          Contributing
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Contributing/Contributing/" class="md-nav__link">
-        🤝 Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-      
+    <label class="md-nav__link" for="nav-5">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Contributing/" title="🤝 Overview" class="md-nav__link">
+      🤝 Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" data-md-state="indeterminate" type="checkbox" id="nav-5-2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-5-2">
-          Docs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Docs" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-2">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Contributing/Documentation/Setup/" class="md-nav__link">
-        🔧 Setup
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Contributing/Documentation/Guidelines/" class="md-nav__link">
-        📚 Guidelines
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
-      
+    <label class="md-nav__link" for="nav-5-2">
+      Docs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Docs" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon"></span>
+        Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Documentation/Setup/" title="🔧 Setup" class="md-nav__link">
+      🔧 Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Contributing/Documentation/Guidelines/" title="📚 Guidelines" class="md-nav__link">
+      📚 Guidelines
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" data-md-state="indeterminate" type="checkbox" id="nav-5-3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="nav-5-3">
-          Sponsorships
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Sponsorships" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-3">
-          <span class="md-nav__icon md-icon"></span>
-          Sponsorships
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Sponsorships
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Sponsorships" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon"></span>
+        Sponsorships
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Contributing/Sponsors/" class="md-nav__link">
-        💲 Patreon
-      </a>
-    </li>
-  
+          
 
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
 
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
+  <li class="md-nav__item">
+    <a href="../../Contributing/Sponsors/" title="💲 Patreon" class="md-nav__link">
+      💲 Patreon
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
 
     
   </ul>
@@ -1357,8 +1093,7 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1443,7 +1178,7 @@
 <li><strong>/q create {package}</strong>: creates new package with given name, filled with default quest</li>
 <li><strong>/q vector {packname.variable} {newvariable}</strong>: calculates the vector from first location variable to you position and saves it as second variable</li>
 <li><strong>/q version</strong>: displays the versions of BetonQuest, the server and all hooked plugins</li>
-<li><strong>/q debug [true/false]</strong>: enable debug mode and write all down in a log file or disable the debug mode</li>
+<li><strong>/q debug [true/false/ingame]</strong>: enable debug mode and write all down in a log file or disable the debug mode</li>
 <li><strong>/questlang {lang}</strong> - changes the language for the player (and globally if used from console). <code>default</code> language will use the language defined in <em>config.yml</em>.</li>
 </ul>
 <h2 id="aliases">Aliases<a class="headerlink" href="#aliases" title="Permanent link">🔗</a></h2>
@@ -1497,7 +1232,22 @@
 <p>Update command ('<code>/q update</code>') will try to download the newest version of the plugin and save it to the update folder. This folder is then handled by Spigot to update the plugin. If you accidentally use this command but do not wish to update the plugin, you should remove <code>BetonQuest.jar</code> file from the <code>plugins/update</code> folder before restarting/reloading the server.</p>
 <p>Using '<code>/q create beton</code>' command you will create new package named '<code>beton</code>'. It will contain the default quest.</p>
 <p>The <code>/q vector</code> command allows you to create vector variables from the specified in first argument location variable to your position. The result will be saved to the "vectors.{second argument}" variable.</p>
-<p>The debug command ('<code>/q debug</code>') allow you to enable or disable the debug mode. If the debug mode is enabled, the last 1000 log entries are written down to the latest.log file as history and write everything down until the debug mode os disabled. The file <code>/plugins/BetonQuest/logs/latest.log</code> is renamed to the current date and time on server start, if the debug mode is not longer active. The debug mode is useful, if you want to report an issue but it is not clear why the issue occurs.</p>
+<p>The debug command ('<code>/q debug</code>') allows you to enable or disable the debug mode. If the debug mode is enabled after
+server startup ('<code>/q debug true</code>'), the last 10 minutes of log entries are written down to the
+<code>/plugins/BetonQuest/logs/latest.log</code> file as history and writing will be continued until the debug mode is disabled
+using ('<code>/q debug false</code>'). The <code>latest.log</code> is renamed to the current date and time on server startup.
+It's useful if you search for more information about an issue and can help developers to fix bugs.</p>
+<p>The command ('<code>/q debug ingame</code>') allows you to manage your ingame debugging.
+The ingame debugging sends you live information about your quests to your chat.
+Running the command without any argument shows your active filters.
+If you don't have any filters active you will see all console output from <code>/q reload</code>.
+If you have filters active you only see information from the selected packages.
+Appending a package name activates the filter for that package.
+You can also use <code>*</code> / <code>MyFolder-*</code> instead of a package name to address all packages / all packages of a folder.
+Appending a level allows you to select which types of messages are displayed.
+The default level <code>error</code> shows all <code>WARNINGS</code> and <code>ERRORS</code> from the log.
+If you want to see more information use the levels <code>info</code> or <code>debug</code>.
+Beware though, the debug level might be spammy.</p>
                 
                   
                     
@@ -1506,7 +1256,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1596479943000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1612370982000' locale='en'></span>
     
   </small>
 </div>
@@ -1526,38 +1276,40 @@
         
 <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../Notification-IO%27s-%26-Categories/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              🏷️   IO's & Categories
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Notification-IO%27s-%26-Categories/" title="🏷️ IO's & Categories" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
-          </div>
-        </a>
-      
-      
-        <a href="../Updating-and-Backups/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              📥 Updating
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                🏷️   IO's & Categories
+              </div>
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
+          </a>
+        
+        
+          <a href="../Updating-and-Backups/" title="📥 Updating" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                📥 Updating
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1567,12 +1319,10 @@
             © 2020  BetonQuest Organisation. GPLv3
           </div>
         
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs Insiders
-          </a>
-        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
       </div>
       
   <div class="md-footer-social">
@@ -1630,17 +1380,16 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.191088e8.min.js"></script>
-      <script src="../../assets/javascripts/bundle.d4cf0930.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
-          features: ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"],
+          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections', 'navigation.expand', 'search.highlight', 'search.suggest'],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.e77c40e2.min.js"
-          }, typeof search !== "undefined" && search),
-          version: {"method": "mike"}
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
         })
       </script>
       
