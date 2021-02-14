@@ -3937,28 +3937,28 @@ Shopkeepers, SkillAPI, Skript, Vault, WorldEdit and WorldGuard.</em></p>
 <h3 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">🔗</a></h3>
 <h4 id="drunk-drunk">Drunk: <code>drunk</code><a class="headerlink" href="#drunk-drunk" title="Permanent link">🔗</a></h4>
 <p>This condition is true if the player is drunken. Only argument is the minimal drunkness (0-100).</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">drunk 50</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">drunk 50</span>
 </code></pre></div>
 </td></tr></table>
 <h4 id="drunk-quality-drunkquality">Drunk Quality: <code>drunkquality</code><a class="headerlink" href="#drunk-quality-drunkquality" title="Permanent link">🔗</a></h4>
 <p>This condition is true if the player has the given drunk quality. Only argument is the minimal drunk quality (1-10).</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">drunkquality 3</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">drunkquality 3</span>
 </code></pre></div>
 </td></tr></table>
 <h4 id="has-brew-hasbrew">Has Brew: <code>hasbrew</code><a class="headerlink" href="#has-brew-hasbrew" title="Permanent link">🔗</a></h4>
 <p>This condition is true if the player has the given grew with the specified amount in his inventory.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">hasbrew MY_BREW 2</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">hasbrew MY_BREW 2</span>
 </code></pre></div>
 </td></tr></table>
 <h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">🔗</a></h3>
 <h4 id="give-brew-givebrew">Give Brew: <code>givebrew</code><a class="headerlink" href="#give-brew-givebrew" title="Permanent link">🔗</a></h4>
-<p>Gives the player the specified drink. An amount needs to be specified.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">givebrew MY_BREW 2</span>
+<p>Gives the player the specified drink. The first number is the amount, and the second number is the quality of the drink.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">givebrew 1 10 MY_BREW</span>
 </code></pre></div>
 </td></tr></table>
 <h4 id="take-brew-takebrew">Take Brew: <code>takebrew</code><a class="headerlink" href="#take-brew-takebrew" title="Permanent link">🔗</a></h4>
 <p>Removes the specified drink from the players inventory. An amount needs to be specified.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">takebrew MY_OTHER_BREW 2</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">takebrew MY_OTHER_BREW 2</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="npcs-using-citizens">NPC's using <a href="https://www.spigotmc.org/resources/citizens.13811/" target="_blank">Citizens</a><a class="headerlink" href="#npcs-using-citizens" title="Permanent link">🔗</a></h2>
@@ -4272,9 +4272,9 @@ be displayed to the player for which you ran the event.</p>
 <h4 id="mmocore-class-mmoclass">MMOCore class: <code>mmoclass</code><a class="headerlink" href="#mmocore-class-mmoclass" title="Permanent link">🔗</a></h4>
 <p>Checks if a player has the given MMOCore class. If a level has been specified the player needs to be on that level or higher to meet the condition.
 You can disable this behaviour by adding the <code>equal</code> argument. 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclass WARRIOR</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclass WARRIOR</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoclass MAGE 5</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoclass MAGE 5 equal</span>
 </code></pre></div>
@@ -4282,31 +4282,31 @@ You can disable this behaviour by adding the <code>equal</code> argument.
 <h4 id="mmocore-attribute-mmoattribute">MMOCore attribute: <code>mmoattribute</code><a class="headerlink" href="#mmocore-attribute-mmoattribute" title="Permanent link">🔗</a></h4>
 <p>Checks if a player has the specified attribute on the given level or higher.
 You can disable this behaviour by adding the <code>equal</code> argument. 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclass mmoattribute strength 2</span> 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclass mmoattribute strength 2</span> 
 <span class="l l-Scalar l-Scalar-Plain">mmoclass mmoattribute strength 2 equal</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="mmocore-profession-mmoprofession">MMOCore profession: <code>mmoprofession</code><a class="headerlink" href="#mmocore-profession-mmoprofession" title="Permanent link">🔗</a></h4>
 <p>Checks if a player has the specified profession on the given level or higher.
 You can disable this behaviour by adding the <code>equal</code> argument. 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofession mining 2</span> 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofession mining 2</span> 
 <span class="l l-Scalar l-Scalar-Plain">mmoprofession mining 2 equal</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="mmoitems-item-mmoitem">MMOItems item: <code>mmoitem</code><a class="headerlink" href="#mmoitems-item-mmoitem" title="Permanent link">🔗</a></h4>
 <p>Checks if a player has the specified amount of MMOItems or more in his inventory. If no amount has been defined the default amount is one.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitem ARMOR SKELETON_CROWN</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitem ARMOR SKELETON_CROWN</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoitem GEMS SPEED_GEM 3</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="mmoitems-hand-mmohand">MMOItems hand: <code>mmohand</code><a class="headerlink" href="#mmoitems-hand-mmohand" title="Permanent link">🔗</a></h4>
 <p>Checks if a player holds the specified MMOItem in his hand. Checks the main hand if not specified otherwise using the <code>offhand</code> argument.
 If no amount has been defined the default amount is one.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmohand ARMOR SKELETON_CROWN</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmohand ARMOR SKELETON_CROWN</span>
 <span class="l l-Scalar l-Scalar-Plain">mmohand GEMS SPEED_GEM 3 offhand</span>
 </code></pre></div>
 </td></tr></table></p>
@@ -4315,7 +4315,7 @@ If no amount has been defined the default amount is one.
 stats that combine all sorts of stats from MMOCore and MMOItems.
 The player needs to be on the specified level or higher in order to meet this condition.
 You can disable this behaviour by adding the <code>equal</code> argument. 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmostat DAMAGE_REDUCTION 3</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmostat DAMAGE_REDUCTION 3</span>
 </code></pre></div>
 </td></tr></table></p>
 <h3 id="objectives_2">Objectives<a class="headerlink" href="#objectives_2" title="Permanent link">🔗</a></h3>
@@ -4323,16 +4323,16 @@ You can disable this behaviour by adding the <code>equal</code> argument.
 <p>This objective requires the player to break 
 <a href="https://git.lumine.io/mythiccraft/mmocore/-/wikis/Mining%20and%20Block%20Regen" target="_blank">special blocks from MMOCore</a>.
 All three different block types and an amount can be defined. You can also send notifications to the player by appending the <code>notify</code> keyword.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 5 block:1</span>      <span class="c1">#A custom block&#39;s block ID</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 5 block:1</span>      <span class="c1">#A custom block&#39;s block ID</span>
 <span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 64 block:STONE</span>  <span class="c1">#vanilla material</span>
 <span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 1 block:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVy</span> <span class="c1">#... this is a heads texture data</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="mmocore-profession-levelup-mmoprofessionlevelup">MMOCore Profession levelup: <code>mmoprofessionlevelup</code><a class="headerlink" href="#mmocore-profession-levelup-mmoprofessionlevelup" title="Permanent link">🔗</a></h4>
 <p>This objective requires the player to level the given profession to the specified level.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofessionlevelup MINING 10</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofessionlevelup MINING 10</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="craft-item-mmoitemcraft">Craft item: <code>mmoitemcraft</code><a class="headerlink" href="#craft-item-mmoitemcraft" title="Permanent link">🔗</a></h4>
@@ -4341,67 +4341,67 @@ It supports any MMOItem that was crafted using vanilla crafting methods, MMOItem
 An amount can also be set if it shall differ from the default (which is one) by adding the <code>amount:</code> argument.
 The amount is based on how many items have actually been crafted, not how often a specific recipe has been used! Therefore,
 a recipe that makes four items at once will let the objective progress by four steps.  </p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemcraft SWORD STEEL_SWORD</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemcraft SWORD STEEL_SWORD</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoitemcraft HEALTH_POTION_RECIPE amount:5</span>
 </code></pre></div>
 </td></tr></table>
 <h4 id="upgrade-item-mmoitemupgrade">Upgrade Item: <code>mmoitemupgrade</code><a class="headerlink" href="#upgrade-item-mmoitemupgrade" title="Permanent link">🔗</a></h4>
 <p>This objective tracks if a player upgrades the given item with an upgrade consumable.<br />
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemupgrade SWORD FALCON_BLADE</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemupgrade SWORD FALCON_BLADE</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="apply-gemstone-mmoitemapplygem">Apply gemstone: <code>mmoitemapplygem</code><a class="headerlink" href="#apply-gemstone-mmoitemapplygem" title="Permanent link">🔗</a></h4>
 <p>This objective is completed when the player applies the gemstone with the given gemstoneID to an item with the given
 itemType and itemID.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemapplygem SWORD CUTLASS GEM_OF_ACCURACY</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemapplygem SWORD CUTLASS GEM_OF_ACCURACY</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="cast-item-ability-mmoitemcastability">Cast item ability: <code>mmoitemcastability</code><a class="headerlink" href="#cast-item-ability-mmoitemcastability" title="Permanent link">🔗</a></h4>
 <p>This objective requires the player to cast an ability using an item. The only argument is the abilityID.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemcastability LIFE_ENDER</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemcastability LIFE_ENDER</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="cast-class-skill-mmocorecastskill">Cast class skill: <code>mmocorecastskill</code><a class="headerlink" href="#cast-class-skill-mmocorecastskill" title="Permanent link">🔗</a></h4>
 <p>This objective requires the player to cast a class skill. The only argument is the abilityID.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocorecastskill BACKSTAB</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocorecastskill BACKSTAB</span>
 </code></pre></div>
 </td></tr></table></p>
 <h3 id="events_7">Events<a class="headerlink" href="#events_7" title="Permanent link">🔗</a></h3>
 <h4 id="give-mmocore-class-experience-mmoclassexperience">Give MMOCore class experience: <code>mmoclassexperience</code><a class="headerlink" href="#give-mmocore-class-experience-mmoclassexperience" title="Permanent link">🔗</a></h4>
 <p>Adds experience to the players class. The amount can be a variable or a number. The <code>level</code> argument
 is optional and would convert the amount to levels instead of XP points.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclassexperience 150</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclassexperience 150</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoclassexperience 1 level</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="give-mmocore-profession-experience-mmoprofessionexperience">Give MMOCore profession experience: <code>mmoprofessionexperience</code><a class="headerlink" href="#give-mmocore-profession-experience-mmoprofessionexperience" title="Permanent link">🔗</a></h4>
 <p>Adds experience in the specified player profession. The amount can be a variable or a number. The <code>level</code> argument
 is optional and would convert the amount to levels instead of XP points.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofessionexperience 100</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofessionexperience 100</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoprofessionexperience 1 level</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="give-class-points-mmocoreclasspoints">Give class points: <code>mmocoreclasspoints</code><a class="headerlink" href="#give-class-points-mmocoreclasspoints" title="Permanent link">🔗</a></h4>
 <p>Gives the player class points. The amount can be a variable or a number.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreclasspoints 1</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreclasspoints 1</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="give-skill-points-mmocoreskillpoints">Give skill points: <code>mmocoreskillpoints</code><a class="headerlink" href="#give-skill-points-mmocoreskillpoints" title="Permanent link">🔗</a></h4>
 <p>Gives the player skill points. The amount can be a variable or a number.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreskillpoints 10</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreskillpoints 10</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="give-attribute-points-mmocoreattributepoints">Give attribute points: <code>mmocoreattributepoints</code><a class="headerlink" href="#give-attribute-points-mmocoreattributepoints" title="Permanent link">🔗</a></h4>
 <p>Gives the player attribute points. The amount can be a variable or a number.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreattributepoints 2</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreattributepoints 2</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="give-attribute-reallocation-points-mmocoreattributereallocationpoints">Give attribute reallocation points: <code>mmocoreattributereallocationpoints</code><a class="headerlink" href="#give-attribute-reallocation-points-mmocoreattributereallocationpoints" title="Permanent link">🔗</a></h4>
 <p>Gives the player attribute reallocation points. The amount can be a variable or a number.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreattributereallocationpoints 1</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocoreattributereallocationpoints 1</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="give-mmoitem-mmoitemgive">Give MMOItem: <code>mmoitemgive</code><a class="headerlink" href="#give-mmoitem-mmoitemgive" title="Permanent link">🔗</a></h4>
@@ -4409,16 +4409,16 @@ is optional and would convert the amount to levels instead of XP points.
 The item can be adjusted to the players level by adding the <code>scale</code> option. If you want all items to be stacked together 
 the <code>singleStack</code> option can be set. If the player doesn't have required space in the inventory, the items will be dropped on the ground.
 You can also specify the <code>notify</code> keyword to display a message to the player about what items have been received.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemgive CONSUMABLE MANA_POTION</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemgive CONSUMABLE MANA_POTION</span>
 </code></pre></div>
 </td></tr></table></p>
 <h4 id="take-mmoitem-mmoitemtake">Take MMOItem: <code>mmoitemtake</code><a class="headerlink" href="#take-mmoitem-mmoitemtake" title="Permanent link">🔗</a></h4>
 <p>Removes the specified item from the players inventory. Optional arguments are an amount and <code>notify</code> to send a notification
 to the player.
 Amount can be a variable.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemtake SWORD STEEL_SWORD</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemtake SWORD STEEL_SWORD</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoitemtake SWORD STEEL_SWORD notify</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoitemtake CONSUMABLE HEALTH_POTION 5</span>
 </code></pre></div>
@@ -4466,7 +4466,7 @@ If you don't specify this, the plugin will assume you're using that variable in 
 The <code>variable</code> part is just a BetonQuest variable without percentage characters, like <code>point.beton.amount</code>.</p>
 <p>Testing your placeholder is easy using this command:  <br />
 <code>/papi parse &lt;PlayerName&gt; %betonquest_&lt;PackageName&gt;:&lt;VariableType&gt;.&lt;Property&gt;%</code>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">%</span><span class="l l-Scalar l-Scalar-Plain">betonquest_someGreatQuest:objective.killZombies.left%</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">%</span><span class="l l-Scalar l-Scalar-Plain">betonquest_someGreatQuest:objective.killZombies.left%</span>
 </code></pre></div>
 </td></tr></table></p>
 <h3 id="variable-ph">Variable: <code>ph</code><a class="headerlink" href="#variable-ph" title="Permanent link">🔗</a></h3>
@@ -4713,7 +4713,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1610189722000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1613325705000' locale='en'></span>
     
   </small>
 </div>
