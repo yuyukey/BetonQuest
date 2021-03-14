@@ -4254,11 +4254,16 @@ be displayed to the player for which you ran the event.</p>
 <h2 id="teamrequiem-mmocore-mmoitem-mythiclib">TeamRequiem (<a href="https://www.spigotmc.org/resources/mmocore.70575/">MMOCore</a>, <a href="https://www.spigotmc.org/resources/mmoitems-premium.39267/">MMOItem</a>, <a href="https://www.spigotmc.org/resources/mmolib.73855/">MythicLib</a>)<a class="headerlink" href="#teamrequiem-mmocore-mmoitem-mythiclib" title="Permanent link">🔗</a></h2>
 <h3 id="conditions_6">Conditions<a class="headerlink" href="#conditions_6" title="Permanent link">🔗</a></h3>
 <h4 id="mmocore-class-mmoclass">MMOCore class: <code>mmoclass</code><a class="headerlink" href="#mmocore-class-mmoclass" title="Permanent link">🔗</a></h4>
-<p>Checks if a player has the given MMOCore class. If a level has been specified the player needs to be on that level or higher to meet the condition.
+<p>Checks if a player has the given MMOCore class. You can check for any class that is not the default class by writing <code>*</code>
+instead of a class name.
+If a level has been specified the player needs to be on that level
+or higher to meet the condition.
 You can disable this behaviour by adding the <code>equal</code> argument. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclass WARRIOR</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoclass * 5</span>
+<span class="l l-Scalar l-Scalar-Plain">mmoclass WARRIOR</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoclass MAGE 5</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoclass MAGE 5 equal</span>
 </code></pre></div>
@@ -4697,7 +4702,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1614805831000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1615741632000' locale='en'></span>
     
   </small>
 </div>
@@ -4828,7 +4833,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.9849d06a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.114c1372.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7da13850.min.js"></script>
       
     
   
