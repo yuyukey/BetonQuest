@@ -1551,7 +1551,7 @@ the variable will resolve. </p>
 </code></pre></div>
 </div>
 <h2 id="calculate-mathematical-expression-mathcalc">Calculate mathematical expression: <code>math.calc</code><a class="headerlink" href="#calculate-mathematical-expression-mathcalc" title="Permanent link">🔗</a></h2>
-<p>This variable allows you to perform a calculation based on other variables (for example point or objective variables) and resolves to the result of the specified calculation. The variable always starts with <code>math.calc:</code>, followed by the calculation which should be calculated. Supported operations are <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> and  <code>^</code>. You can use <code>( )</code> and <code>[ ]</code> braces and also calculate absolute values with <code>| |</code> (but don't use this in the command event as it splits the commands at every <code>|</code>). If you want to use variables in the calculation, don't put <code>%</code> around them.</p>
+<p>This variable allows you to perform a calculation based on other variables (for example point or objective variables) and resolves to the result of the specified calculation. The variable always starts with <code>math.calc:</code>, followed by the calculation which should be calculated. Supported operations are <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> and  <code>^</code>. You can use <code>( )</code> and <code>[ ]</code> braces and also calculate absolute values with <code>| |</code> (but don't use this in the command event as it splits the commands at every <code>|</code>). If you want to use variables in the calculation, don't put <code>%</code> around them. Additionally, you can use the round operator <code>~</code> to round everything left of it to the number of decimal digits given on the right. So <code>4+0.35~1</code> will produce <code>4.4</code> and <code>4.2~0</code> will produce <code>4</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p><code>%math.calc:100*(15-point.reputation.amount)%</code></p>
@@ -1594,7 +1594,7 @@ the variable will resolve. </p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1599742319000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1616843670000' locale='en'></span>
     
   </small>
 </div>
