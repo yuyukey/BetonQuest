@@ -1799,7 +1799,8 @@
 </div>
 <h2 id="crafting-craft">Crafting: <code>craft</code><a class="headerlink" href="#crafting-craft" title="Permanent link">🔗</a></h2>
 <p>To complete this objective the player must craft specified item. First argument is ID of the item, as in <em>items.yml</em>. Next is amount (integer).</p>
-<p>Crafting objective has two properties, <code>amount</code> and <code>left</code>. Amount is current amount of crafted items and left is amount needed to complete the objective.</p>
+<p>The crafting objective has three properties: <code>left</code> is the amount of items left to craft, <code>amount</code> is the current amount of
+already crafted items and <code>total</code> is the initially required amount of items to be crafted.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">craft saddle 5 events:reward</span>
@@ -1864,7 +1865,7 @@ You can also specify additional arguments: <code>name:</code> followed by the na
 <code>required:</code> followed by a list of conditions separated with commas will only accept killing players meeting these conditions
 and <code>notify</code> will display notifications when a player is killed, optionally with the notification interval after a colon.</p>
 <p>The kill objective has three properties: <code>left</code> is the amount of players still left to kill, <code>amount</code> is the amount of
-already killed players and <code>total</code>is the initially required amount to kill.</p>
+already killed players and <code>total</code> is the initially required amount to kill.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">kill 5 required:team_B</span>
@@ -1951,7 +1952,7 @@ This amount is a total amount though, it does not count per each individual item
 <p>This objective has two variable properties: <code>amount</code> (shows how much the player already collected) and <code>left</code> (displays how much is left to pickup).</p>
 <h2 id="mob-kill-mobkill">Mob Kill: <code>mobkill</code><a class="headerlink" href="#mob-kill-mobkill" title="Permanent link">🔗</a></h2>
 <p>The player must kill specified amount of mobs You must specify mob type first and then amount. You can find possible mob types here: <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">mob types</a>. Additionally you can specify names for mobs with <code>name:Uber_Zombie</code>, so only killing properly named mobs counts. All <code>_</code> are replaced with spaces, so in this example you would have to kill 5 zombies with "Uber Zombie" above their heads. You can also specify <code>notify</code> keyword to display messages to the player each time he kills a mob, optionally with the notification interval after colon. If you want to accept only mobs marked with <code>spawn</code> event, use <code>marked:</code> argument followed by the keyword used in that event.</p>
-<p>This objective also has two properties, <code>amount</code> and <code>left</code>. Amount is current amount of killed mobs, left is amount needed to complete the objective.</p>
+<p>This objective also has two properties, <code>amount</code> and <code>left</code>. Amount is the current amount of killed mobs, left is amount needed to complete the objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mobkill ZOMBIE 5 name:Uber_Zombie conditions:night</span>
@@ -2038,7 +2039,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1617569331000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1617712833000' locale='en'></span>
     
   </small>
 </div>
