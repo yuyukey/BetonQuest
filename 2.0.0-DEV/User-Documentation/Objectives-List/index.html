@@ -17,7 +17,7 @@
         
       
       <link rel="icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7+insiders-2.5.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1+insiders-2.5.0">
     
     
       
@@ -25,10 +25,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec3b3678.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e26d9fba.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.de2705de.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.77b964be.min.css">
         
       
       
@@ -1836,8 +1836,12 @@ already crafted items and <code>total</code> is the initially required amount of
 </code></pre></div>
 </div>
 <h2 id="fishing-fish">Fishing: <code>fish</code><a class="headerlink" href="#fishing-fish" title="Permanent link">🔗</a></h2>
-<p>Requires the player to catch a fish. It doesn't have to be a fish, it can also be a treasure or junk. The first argument is a <code>block selector</code> name of the item to catch, optionally with data value after a colon. Second argument must be amount of fish to catch. You can also add <code>notify</code> argument if you want to display progress, optionally with the notification interval after colon.</p>
-<p>Fishing has the same properties as mob kill objective.</p>
+<p>Requires the player to catch something with the fishing rod. It doesn't have to be a fish, it can also be a treasure or
+junk. The first argument is a <a href="/User-Documentation/Reference/#block-selectors">Block Selector</a> of the item to catch.
+Second argument must be the amount of fish to catch. You can also add the <code>notify</code> argument if you want to display
+progress, optionally with the notification interval after a colon.</p>
+<p>The fish objective has three properties: <code>left</code> is the amount of fish still left to be caught, <code>amount</code> is the amount of
+already caught fish and <code>total</code> is the initially required amount of fish needed to be caught.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fish SALMON 5 notify events:tag_fish_caught</span>
@@ -2039,7 +2043,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1617712833000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1618058501000' locale='en'></span>
     
   </small>
 </div>
@@ -2174,7 +2178,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.9aafa2c6.min.js"></script>
+      <script src="../../assets/javascripts/bundle.de8343b9.min.js"></script>
       
         <script src="../../webCode/js/copyLinkToClipboard.js"></script>
       
