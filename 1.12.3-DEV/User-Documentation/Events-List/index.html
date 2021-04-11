@@ -2231,15 +2231,18 @@ Random is the amount of events, that will be randomly chosen to fire. It's optio
 </div>
 <h2 id="journal-journal">Journal: <code>journal</code><a class="headerlink" href="#journal-journal" title="Permanent link">🔗</a></h2>
 <p><strong>static</strong></p>
-<p>Adds or deletes an entry to/from player’s journal. Entries are defined in <code>journal.yml</code> The first argument is action (add/del), the second one is name of the entry. You can also use only one argument, <code>update</code>, it will simply update the journal without addin any entries. It's useful when you need to update the main page.</p>
+<p>Adds or deletes an entry to/from a player's journal. Journal entries have to be defined in <code>journal.yml</code>. The first
+argument is the action to perform, the second one is the name of the entry if required. Changing journal entries will
+also reload the journal.</p>
+<p>Possible actions are:
+- <code>add</code>: Adds a page to the journal.
+- <code>delete</code>: Deletes a page from the journal.
+- <code>update</code>: Refreshes the journal. This is especially useful when you need to update the main page.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">journal add quest_started</span>
-</code></pre></div>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">journal update</span>
+<span class="l l-Scalar l-Scalar-Plain">journal delete quest_available</span>
+<span class="l l-Scalar l-Scalar-Plain">journal update</span>
 </code></pre></div>
 </div>
 <h2 id="kill-kill">Kill: <code>kill</code><a class="headerlink" href="#kill-kill" title="Permanent link">🔗</a></h2>
@@ -2559,7 +2562,7 @@ Refer to <code>variable</code> objective documentation for information about sto
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1617569331000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1618133959000' locale='en'></span>
     
   </small>
 </div>
