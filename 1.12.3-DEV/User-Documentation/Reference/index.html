@@ -1926,7 +1926,8 @@ You can define your static events in <em>main.yml</em> file under <code>static</
     <span class="nt">conditions</span><span class="p">:</span> <span class="s">&#39;quest_started,!quest_completed&#39;</span>
 </code></pre></div>
 <p>Each string can have text in different languages, list of conditions separated by commas (these must be met for the text to show in the journal) and <code>priority</code>, which controls the order of texts. You can use conversation variables in the texts, but they will only be updated when the player gets his journal with the <strong>/journal</strong> command. Color codes are supported.</p>
-<p>If you want your main page take a separate page (so entries will be displayed on next free page), set <code>full_main_page</code> in <em>config.yml</em> to "true".</p>
+<p>If you want your main page take a separate page (so entries will be displayed on next free page), set <code>full_main_page</code> in <em>config.yml</em> to "true".
+If you want to manually wrap the page, use the pipe <code>|</code> character. Use \n to go to a new line.</p>
 <h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">🔗</a></h2>
 <p>Tags are little pieces of text you can assign to player and then check if he has them. They are particularly useful to determine if player has started or completed quest. They are given with <code>tag</code> event and checked with <code>tag</code> condition. All tags are bound to a package, so if you add <code>beton</code> tag from within the <code>default</code> package, the tag will look like <code>default.beton</code>. If you're checking for <code>beton</code> tag from within <code>default</code> package, you're actually checking for <code>default.beton</code>. If you want to check a tag from another package, then you just need to prefix it's name with that package, for example <code>quest.beton</code>.</p>
 <h2 id="points">Points<a class="headerlink" href="#points" title="Permanent link">🔗</a></h2>
@@ -2210,7 +2211,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1618081034000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1618688186000' locale='en'></span>
     
   </small>
 </div>
