@@ -17,7 +17,7 @@
         
       
       <link rel="icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.6.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.7.0">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bb0b7228.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.736f8a5c.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.77b964be.min.css">
@@ -1054,11 +1054,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#200-dev-71-2021-05-01" class="md-nav__link">
-    [2.0.0-DEV-71] - 2021-05-01
+  <a href="#200-dev-72-2021-05-01" class="md-nav__link">
+    [2.0.0-DEV-72] - 2021-05-01
   </a>
   
-    <nav class="md-nav" aria-label="[2.0.0-DEV-71] - 2021-05-01">
+    <nav class="md-nav" aria-label="[2.0.0-DEV-72] - 2021-05-01">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2266,11 +2266,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#200-dev-71-2021-05-01" class="md-nav__link">
-    [2.0.0-DEV-71] - 2021-05-01
+  <a href="#200-dev-72-2021-05-01" class="md-nav__link">
+    [2.0.0-DEV-72] - 2021-05-01
   </a>
   
-    <nav class="md-nav" aria-label="[2.0.0-DEV-71] - 2021-05-01">
+    <nav class="md-nav" aria-label="[2.0.0-DEV-72] - 2021-05-01">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3201,7 +3201,7 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="200-dev-71-2021-05-01">[2.0.0-DEV-71] - 2021-05-01<a class="headerlink" href="#200-dev-71-2021-05-01" title="Permanent link">🔗</a></h2>
+<h2 id="200-dev-72-2021-05-01">[2.0.0-DEV-72] - 2021-05-01<a class="headerlink" href="#200-dev-72-2021-05-01" title="Permanent link">🔗</a></h2>
 <h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Logging</li>
@@ -3225,6 +3225,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>math variable now allows rounding output with the ~ operator</li>
 <li>changed package names from <code>pl.betoncraft.betonquest</code> to <code>org.betonquest.betonquest</code></li>
+<li>all objectives that can be advanced without directly completing now support notify</li>
+<li>all objectives that can be advanced without directly completing now support <code>left</code>, <code>amount</code> and <code>total</code> variables</li>
 </ul>
 <h3 id="deprecated">Deprecated<a class="headerlink" href="#deprecated" title="Permanent link">🔗</a></h3>
 <h3 id="removed">Removed<a class="headerlink" href="#removed" title="Permanent link">🔗</a></h3>
@@ -3246,7 +3248,6 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>tags and points are now thread safe</li>
 <li>compatibility for packet interceptor on papermc</li>
 <li>craft objective: multi-craft, drop-craft, hotbar/offhand-craft, shift-Q-craft and any illegal crafting is correctly detected, </li>
-<li>craft objective variables <code>left</code> and <code>amount</code> were swapped</li>
 <li>q version now works again</li>
 <li>NPC hider for not spawned NPCs</li>
 <li>Conversation IO Chest load NPC skull async from Citizens instead of sync</li>
@@ -3258,6 +3259,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>fixed smelt objective: only taking out normally did count, shift-extract got canceled</li>
 <li>empty values in <code>variable</code> objective now don't break on player join</li>
 <li>PacketInterceptor sync wait lag</li>
+<li>the <code>left</code> and <code>amount</code> variables of some objectives were swapped and have been corrected: <code>left</code> is the amount left, <code>amount</code> is the amount done</li>
+<li>brew objective now counts newly brewed potions even if there were already some potions of the desired type in other slots present</li>
 </ul>
 <h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">🔗</a></h3>
 <ul>
@@ -4236,10 +4239,10 @@ Notes:</li>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.60c1e489.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c46528a6.min.js"></script>
       
         <script src="../../webCode/js/copyLinkToClipboard.js"></script>
       

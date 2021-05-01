@@ -17,7 +17,7 @@
         
       
       <link rel="icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.6.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.7.0">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bb0b7228.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.736f8a5c.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.77b964be.min.css">
@@ -4043,10 +4043,15 @@ The first argument is number (ID of the NPC), and the second is optional <code>c
 </code></pre></div>
 </div>
 <h4 id="npc-kill-npckill">NPC Kill: <code>npckill</code><a class="headerlink" href="#npc-kill-npckill" title="Permanent link">🔗</a></h4>
-<p>NPC Kill objective requires the player to kill an NPC with the given ID. You can also define how many times an NPC has to be killed. Right after objective's name there must be na ID of the NPC. You can also add an amount by <code>amount:</code>.</p>
+<p>The NPC kill objective requires the player to kill a NPC with the given ID. You can also define how many times the NPC
+has to be killed. Right after the objective's name there must be the ID of the NPC. You can also add an amount with the
+<code>amount</code> keyword. You can use the <code>notify</code> keyword to display a message each time the player advances the objective,
+optionally with the notification interval after a colon.</p>
+<p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of NPCs already killed,
+<code>left</code> is the amount of NPCs still needed to kill and <code>total</code> is the amount of NPCs initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">npckill 16 amount:3 events:reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">npckill 16 amount:3 events:reward notify</span>
 </code></pre></div>
 </div>
 <h4 id="npc-range-npcrange">NPC Range: <code>npcrange</code><a class="headerlink" href="#npc-range-npcrange" title="Permanent link">🔗</a></h4>
@@ -4244,7 +4249,10 @@ be displayed to the player for which you ran the event.</p>
 <h4 id="jobs-job-levelup-nujobs_levelup-jobname">Jobs Job Levelup: <code>nujobs_levelup {jobname}</code><a class="headerlink" href="#jobs-job-levelup-nujobs_levelup-jobname" title="Permanent link">🔗</a></h4>
 <p>Triggers when player levels up.</p>
 <h4 id="jobs-job-payment-nujobs_payment-amount">Jobs Job Payment: <code>nujobs_payment {amount}</code><a class="headerlink" href="#jobs-job-payment-nujobs_payment-amount" title="Permanent link">🔗</a></h4>
-<p>Triggers when player makes {amount} of money from jobs.</p>
+<p>Triggers when player makes {amount} of money from jobs. You can use the <code>notify</code> keyword to display a message each time
+the player advances the objective, optionally with the notification interval after a colon.</p>
+<p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of money already received,
+<code>left</code> is the amount of money still needed to receive and <code>total</code> is the amount of money initially required.</p>
 <h2 id="magic"><a href="http://dev.bukkit.org/bukkit-plugins/magic/">Magic</a><a class="headerlink" href="#magic" title="Permanent link">🔗</a></h2>
 <h3 id="conditions_4">Conditions<a class="headerlink" href="#conditions_4" title="Permanent link">🔗</a></h3>
 <h4 id="wand-wand">Wand: <code>wand</code><a class="headerlink" href="#wand-wand" title="Permanent link">🔗</a></h4>
@@ -4331,14 +4339,17 @@ You can disable this behaviour by adding the <code>equal</code> argument.
 <h4 id="break-special-blocks-mmocorebreakblock">Break Special Blocks: <code>mmocorebreakblock</code><a class="headerlink" href="#break-special-blocks-mmocorebreakblock" title="Permanent link">🔗</a></h4>
 <p>This objective requires the player to break 
 <a href="https://git.lumine.io/mythiccraft/mmocore/-/wikis/Mining%20and%20Block%20Regen" target="_blank">special blocks from MMOCore</a>.
-All three different block types and an amount can be defined. You can also send notifications to the player by appending the <code>notify</code> keyword.
+All three different block types and an amount can be defined. You can also send notifications to the player by appending
+the <code>notify</code> keyword optionally with the notification interval after a colon.</p>
+<p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of blocks already broken,
+<code>left</code> is the amount of blocks still left to break and <code>total</code> is the amount of blocks initially required.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 5 block:1</span>      <span class="c1">#A custom block&#39;s block ID</span>
 <span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 64 block:STONE</span>  <span class="c1">#vanilla material</span>
 <span class="l l-Scalar l-Scalar-Plain">mmocorebreakblock 1 block:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVy</span> <span class="c1">#... this is a heads texture data</span>
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
 <h4 id="mmocore-profession-levelup-mmoprofessionlevelup">MMOCore Profession levelup: <code>mmoprofessionlevelup</code><a class="headerlink" href="#mmocore-profession-levelup-mmoprofessionlevelup" title="Permanent link">🔗</a></h4>
 <p>This objective requires the player to level the given profession to the specified level.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoprofessionlevelup MINING 10</span>
@@ -4349,7 +4360,11 @@ All three different block types and an amount can be defined. You can also send 
 It supports any MMOItem that was crafted using vanilla crafting methods, MMOItems "recipe-amounts" crafting and MMOItems station crafting.
 An amount can also be set if it shall differ from the default (which is one) by adding the <code>amount:</code> argument.
 The amount is based on how many items have actually been crafted, not how often a specific recipe has been used! Therefore,
-a recipe that makes four items at once will let the objective progress by four steps.  </p>
+a recipe that makes four items at once will let the objective progress by four steps. You can use the <code>notify</code> keyword
+to display a message each time the player advances the objective, optionally with the notification interval after a
+colon.</p>
+<p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of items already crafted,
+<code>left</code> is the amount of items still needed to craft and <code>total</code> is the amount of items initially required.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemcraft SWORD STEEL_SWORD</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoitemcraft HEALTH_POTION_RECIPE amount:5</span>
@@ -4441,8 +4456,9 @@ the mob's internal name (the one defined in your MythicMobs configuration). You 
 argument to specify how many of these mobs need to be killed. It's also possible to add the optional arguments
 <code>minLevel</code> and <code>maxLevel</code> to further customize what mobs need to be killed.
 You can also add an optional <code>neutralDeathRadiusAllPlayers</code> argument to complete the objective for each nearby player within the defined radius when the mob is killed by any source.
-You can add a "notify" keyword if you want to send a notification to players whenever the objective
-progresses.</p>
+You can add a <code>notify</code> keyword if you want to send a notification to players whenever the objective progresses.</p>
+<p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of mythic mobs already killed,
+<code>left</code> is the amount of mythic mobs still needed to kill and <code>total</code> is the amount of mythic mobs initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmobkill SkeletalKnight amount:2 events:reward</span>
@@ -4722,7 +4738,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1619816462000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1619894321000' locale='en'></span>
     
   </small>
 </div>
@@ -4854,10 +4870,10 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.60c1e489.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c46528a6.min.js"></script>
       
         <script src="../../webCode/js/copyLinkToClipboard.js"></script>
       
