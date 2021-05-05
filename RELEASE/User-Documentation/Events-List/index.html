@@ -17,7 +17,7 @@
         
       
       <link rel="icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6+insiders-2.3.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.6.0">
     
     
       
@@ -25,11 +25,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3a1236c2.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fc703a5.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.de2705de.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.77b964be.min.css">
         
+      
       
     
     
@@ -72,8 +73,9 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal">
   
     
+    <script>function __scope(t,e="../.."){return new URL(e,location).pathname+"."+t}function __get(t,e=localStorage,n){return JSON.parse(e.getItem(__scope(t,n)))}function __set(t,e,n=localStorage,o){try{n.setItem(__scope(t,o),JSON.stringify(e))}catch(t){}}</script>
     
-      <script>var palette=JSON.parse(localStorage.getItem("__palette"));if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -89,6 +91,13 @@
     <div data-md-component="announce">
       
     </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
     
       
 
@@ -126,16 +135,20 @@
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" type="radio" name="__palette" id="__palette_1">
-          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
-          </label>
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
         
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" type="radio" name="__palette" id="__palette_2">
-          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
-          </label>
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            </label>
+          
         
       </form>
     
@@ -149,15 +162,19 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
       
@@ -183,7 +200,7 @@
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     BetonQuest on GitHub
@@ -328,7 +345,7 @@
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     BetonQuest on GitHub
@@ -813,6 +830,7 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -827,6 +845,7 @@
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1664,6 +1683,7 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -2035,7 +2055,7 @@
                 
                 <h1 id="events-list">Events List<a class="headerlink" href="#events-list" title="Permanent link">🔗</a></h1>
 <h2 id="cancel-quest-cancel">Cancel quest: <code>cancel</code><a class="headerlink" href="#cancel-quest-cancel" title="Permanent link">🔗</a></h2>
-<p>This event works in the same way as a quest canceler in the backpack. Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in <em>main.yml</em></p>
+<p>This event works in the same way as a <a href="/User-Documentation/Reference/#canceling-quests">quest canceler in the backpack</a>. Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in <em>main.yml</em></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cancel wood</span>
@@ -2218,15 +2238,18 @@ Random is the amount of events, that will be randomly chosen to fire. It's optio
 </div>
 <h2 id="journal-journal">Journal: <code>journal</code><a class="headerlink" href="#journal-journal" title="Permanent link">🔗</a></h2>
 <p><strong>static</strong></p>
-<p>Adds or deletes an entry to/from player’s journal. Entries are defined in <code>journal.yml</code> The first argument is action (add/del), the second one is name of the entry. You can also use only one argument, <code>update</code>, it will simply update the journal without addin any entries. It's useful when you need to update the main page.</p>
+<p>Adds or deletes an entry to/from a player's journal. Journal entries have to be defined in <code>journal.yml</code>. The first
+argument is the action to perform, the second one is the name of the entry if required. Changing journal entries will
+also reload the journal.</p>
+<p>Possible actions are:
+- <code>add</code>: Adds a page to the journal.
+- <code>delete</code>: Deletes a page from the journal.
+- <code>update</code>: Refreshes the journal. This is especially useful when you need to update the main page.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">journal add quest_started</span>
-</code></pre></div>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">journal update</span>
+<span class="l l-Scalar l-Scalar-Plain">journal delete quest_available</span>
+<span class="l l-Scalar l-Scalar-Plain">journal update</span>
 </code></pre></div>
 </div>
 <h2 id="kill-kill">Kill: <code>kill</code><a class="headerlink" href="#kill-kill" title="Permanent link">🔗</a></h2>
@@ -2278,7 +2301,18 @@ argument followed by the keyword.</p>
 </code></pre></div>
 </div>
 <h2 id="notification-notify">Notification: <code>notify</code><a class="headerlink" href="#notification-notify" title="Permanent link">🔗</a></h2>
-<p>Displays a notification using the NotifyIO system. </p>
+<p>Displays a notification using the NotifyIO system.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>All colons (<code>:</code>) in the message part of the notification need to be escaped, including those inside variables.
+One backslash (<code>\</code>) is required when using no quoting at all (<code>...</code>) or single quotes
+(<code>'...'</code>). Two backslashes are required (<code>\\</code>) when using double quotes (<code>"..."</code>).</p>
+<p>Examples:<br>
+<code>eventName: notify Peter:Heya %player%!</code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: notify Peter<ins class="critic">\</ins>:Heya %player%!</code><br>
+<code>eventName: <mark class="critic">'</mark>notify Peter:Heya %player%!<mark class="critic">'</mark></code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: <mark class="critic">'</mark>notify Peter<ins class="critic">\</ins>:Heya %player%!<mark class="critic">'</mark></code><br>
+<code>eventName: <mark class="critic">"</mark>notify Peter:Heya %player%!<mark class="critic">"</mark></code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: <mark class="critic">"</mark>notify Peter<ins class="critic">\\</ins>:Heya %player%!<mark class="critic">"</mark></code><br>
+<code>otherEvent: notify You own %math.calc:5% fish!</code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>otherEvent: You own %math.calc<ins class="critic">\</ins>:5% fish!</code></p>
+</div>
 <table>
 <thead>
 <tr>
@@ -2334,16 +2368,6 @@ you want to use the Notify system to it's full extend.
 <span class="c1">#You can also override category settings:</span>
 <span class="nt">myEvent3</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Another</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:info</span><span class="nv"> </span><span class="s">io:advancement</span><span class="nv"> </span><span class="s">frame:challenge&quot;</span>
 </code></pre></div></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>All colons (<code>:</code>) in the message part of the notification need to be escaped, including those inside variables, with one backslash (<code>\</code>) when using single quotes
-(<code>'...'</code>) or no quoting at all (<code>...</code>) and with two backslashes (<code>\\</code>) when using double quotes (<code>"..."</code>).  <br />
-Example:<br />
-<code>eventName: 'notify Peter:Heya %player%!'</code> -&gt; <code>eventName: 'notify Peter<ins class="critic">\</ins>:Heya %player%!'</code>  <br />
-<code>eventName: notify Peter:Heya %player%!</code> -&gt; <code>eventName: notify Peter<ins class="critic">\</ins>:Heya %player%!</code>
-<code>eventName: "notify Peter:Heya %player%!"</code> -&gt; <code>eventName: "notify Peter<ins class="critic">\\</ins>:Heya %player%!"</code>
-<code>otherEvent: notify You own %math.calc:5% fish!</code> -&gt; <code>otherEvent: You own %math.calc<ins class="critic">\</ins>:5% fish!</code></p>
-</div>
 <h2 id="broadcast-notifyall">Broadcast: <code>notifyall</code><a class="headerlink" href="#broadcast-notifyall" title="Permanent link">🔗</a></h2>
 <p>This events works just like the <a href="#notification-notify">notify</a> event but shows the notification for all online players.</p>
 <h2 id="objective-objective">Objective: <code>objective</code><a class="headerlink" href="#objective-objective" title="Permanent link">🔗</a></h2>
@@ -2514,13 +2538,15 @@ if the player has one active.The first and only argument must be location. It's 
 </code></pre></div>
 </div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
-<p>This event has only one purpose - to change variables stored in <code>variable</code> objective.
-The first argument is the ID of a <code>variable</code> objective (if you use any other type you will get an error).
-Second one is the key of the variable and the third is the value. Both can use <code>%...%</code> variables.
-Refer to <code>variable</code> objective documentation for information about storing variables.</p>
+<p>This event has only one purpose: Change values that are stored in <code>variable</code> objective variables. The first argument is
+the ID of the <code>variable</code> objective. The second argument is the name of the variable to set. The third argument is the
+value to set. Both the name and value can use <code>%...%</code> variables. To delete a variable you can use <code>""</code>. Refer to the
+<a href="/User-Documentation/Objectives-List/#variable-variable"><code>variable</code> objective</a> documentation for more information about
+storing variables.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable some_var_obj name %player%</span>
+<span class="l l-Scalar l-Scalar-Plain">variable other_var_obj desc &quot;&quot;</span>
 </code></pre></div>
 </div>
 <h2 id="weather-weather">Weather: <code>weather</code><a class="headerlink" href="#weather-weather" title="Permanent link">🔗</a></h2>
@@ -2545,7 +2571,7 @@ Refer to <code>variable</code> objective documentation for information about sto
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1614794213000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1618148836000' locale='en'></span>
     
   </small>
 </div>
@@ -2560,6 +2586,10 @@ Refer to <code>variable</code> objective documentation for information about sto
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
         
       </main>
       
@@ -2673,10 +2703,12 @@ Refer to <code>variable</code> objective documentation for information about sto
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.9849d06a.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.114c1372.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>
+      
+        <script src="../../webCode/js/copyLinkToClipboard.js"></script>
       
     
   

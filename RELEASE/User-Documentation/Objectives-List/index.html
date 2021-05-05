@@ -17,7 +17,7 @@
         
       
       <link rel="icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6+insiders-2.3.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.6.0">
     
     
       
@@ -25,11 +25,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3a1236c2.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fc703a5.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.de2705de.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.77b964be.min.css">
         
+      
       
     
     
@@ -72,8 +73,9 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal">
   
     
+    <script>function __scope(t,e="../.."){return new URL(e,location).pathname+"."+t}function __get(t,e=localStorage,n){return JSON.parse(e.getItem(__scope(t,n)))}function __set(t,e,n=localStorage,o){try{n.setItem(__scope(t,o),JSON.stringify(e))}catch(t){}}</script>
     
-      <script>var palette=JSON.parse(localStorage.getItem("__palette"));if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -89,6 +91,13 @@
     <div data-md-component="announce">
       
     </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
     
       
 
@@ -126,16 +135,20 @@
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" type="radio" name="__palette" id="__palette_1">
-          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
-          </label>
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
         
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" type="radio" name="__palette" id="__palette_2">
-          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
-          </label>
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            </label>
+          
         
       </form>
     
@@ -149,15 +162,19 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
       
@@ -183,7 +200,7 @@
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     BetonQuest on GitHub
@@ -328,7 +345,7 @@
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     BetonQuest on GitHub
@@ -799,6 +816,7 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -813,6 +831,7 @@
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1517,6 +1536,7 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -1741,44 +1761,65 @@
                 
                 <h1 id="objectives-list">Objectives List<a class="headerlink" href="#objectives-list" title="Permanent link">🔗</a></h1>
 <h2 id="action-action">Action: <code>action</code><a class="headerlink" href="#action-action" title="Permanent link">🔗</a></h2>
-<p>This objective completes when player clicks on given block type. This can be further limited by location condition and item in hand condition. First argument is type of the click, it can be right, left or any. Next is a <code>block selector</code>. You can also specify <code>loc:</code> argument, followed by standard location format and <code>range:</code> followed by a number (or variable). It will define where the clicked block needs to be, as opposed to "where you must be" in location condition. If you add argument <code>cancel</code>, the click will be canceled (chest will not open, button will not be pressed etc.)</p>
-<p>Action objective contains one property, <code>location</code>. It's a string formatted like <code>X: 100, Y: 200, Z:300</code>. It does not show the radius.</p>
+<p>This objective completes when the player clicks on the given block type. This can be further limited by the location condition and
+the item in hand condition. The first argument is the type of the click, it can be right, left or any. Next is a
+<a href="/User-Documentation/Reference/#block-selectors">Block Selector</a>. You can also specify the <code>loc:</code> argument, followed by
+the standard location format and the <code>range:</code> followed by a number (or variable). It will define where the clicked block needs
+to be, as opposed to "where you must be" in location condition. If you add the argument <code>cancel</code>, the click will be canceled
+(chest will not open, button will not be pressed etc.)</p>
+<p>Action objective contains one property, <code>location</code>. It's a string formatted like <code>X: 100, Y: 200, Z:300</code>. It does not
+show the radius.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">action right DOOR conditions:holding_key loc:100;200;300;world range:5</span>
 </code></pre></div>
 </div>
 <h2 id="arrow-shooting-arrow">Arrow Shooting: <code>arrow</code><a class="headerlink" href="#arrow-shooting-arrow" title="Permanent link">🔗</a></h2>
-<p>To complete this objective the player needs to shoot the arrow into the target. There are two arguments, location of the target and precision number (radius around location where the arrow must land, should be small). Note that the position of an arrow after hit is on the wall of a <em>full</em> block, which means that shooting not full blocks (like heads) won't give accurate results. Experiment with this objective a bit to make sure you've set the numbers correctly.</p>
+<p>To complete this objective the player needs to shoot the arrow into the target. There are two arguments, location of the
+target and precision number (radius around location where the arrow must land, should be small). Note that the position
+of an arrow after hit is on the wall of a <em>full</em> block, which means that shooting not full blocks (like heads) won't
+give accurate results. Experiment with this objective a bit to make sure you've set the numbers correctly.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">arrow 100.5;200.5;300.5;world 1.1 events:reward conditions:correct_player_position</span>
 </code></pre></div>
 </div>
 <h2 id="block-block">Block: <code>block</code><a class="headerlink" href="#block-block" title="Permanent link">🔗</a></h2>
-<p>To complete this objective player must break or place specified amount of blocks. First argument after name is a <code>block selector</code>. Next is amount. It can be more than 0 for placing and less than 0 for destroying. You can also use <code>notify</code> keyword to display messages to the player each time he updates amount of blocks, optionally with the notification interval after colon.</p>
-<p>This objective has two properties, <code>amount</code> and <code>left</code>. Amount is current amount of blocks in the objective, left is amount needed to complete the objective. Note that it may sometimes be negative!</p>
+<p>To complete this objective the player must break or place the specified amount of blocks. The first argument is a
+<a href="/User-Documentation/Reference/#block-selectors">Block Selector</a>. Next is amount. It can be more than 0 for placing and
+less than 0 for destroying. You can also use the <code>notify</code> keyword to display messages to the player each time he updates
+amount of blocks, optionally with the notification interval after colon.</p>
+<p>This objective has two properties, <code>amount</code> and <code>left</code>. Amount is current amount of blocks in the objective, left is
+amount needed to complete the objective. Note that it may sometimes be negative!</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">block LOG -16 events:reward notify:5</span>
 </code></pre></div>
 </div>
 <h2 id="breed-animals-breed">Breed animals: <code>breed</code><a class="headerlink" href="#breed-animals-breed" title="Permanent link">🔗</a></h2>
-<p>This objective is completed by breeding animals of specified type. The first argument is animal type (<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">types</a>) and second is amount (positive integer). You can add <code>notify</code> argument to display a message with remaining amount each time the animal is bred, optionally with the notification interval after colon. While you can specify any entity, the objective will be completable only for breedable ones.</p>
+<p>This objective is completed by breeding animals of specified type. The first argument is the
+<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">animal type</a> and the second argument is the
+amount (positive integer). You can add the <code>notify</code> argument to display a message with the remaining amount each time
+the animal is bred, optionally with the notification interval after a colon. While you can specify any entity, the
+objective will be completable only for breedabgle ones.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">breed cow 10 notify:2 events:reward</span>
 </code></pre></div>
 </div>
 <h2 id="put-items-in-a-chest-chestput">Put items in a chest: <code>chestput</code><a class="headerlink" href="#put-items-in-a-chest-chestput" title="Permanent link">🔗</a></h2>
-<p>This objective requires the player to put specified items in a specified chest. First argument is a location of the chest, second argument is a list of items (from <em>items.yml</em> file), separated with a comma. You can also add amount of items after a colon. The items will be removed upon completing the objective unless you add <code>items-stay</code> optional argument.</p>
+<p>This objective requires the player to put specified items in a specified chest. First argument is a location of the
+chest, second argument is a list of items (from <em>items.yml</em> file), separated with a comma. You can also add amount of
+items after a colon. The items will be removed upon completing the objective unless you add <code>items-stay</code> optional
+argument.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestput 100;200;300;world emerald:5,sword events:tag,message</span>
 </code></pre></div>
 </div>
 <h2 id="eatdrink-consume">Eat/drink: <code>consume</code><a class="headerlink" href="#eatdrink-consume" title="Permanent link">🔗</a></h2>
-<p>This objective is completed by eating specified food or drinking specified potion. The only required argument is the ID of an item from <em>items.yml</em>.</p>
+<p>This objective is completed by eating specified food or drinking specified potion. The only required argument is the ID
+of an item from <em>items.yml</em>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">consume tawny_owl events:faster_endurance_regen</span>
@@ -1786,44 +1827,66 @@
 </div>
 <h2 id="crafting-craft">Crafting: <code>craft</code><a class="headerlink" href="#crafting-craft" title="Permanent link">🔗</a></h2>
 <p>To complete this objective the player must craft specified item. First argument is ID of the item, as in <em>items.yml</em>. Next is amount (integer).</p>
-<p>Crafting objective has two properties, <code>amount</code> and <code>left</code>. Amount is current amount of crafted items and left is amount needed to complete the objective.</p>
+<p>The crafting objective has three properties: <code>left</code> is the amount of items left to craft, <code>amount</code> is the current amount of
+already crafted items and <code>total</code> is the initially required amount of items to be crafted.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">craft saddle 5 events:reward</span>
 </code></pre></div>
 </div>
 <h2 id="enchant-item-enchant">Enchant item: <code>enchant</code><a class="headerlink" href="#enchant-item-enchant" title="Permanent link">🔗</a></h2>
-<p>This objectie is completed when the player enchants specified item with specified enchantment. The first argument is an item name, as defined it <em>items.yml</em>. Second one is the <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html">enchantment</a> and a level, separated with a colon. If you need to check for multiple enchantments you can add a list of them, separated by colons.</p>
+<p>This objectie is completed when the player enchants specified item with specified enchantment. The first argument is an
+item name, as defined it <em>items.yml</em>. Second one is the
+<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html">enchantment</a> and a level, separated
+with a colon. If you need to check for multiple enchantments you can add a list of them, separated by colons.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">enchant sword damage_all:1,knockback:1 events:reward</span>
 </code></pre></div>
 </div>
 <h2 id="experience-experience">Experience: <code>experience</code><a class="headerlink" href="#experience-experience" title="Permanent link">🔗</a></h2>
-<p>This objective can by completed by reaching specified amount of experience points. You can check for whole levels by adding the <code>level</code> argument. The conditions are checked when the player levels up, so if they are not met the first time, the player will have to meet them and levelup again.</p>
+<p>This objective can by completed by reaching specified amount of experience points. You can check for whole levels by
+adding the <code>level</code> argument. The conditions are checked when the player levels up, so if they are not met the first
+time, the player will have to meet them and levelup again.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">experience 25 level events:reward</span>
 </code></pre></div>
 </div>
 <h2 id="delay-delay">Delay: <code>delay</code><a class="headerlink" href="#delay-delay" title="Permanent link">🔗</a></h2>
-<p>This objective is just a long, persistent delay for firing events. It will run only after certain amount of time (measured in minutes) and only when player is online and meets all conditions. If a player is offline at that time it will just wait for them to log in. You should use it for example to delete tags so the player can complete quests multiple times. First argument is time, by default in minutes. You can also use <code>ticks</code> or <code>seconds</code> argument to use different units, but keep in mind that it's not very precise - it will complete roughly after the time ends. To control that precision you can specify an optional <code>interval:</code> argument, which specifies how many ticks should pass between checks. One second is 20 ticks. Less makes the objective more precise, at the expense of performance. The rest is just like in other objectives.</p>
-<p>Delay has two properties, <code>left</code> and <code>date</code>. The first one will show how much time needs to pass before the delay is completed (i.e. <code>23 days, 5 hours and 45 minutes</code>), the second one will show a date of completing the objective formatted using <code>date_format</code> setting in <em>config.yml</em> (it will look like the one above every journal entry).</p>
+<p>This objective is just a long, persistent delay for firing events. It will run only after certain amount of time
+(measured in minutes) and only when player is online and meets all conditions. If a player is offline at that time it
+will just wait for them to log in. You should use it for example to delete tags so the player can complete quests
+multiple times. First argument is time, by default in minutes. You can also use <code>ticks</code> or <code>seconds</code> argument to use
+different units, but keep in mind that it's not very precise - it will complete roughly after the time ends. To control
+that precision you can specify an optional <code>interval:</code> argument, which specifies how many ticks should pass between
+checks. One second is 20 ticks. Less makes the objective more precise, at the expense of performance. The rest is
+just like in other objectives.</p>
+<p>Delay has two properties, <code>left</code> and <code>date</code>. The first one will show how much time needs to pass before the delay is
+completed (i.e. <code>23 days, 5 hours and 45 minutes</code>), the second one will show a date of completing the objective
+formatted using <code>date_format</code> setting in <em>config.yml</em> (it will look like the one above every journal entry).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">delay 1000 ticks interval:5 events:event1,event2</span>
 </code></pre></div>
 </div>
 <h2 id="death-die">Death: <code>die</code><a class="headerlink" href="#death-die" title="Permanent link">🔗</a></h2>
-<p>Death objective completes when the player dies meeting all conditions. You can optionally cancel death with <code>cancel</code> argument. It will heal player and optionally teleport him to respawn location. There can be two arguments: <code>cancel</code>, which is optional, and <code>respawn:</code>, which is also optional and only used if there is the <code>cancel</code> argument set. You can add them right after type of objective.</p>
+<p>Death objective completes when the player dies meeting all conditions. You can optionally cancel death with <code>cancel</code>
+argument. It will heal player and optionally teleport him to respawn location. There can be two arguments: <code>cancel</code>,
+which is optional, and <code>respawn:</code>, which is also optional and only used if there is the <code>cancel</code> argument set. You can
+add them right after type of objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">die cancel respawn:100;200;300;world;90;0 events:teleport</span>
 </code></pre></div>
 </div>
 <h2 id="fishing-fish">Fishing: <code>fish</code><a class="headerlink" href="#fishing-fish" title="Permanent link">🔗</a></h2>
-<p>Requires the player to catch a fish. It doesn't have to be a fish, it can also be a treasure or junk. The first argument is a <code>block selector</code> name of the item to catch, optionally with data value after a colon. Second argument must be amount of fish to catch. You can also add <code>notify</code> argument if you want to display progress, optionally with the notification interval after colon.</p>
-<p>Fishing has the same properties as mob kill objective.</p>
+<p>Requires the player to catch something with the fishing rod. It doesn't have to be a fish, it can also be a treasure or
+junk. The first argument is a <a href="/User-Documentation/Reference/#block-selectors">Block Selector</a> of the item to catch.
+Second argument must be the amount of fish to catch. You can also add the <code>notify</code> argument if you want to display
+progress, optionally with the notification interval after a colon.</p>
+<p>The fish objective has three properties: <code>left</code> is the amount of fish still left to be caught, <code>amount</code> is the amount of
+already caught fish and <code>total</code> is the initially required amount of fish needed to be caught.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fish SALMON 5 notify events:tag_fish_caught</span>
@@ -1834,8 +1897,9 @@
 Available values are <code>right</code>, <code>left</code> and <code>any</code>.
 Second required argument is the <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">mob type</a>.
 Next is an amount of mobs required to click on. These must be unique, so the player can't simply click twenty times on
-the same zombie to complete it. There is also an optional <code>name:</code> parameter which specifies what name the entity must have
-(you need to write <code>_</code> instead of the space character).
+the same zombie to complete it. There is also an optional <code>name:</code> parameter which specifies what custom name the entity must have
+(you need to write <code>_</code> instead of the space character). To check for the real name (e.g. if you renamed players to include
+their rank) you can also use <code>realname:</code> instead.
 Add <code>marked:</code> if the clicked entity needs to be marked by the <code>spawn</code> event (see its description for marking explanation). 
 You can also add <code>notify</code> argument to make the objective notify players whenever they click a correct entity,
 optionally with the notification interval after colon and <code>cancel</code> if the click shouldn't do what it usually does
@@ -1851,14 +1915,15 @@ You can also specify additional arguments: <code>name:</code> followed by the na
 <code>required:</code> followed by a list of conditions separated with commas will only accept killing players meeting these conditions
 and <code>notify</code> will display notifications when a player is killed, optionally with the notification interval after a colon.</p>
 <p>The kill objective has three properties: <code>left</code> is the amount of players still left to kill, <code>amount</code> is the amount of
-already killed players and <code>total</code>is the initially required amount to kill.</p>
+already killed players and <code>total</code> is the initially required amount to kill.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">kill 5 required:team_B</span>
 </code></pre></div>
 </div>
 <h2 id="location-location">Location: <code>location</code><a class="headerlink" href="#location-location" title="Permanent link">🔗</a></h2>
-<p>This objective completes when player moves in specified range of specified location and meets all conditions. The first argument after objective's name must be location, the second - radius around the location. It can be a variable.</p>
+<p>This objective completes when player moves in specified range of specified location and meets all conditions. The first
+argument after objective's name must be location, the second - radius around the location. It can be a variable.</p>
 <p>Location objective contains one property, <code>location</code>. It's a string formatted like <code>X: 100, Y: 200, Z:300</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1876,7 +1941,8 @@ Don't forget that if you use global and persistent you can still remove the obje
 </code></pre></div>
 </div>
 <h2 id="logout-logout">Logout: <code>logout</code><a class="headerlink" href="#logout-logout" title="Permanent link">🔗</a></h2>
-<p>To complete this objective the player simply needs to leave the server. Keep in mind that running a <code>folder</code> event here will make it run in "persistent" mode, since the player is offline on the next tick.</p>
+<p>To complete this objective the player simply needs to leave the server. Keep in mind that running a <code>folder</code> event here
+will make it run in "persistent" mode, since the player is offline on the next tick.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">logout events:delete_objective</span>
@@ -1937,8 +2003,15 @@ This amount is a total amount though, it does not count per each individual item
 </div>
 <p>This objective has two variable properties: <code>amount</code> (shows how much the player already collected) and <code>left</code> (displays how much is left to pickup).</p>
 <h2 id="mob-kill-mobkill">Mob Kill: <code>mobkill</code><a class="headerlink" href="#mob-kill-mobkill" title="Permanent link">🔗</a></h2>
-<p>The player must kill specified amount of mobs You must specify mob type first and then amount. You can find possible mob types here: <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">mob types</a>. Additionally you can specify names for mobs with <code>name:Uber_Zombie</code>, so only killing properly named mobs counts. All <code>_</code> are replaced with spaces, so in this example you would have to kill 5 zombies with "Uber Zombie" above their heads. You can also specify <code>notify</code> keyword to display messages to the player each time he kills a mob, optionally with the notification interval after colon. If you want to accept only mobs marked with <code>spawn</code> event, use <code>marked:</code> argument followed by the keyword used in that event.</p>
-<p>This objective also has two properties, <code>amount</code> and <code>left</code>. Amount is current amount of killed mobs, left is amount needed to complete the objective.</p>
+<p>The player must kill specified amount of mobs You must specify mob type first and then amount. You can find possible mob
+types here: <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">mob types</a>. Additionally you
+can specify names for mobs with <code>name:Uber_Zombie</code>, so only killing properly named mobs counts. All <code>_</code> are replaced
+with spaces, so in this example you would have to kill 5 zombies with "Uber Zombie" above their heads. You can also
+specify <code>notify</code> keyword to display messages to the player each time he kills a mob, optionally with the notification
+interval after colon. If you want to accept only mobs marked with <code>spawn</code> event, use <code>marked:</code> argument followed by the
+keyword used in that event.</p>
+<p>This objective also has two properties, <code>amount</code> and <code>left</code>. Amount is the current amount of killed mobs, left is amount
+needed to complete the objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mobkill ZOMBIE 5 name:Uber_Zombie conditions:night</span>
@@ -1949,7 +2022,8 @@ This amount is a total amount though, it does not count per each individual item
 The first argument is a potion ID from <em>items.yml</em>. Second argument is amount of potions.
 You can optionally add <code>notify</code> argument to make the objective display progress to players,
 optionally with the notification interval after a colon.</p>
-<p>The brewing will be accepted if the player was the last one to click the ingredient slot in the brewing stand and there were no matching potions there already.</p>
+<p>The brewing will be accepted if the player was the last one to click the ingredient slot in the brewing stand and there
+were no matching potions there already.</p>
 <p>Potion objective has <code>amount</code> and <code>left:</code> properties.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1957,7 +2031,9 @@ optionally with the notification interval after a colon.</p>
 </code></pre></div>
 </div>
 <h2 id="sheep-shearing-shear">Sheep shearing: <code>shear</code><a class="headerlink" href="#sheep-shearing-shear" title="Permanent link">🔗</a></h2>
-<p>To complete this objective the player has to shear specified amount of sheep, optionally with specified color and/or name. The first, required argument is amount (integer). Optionally, you can add <code>name:</code> argument with the name and <code>color:</code> with <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/DyeColor.html">color name</a>.</p>
+<p>To complete this objective the player has to shear specified amount of sheep, optionally with specified color and/or
+name. The first, required argument is amount (integer). Optionally, you can add <code>name:</code> argument with the name and
+<code>color:</code> with <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/DyeColor.html">color name</a>.</p>
 <p>Sheep shearing has the same properties as mob kill objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1965,7 +2041,9 @@ optionally with the notification interval after a colon.</p>
 </code></pre></div>
 </div>
 <h2 id="smelting-smelt">Smelting: <code>smelt</code><a class="headerlink" href="#smelting-smelt" title="Permanent link">🔗</a></h2>
-<p>To complete this objective player must smelt specified item. Note that you must define item as output from furnace, not the ingredient. This one does not support data values (it doesn’t have to). First argument is a <code>block selector</code>. Next is amount (integer).</p>
+<p>To complete this objective the player must smelt a specified item. Note that you must define the output item, not the
+ingredient. The first argument is a <a href="/User-Documentation/Reference/#block-selectors">Block Selector</a> for the output
+item. The second is the amount (integer).</p>
 <p>Smelting has the same properties as crafting objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1973,8 +2051,11 @@ optionally with the notification interval after a colon.</p>
 </code></pre></div>
 </div>
 <h2 id="step-on-pressure-plate-step">Step on pressure plate: <code>step</code><a class="headerlink" href="#step-on-pressure-plate-step" title="Permanent link">🔗</a></h2>
-<p>To complete this objective the player has to step on pressure plate at given location. The type of plate does not matter. The first and only required argument is a location. If the pressure plate is not present at that location, the objective will not be completable and will log errors in the console.</p>
-<p>Step objective contains one property, <code>location</code>. It's a string formatted like <code>X: 100, Y: 200, Z:300</code>. It shows an exact location of the pressure plate.</p>
+<p>To complete this objective the player has to step on a pressure plate at a given location. The type of plate does not
+matter. The first and only required argument is a location. If the pressure plate is not present at that location, the
+objective will not be completable and will log errors in the console.</p>
+<p>Step objective contains one property, <code>location</code>. It shows the exact location of the pressure plate in a string
+formatted like <code>X: 100, Y: 200, Z:300</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">step 100;200;300;world events:done</span>
@@ -2000,8 +2081,11 @@ The mob must be tameable for the objective to be valid, e.g. on 1.16.1: <code>CA
 <h2 id="riding-riding">Riding: <code>riding</code><a class="headerlink" href="#riding-riding" title="Permanent link">🔗</a></h2>
 <p>This objective can be completed by riding the specified entity.
 <code>any</code> is also a valid input and matches any entity.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">riding horse</span>
 </code></pre></div>
+</div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
 <p>This objective is different. You cannot complete it, it will also ignore defined events and conditions. You can start it and that's it.
 While this objective is active though, everything the player types in chat (and matches special pattern) will become a variable.
@@ -2025,7 +2109,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1609443042000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1618133389000' locale='en'></span>
     
   </small>
 </div>
@@ -2040,6 +2124,10 @@ To remove this objective use <code>objective delete</code> event - there is no o
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
         
       </main>
       
@@ -2153,10 +2241,12 @@ To remove this objective use <code>objective delete</code> event - there is no o
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.9849d06a.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.114c1372.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>
+      
+        <script src="../../webCode/js/copyLinkToClipboard.js"></script>
       
     
   

@@ -17,7 +17,7 @@
         
       
       <link rel="icon" href="../../media/design/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6+insiders-2.3.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3+insiders-2.6.0">
     
     
       
@@ -25,11 +25,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3a1236c2.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fc703a5.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.de2705de.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.77b964be.min.css">
         
+      
       
     
     
@@ -72,8 +73,9 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal">
   
     
+    <script>function __scope(t,e="../.."){return new URL(e,location).pathname+"."+t}function __get(t,e=localStorage,n){return JSON.parse(e.getItem(__scope(t,n)))}function __set(t,e,n=localStorage,o){try{n.setItem(__scope(t,o),JSON.stringify(e))}catch(t){}}</script>
     
-      <script>var palette=JSON.parse(localStorage.getItem("__palette"));if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -89,6 +91,13 @@
     <div data-md-component="announce">
       
     </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
     
       
 
@@ -126,16 +135,20 @@
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal" type="radio" name="__palette" id="__palette_1">
-          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
-          </label>
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
         
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue" type="radio" name="__palette" id="__palette_2">
-          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
-          </label>
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            </label>
+          
         
       </form>
     
@@ -149,15 +162,19 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
       
@@ -183,7 +200,7 @@
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     BetonQuest on GitHub
@@ -328,7 +345,7 @@
 <a href="https://github.com/BetonQuest/BetonQuest/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     BetonQuest on GitHub
@@ -1009,6 +1026,7 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -1025,6 +1043,7 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -1035,11 +1054,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1122-2021-03-14" class="md-nav__link">
-    [1.12.2] - 2021-03-14
+  <a href="#1123-2021-05-04" class="md-nav__link">
+    [1.12.3] - 2021-05-04
   </a>
   
-    <nav class="md-nav" aria-label="[1.12.2] - 2021-03-14">
+    <nav class="md-nav" aria-label="[1.12.3] - 2021-05-04">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1090,11 +1109,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1121-2021-02-05" class="md-nav__link">
-    [1.12.1] - 2021-02-05
+  <a href="#1122-2021-03-14" class="md-nav__link">
+    [1.12.2] - 2021-03-14
   </a>
   
-    <nav class="md-nav" aria-label="[1.12.1] - 2021-02-05">
+    <nav class="md-nav" aria-label="[1.12.2] - 2021-03-14">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1145,11 +1164,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1120-2021-01-10" class="md-nav__link">
-    [1.12.0] - 2021-01-10
+  <a href="#1121-2021-02-05" class="md-nav__link">
+    [1.12.1] - 2021-02-05
   </a>
   
-    <nav class="md-nav" aria-label="[1.12.0] - 2021-01-10">
+    <nav class="md-nav" aria-label="[1.12.1] - 2021-02-05">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1200,6 +1219,61 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#1120-2021-01-10" class="md-nav__link">
+    [1.12.0] - 2021-01-10
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.12.0] - 2021-01-10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deprecated_3" class="md-nav__link">
+    Deprecated
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_3" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security_3" class="md-nav__link">
+    Security
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1110-2020-01-02" class="md-nav__link">
     [1.11.0] - 2020-01-02
   </a>
@@ -1208,7 +1282,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added_3" class="md-nav__link">
+  <a href="#added_4" class="md-nav__link">
     Added
   </a>
   
@@ -1242,7 +1316,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added_4" class="md-nav__link">
+  <a href="#added_5" class="md-nav__link">
     Added
   </a>
   
@@ -1417,7 +1491,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_5" class="md-nav__link">
+  <a href="#added_6" class="md-nav__link">
     Added
   </a>
   
@@ -1491,7 +1565,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_6" class="md-nav__link">
+  <a href="#added_7" class="md-nav__link">
     Added
   </a>
   
@@ -1558,7 +1632,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_7" class="md-nav__link">
+  <a href="#added_8" class="md-nav__link">
     Added
   </a>
   
@@ -1592,7 +1666,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_8" class="md-nav__link">
+  <a href="#added_9" class="md-nav__link">
     Added
   </a>
   
@@ -1740,7 +1814,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_9" class="md-nav__link">
+  <a href="#added_10" class="md-nav__link">
     Added
   </a>
   
@@ -1788,7 +1862,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_10" class="md-nav__link">
+  <a href="#added_11" class="md-nav__link">
     Added
   </a>
   
@@ -2236,6 +2310,7 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -2246,11 +2321,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1122-2021-03-14" class="md-nav__link">
-    [1.12.2] - 2021-03-14
+  <a href="#1123-2021-05-04" class="md-nav__link">
+    [1.12.3] - 2021-05-04
   </a>
   
-    <nav class="md-nav" aria-label="[1.12.2] - 2021-03-14">
+    <nav class="md-nav" aria-label="[1.12.3] - 2021-05-04">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2301,11 +2376,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1121-2021-02-05" class="md-nav__link">
-    [1.12.1] - 2021-02-05
+  <a href="#1122-2021-03-14" class="md-nav__link">
+    [1.12.2] - 2021-03-14
   </a>
   
-    <nav class="md-nav" aria-label="[1.12.1] - 2021-02-05">
+    <nav class="md-nav" aria-label="[1.12.2] - 2021-03-14">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2356,11 +2431,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1120-2021-01-10" class="md-nav__link">
-    [1.12.0] - 2021-01-10
+  <a href="#1121-2021-02-05" class="md-nav__link">
+    [1.12.1] - 2021-02-05
   </a>
   
-    <nav class="md-nav" aria-label="[1.12.0] - 2021-01-10">
+    <nav class="md-nav" aria-label="[1.12.1] - 2021-02-05">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2411,6 +2486,61 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#1120-2021-01-10" class="md-nav__link">
+    [1.12.0] - 2021-01-10
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.12.0] - 2021-01-10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deprecated_3" class="md-nav__link">
+    Deprecated
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_3" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security_3" class="md-nav__link">
+    Security
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1110-2020-01-02" class="md-nav__link">
     [1.11.0] - 2020-01-02
   </a>
@@ -2419,7 +2549,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added_3" class="md-nav__link">
+  <a href="#added_4" class="md-nav__link">
     Added
   </a>
   
@@ -2453,7 +2583,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added_4" class="md-nav__link">
+  <a href="#added_5" class="md-nav__link">
     Added
   </a>
   
@@ -2628,7 +2758,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_5" class="md-nav__link">
+  <a href="#added_6" class="md-nav__link">
     Added
   </a>
   
@@ -2702,7 +2832,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_6" class="md-nav__link">
+  <a href="#added_7" class="md-nav__link">
     Added
   </a>
   
@@ -2769,7 +2899,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_7" class="md-nav__link">
+  <a href="#added_8" class="md-nav__link">
     Added
   </a>
   
@@ -2803,7 +2933,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_8" class="md-nav__link">
+  <a href="#added_9" class="md-nav__link">
     Added
   </a>
   
@@ -2951,7 +3081,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_9" class="md-nav__link">
+  <a href="#added_10" class="md-nav__link">
     Added
   </a>
   
@@ -2999,7 +3129,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#added_10" class="md-nav__link">
+  <a href="#added_11" class="md-nav__link">
     Added
   </a>
   
@@ -3181,12 +3311,47 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="1122-2021-03-14">[1.12.2] - 2021-03-14<a class="headerlink" href="#1122-2021-03-14" title="Permanent link">🔗</a></h2>
+<h2 id="1123-2021-05-04">[1.12.3] - 2021-05-04<a class="headerlink" href="#1123-2021-05-04" title="Permanent link">🔗</a></h2>
 <h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">🔗</a></h3>
+<ul>
+<li>FastAsyncWorldEdit compatibility</li>
+<li>craft objective variable <code>total</code></li>
+<li>curly braces in math.calc variables for using variables with math symbols</li>
+<li>player attribute to QuestCompassTargetChangeEvent</li>
+</ul>
 <h3 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">🔗</a></h3>
 <h3 id="deprecated">Deprecated<a class="headerlink" href="#deprecated" title="Permanent link">🔗</a></h3>
+<ul>
+<li>math variable now allows rounding output with the ~ operator</li>
+</ul>
 <h3 id="removed">Removed<a class="headerlink" href="#removed" title="Permanent link">🔗</a></h3>
 <h3 id="fixes">Fixes<a class="headerlink" href="#fixes" title="Permanent link">🔗</a></h3>
+<ul>
+<li>parsing of math variable</li>
+<li>craft objective: multi-craft, drop-craft, hotbar/offhand-craft, shift-Q-craft and any illegal crafting is correctly detected,</li>
+<li>craft objective variables <code>left</code> and <code>amount</code> were swapped</li>
+<li>NPC hider for not spawned NPCs</li>
+<li>Conversation IO Chest load NPC skull async from Citizens instead of sync</li>
+<li>block selector didn't respect regex boundary</li>
+<li>block selector regex errors are now properly handled</li>
+<li><code>default_journal_slot: -1</code> now uses the first free slot instead of the last hotbar slot</li>
+<li>mmobkill objective notify argument not working correctly</li>
+<li><code>fish</code> objective didn't count the amount of fish caught in one go (if modified by e.g. mcMMO)</li>
+<li>fixed smelt objective: only taking out normally did count, shift-extract got canceled</li>
+<li>empty values in <code>variable</code> objective now don't break on player join</li>
+<li>PacketInterceptor sync wait lag</li>
+<li>notifications using the chatIO were catched by the conversation interceptor</li>
+</ul>
+<h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">🔗</a></h3>
+<ul>
+<li>it was possible to put a QuestItem into a chest</li>
+</ul>
+<h2 id="1122-2021-03-14">[1.12.2] - 2021-03-14<a class="headerlink" href="#1122-2021-03-14" title="Permanent link">🔗</a></h2>
+<h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">🔗</a></h3>
+<h3 id="changed_1">Changed<a class="headerlink" href="#changed_1" title="Permanent link">🔗</a></h3>
+<h3 id="deprecated_1">Deprecated<a class="headerlink" href="#deprecated_1" title="Permanent link">🔗</a></h3>
+<h3 id="removed_1">Removed<a class="headerlink" href="#removed_1" title="Permanent link">🔗</a></h3>
+<h3 id="fixes_1">Fixes<a class="headerlink" href="#fixes_1" title="Permanent link">🔗</a></h3>
 <ul>
 <li><code>npcrange</code> objective is triggered at wrong time</li>
 <li>Citizens compatibility for not spawned NPCs</li>
@@ -3196,16 +3361,16 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>tags and points are now thread safe</li>
 <li>compatibility for packet interceptor on papermc</li>
 </ul>
-<h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">🔗</a></h3>
+<h3 id="security_1">Security<a class="headerlink" href="#security_1" title="Permanent link">🔗</a></h3>
 <h2 id="1121-2021-02-05">[1.12.1] - 2021-02-05<a class="headerlink" href="#1121-2021-02-05" title="Permanent link">🔗</a></h2>
-<h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">🔗</a></h3>
+<h3 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Ingame update notification if the updater found an update</li>
 </ul>
-<h3 id="changed_1">Changed<a class="headerlink" href="#changed_1" title="Permanent link">🔗</a></h3>
-<h3 id="deprecated_1">Deprecated<a class="headerlink" href="#deprecated_1" title="Permanent link">🔗</a></h3>
-<h3 id="removed_1">Removed<a class="headerlink" href="#removed_1" title="Permanent link">🔗</a></h3>
-<h3 id="fixes_1">Fixes<a class="headerlink" href="#fixes_1" title="Permanent link">🔗</a></h3>
+<h3 id="changed_2">Changed<a class="headerlink" href="#changed_2" title="Permanent link">🔗</a></h3>
+<h3 id="deprecated_2">Deprecated<a class="headerlink" href="#deprecated_2" title="Permanent link">🔗</a></h3>
+<h3 id="removed_2">Removed<a class="headerlink" href="#removed_2" title="Permanent link">🔗</a></h3>
+<h3 id="fixes_2">Fixes<a class="headerlink" href="#fixes_2" title="Permanent link">🔗</a></h3>
 <ul>
 <li>The Autoupdater got a small fix, and the fail safety for broken downloads was improved</li>
 <li><code>npcrange</code> objective does not throw errors when the player is in a different world than the NPC</li>
@@ -3219,9 +3384,9 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>fixed resuming to path finding when conversation interrupt movement</li>
 <li>fixes Die objective teleporting player during the tick</li>
 </ul>
-<h3 id="security_1">Security<a class="headerlink" href="#security_1" title="Permanent link">🔗</a></h3>
+<h3 id="security_2">Security<a class="headerlink" href="#security_2" title="Permanent link">🔗</a></h3>
 <h2 id="1120-2021-01-10">[1.12.0] - 2021-01-10<a class="headerlink" href="#1120-2021-01-10" title="Permanent link">🔗</a></h2>
-<h3 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">🔗</a></h3>
+<h3 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Tags and Objectives can now be removed with a static event for all players, even if they are not online</li>
 <li>deletepoint event can now also be called to delete all points for all players</li>
@@ -3295,7 +3460,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Added new config option 'npcInteractionLimit' default 500 that limits the click on an NPC to every x milliseconds</li>
 <li>Added PlayerHider to hide specific players for specified players</li>
 </ul>
-<h3 id="changed_2">Changed<a class="headerlink" href="#changed_2" title="Permanent link">🔗</a></h3>
+<h3 id="changed_3">Changed<a class="headerlink" href="#changed_3" title="Permanent link">🔗</a></h3>
 <ul>
 <li>devbuilds always show notifications for new devbuilds, even when the user is not on a _DEV strategy</li>
 <li>Items for HolographicDisplays are now defines in items.yml</li>
@@ -3325,13 +3490,13 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Added player death/respawn behavior to Region Objective and improved performance</li>
 <li>changed smelting and fish objective from material to BlockSelector</li>
 </ul>
-<h3 id="deprecated_2">Deprecated<a class="headerlink" href="#deprecated_2" title="Permanent link">🔗</a></h3>
+<h3 id="deprecated_3">Deprecated<a class="headerlink" href="#deprecated_3" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Marked message event for removal in BQ 2.0</li>
 <li>Marked playsound event for removal in BQ 2.0</li>
 <li>Marked title event for removal in BQ 2.0</li>
 </ul>
-<h3 id="removed_2">Removed<a class="headerlink" href="#removed_2" title="Permanent link">🔗</a></h3>
+<h3 id="removed_3">Removed<a class="headerlink" href="#removed_3" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Removed Deprecated Exceptions</li>
 <li>Removed RacesAndClasses support</li>
@@ -3342,7 +3507,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>removed BetonLangAPI support</li>
 <li>removed PlayerPoints support(this can still be used via Vault)</li>
 </ul>
-<h3 id="fixes_2">Fixes<a class="headerlink" href="#fixes_2" title="Permanent link">🔗</a></h3>
+<h3 id="fixes_3">Fixes<a class="headerlink" href="#fixes_3" title="Permanent link">🔗</a></h3>
 <ul>
 <li>event priority for block objective</li>
 <li>linebreaks in strings</li>
@@ -3382,12 +3547,12 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>fixed door event not working correctly</li>
 <li>fixed <code>1 give</code> command exceptions</li>
 </ul>
-<h3 id="security_2">Security<a class="headerlink" href="#security_2" title="Permanent link">🔗</a></h3>
+<h3 id="security_3">Security<a class="headerlink" href="#security_3" title="Permanent link">🔗</a></h3>
 <ul>
 <li>fixed issue, where objectives that count things are out of sync with the database. This has also affected BungeeCord support</li>
 </ul>
 <h2 id="1110-2020-01-02">[1.11.0] - 2020-01-02<a class="headerlink" href="#1110-2020-01-02" title="Permanent link">🔗</a></h2>
-<h3 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">🔗</a></h3>
+<h3 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Support Minecraft 1.8 - 1.13.2+</li>
 <li>New Block Selector to select blocks by material and attributes. Can use wildcards as well.</li>
@@ -3439,7 +3604,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Development versions can be full of bugs. If you find any, please report them on GitHub Issues.</li>
 <li>This version is only compatible to Shopkeepers v2.2.0 and above</li>
 </ul>
-<h3 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">🔗</a></h3>
+<h3 id="added_5">Added<a class="headerlink" href="#added_5" title="Permanent link">🔗</a></h3>
 <ul>
 <li>npc holograms above the head that follow the npc (requires HolographicDisplays)</li>
 <li>New 'facing' condition - check if player is facing a direction </li>
@@ -3588,7 +3753,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>"main.yml" is now the only required file in the package. Empty files can be deleted</li>
 <li>Custom settings (i.e. EffectLib particle effects) are moved from "main.yml" to "custom.yml"</li>
 </ul>
-<h3 id="added_5">Added<a class="headerlink" href="#added_5" title="Permanent link">🔗</a></h3>
+<h3 id="added_6">Added<a class="headerlink" href="#added_6" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Compatibility with Shopkeepers ('shopkeeper' event, 'shopamount' condition)</li>
 <li>Compatibility with PlaceholderAPI ('ph' variable and 'betonquest' placeholder)</li>
@@ -3649,7 +3814,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>Updater is now based on GitHub Releases, no longer downloads major updates automatically, it is more configurable and can also download development versions with "/q update --dev"</li>
 </ul>
-<h3 id="added_6">Added<a class="headerlink" href="#added_6" title="Permanent link">🔗</a></h3>
+<h3 id="added_7">Added<a class="headerlink" href="#added_7" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Added console message about the cause of "/q give" errors (tells you what is wrong with item instruction string)</li>
 </ul>
@@ -3682,7 +3847,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Block, Craft and MythicMobs MobKill objectives now correctly save data</li>
 <li>Take event now correctly takes items from inventory, armor slots and backpack</li>
 </ul>
-<h3 id="added_7">Added<a class="headerlink" href="#added_7" title="Permanent link">🔗</a></h3>
+<h3 id="added_8">Added<a class="headerlink" href="#added_8" title="Permanent link">🔗</a></h3>
 <ul>
 <li>New variable system in conversations (check out the documentation)</li>
 <li>More options for journal, including one entry per page and removing date</li>
@@ -3744,7 +3909,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>Conversation can no longer be started multiple times at once if it happens on the same tick</li>
 </ul>
-<h3 id="added_8">Added<a class="headerlink" href="#added_8" title="Permanent link">🔗</a></h3>
+<h3 id="added_9">Added<a class="headerlink" href="#added_9" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Dutch translation by Jack McKalling</li>
 </ul>
@@ -3800,7 +3965,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Fixed database saving/loading issues</li>
 <li>Fixed player options in conversations being white on next lines when using tellraw</li>
 </ul>
-<h3 id="added_9">Added<a class="headerlink" href="#added_9" title="Permanent link">🔗</a></h3>
+<h3 id="added_10">Added<a class="headerlink" href="#added_10" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Quest canceling system</li>
 <li>New inventory GUI for conversations</li>
@@ -3867,7 +4032,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Inverted item condition now behave correctly</li>
 <li>Time condition now checks time correctly</li>
 </ul>
-<h3 id="added_10">Added<a class="headerlink" href="#added_10" title="Permanent link">🔗</a></h3>
+<h3 id="added_11">Added<a class="headerlink" href="#added_11" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Added backpack for storing quest items, which cannot be dropped in any way</li>
 <li>Added database backups</li>
@@ -4054,6 +4219,10 @@ Notes:</li>
           </div>
         </div>
         
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
       </main>
       
         
@@ -4166,10 +4335,12 @@ Notes:</li>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.9849d06a.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.114c1372.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>
+      
+        <script src="../../webCode/js/copyLinkToClipboard.js"></script>
       
     
   
