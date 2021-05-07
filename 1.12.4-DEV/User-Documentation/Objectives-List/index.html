@@ -2022,9 +2022,10 @@ needed to complete the objective.</p>
 The first argument is a potion ID from <em>items.yml</em>. Second argument is amount of potions.
 You can optionally add <code>notify</code> argument to make the objective display progress to players,
 optionally with the notification interval after a colon.</p>
-<p>The brewing will be accepted if the player was the last one to click the ingredient slot in the brewing stand and there
-were no matching potions there already.</p>
-<p>Potion objective has <code>amount</code> and <code>left:</code> properties.</p>
+<p>The brewing will be accepted if the player was the last one add something to the brewing stand and will only count newly
+brewed potions.</p>
+<p>This objective has these three properties: <code>amount</code> for what is already done, <code>left:</code> for what is still left and <code>total</code>
+for what was initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">brew weird_concoction 4 event:add_tag</span>
@@ -2109,7 +2110,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1618133389000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1620404602000' locale='en'></span>
     
   </small>
 </div>
