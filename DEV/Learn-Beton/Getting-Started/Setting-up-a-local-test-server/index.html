@@ -1425,7 +1425,8 @@ going to get quite a lot of files in it. Move the downloaded file here and renam
 Open your text editor and create a file named <code>start.bat</code> (For Linux and Mac: Create a <code>start.sh</code> file instead).
 Place it in the freshly created folder.
 Open it and copy this into it:
-<div class="highlight"><pre><span></span><code>java -Xms1G -Xmx1G -jar paper.jar
+<div class="highlight"><pre><span></span><code>java -Xms1G -Xmx1G -jar paper.jar --nogui
+pause
 </code></pre></div>
 This script tells java to search for a file named <code>paper.jar</code>.
 The <code>1G</code> setting in both the <code>-Xms</code> and <code>-Xmx</code> options is how much RAM you want to give to the server 
@@ -1450,7 +1451,7 @@ The start file now serves as the start button for the server.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1620328412000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1621421171000' locale='en'></span>
     
   </small>
 </div>
