@@ -1501,13 +1501,13 @@ Do that now or just continue with this tutorial.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<p>This is an event instruction. BetonQuest will use it to determine what type of event it is and what exactly should it do. 
-<code>mega</code> is the name, <code>notify</code> is the events type and <code>Hello world!</code> tells the message event what it needs to display.
-In this case, if you run <code>mega</code> event, it will display to you <code>Hello world!</code> message. Now save the file,
+<p>This is an event instruction. BetonQuest will use it to determine what type of event is used and what exactly it should do.
+<code>mega</code> is the event's name, <code>notify</code> is the events type and <code>Hello world!</code> tells the notify event what it needs to display.
+In this case, if you run <code>mega</code> event, it will display <code>Hello world!</code> as a chat message. Now save the file,
 issue <strong>/q reload</strong> command and run the event with <strong>/q e {name} default.mega</strong> command (<code>q</code> is shortcut for <code>quest</code>,
 <code>e</code> is shortcut for <code>event</code>, <code>{name}</code> is your Minecraft name without the brackets, <code>default</code> is the package/quest
-and <code>mega</code> is the name of the event we've just created). It should show you white <code>Hello world!</code> message in the chat.</p>
-<p>Let's create another event, more complicated one. <code>teleport</code> seems complicated enough.
+and <code>mega</code> is the name of the event we've just created). It should show you a <code>Hello world!</code> notification in the chat.</p>
+<p>Let's create another event, a more complicated one. <code>teleport</code> seems complicated enough.
 As you can read in the <a href="../../../User-Documentation/Events-List/">Events list</a>, it needs a single argument, the location.
 Press F3 and check out your current location (it's shown on the left, three numbers, <code>x</code>, <code>y</code> and <code>z</code>).
 Now add in <em>events.yml</em> another line:</p>
@@ -1542,10 +1542,10 @@ of the event, otherwise it will get confusing really fast. Example:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">events.yml</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="c1"># This is a comment btw</span>
 <span class="c1"># Old:</span>
-<span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;message</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
+<span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
 
 <span class="c1"># New:</span>
-<span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;message</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:isAtSpawn&quot;</span>
+<span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:isAtSpawn&quot;</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">conditions.yml</label><div class="tabbed-content">
@@ -1559,16 +1559,16 @@ of the event, otherwise it will get confusing really fast. Example:</p>
 </div>
 <p>Now <code>sayHello</code> event will run only if it meets <code>isAtSpawn</code> condition. Reload the plugin, walk outside of the 5 block
 radius and try to run <code>sayHello</code> event. Puff, nothing happens. It's because you're not meeting <code>isAtSpawn</code> condition.
-Walk into the radius again and try to run that event now. It should happily display the <code>Hello world!</code> message.</p>
-<p>It's very nice that we can add such conditions, but the problem is: what if you wanted to display the message only if  the
+Walk into the radius again and try to run that event now. It should happily display the <code>Hello world!</code> notification.</p>
+<p>It's very nice that we can add such conditions, but the problem is: what if you wanted to display the notification only if the
 player is <em>outside</em> the radius? Don't worry, you don't have to specify <code>inverted_location</code> condition or anything like that.
 You can simply negate the condition. Negation makes the condition behave in the exact opposite way, in this case it
 <code>isAtSpawn</code> will be met only if the player is outside of the 5 block radius, and it won't be met if he's inside.
 Open the <em>events.yml</em> and add an exclamation mark before the <code>isAtSpawn</code> condition, so it looks like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;message</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:!isAtSpawn&quot;</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:!isAtSpawn&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<p>This means "display message <code>Hello world!</code> if the <code>isAtSpawn</code> condition is <em>not met</em>". Save the file, reload the plugin
+<p>This means "display the <code>Hello world!</code> notification if the <code>isAtSpawn</code> condition is <em>not met</em>". Save the file, reload the plugin
 and run the event inside and outside of the radius to see how it works.</p>
 <h2 id="basic-tags">Basic tags<a class="headerlink" href="#basic-tags" title="Permanent link">🔗</a></h2>
 <p>Now that you know how to use events and conditions I'll show you what tags are. Create new events:</p>
@@ -1790,7 +1790,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1610966459000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1621851972000' locale='en'></span>
     
   </small>
 </div>

@@ -831,8 +831,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#each-day-different-quest-same-for-every-player" class="md-nav__link">
-    Each day different quest (same for every player)
+  <a href="#the-same-random-daily-quest-for-every-player" class="md-nav__link">
+    The same random daily quest for every player
   </a>
   
 </li>
@@ -1638,8 +1638,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#each-day-different-quest-same-for-every-player" class="md-nav__link">
-    Each day different quest (same for every player)
+  <a href="#the-same-random-daily-quest-for-every-player" class="md-nav__link">
+    The same random daily quest for every player
   </a>
   
 </li>
@@ -1805,8 +1805,13 @@ Best practise is to define all options like this: <code>myOptionName: "myData"</
 <p>Since <code>folder</code> event can run <code>tag</code> events even for offline players you can create races. Create <code>location</code> objective where you want the finish line to be and condition it with negated "race_failed" tag (or similar). It will mean that "if the player has not failed the race, he can win it by reaching the location". Now when the race starts fire <code>folder</code> event with the amount of time you want to give your players to complete the race. This event should set "race_failed" tag. If the player reaches the location before this tag is set, he will fire all events in that <code>location</code> objective, but if the time has passed, the objective will not be completed. You can figure the rest out for yourself.</p>
 <h2 id="random-daily-quests">Random daily quests<a class="headerlink" href="#random-daily-quests" title="Permanent link">🔗</a></h2>
 <p>Starting the random quest must be blocked with a special tag. If there is no such tag, the conversation option should appear. Create a few quests, each of them started with single <code>folder</code> event (they <strong>must</strong> be started by single event!). Now add those events to another <code>folder</code> event and make it <code>random:1</code>. At the end of every quest add <code>delay</code> which will reset the special blocking tag. Now add that <code>folder</code> event to the conversation option. When the player chooses it he will start one random quest, and the conversation option will become available after defined in <code>delay</code> objective time after completing the quest.</p>
-<h2 id="each-day-different-quest-same-for-every-player">Each day different quest (same for every player)<a class="headerlink" href="#each-day-different-quest-same-for-every-player" title="Permanent link">🔗</a></h2>
-<p>To do this use something called "<a href="../../User-Documentation/Reference/#static-events">Static event</a>". Using the static event run <code>folder</code> event every day at some late hour (for example 4am). The <code>folder</code> event should be <code>random:1</code> and contain several different <code>setblock</code> events. These events will set some specific block to several different material types (for example dirt, stone, wood, sand etc). Now when the player starts the conversation and asks about the daily quest the NPC should check (using <code>testforblock</code> condition) which type of block is currently set and give the player different quest, depending on the block type.</p>
+<h2 id="the-same-random-daily-quest-for-every-player">The same random daily quest for every player<a class="headerlink" href="#the-same-random-daily-quest-for-every-player" title="Permanent link">🔗</a></h2>
+<p>To do this use something called "<a href="../../User-Documentation/Reference/#static-events">Static event</a>".
+Run a static <code>folder</code> event every day at some late hour (for example 4am).
+The <code>folder</code> event should be <code>random:1</code> and contain several different <code>globaltag</code> events.
+These events will set a specific tag. Now when the player starts the conversation and asks about the daily quest the NPC
+should check (using the <code>globaltag</code> condition) which tag is currently set and give the player different quests based on that.
+Of course, the static folder event also needs to remove the the current tag before setting a new one.</p>
 <h2 id="make-the-npc-react-randomly">Make the NPC react randomly<a class="headerlink" href="#make-the-npc-react-randomly" title="Permanent link">🔗</a></h2>
 <p>Imagine you want to lie to NPC and he has 15% chance of believing you completely, 35% of being suspicious and 50% of not believing at all. The common denominator for those percentages is 20, so we can write it as 3/20, 7/20 and 10/20. The NPC will check options one after another until it finds one which meets all conditions. We will use <code>random</code> condition with our options. The first one will have <code>3-20</code> chance (that's the format used by <code>random</code> condition). If this condition fails, the NPC will check next option. But it won't be <code>7-20</code>, because we already "used" 3 of 20. If you wrote it like that, the chance would be too low. That's why it will be <code>7-17</code>. The third option should have <code>10-10</code> (because <code>17 - 7 = 10</code> and 50% is 10/20), but as you can see it will always be true. It's because we want the last option to be shown if both previous fail. You don't have to add the last condition at all.</p>
 <h2 id="quest-gui">Quest GUI<a class="headerlink" href="#quest-gui" title="Permanent link">🔗</a></h2>
@@ -1819,7 +1824,7 @@ Best practise is to define all options like this: <code>myOptionName: "myData"</
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1617569331000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1621851972000' locale='en'></span>
     
   </small>
 </div>
