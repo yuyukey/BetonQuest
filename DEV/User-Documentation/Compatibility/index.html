@@ -4452,13 +4452,21 @@ You can also specify the <code>notify</code> keyword to display a message to the
 </td></tr></table></p>
 <h4 id="take-mmoitem-mmoitemtake">Take MMOItem: <code>mmoitemtake</code><a class="headerlink" href="#take-mmoitem-mmoitemtake" title="Permanent link">🔗</a></h4>
 <p>Removes the specified item from the players inventory. Optional arguments are an amount and <code>notify</code> to send a notification
-to the player.
-Amount can be a variable.
+to the player.</p>
+<p>Which inventory types are checked is defined by the <code>invOrder:</code>
+option. You can use <code>Backpack</code>, <code>Inventory</code> and <code>Armor</code> there. One after another will be checked if multiple types are defined.
+The backpack will not work before 2.0's item rework since the current item system does not safe custom NBT data.</p>
+<p>You can also specify <code>notify</code> keyword to display a simple message to the player about loosing items.</p>
+<p>Amount can be a variable.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemtake SWORD STEEL_SWORD</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mmoitemtake SWORD STEEL_SWORD</span>
 <span class="l l-Scalar l-Scalar-Plain">mmoitemtake SWORD STEEL_SWORD notify</span>
-<span class="l l-Scalar l-Scalar-Plain">mmoitemtake CONSUMABLE HEALTH_POTION 5</span>
+<span class="l l-Scalar l-Scalar-Plain">mmoitemtake CONSUMABLE HEALTH_POTION amount:5</span>
+<span class="l l-Scalar l-Scalar-Plain">mmoitemtake CONSUMABLE BAKED_APPLES amount:2 invOrder:Backpack,Inventory</span>
+<span class="l l-Scalar l-Scalar-Plain">mmoitemtake ARMOR KINGS_CHESTPLATE invOrder:Armor,Backpack</span>
 </code></pre></div>
 </td></tr></table></p>
 <h2 id="mythicmobs"><a href="http://dev.bukkit.org/bukkit-plugins/mythicmobs/">MythicMobs</a><a class="headerlink" href="#mythicmobs" title="Permanent link">🔗</a></h2>
@@ -4752,7 +4760,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1619894321000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1621672481000' locale='en'></span>
     
   </small>
 </div>

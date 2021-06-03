@@ -2027,7 +2027,8 @@
                 
                 <h1 id="events-list">Events List<a class="headerlink" href="#events-list" title="Permanent link">🔗</a></h1>
 <h2 id="cancel-quest-cancel">Cancel quest: <code>cancel</code><a class="headerlink" href="#cancel-quest-cancel" title="Permanent link">🔗</a></h2>
-<p>This event works in the same way as a <a href="/User-Documentation/Reference/#canceling-quests">quest canceler in the backpack</a>. Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in <em>main.yml</em></p>
+<p>This event works in the same way as a <a href="/User-Documentation/Reference/#canceling-quests">quest canceler in the backpack</a>.
+Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in <em>main.yml</em></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cancel wood</span>
@@ -2450,13 +2451,21 @@ Next goes the tag name. It can't contain spaces (though <code>_</code> is fine).
 </code></pre></div>
 </div>
 <h2 id="take-items-take">Take Items: <code>take</code><a class="headerlink" href="#take-items-take" title="Permanent link">🔗</a></h2>
-<p>Removes items from player’s inventory or backpack (in that order). If the items aren't quest items don't use <code>take</code> event with player options in conversations!
+<p>Removes items from the player’s inventory, armor slots or backpack.
+The items itself must be defined in the items.yml, optionally with an amount after a colon.
+Which inventory types are checked is defined by the <code>invOrder:</code>
+option. You can use <code>Backpack</code>, <code>Inventory</code> and <code>Armor</code> there. One after another will be checked if multiple types are defined.</p>
+<p>Note: If the items aren't quest items don't use <code>take</code>event with player options in conversations!
 The player can drop items before selecting the option and pickup them after the event fires.
-Validate it on NPC’s reaction! Defining instruction string is the same as in give event.
-You can also specify <code>notify</code> keyword to display a simple message to the player about loosing items.</p>
+Validate it on the NPC’s reaction!</p>
+<p>You can also specify <code>notify</code> keyword to display a simple message to the player about loosing items.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">take emerald:120,sword</span>
+<span class="l l-Scalar l-Scalar-Plain">take nugget:6 notify</span>
+<span class="l l-Scalar l-Scalar-Plain">take wand notify invOrder:Backpack</span>
+<span class="l l-Scalar l-Scalar-Plain">take money:50 invOrder:Backpack,Inventory</span>
+<span class="l l-Scalar l-Scalar-Plain">take armor invOrder:Armor,Inventory,Backpack</span>
 </code></pre></div>
 </div>
 <h2 id="time-time">Time: <code>time</code><a class="headerlink" href="#time-time" title="Permanent link">🔗</a></h2>
@@ -2510,7 +2519,7 @@ storing variables.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1618148836000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1621672481000' locale='en'></span>
     
   </small>
 </div>
