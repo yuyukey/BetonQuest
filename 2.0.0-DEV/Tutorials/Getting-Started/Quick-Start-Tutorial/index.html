@@ -1601,13 +1601,13 @@ Now it will show <strong>true</strong>.</p>
 talks with an NPC, and if the NPC sees that tag next time they talk, he will tell something different, like "welcome back".</p>
 <h2 id="creating-objectives">Creating objectives<a class="headerlink" href="#creating-objectives" title="Permanent link">🔗</a></h2>
 <p>Time to write some objectives! Open the <em>objectives.yml</em> file and add a new line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">kill_creepers</span><span class="p">:</span> <span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">CREEPER</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">events:bar</span><span class="nv"> </span><span class="s">conditions:has_beton_tag&quot;</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">kill_creepers</span><span class="p">:</span> <span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">CREEPER</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">events:tp</span><span class="nv"> </span><span class="s">conditions:has_beton_tag&quot;</span>
 </code></pre></div>
 </td></tr></table>
 <p>Now let's analyze it. <code>kill_creepers</code> is a name of the objective. <code>mobkill</code> is a type. In this case, to complete the
 objective the player will have to kill some mobs. <code>creeper</code> is a type of the mob, so we know that these mobs will have
-to be Creepers. <code>3</code> is the amount. It means that the player has to kill 3 Creepers. <code>events:bar</code> means than once the
-player kills those Creepers, the <code>bar</code> event will be run (it's the teleportation event, but we renamed it).
+to be Creepers. <code>3</code> is the amount. It means that the player has to kill 3 Creepers. <code>events:tp</code> means than once the
+player kills those Creepers, the <code>tp</code> event will be run.
 <code>conditions:has_beton_tag</code> tells us that the player will have to have <code>beton</code> tag while killing Creepers to complete the objective.
 Save it, reload the plugin and issue <strong>/q o {name} add default.kill_creepers</strong> command (<code>o</code> is for <code>objective</code>, <code>add</code>
 tells the plugin to add an objective).</p>
@@ -1615,7 +1615,7 @@ tells the plugin to add an objective).</p>
 objectives. It should show <code>default.kill_creepers</code>. Alright, remove (yes, remove!) the <code>beton</code> tag from you and find
 some Creepers to kill. Once you killes 3 of them you will notice that nothing happened. It's because <code>has_beton_tag</code>
 condtion is not met, so the objective does not count your progress. Now add the tag again and kill another Creepers.
-When the third is dead you should be teleported to the location defined in <code>bar</code> event.</p>
+When the third is dead you should be teleported to the location defined in <code>tp</code> event.</p>
 <p>Congratulations, now you know how to use objectives. You should experiment with other types now, since objectives will
 be used very often in your quests. Once you're done check out the <em>Writing your first conversation</em> chapter to use your
 knowledge to write your fisrt conversation.</p>
@@ -1792,7 +1792,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1625129633000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1628714103000' locale='en'></span>
     
   </small>
 </div>

@@ -1841,7 +1841,10 @@
 <h2 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">🔗</a></h2>
 <p>All the content you create is organized into packages. Each package must contain the <em>main.yml</em> file with package-specific settings. Additionally it can have <em>conversations</em> directory with conversation files, <em>events.yml</em>, <em>conditions.yml</em>, <em>objectives.yml</em>, <em>items.yml</em> and <em>journal.yml</em>. The default package is called simply "default". It is always present, and if you delete it, it will be regenerated with a sample quest.</p>
 <p>If you want, you can simply ignore the existence of packages and write all your quests in the default one. You will however come to a point, when your files contain hundreds of lines and it gets a little bit confusing. That's why it's better to split your quests into multiple packages, for example "main" for the quests in the main city, "dungeon" for some interesting dungeon story etc.</p>
-<p>Each package can be disabled/enabled in the <em>main.yml</em> file, by setting <code>enabled</code> to <code>true</code> or <code>false</code>.</p>
+<p>Each package can be disabled/enabled in the <em>main.yml</em> file, by setting <code>enabled</code> to <code>true</code> or <code>false</code>.
+<div class="highlight"><pre><span></span><code><span class="c1">#Add this to the package main.yml</span>
+<span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div></p>
 <p>It would be limiting if you couldn't interact between packages. That's why you can always access stuff from other packages by prefixing its name with package name. If you're writing a conversation in package <code>village</code> and you want to fire an event <code>reward</code> from package <code>beton</code>, you simply name the event as <code>beton.reward</code>. The plugin will search for <code>reward</code> in <code>beton</code> package instead of the one in which the conversation is defined. All events, conditions, objectives, items and conversations behave this way. Note that you can't cross-reference journal entries!</p>
 <p>Packages can be nested together in folders. A folder can either contain packages or be a package, never both. The name of such nested package is prefixed by names of all folders, separated with a dash. This directory tree (<em>main.yml</em> represents a package):</p>
 <div class="highlight"><pre><span></span><code>    BetonQuest/
@@ -2216,7 +2219,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1625129633000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1628714103000' locale='en'></span>
     
   </small>
 </div>
