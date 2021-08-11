@@ -11,7 +11,7 @@
         <meta name="author" content="BetonQuest Organisation">
       
       
-        <link rel="canonical" href="https://betonquest.github.io/BetonQuest/Participate/Code/Versioning/">
+        <link rel="canonical" href="https://betonquest.github.io/BetonQuest/Participate/Code/Versioning-and-Releasing/">
       
       
         
@@ -21,7 +21,7 @@
     
     
       
-        <title>🏷️ Versioning - BetonQuest</title>
+        <title>🏭 Versioning & Releasing - BetonQuest</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#betonquest-versioning" class="md-skip">
+        <a href="#versioning-and-releasing" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷️ Versioning
+              🏭 Versioning & Releasing
             
           </span>
         </div>
@@ -1208,20 +1208,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../Releasing/" class="md-nav__link">
-        🏭 Releasing
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -1230,20 +1216,24 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          🏷️ Versioning
+          🏭 Versioning & Releasing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        🏷️ Versioning
+        🏭 Versioning & Releasing
       </a>
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1253,9 +1243,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#betonquest-versioning" class="md-nav__link">
-    BetonQuest Versioning
+  <a href="#versioning" class="md-nav__link">
+    Versioning
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releasing" class="md-nav__link">
+    Releasing
+  </a>
+  
+    <nav class="md-nav" aria-label="Releasing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-prerequisites" class="md-nav__link">
+    Step 1: Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-build-a-release" class="md-nav__link">
+    Step 2: Build a release
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1360,6 +1377,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1368,9 +1387,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#betonquest-versioning" class="md-nav__link">
-    BetonQuest Versioning
+  <a href="#versioning" class="md-nav__link">
+    Versioning
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releasing" class="md-nav__link">
+    Releasing
+  </a>
+  
+    <nav class="md-nav" aria-label="Releasing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-prerequisites" class="md-nav__link">
+    Step 1: Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-build-a-release" class="md-nav__link">
+    Step 2: Build a release
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1386,27 +1432,31 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/documentation/Participate/Code/Versioning.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/documentation/Participate/Code/Versioning-and-Releasing.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>🏷️ Versioning</h1>
-                
-                <h2 id="betonquest-versioning">BetonQuest Versioning<a class="headerlink" href="#betonquest-versioning" title="Permanent link">🔗</a></h2>
-<p>These are the build types that are used in the build pipeline:<br />
-1. Version tags <code>v*</code> (In the official repository)<br />
-2. Commits to <code>master</code> or branches called <code>master_v*</code> (In the official repository)<br />
-3. Commits to other branches (or repos) and Pull requests<br />
-4. Local builds  </p>
-<p>These result in a versioning like this:<br />
-1. 1.12.0<br />
-2. 1.12.0-DEV-1<br />
-3. 1.12.0-DEV-ARTIFACT-5522<br />
-4. 1.12.0-DEV-UNOFFICAL  </p>
-<p>The output jar does not contain the version in its name due to limits with the Spigot updater.
-Another reason is to make it clear which one of the buildpipeline output jars is the correct one for users.</p>
-<p>Therefore, the runnable jar file is <code>BetonQuest.jar</code>. The version can only be seen Ingame by using /q version.</p>
+                <h1 id="versioning-and-releasing">Versioning and Releasing<a class="headerlink" href="#versioning-and-releasing" title="Permanent link">🔗</a></h1>
+<h2 id="versioning">Versioning<a class="headerlink" href="#versioning" title="Permanent link">🔗</a></h2>
+<p>BetonQuest follows the <a href="https://semver.org/">Semantic Versioning</a> specification.</p>
+<p>We adapt the specification with these version types:
+* <code>1.12.0</code> for git version tags <code>v*</code> (in the official repository)
+* <code>1.12.0-DEV-1</code> for commits to <code>master</code> or branches called <code>master_v*</code> (in the official repository)
+* <code>1.12.0-DEV-ARTIFACT-5522</code> for commits to other branches (or repos) and Pull requests
+* <code>1.12.0-DEV-UNOFFICAL</code> for local builds</p>
+<p>Only use the three digits(Major, Minor, Patch) to specify versions in files like the pom.xml. All suffixes are set
+by the build-pipeline.</p>
+<p>The officially distributed jar does not contain the version in its name due to limits with the Spigot updater.
+Therefore, it's named <code>BetonQuest.jar</code>. The version can only be seen ingame by using <code>/q version</code>.</p>
+<h2 id="releasing">Releasing<a class="headerlink" href="#releasing" title="Permanent link">🔗</a></h2>
+<p>This project has a custom build-pipeline that utilizes GitHub('s) actions.</p>
+<h3 id="step-1-prerequisites">Step 1: Prerequisites<a class="headerlink" href="#step-1-prerequisites" title="Permanent link">🔗</a></h3>
+<p>Check out the remote branch or commit, that you want to use for the release.
+Make sure that the current version in all the files (pom.xml etc.) is the correct version that should be used for the release.</p>
+<h3 id="step-2-build-a-release">Step 2: Build a release<a class="headerlink" href="#step-2-build-a-release" title="Permanent link">🔗</a></h3>
+<p>Run the script <code>./.github/scripts/release.sh</code>. It leads you through the creation of a release.
+If you run into errors you may need to do the script's release steps manually. </p>
                 
                   
                     
@@ -1415,7 +1465,7 @@ Another reason is to make it clear which one of the buildpipeline output jars is
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1625129633000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1628632443000' locale='en'></span>
     
   </small>
 </div>
@@ -1442,7 +1492,7 @@ Another reason is to make it clear which one of the buildpipeline output jars is
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../Releasing/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../Contributing-Guidelines/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1451,7 +1501,7 @@ Another reason is to make it clear which one of the buildpipeline output jars is
               <span class="md-footer__direction">
                 Previous
               </span>
-              🏭 Releasing
+              📚 Contributing Guidelines
             </div>
           </div>
         </a>
