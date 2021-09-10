@@ -1059,6 +1059,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../SetupIDE/" class="md-nav__link">
+        📰 Setup IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1068,18 +1082,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_2">
+        <label class="md-nav__link" for="__nav_5_3">
           Code
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Code" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_2">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
@@ -1188,6 +1202,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#add-new-repositories-to-mavens-settingsxml" class="md-nav__link">
+    Add new repositories to Maven's settings.xml
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1239,36 +1260,22 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" data-md-state="indeterminate" type="checkbox" id="__nav_5_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_3">
+        <label class="md-nav__link" for="__nav_5_4">
           Docs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Docs" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_3">
+        <label class="md-nav__title" for="__nav_5_4">
           <span class="md-nav__icon md-icon"></span>
           Docs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Docs/Setup/" class="md-nav__link">
-        🔧 Setup
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -1387,6 +1394,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#add-new-repositories-to-mavens-settingsxml" class="md-nav__link">
+    Add new repositories to Maven's settings.xml
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1416,12 +1430,13 @@
                 
                 
                 <h1 id="contributing-guidelines">Contributing Guidelines<a class="headerlink" href="#contributing-guidelines" title="Permanent link">🔗</a></h1>
-<p>The BetonQuest organisation recommends <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ Community Edition</a> as the preferred IDE.
-This makes it possible to ship a complete project setup that ensures a consistent code quality and style.
-The project has been setup using maven and will build immediately on your device without any extra work (like manually adding dependencies).</p>
+<p>The BetonQuest organisation recommends <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ Community
+Edition</a> as the preferred IDE. This makes it possible to ship a complete project setup that ensures a consistent code
+quality and style. The project has been setup using maven and will build immediately on your device without any extra
+work (like manually adding dependencies).</p>
 <p>Everyone that wants to use another IDE can do so but has to ensure that their code meets the guidelines.
-<strong>Notice that everything that is prescribed in the Coding Guidelines will be checked by the Build-Pipeline.
-The Build-Pipeline will not accept commits that fail to respect the guidelines.</strong></p>
+<strong>Notice that everything that is prescribed in the Coding Guidelines will be checked by the Build-Pipeline. The
+Build-Pipeline will not accept commits that fail to respect the guidelines.</strong></p>
 <h2 id="walkthrough-of-the-guidelines">Walkthrough of the Guidelines<a class="headerlink" href="#walkthrough-of-the-guidelines" title="Permanent link">🔗</a></h2>
 <h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">🔗</a></h3>
 <p>You can clone the project from our GitHub repository:</p>
@@ -1429,28 +1444,33 @@ The Build-Pipeline will not accept commits that fail to respect the guidelines.<
 </code></pre></div>
 <h3 id="get-ready-to-create-a-pull-request">Get ready to create a Pull Request!<a class="headerlink" href="#get-ready-to-create-a-pull-request" title="Permanent link">🔗</a></h3>
 <h4 id="test-your-changes">Test your changes!<a class="headerlink" href="#test-your-changes" title="Permanent link">🔗</a></h4>
-<p>Please ensure your changes actually work and haven't introduced any bugs.
-Therefore, you should compile the plugin and run it on a local 1.13+ test server.
-Please install any related dependencies! If you changed code related to MySQL then setup a MySQL on your machine and test if BetonQuest still saves its data correctly. </p>
+<p>Please ensure your changes actually work and haven't introduced any bugs. Therefore, you should compile the plugin and
+run it on a local 1.13+ test server. Please install any related dependencies! If you changed code related to MySQL then
+setup a MySQL on your machine and test if BetonQuest still saves its data correctly.</p>
 <h4 id="does-your-change-require-updates-to-users-configs">Does your change require updates to users configs?<a class="headerlink" href="#does-your-change-require-updates-to-users-configs" title="Permanent link">🔗</a></h4>
-<p>This would be the case if you removed arguments or renamed e.g. an event.
-You then have to write code to update any related configs to your new syntax.
-Search for the ConfigUpdater class in the project to see how its done.</p>
+<p>This would be the case if you removed arguments or renamed e.g. an event. You then have to write code to update any
+related configs to your new syntax. Search for the ConfigUpdater class in the project to see how its done.</p>
 <h4 id="validate-your-codes-quality">Validate your codes quality<a class="headerlink" href="#validate-your-codes-quality" title="Permanent link">🔗</a></h4>
-<p>Please check you code with PMD. IntelliJ's plugin store offer the <em>QAPlug</em> &amp; <em>QAPlug - PMD</em> plugins for free.
-We provide our own ruleset for PMD (<em>config/pmd-ruleset.xml</em>) that needs to be imported in QAPlug. 
-To do so open IntelliJ's settings and navigate to  QAPlug -&gt; Coding Rules. Click the plus and select Project Profile.
-Now you just need to tick "Import Profile" to add our ruleset (<em>config/pmd-ruleset.xml</em>).</p>
+<p>Please check you code with PMD. IntelliJ's plugin store offer the <em>QAPlug</em> &amp; <em>QAPlug - PMD</em> plugins for free. We provide
+our own ruleset for PMD (<em>config/pmd-ruleset.xml</em>) that needs to be imported in QAPlug. To do so open IntelliJ's
+settings and navigate to QAPlug -&gt; Coding Rules. Click the plus and select Project Profile. Now you just need to tick "
+Import Profile" to add our ruleset (<em>config/pmd-ruleset.xml</em>).</p>
 <p>Please also remove any TODO's along with commented out code.</p>
 <p>You can run <code>mvn verify</code> locally to ensure that you meet (nearly) all conditions before creating a PR.</p>
 <h4 id="update-the-changelog">Update the Changelog<a class="headerlink" href="#update-the-changelog" title="Permanent link">🔗</a></h4>
 <p>You need to add your changes to the <em>Changelog.md</em> file that can be found in the projects root folder.</p>
 <h4 id="update-the-documentation">Update the documentation<a class="headerlink" href="#update-the-documentation" title="Permanent link">🔗</a></h4>
-<p>You also need to document changes or additions to the plugins feature set in our documentation. Please notice that the documentation 
-also has <a href="../../Docs/Guidelines/">it's own guidelines</a>.</p>
+<p>You also need to document changes or additions to the plugins feature set in our documentation. Please notice that the
+documentation also has <a href="../../Docs/Guidelines/">it's own guidelines</a>.</p>
 <h4 id="clean-the-commit-history">Clean the commit history<a class="headerlink" href="#clean-the-commit-history" title="Permanent link">🔗</a></h4>
-<p>You need to have a clean commit history in order to get you PR accepted.
-Check out this <a href="https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d" target="_blank">guide</a> if you don't know how to do so.</p>
+<p>You need to have a clean commit history in order to get you PR accepted. Check out
+this <a href="https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d" target="_blank">
+guide</a> if you don't know how to do so.</p>
+<h4 id="add-new-repositories-to-mavens-settingsxml">Add new repositories to Maven's settings.xml<a class="headerlink" href="#add-new-repositories-to-mavens-settingsxml" title="Permanent link">🔗</a></h4>
+<p>New repositories need to be added in this format: <code>betonquest-&lt;repoName&gt;-repo</code>.
+Additionally, you need to add that repositories ID to Maven's <code>settings.xml</code> configuration.
+Please see <a href="../../SetupIDE/#build-speed-up">this guide</a> for an example configuration.</p>
+<p>Make sure to add the new repository ID to the linked guide too!#</p>
                 
                   
                     
@@ -1459,7 +1479,7 @@ Check out this <a href="https://medium.com/@catalinaturlea/clean-git-history-a-s
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-07-01T08:53:53+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-07-01</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-09-10T19:35:54+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-09-10</span>
       
     
   </small>
@@ -1490,7 +1510,7 @@ Check out this <a href="https://medium.com/@catalinaturlea/clean-git-history-a-s
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../Overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🤝 Overview" rel="prev">
+        <a href="../../SetupIDE/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📰 Setup IDE" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1499,7 +1519,7 @@ Check out this <a href="https://medium.com/@catalinaturlea/clean-git-history-a-s
               <span class="md-footer__direction">
                 Previous
               </span>
-              🤝 Overview
+              📰 Setup IDE
             </div>
           </div>
         </a>
