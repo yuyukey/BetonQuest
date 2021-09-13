@@ -1357,6 +1357,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#luckperms" class="md-nav__link">
+    LuckPerms
+  </a>
+  
+    <nav class="md-nav" aria-label="LuckPerms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context-integration" class="md-nav__link">
+    Context Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#magic" class="md-nav__link">
     Magic
   </a>
@@ -3126,6 +3146,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#luckperms" class="md-nav__link">
+    LuckPerms
+  </a>
+  
+    <nav class="md-nav" aria-label="LuckPerms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context-integration" class="md-nav__link">
+    Context Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#magic" class="md-nav__link">
     Magic
   </a>
@@ -3930,10 +3970,10 @@
                 
                 
                 <h1 id="compatibility">Compatibility<a class="headerlink" href="#compatibility" title="Permanent link">🔗</a></h1>
-<p><strong>In total 29 plugins have dedicated support for BetonQuest.</strong></p>
+<p><strong>In total 30 plugins have dedicated support for BetonQuest.</strong></p>
 <p>BetonQuest hooks into other plugins by itself to provide more events, conditions and objectives or other features. 
-24 plugins are supported right now:  <br />
-<em>AureliumSkills, Brewery, Citizens, Denizen, EffectLib, Heroes, HolographicDisplays, JobsReborn, Magic,
+25 plugins are supported right now:  <br />
+<em>AureliumSkills, Brewery, Citizens, Denizen, EffectLib, Heroes, HolographicDisplays, JobsReborn, LuckPerms, Magic,
 mcMMO, MythicLib, MMOCore, MMOItems, MythicMobs, PlaceholderAPI, ProtocolLib, Quests,
 Shopkeepers, SkillAPI, Skript, Vault, WorldEdit, FastAsyncWorldEdit and WorldGuard.</em></p>
 <p>Some plugins also hook into BetonQuest and provide support by themselves:<br />
@@ -4288,6 +4328,35 @@ be displayed to the player for which you ran the event.</p>
 the player advances the objective, optionally with the notification interval after a colon.</p>
 <p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of money already received,
 <code>left</code> is the amount of money still needed to receive and <code>total</code> is the amount of money initially required.</p>
+<h2 id="luckperms"><a href="https://luckperms.net/">LuckPerms</a><a class="headerlink" href="#luckperms" title="Permanent link">🔗</a></h2>
+<h3 id="context-integration">Context Integration<a class="headerlink" href="#context-integration" title="Permanent link">🔗</a></h3>
+<p>Any BetonQuest tag (global and per-player) can be used as a LuckPerms context. This means that a player needs the specified tag for a permission
+to be true - this removes the need for tons of <code>permission add ...</code> events as you can hook your existing
+quest progress tags right into LuckPerms permission
+<a href="https://luckperms.net/wiki/Context" target="_blank">contexts</a>.
+The syntax is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>betonquest:tag</td>
+<td>packageName.tagName</td>
+</tr>
+<tr>
+<td>betonquest:tag</td>
+<td>default.questCompleted</td>
+</tr>
+</tbody>
+</table>
+<p>Autocompletion only works in chat and for global tags.
+Check the 
+<a href="https://luckperms.net/wiki/Context" target="_blank">Luck Perms documentation</a>
+for an in-depth explanation on what contexts are and how to add them to permission.</p>
 <h2 id="magic"><a href="http://dev.bukkit.org/bukkit-plugins/magic/">Magic</a><a class="headerlink" href="#magic" title="Permanent link">🔗</a></h2>
 <h3 id="conditions_5">Conditions<a class="headerlink" href="#conditions_5" title="Permanent link">🔗</a></h3>
 <h4 id="wand-wand">Wand: <code>wand</code><a class="headerlink" href="#wand-wand" title="Permanent link">🔗</a></h4>
@@ -4781,7 +4850,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-09-08T19:09:52+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-09-08</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-09-13T10:09:53+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-09-13</span>
       
     
   </small>
