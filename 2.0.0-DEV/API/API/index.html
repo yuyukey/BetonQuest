@@ -1456,9 +1456,17 @@ If you plan on doing something with this API please keep in mind that you will n
 <p>If you want your event to be <em>persistent</em>, you need to set <code>super.persistent</code> variable to <code>true</code> in the constructor. This will make BetonQuest run this event even if the <code>playerID</code> points to an offline player, so prepare your code for that.</p>
 <p>If you want your event to be <em>static</em>, you need to set <code>super.staticness</code> variable to <code>true</code> in the constructor. This will allow BetonQuest to run this event with <code>playerID</code> set to <code>null</code>, so prepare your code for that.</p>
 <p>When you'll finish your class you need to invoke <code>registerEvents(String name, Class&lt;? extends QuestEvent&gt; class)</code> from BetonQuest instance (which you can get using <code>BetonQuest.getInstance()</code> static method). The name for your event will be used in instruction strings (such as "journal" for journal event). The class argument is the <code>Class</code> object of your event. You can get it using <code>YourEvent.class</code>. That's it, you created an event. Don't forget to check it for bugs!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>IDE's typically autocomplete the wrong constructor. A correct constructor takes a single <code>Instruction</code> argument.</p>
+</div>
 <h2 id="writing-conditions">Writing conditions<a class="headerlink" href="#writing-conditions" title="Permanent link">🔗</a></h2>
 <p>Writing conditions is easy too. They must extend <code>Condition</code> and override <code>execute(String playerID)</code> method, which should return <code>true</code> or <code>false</code>, depending on if the condition was met. You register them using <code>registerConditions(String name, Class&lt;? extends Condition)</code> method from BetonQuest instance as well. The rest is almost the same, you're defining the constructor which will parse the <code>Instruction</code> object and overriding <code>execute(String playerID)</code> method to check if the player meets the condition. Don't worry about inverting it, as it's automatically done by BetonQuest.</p>
 <p>Conditions are always getting an online player in the <code>execute(String playerID)</code> method, so you don't need to check that manually.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>IDE's typically autocomplete the wrong constructor. A correct constructor takes a single <code>Instruction</code> argument.</p>
+</div>
 <h2 id="writing-objectives">Writing objectives<a class="headerlink" href="#writing-objectives" title="Permanent link">🔗</a></h2>
 <p>Objectives are more complicated because they use event handlers and they must store players' data. They extend <code>Objective</code> class. As always, you need to extract all data from supplied <code>Instruction</code> object in the constructor. Don't register listeners in the constructor!</p>
 <p>If your objective handles changing data (like amount of mobs left to kill) you should create a class extending <code>ObjectiveData</code>. For example <code>block</code> objective does need to store amount of blocks left to place/break, and it does that using "BlockData" class. In the constructor it receives three strings: data string, ID of the player and ID of the objective. The latter two are used by BetonQuest to correctly save and load the former one from the database.</p>
@@ -1469,6 +1477,10 @@ If you plan on doing something with this API please keep in mind that you will n
 <p><code>start()</code> and <code>stop()</code> methods must start objective's listeners and stop them accordingly. It's because the plugin turns the objective's listeners off if there are no players having it active. Here usually you will register/unregister listeners, but some objectives may be different. For example <code>delay</code> objective starts and cancels a runnable, instead of using listeners.</p>
 <p>If your objective has some properties (used in variables) you should override the <code>String getProperty(String property, String playerID)</code> method. At runtime, if anyone uses <code>%objective.yourObjective.theProperty%</code> variable, BetonQuest will call that method with <code>theProperty</code> keyword as the first argument. Using it you should parse the data of the objective and return it as a String. If the supplied property name is incorrect or there was an error during getting the value, return an empty String and optionally log an error (<code>LogUtils.getLogger().log(...)</code>).</p>
 <p>Objectives are registered the same way as conditions and events, using <code>registerObjective(String name, Class&lt;? extends Objective&gt;)</code> method.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>IDE's typically autocomplete the wrong constructor. A correct constructor takes a single <code>Instruction</code> argument.</p>
+</div>
 <h2 id="reading-instruction-object">Reading <code>Instruction</code> object<a class="headerlink" href="#reading-instruction-object" title="Permanent link">🔗</a></h2>
 <p>The <code>Instruction</code> object parses the instruction string defined by the user and splits it into arguments. You can ask it for required arguments one by one with <code>next()</code> method or a parser method like <code>getQuestItem()</code>. Required arguments are the ones specified at the very beginning of an instruction string, for example <code>add someTag</code> in <code>tag</code> event. It will automaticly throw <code>InstructionParseException</code> for you if it encounters an error, for example when there were no more arguments in user's instruction or it can't parse the argument to the type you asked for.</p>
 <p>You can also ask for optional arguments: if the instruction string contains argument <code>arg:something</code> and you ask for optional <code>arg</code>, it will give you <code>something</code>. If there is no optional argument, it will return <code>null</code>. Don't worry about passing that <code>null</code> to parser methods like <code>getLocation(String)</code>, they won't throw an error, they'll simply return that <code>null</code>.</p>
@@ -1506,7 +1518,7 @@ If you plan on doing something with this API please keep in mind that you will n
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-07-28T08:22:40+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-07-28</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-03T19:46:32+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-03</span>
       
     
   </small>
