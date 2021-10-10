@@ -2046,15 +2046,28 @@ met.</p>
 <p>With this configuration, the command objective requires the player to execute <code>/warp MyName farms</code> to be completed. The
 command objective matches from the start of the command that was executed, therefore if the player executed
 <code>/warp MyName farms other arguments</code> it would still be completed.</p>
-<p>Optional arguments:
-* <code>ignoreCase</code>: If provided, instructs the objective to ignore case for the command to match.
-* <code>exact</code>: If provided, requires an exact command match, not just the command start.
-* <code>cancel</code>: If provided, the objective will cancel the execution of the command on a match. This needs to be enabled to suppress the <code>Unknown Command</code> message when using custom commands.
-* <code>failEvents</code>: If provided, specifies a list of events to execute if a non-matching command is run and conditions are met.</p>
+<p>Optional arguments:</p>
+<ul>
+<li><code>ignoreCase</code>: If provided, instructs the objective to ignore case for the command to match.</li>
+<li><code>exact</code>: If provided, requires an exact command match, not just the command start.</li>
+<li><code>cancel</code>: If provided, the objective will cancel the execution of the command on a match. This needs to be enabled to suppress the <code>Unknown Command</code> message when using custom commands.</li>
+<li><code>failEvents</code>: If provided, specifies a list of events to execute if a non-matching command is run and conditions are met.</li>
+</ul>
 <div class="admonition complex example">
 <p class="admonition-title">Complex</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command /warp_%player%_farms ignoreCase exact cancel failEvents:failEvent1,failEvent2 events:event1,event2</span>
 </code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sometimes you want to use actual underscores in your command. These will however be replaced with spaces by default.
+You can "escape" them using backslashes:
+One backslash (<code>\</code>) is required when using no quoting at all (<code>...</code>) or single quotes
+(<code>'...'</code>). Two backslashes are required (<code>\\</code>) when using double quotes (<code>"..."</code>).</p>
+<p>Examples:<br>
+<code>eventName: command /enchant_@s_minecraft:aqua_affinity</code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName:command /enchant_@s_minecraft:aqua<ins class="critic">\</ins>_affinity</code><br>
+<code>eventName: <mark class="critic">'</mark>command /enchant_@s_minecraft:aqua_affinity<mark class="critic">'</mark></code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: <mark class="critic">'</mark>command /enchant_@s_minecraft:aqua<ins class="critic">\</ins>_affinity<mark class="critic">'</mark></code><br>
+<code>eventName: <mark class="critic">"</mark>command /enchant_@s_minecraft:aqua_affinity<mark class="critic">"</mark></code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: <mark class="critic">"</mark>command /enchant_@s_minecraft:aqua<ins class="critic">\\</ins>_affinity<mark class="critic">"</mark></code><br></p>
 </div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
 <p>This objective is different. You cannot complete it, it will also ignore defined events and conditions. You can start it and that's it.
@@ -2079,7 +2092,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-07T16:57:23+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-07</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-10T14:57:32+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-10</span>
       
     
   </small>
