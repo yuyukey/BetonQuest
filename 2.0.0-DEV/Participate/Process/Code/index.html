@@ -16,12 +16,12 @@
       
         
       
-      <link rel="icon" href="../../../media/brand/Icon/Icon32.ico">
+      <link rel="icon" href="../../../_media/brand/Icon/Icon32.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.2.1+insiders-2.12.0">
     
     
       
-        <title>Changing Code - BetonQuest</title>
+        <title>👨‍🔧 Changing Code - BetonQuest</title>
       
     
     
@@ -55,15 +55,15 @@
     
       <link rel="stylesheet" href="../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/admonition.css">
+      <link rel="stylesheet" href="../../../_webCode/css/admonition.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/button.css">
+      <link rel="stylesheet" href="../../../_webCode/css/button.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/centered.css">
+      <link rel="stylesheet" href="../../../_webCode/css/centered.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/contentAreaFullWidth.css">
+      <link rel="stylesheet" href="../../../_webCode/css/contentAreaFullWidth.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/superFences.css">
+      <link rel="stylesheet" href="../../../_webCode/css/superFences.css">
     
     <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../../..":"../../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
@@ -132,7 +132,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../../media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Changing Code
+              👨‍🔧 Changing Code
             
           </span>
         </div>
@@ -301,7 +301,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../API/API/" class="md-tabs__link">
+      <a href="../../../API/Overview/" class="md-tabs__link">
         🔌 API
       </a>
     </li>
@@ -355,7 +355,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../../media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     BetonQuest
@@ -1051,6 +1051,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -1071,8 +1075,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../API/Overview/" class="md-nav__link">
+        🤝 Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../API/API/" class="md-nav__link">
         ⚙️ API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../API/Logging/" class="md-nav__link">
+        📑 Logging
       </a>
     </li>
   
@@ -1233,6 +1265,8 @@
         
           
         
+          
+        
       
       
         
@@ -1261,7 +1295,7 @@
   
     <li class="md-nav__item">
       <a href="Checking-Requirements/" class="md-nav__link">
-        🕵️‍♂️ Checking Requirements
+        🕵️‍♂️  Checking Requirements
       </a>
     </li>
   
@@ -1276,6 +1310,20 @@
     <li class="md-nav__item">
       <a href="Adding-a-new-Dependency/" class="md-nav__link">
         📥 Adding a Dependency
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Writing-JUnit-Tests/" class="md-nav__link">
+        📋    Writing JUnit Tests
       </a>
     </li>
   
@@ -1532,7 +1580,7 @@
                 
                 
                 
-                <h1 id="changing-code">Changing Code<a class="headerlink" href="#changing-code" title="Permanent link">🔗</a></h1>
+                <h1 id="changing-code">👨‍🔧 Changing Code<a class="headerlink" href="#changing-code" title="Permanent link">🔗</a></h1>
 <p>Make sure to <a href="../../Setup-Project/">setup the project</a> before doing this step. 
 You should always <a href="../Create-a-new-Branch/">create a new branch</a> everytime you develop a new feature,
 fix a bug or make other changes.</p>
@@ -1542,7 +1590,9 @@ fix a bug or make other changes.</p>
 <p>After you made changes, you should also run <code>mvn verify</code> to check our requirements.
 If you have problems solving issues with our requirements there is also a page
 <a href="Checking-Requirements/">Checking Requirements</a>, that you will probably read later.</p>
-<details class="success"><summary>Improve Build Speed</summary><p>If <code>mvn verify</code> takes too long, and you just want a jar, you want to build without checking our requirements.
+<details class="success">
+<summary>Improve Build Speed</summary>
+<p>If <code>mvn verify</code> takes too long, and you just want a jar, you want to build without checking our requirements.
 You can execute <code>mvn package</code> instead of <code>mvn verify</code> for that.
 But don't forget, you need to successfully run <code>mvn verify</code>, before you make a pull request on GitHub!</p>
 </details>
@@ -1577,7 +1627,7 @@ In case you already did that: Continue with <a href="../Submitting-Changes/">Sub
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-18T20:01:01+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-18</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-11-14T21:49:25+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-11-14</span>
       
     
   </small>
@@ -1624,13 +1674,13 @@ In case you already did that: Continue with <a href="../Submitting-Changes/">Sub
       
       
         
-        <a href="Checking-Requirements/" class="md-footer__link md-footer__link--next" aria-label="Next: 🕵️‍♂️ Checking Requirements" rel="next">
+        <a href="Checking-Requirements/" class="md-footer__link md-footer__link--next" aria-label="Next: 🕵️‍♂️  Checking Requirements" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              🕵️‍♂️ Checking Requirements
+              🕵️‍♂️  Checking Requirements
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1780,7 +1830,7 @@ In case you already did that: Continue with <a href="../Submitting-Changes/">Sub
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var form=document.forms.consent;form.addEventListener("submit",function(n){n.preventDefault(),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(n){return[n,!0]}))),location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.1afabad3.min.js"></script>
@@ -1789,7 +1839,7 @@ In case you already did that: Continue with <a href="../Submitting-Changes/">Sub
       
         <script src="../../../js/timeago_mkdocs_material.js"></script>
       
-        <script src="../../../webCode/js/copyLinkToClipboard.js"></script>
+        <script src="../../../_webCode/js/copyLinkToClipboard.js"></script>
       
     
   </body>

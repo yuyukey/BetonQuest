@@ -11,27 +11,27 @@
         <meta name="author" content="BetonQuest Organisation">
       
       
-        <link rel="canonical" href="https://docs.betonquest.org/2.0.0-DEV/Documentation/Commands-and-permissions/">
+        <link rel="canonical" href="https://docs.betonquest.org/2.0.0-DEV/Participate/Process/Code/Writing-JUnit-Tests/">
       
       
         
       
-      <link rel="icon" href="../../_media/brand/Icon/Icon32.ico">
+      <link rel="icon" href="../../../../_media/brand/Icon/Icon32.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.2.1+insiders-2.12.0">
     
     
       
-        <title>🔒 Permissions & Commands - BetonQuest</title>
+        <title>📋 Writing JUnit Tests - BetonQuest</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f55811a5.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.f55811a5.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.73e53a79.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.73e53a79.min.css">
         
       
-      <link rel="preload" as="style" href="../../assets/stylesheets/vendor/mermaid.733f213f.min.css">
+      <link rel="preload" as="style" href="../../../../assets/stylesheets/vendor/mermaid.733f213f.min.css">
       
   
   
@@ -53,19 +53,19 @@
     
     
     
-      <link rel="stylesheet" href="../../css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../_webCode/css/admonition.css">
+      <link rel="stylesheet" href="../../../../_webCode/css/admonition.css">
     
-      <link rel="stylesheet" href="../../_webCode/css/button.css">
+      <link rel="stylesheet" href="../../../../_webCode/css/button.css">
     
-      <link rel="stylesheet" href="../../_webCode/css/centered.css">
+      <link rel="stylesheet" href="../../../../_webCode/css/centered.css">
     
-      <link rel="stylesheet" href="../../_webCode/css/contentAreaFullWidth.css">
+      <link rel="stylesheet" href="../../../../_webCode/css/contentAreaFullWidth.css">
     
-      <link rel="stylesheet" href="../../_webCode/css/superFences.css">
+      <link rel="stylesheet" href="../../../../_webCode/css/superFences.css">
     
-    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../..":"../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../../../..":"../../../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
       
 
@@ -108,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#commands-and-permissions" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -130,9 +130,9 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest" data-md-component="logo">
+    <a href="../../../.." title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../_media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🔒 Permissions & Commands
+              📋    Writing JUnit Tests
             
           </span>
         </div>
@@ -247,7 +247,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href="../../../.." class="md-tabs__link">
       🚀 Home
     </a>
   </li>
@@ -262,7 +262,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Tutorials/Welcome/" class="md-tabs__link">
+      <a href="../../../../Tutorials/Welcome/" class="md-tabs__link">
         🎓 Tutorials
       </a>
     </li>
@@ -271,8 +271,6 @@
       
         
   
-  
-    
   
 
 
@@ -285,7 +283,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Reference/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../../Documentation/Reference/" class="md-tabs__link">
         📚 Documentation
       </a>
     </li>
@@ -303,7 +301,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../API/Overview/" class="md-tabs__link">
+      <a href="../../../../API/Overview/" class="md-tabs__link">
         🔌 API
       </a>
     </li>
@@ -313,13 +311,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Participate/Overview/" class="md-tabs__link">
+      <a href="../../../Overview/" class="md-tabs__link md-tabs__link--active">
         🧪 Participate
       </a>
     </li>
@@ -353,9 +353,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest" data-md-component="logo">
+    <a href="../../../.." title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../_media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     BetonQuest
@@ -384,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         🚀 Home
       </a>
     </li>
@@ -433,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Welcome/" class="md-nav__link">
+      <a href="../../../../Tutorials/Welcome/" class="md-nav__link">
         👋 Welcome!
       </a>
     </li>
@@ -487,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Getting-Started/Setting-up-a-local-test-server/" class="md-nav__link">
+      <a href="../../../../Tutorials/Getting-Started/Setting-up-a-local-test-server/" class="md-nav__link">
         💻 Setting up a local test server
       </a>
     </li>
@@ -501,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Getting-Started/Installing-BetonQuest/" class="md-nav__link">
+      <a href="../../../../Tutorials/Getting-Started/Installing-BetonQuest/" class="md-nav__link">
         📥 Installing BetonQuest
       </a>
     </li>
@@ -515,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Getting-Started/Setting-up-the-editor/" class="md-nav__link">
+      <a href="../../../../Tutorials/Getting-Started/Setting-up-the-editor/" class="md-nav__link">
         ✒️ Setting up the editor
       </a>
     </li>
@@ -529,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Getting-Started/YAML-for-questers/" class="md-nav__link">
+      <a href="../../../../Tutorials/Getting-Started/YAML-for-questers/" class="md-nav__link">
         📑 YAML for questers
       </a>
     </li>
@@ -543,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Getting-Started/Learn-BetonQuest/" class="md-nav__link">
+      <a href="../../../../Tutorials/Getting-Started/Learn-BetonQuest/" class="md-nav__link">
         🎓 Learn BetonQuest
       </a>
     </li>
@@ -596,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tutorials/Frequently-Asked-Questions/" class="md-nav__link">
+      <a href="../../../../Tutorials/Frequently-Asked-Questions/" class="md-nav__link">
         🤔  General FAQ
       </a>
     </li>
@@ -623,14 +623,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -699,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/" class="md-nav__link">
+      <a href="../../../../Documentation/Reference/" class="md-nav__link">
         📚   Reference
       </a>
     </li>
@@ -713,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Conversations/" class="md-nav__link">
+      <a href="../../../../Documentation/Conversations/" class="md-nav__link">
         💬  Conversations
       </a>
     </li>
@@ -727,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Menus/" class="md-nav__link">
+      <a href="../../../../Documentation/Menus/" class="md-nav__link">
            📱     Menus
       </a>
     </li>
@@ -788,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Objectives-List/" class="md-nav__link">
+      <a href="../../../../Documentation/Objectives-List/" class="md-nav__link">
         ✔️ Objectives List
       </a>
     </li>
@@ -802,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Events-List/" class="md-nav__link">
+      <a href="../../../../Documentation/Events-List/" class="md-nav__link">
         ⚙️ Events List
       </a>
     </li>
@@ -816,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Conditions-List/" class="md-nav__link">
+      <a href="../../../../Documentation/Conditions-List/" class="md-nav__link">
           ❓    Conditions List
       </a>
     </li>
@@ -830,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Compatibility/" class="md-nav__link">
+      <a href="../../../../Documentation/Compatibility/" class="md-nav__link">
         🤝 Compatibility List
       </a>
     </li>
@@ -844,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Variables-List/" class="md-nav__link">
+      <a href="../../../../Documentation/Variables-List/" class="md-nav__link">
         🔮   Variables List
       </a>
     </li>
@@ -899,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notification-Settings/" class="md-nav__link">
+      <a href="../../../../Documentation/Notification-Settings/" class="md-nav__link">
         🔊   Settings
       </a>
     </li>
@@ -913,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notification-IO%27s-%26-Categories/" class="md-nav__link">
+      <a href="../../../../Documentation/Notification-IO%27s-%26-Categories/" class="md-nav__link">
         🏷️   IO's & Categories
       </a>
     </li>
@@ -932,16 +930,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
       
       
@@ -972,72 +968,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          🔒 Permissions & Commands
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../Documentation/Commands-and-permissions/" class="md-nav__link">
         🔒 Permissions & Commands
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aliases" class="md-nav__link">
-    Aliases
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
-    Permissions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#main-command-details" class="md-nav__link">
-    Main command details
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1049,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
+      <a href="../../../../Documentation/Updating-and-Backups/" class="md-nav__link">
         📥 Updating
       </a>
     </li>
@@ -1063,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Configuration/" class="md-nav__link">
+      <a href="../../../../Documentation/Configuration/" class="md-nav__link">
         🔧  Configuration
       </a>
     </li>
@@ -1077,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CHANGELOG/" class="md-nav__link">
+      <a href="../../../../Documentation/CHANGELOG/" class="md-nav__link">
         🗃️ Changelog
       </a>
     </li>
@@ -1140,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../API/Overview/" class="md-nav__link">
+      <a href="../../../../API/Overview/" class="md-nav__link">
         🤝 Overview
       </a>
     </li>
@@ -1154,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../API/API/" class="md-nav__link">
+      <a href="../../../../API/API/" class="md-nav__link">
         ⚙️ API
       </a>
     </li>
@@ -1168,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../API/Logging/" class="md-nav__link">
+      <a href="../../../../API/Logging/" class="md-nav__link">
         📑 Logging
       </a>
     </li>
@@ -1188,12 +1123,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -1226,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Overview/" class="md-nav__link">
+      <a href="../../../Overview/" class="md-nav__link">
         🤝 Overview
       </a>
     </li>
@@ -1240,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Setup-Project/" class="md-nav__link">
+      <a href="../../../Setup-Project/" class="md-nav__link">
         🚩 Setup Project
       </a>
     </li>
@@ -1252,14 +1189,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
       
       
       
@@ -1294,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Create-a-new-Branch/" class="md-nav__link">
+      <a href="../../Create-a-new-Branch/" class="md-nav__link">
         🧬 Create a new Branch
       </a>
     </li>
@@ -1306,12 +1245,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_2" type="checkbox" id="__nav_5_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_2" type="checkbox" id="__nav_5_3_2" checked>
       
       
       
@@ -1331,7 +1272,7 @@
         
         
         <div class="md-nav__link md-nav__link--container ">
-          <a href="../../Participate/Process/Code/">👨‍🔧 Changing Code</a>
+          <a href="../">👨‍🔧 Changing Code</a>
           <label for="__nav_5_3_2">
             <span class="md-nav__icon md-icon"></span>
           </label>
@@ -1353,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Code/Checking-Requirements/" class="md-nav__link">
+      <a href="../Checking-Requirements/" class="md-nav__link">
         🕵️‍♂️  Checking Requirements
       </a>
     </li>
@@ -1367,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Code/Adding-a-new-Dependency/" class="md-nav__link">
+      <a href="../Adding-a-new-Dependency/" class="md-nav__link">
         📥 Adding a Dependency
       </a>
     </li>
@@ -1379,11 +1320,74 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Participate/Process/Code/Writing-JUnit-Tests/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          📋    Writing JUnit Tests
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         📋    Writing JUnit Tests
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-logging" class="md-nav__link">
+    Handling Logging
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Logging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logvalidator" class="md-nav__link">
+    LogValidator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    Advanced Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1423,7 +1427,7 @@
         
         
         <div class="md-nav__link md-nav__link--container ">
-          <a href="../../Participate/Process/Docs/">👨‍🏫 Changing Docs</a>
+          <a href="../../Docs/">👨‍🏫 Changing Docs</a>
           <label for="__nav_5_3_3">
             <span class="md-nav__icon md-icon"></span>
           </label>
@@ -1445,7 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Docs/Principles/" class="md-nav__link">
+      <a href="../../Docs/Principles/" class="md-nav__link">
         ✒️ Fundamental Principles
       </a>
     </li>
@@ -1459,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Docs/Guidelines/" class="md-nav__link">
+      <a href="../../Docs/Guidelines/" class="md-nav__link">
         📚 Guidelines
       </a>
     </li>
@@ -1480,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Maintaining-the-Changelog/" class="md-nav__link">
+      <a href="../../Maintaining-the-Changelog/" class="md-nav__link">
         📑 Maintaining the Changelog
       </a>
     </li>
@@ -1494,7 +1498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Process/Submitting-Changes/" class="md-nav__link">
+      <a href="../../Submitting-Changes/" class="md-nav__link">
         🏁 Submitting Changes
       </a>
     </li>
@@ -1547,7 +1551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Participate/Misc/Versioning-and-Releasing/" class="md-nav__link">
+      <a href="../../../Misc/Versioning-and-Releasing/" class="md-nav__link">
         🏭 Versioning & Releasing
       </a>
     </li>
@@ -1584,8 +1588,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1594,30 +1596,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aliases" class="md-nav__link">
-    Aliases
+  <a href="#handling-logging" class="md-nav__link">
+    Handling Logging
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Logging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logvalidator" class="md-nav__link">
+    LogValidator
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
-    Permissions
+        
+          <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    Advanced Features
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#main-command-details" class="md-nav__link">
-    Main command details
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1633,108 +1641,101 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/docs/Documentation/Commands-and-permissions.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/docs/Participate/Process/Code/Writing-JUnit-Tests.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
                 
-                <h1 id="commands-and-permissions">Commands and permissions<a class="headerlink" href="#commands-and-permissions" title="Permanent link">🔗</a></h1>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">🔗</a></h2>
+                  <h1>📋    Writing JUnit Tests</h1>
+                
+                <p>Here you can find a summary on how to write JUnit tests for BetonQuest. In order to understand this, you need to have
+basic knowledge of JUnit tests and mocking of objects and classes.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">🔗</a></h2>
+<p>It is a major goal to write JUnit tests for most parts of BetonQuest.</p>
+<p><strong>There are things, where you definitely want as many tests as possible:</strong></p>
 <ul>
-<li><strong>/j</strong> - gives the journal</li>
-<li><strong>/backpack</strong> - opens the backpack</li>
-<li><strong>/q</strong> - lists all available admin commands</li>
-<li><strong>/q reload</strong> - reloads the plugin</li>
-<li><strong>/q objectives {playerName} [list/add/del/complete] [instruction]</strong> - shows player's currently active objectives</li>
-<li><strong>/q tags {playerName} [list/add/del] [tag]</strong> - lists all player's tags</li>
-<li><strong>/q globaltags {playerName} [list/add/del] [tag]</strong> - lists all global tags</li>
-<li><strong>/q points {playerName} [list/add/del] [category] [amount]</strong> - lists all player's points in all categories</li>
-<li><strong>/q globalpoints {playerName} [list/add/del] [category] [amount]</strong></li>
-<li><strong>/q journal {playerName} [list/add/del] [package.pointer] [date]</strong></li>
-<li><strong>/q event {playerName} {package.eventID}</strong> - fires an event for the player</li>
-<li><strong>/q condition {playerName} {package.conditionID}</strong> - shows if the player meet specified condition or not</li>
-<li><strong>/q item {package.itemID}</strong> - creates an item based on what you're holding in hand</li>
-<li><strong>/q give {package.itemID}</strong> - gives you an item defined in the configuration</li>
-<li><strong>/q config {set/add/read} {path} [value]</strong> - sets, adds or reads values from configuration</li>
-<li><strong>/q purge {playerName}</strong> - deletes all player's data from the database</li>
-<li><strong>/q rename {tag/point/globalpoint/objective/entry} {oldName} {newName}</strong> - renames all specified things in the database</li>
-<li><strong>/q delete {tag/point/objective/entry} {name}</strong> - deletes all specified things in the database</li>
-<li><strong>/q backup</strong> - creates a backup of configuration files and database</li>
-<li><strong>/q update</strong> - updates the plugin to the newest version.</li>
-<li><strong>/q create {package}</strong>: creates new package with given name, filled with default quest</li>
-<li><strong>/q vector {packname.variable} {newvariable}</strong>: calculates the vector from first location variable to you position and saves it as second variable</li>
-<li><strong>/q version</strong>: displays the versions of BetonQuest, the server and all hooked plugins</li>
-<li><strong>/q debug [true/false/ingame]</strong>: enable debug mode and write all down in a log file or disable the debug mode</li>
-<li><strong>/questlang {lang}</strong> - changes the language for the player (and globally if used from console). <code>default</code> language will use the language defined in <em>config.yml</em>.</li>
+<li>API</li>
+<li>Utilities</li>
+<li>Internal application logic that is used by a bunch of other code</li>
+<li>Critical parts that can cause a lot of harm when bugged</li>
 </ul>
-<h2 id="aliases">Aliases<a class="headerlink" href="#aliases" title="Permanent link">🔗</a></h2>
+<p><strong>But there are also some parts, where we do not want tests at all:</strong></p>
 <ul>
-<li><strong>/j</strong>: bj, journal, bjournal, betonjournal, betonquestjournal</li>
-<li><strong>/backpack</strong>: b, bb, bbackpack, betonbackpack, betonquestbackpack</li>
-<li><strong>/q</strong>: bq, bquest, bquests, betonquest, betonquests, quest, quests<ul>
-<li><strong>objective</strong>: o, objectives</li>
-<li><strong>tag</strong>: t, tags</li>
-<li><strong>point</strong>: p, points</li>
-<li><strong>event</strong>: e, events</li>
-<li><strong>condition</strong>: c, conditions</li>
-<li><strong>journal</strong>: j, journals</li>
-<li><strong>item</strong>: i, items</li>
-<li><strong>give</strong>: g</li>
-<li><strong>rename</strong>: r</li>
-<li><strong>delete</strong>: d, del</li>
-<li><strong>create</strong>: package</li>
-</ul>
-</li>
-<li><strong>/questlang</strong>: ql</li>
-</ul>
-<h2 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">🔗</a></h2>
-<ul>
-<li><strong>betonquest.admin</strong> - allows using admin commands (/q ...) and creating an NPC from blocks</li>
-<li><strong>betonquest.journal</strong> - allows using /j command (default for players)</li>
-<li><strong>betonquest.backpack</strong> - allows using /backpack command (default for players)</li>
-<li><strong>betonquest.conversation</strong> - allows talking with NPCs (default for players)</li>
-<li><strong>betonquest.language</strong> - allows changing the language (default for players)</li>
+<li>If a core API concept has many implementations, the implementations itself should not be tested</li>
+<li>Some parts of the code require a lot of Bukkit API mocking. If this takes too much time no tests are
+  necessary</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Don't give <strong>betonquest.admin</strong> permission to people you don't fully trust. They can use <strong>/q config</strong> command to add a <code>command</code> event, and this way execute any command as the console. This might be dangerous.</p>
+<p class="admonition-title">Handling Concurrency</p>
+<p>By default, all classes and methods are executed <code>CONCURRENT</code>. This means that its tests are run in parallel which saves
+time. Some tests cannot be executed in parallel, in such cases the following annotation needs to be 
+added to the related methods or the entire class.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Execution</span><span class="p">(</span><span class="n">ExecutionMode</span><span class="p">.</span><span class="na">SAME_THREAD</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
 </div>
-<h2 id="main-command-details">Main command details<a class="headerlink" href="#main-command-details" title="Permanent link">🔗</a></h2>
-<p>Reloading loads all data from configuration, but not everything is updated. Player's data isn't touched to avoid lags made by database saving. The database is also the same, you will have to reload/restart the whole server for the database to change.</p>
-<p>Tags subcommand allows you to easily list and modify tags. '<code>/q tags Beton</code>' would list tags for player Beton. '<code>/q tags Beton add test</code>' would add "test" tag for that player, and '<code>/q tags Beton del test</code>' would remove it.</p>
-<p>Points subcommand is similar - listing points is done the same way. Adding points to a category looks like that: '<code>/q points Beton add reputation 20</code>' (adding 20 points to "reputation" category). You can also subtract points with negative amounts. Removing the whole point category can be achieved by '<code>/q points Beton del reputation</code>'.</p>
-<p>Journal subcommand works in the same way as those two above. Adding and removing looks like <code>/q journal Beton add default.wood_started</code> (or <code>del</code>), and you can also specify the date of entry when adding it, by appending date written like this: <code>23.04.2014_16:52</code> at the end of the command. Note that there is <code>_</code> character instead of space!</p>
-<p>Objective subcommand allows you to list all active objectives (shown as their labels) of the player. It can also directly add or cancel objectives using instruction strings. You can also complete the objective for the player using <code>complete</code> argument - it will run all events and remove the objective.</p>
-<p>Running events for online players can be done with event argument: '<code>/q event Beton give_emeralds</code>' would run "give_emeralds" for player Beton (if he's online) from default package (not necessarily "default" but rather the default one specified in <em>config.yml</em>). If you want to run a static event, replace player's name with <code>-</code>.</p>
-<p>There is also condition argument for checking conditions, for example '<code>/q condition Beton has_food</code>'. Events and conditions need to be defined in their files, this command doesn't accept raw instructions. You can skip package name, the plugin will assume you're reffering to package specified in <code>default_package</code> option in <em>config.yml</em> file. If you want to check a static condition replace the player's name with <code>-</code>.</p>
-<p>If you need to create for example "Nettlebane" quest item, just hold it in your hand and type '<code>/q item nettlebane</code>'. It will copy the item you're holding into the <em>items.yml</em> file and save it there with the name you specified (in this case "nettlebane"). You can skip the package name here as well.</p>
-<p>The '<code>/q give package.item</code>' command will simply give you specified item.</p>
-<p>Config subcommand is used to modify or display values in configuration files. <code>set</code> option replaces the value with what you typed, <code>add</code> simply adds your string to the existing value. (Note on spaces: by default the plugin won't insert a space between existing and added value. You can however achieve that by prefixing the string with <code>_</code> character. For example: existing string is <code>objective location</code>, and you want to add <code>100;200;300;world;10</code>. Your command will look like <code>/q config add default.events.loc_obj _100;200;300;world;10</code>). <code>read</code> option allows you to display config value without modifying it.</p>
-<p>Path in this command is like an address of the value. Next branches are separated by dots. For example language setting in main configuration has path <code>config.language</code>, and a text in "bye" player option in default quest has path <code>default.conversations.innkeeper.player_options.bye.text</code></p>
-<p>You can purge specific player with '<code>/q purge Beton</code>' command, where Beton is the name of the player. To purge the entire database at once simply change the prefix in <em>config.yml</em> or delete <em>database.db</em> file.</p>
-<p>Delete command ('<code>/q delete</code>') allows you to delete from the database every tag, point, objective or journal entry with specified name.</p>
-<p>Rename command ('<code>/q rename</code>') allows you to rename every tag, point, globalpoint, objective or journal entry in the database. In case of an objective it will also rename the objective in <em>objectives.yml</em>, so it continues to work correctly.</p>
-<p>If you want to backup your configuration and database make sure that your server is empty (this process requires all data to be saved to database -&gt; all players offline) and run '<code>/q backup</code>' command. You will get a zip file containing all your data, ready to be unzipped for restoring the plugin.</p>
-<p>Update command ('<code>/q update</code>') will try to download the newest version of the plugin and save it to the update folder. This folder is then handled by Spigot to update the plugin. If you accidentally use this command but do not wish to update the plugin, you should remove <code>BetonQuest.jar</code> file from the <code>plugins/update</code> folder before restarting/reloading the server.</p>
-<p>Using '<code>/q create beton</code>' command you will create new package named '<code>beton</code>'. It will contain the default quest.</p>
-<p>The <code>/q vector</code> command allows you to create vector variables from the specified in first argument location variable to your position. The result will be saved to the "vectors.{second argument}" variable.</p>
-<p>The debug command ('<code>/q debug</code>') allows you to enable or disable the debug mode. If the debug mode is enabled after
-server startup ('<code>/q debug true</code>'), all log entries from the configured log history time frame are written to the
-<code>/plugins/BetonQuest/logs/latest.log</code> file as history and writing will be continued until the debug mode is disabled
-using ('<code>/q debug false</code>'). The <code>latest.log</code> is renamed to the current date and time on server startup.
-It's useful if you search for more information about an issue and can help developers to fix bugs.</p>
-<p>The command ('<code>/q debug ingame</code>') allows you to manage your ingame debugging.
-The ingame debugging sends you live information about quests to your chat.
-Running the command without any argument shows your active filters.
-If you don't have any filters active you will see all console output from <code>/q reload</code>.
-If you have filters active you only see information from the selected packages.
-Appending a package name activates the filter for that package.
-You can also use <code>*</code> / <code>MyFolder-*</code> instead of a package name to address all packages / all packages of a folder.
-Appending a level allows you to select which types of messages are displayed.
-The default level <code>error</code> shows all <code>WARNINGS</code> and <code>ERRORS</code> from the log.
-If you want to see more information use the levels <code>info</code> or <code>debug</code>.
-Beware though, the debug level might be spammy.</p>
+<h2 id="handling-logging">Handling Logging<a class="headerlink" href="#handling-logging" title="Permanent link">🔗</a></h2>
+<p><em>You may need to read <a href="../../../../API/Logging/">Logging</a> to understand this paragraph.</em></p>
+<p>This error can occur everytime the <code>@CustomLog</code> annotation is used in a class that is called by a JUnit test:</p>
+<div class="highlight"><pre><span></span><code>Cannot invoke &quot;org.bukkit.Server.getPluginManager()&quot; because &quot;org.bukkit.Bukkit.server&quot; is null
+</code></pre></div>
+<p>If this is the case, you need the <code>BetonQuestLoggerService</code>. Simply add the following annotation to the
+class:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="hll"><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">BetonQuestLoggerService</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
+</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestFeature</span> <span class="p">{</span>
+</code></pre></div>
+</td></tr></table>
+<p>The test should now work as intended because a new anonymous logger is created everytime the <code>@CustomLog</code> annotation
+is used. All these loggers have a silent parent logger - so there are no visible log messages in the command line. The 
+<code>BetonQuestLoggerService</code> also enables a few new features:</p>
+<h3 id="logvalidator">LogValidator<a class="headerlink" href="#logvalidator" title="Permanent link">🔗</a></h3>
+<p>You can now add this optional argument to any test's method signature:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">BetonQuestLoggerService</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestFeature</span> <span class="p">{</span>
+
+    <span class="nd">@Test</span>
+<span class="hll">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testCustom</span><span class="p">(</span><span class="n">LogValidator</span> <span class="n">validator</span><span class="p">)</span> <span class="p">{</span>
+</span></code></pre></div>
+</td></tr></table>
+<p>The <code>LogValidator</code> is created and passed to your method by the <code>BetonQuestLoggerService</code>.
+It makes it possible to assert that a log message has been logged in the silent parent logger.
+The simplest method is <code>assertLogEntry(Level level, String message)</code>, that you can use to check
+that the given message with the given level has been logged. You can also check that there are no additional log 
+messages in the <code>LogValidator</code> by calling <code>assertEmpty()</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Use <code>ExecutionMode.SAME_THREAD</code></p>
+<p>When using the <code>LogValidator</code>, you validate that log messages are logged in the correct order. This means that
+if you leave the <code>ExecutionMode</code> on its default (<code>CONCURRENT</code>) value, the test will fail. This happens because the
+log messages don't have a predictable order as your tests would be executed in parallel.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Execution</span><span class="p">(</span><span class="n">ExecutionMode</span><span class="p">.</span><span class="na">SAME_THREAD</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+</div>
+<h3 id="advanced-features">Advanced Features<a class="headerlink" href="#advanced-features" title="Permanent link">🔗</a></h3>
+<details class="note">
+<summary>Obtaining the parent <code>Logger</code> and a <code>BetonQuestLogger</code></summary>
+<p>You can also use these two additional arguments:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">BetonQuestLoggerService</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestFeature</span> <span class="p">{</span>
+    <span class="nd">@Test</span>
+<span class="hll">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testCustom</span><span class="p">(</span><span class="n">LogValidator</span> <span class="n">validator</span><span class="p">,</span> <span class="n">Logger</span> <span class="n">logger</span><span class="p">,</span> <span class="n">BetonQuestLogger</span> <span class="n">log</span><span class="p">)</span> <span class="p">{</span>
+</span></code></pre></div>
+</td></tr></table>
+<p>The <code>logger</code> is the silent parent <code>Logger</code>.</p>
+<p>The <code>log</code> is a new instance of the <code>BetonQuestLogger</code> that you can use to log things during the test.
+This logger has a topic that can be accessed via <code>BetonQuestLoggerService.LOGGER_TOPIC</code>.</p>
+</details>
                 
                   
                     
@@ -1743,7 +1744,7 @@ Beware though, the debug level might be spammy.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-11-17T19:28:03+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-11-17</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-11-17T17:25:15+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-11-17</span>
       
     
   </small>
@@ -1774,7 +1775,7 @@ Beware though, the debug level might be spammy.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Notification-IO%27s-%26-Categories/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🏷️   IO&#39;s &amp; Categories" rel="prev">
+        <a href="../Adding-a-new-Dependency/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📥 Adding a Dependency" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1783,20 +1784,20 @@ Beware though, the debug level might be spammy.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              🏷️   IO's & Categories
+              📥 Adding a Dependency
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Updating-and-Backups/" class="md-footer__link md-footer__link--next" aria-label="Next: 📥 Updating" rel="next">
+        <a href="../../Docs/" class="md-footer__link md-footer__link--next" aria-label="Next: 👨‍🏫 Changing Docs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              📥 Updating
+              👨‍🏫 Changing Docs
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1946,16 +1947,16 @@ Beware though, the debug level might be spammy.</p>
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var form=document.forms.consent;form.addEventListener("submit",function(n){n.preventDefault(),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(n){return[n,!0]}))),location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1afabad3.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.1afabad3.min.js"></script>
       
-        <script src="../../js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
-        <script src="../../_webCode/js/copyLinkToClipboard.js"></script>
+        <script src="../../../../_webCode/js/copyLinkToClipboard.js"></script>
       
     
   </body>

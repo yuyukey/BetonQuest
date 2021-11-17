@@ -11,27 +11,27 @@
         <meta name="author" content="BetonQuest Organisation">
       
       
-        <link rel="canonical" href="https://docs.betonquest.org/2.0.0-DEV/Tutorials/Getting-Started/Learn-BetonQuest/">
+        <link rel="canonical" href="https://docs.betonquest.org/2.0.0-DEV/API/Logging/">
       
       
         
       
-      <link rel="icon" href="../../../_media/brand/Icon/Icon32.ico">
+      <link rel="icon" href="../../_media/brand/Icon/Icon32.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.2.1+insiders-2.12.0">
     
     
       
-        <title>🎓 Learn BetonQuest - BetonQuest</title>
+        <title>📑 Logging - BetonQuest</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f55811a5.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f55811a5.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.73e53a79.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.73e53a79.min.css">
         
       
-      <link rel="preload" as="style" href="../../../assets/stylesheets/vendor/mermaid.733f213f.min.css">
+      <link rel="preload" as="style" href="../../assets/stylesheets/vendor/mermaid.733f213f.min.css">
       
   
   
@@ -53,19 +53,19 @@
     
     
     
-      <link rel="stylesheet" href="../../../css/timeago.css">
+      <link rel="stylesheet" href="../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../_webCode/css/admonition.css">
+      <link rel="stylesheet" href="../../_webCode/css/admonition.css">
     
-      <link rel="stylesheet" href="../../../_webCode/css/button.css">
+      <link rel="stylesheet" href="../../_webCode/css/button.css">
     
-      <link rel="stylesheet" href="../../../_webCode/css/centered.css">
+      <link rel="stylesheet" href="../../_webCode/css/centered.css">
     
-      <link rel="stylesheet" href="../../../_webCode/css/contentAreaFullWidth.css">
+      <link rel="stylesheet" href="../../_webCode/css/contentAreaFullWidth.css">
     
-      <link rel="stylesheet" href="../../../_webCode/css/superFences.css">
+      <link rel="stylesheet" href="../../_webCode/css/superFences.css">
     
-    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../../..":"../../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../..":"../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
       
 
@@ -108,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#checking-out-the-default-example-quest" class="md-skip">
+        <a href="#why-a-custom-logger" class="md-skip">
           Skip to content
         </a>
       
@@ -130,9 +130,9 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest" data-md-component="logo">
+    <a href="../.." title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../../_media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -148,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🎓 Learn BetonQuest
+              📑 Logging
             
           </span>
         </div>
@@ -247,7 +247,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       🚀 Home
     </a>
   </li>
@@ -256,15 +256,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Welcome/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Tutorials/Welcome/" class="md-tabs__link">
         🎓 Tutorials
       </a>
     </li>
@@ -285,7 +283,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Documentation/Reference/" class="md-tabs__link">
+      <a href="../../Documentation/Reference/" class="md-tabs__link">
         📚 Documentation
       </a>
     </li>
@@ -297,13 +295,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../API/Overview/" class="md-tabs__link">
+      <a href="../Overview/" class="md-tabs__link md-tabs__link--active">
         🔌 API
       </a>
     </li>
@@ -319,7 +319,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Participate/Overview/" class="md-tabs__link">
+      <a href="../../Participate/Overview/" class="md-tabs__link">
         🧪 Participate
       </a>
     </li>
@@ -353,9 +353,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest" data-md-component="logo">
+    <a href="../.." title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../../_media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     BetonQuest
@@ -384,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         🚀 Home
       </a>
     </li>
@@ -397,14 +397,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -435,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Welcome/" class="md-nav__link">
+      <a href="../../Tutorials/Welcome/" class="md-nav__link">
         👋 Welcome!
       </a>
     </li>
@@ -447,16 +445,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
       
       
@@ -491,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Setting-up-a-local-test-server/" class="md-nav__link">
+      <a href="../../Tutorials/Getting-Started/Setting-up-a-local-test-server/" class="md-nav__link">
         💻 Setting up a local test server
       </a>
     </li>
@@ -505,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Installing-BetonQuest/" class="md-nav__link">
+      <a href="../../Tutorials/Getting-Started/Installing-BetonQuest/" class="md-nav__link">
         📥 Installing BetonQuest
       </a>
     </li>
@@ -519,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Setting-up-the-editor/" class="md-nav__link">
+      <a href="../../Tutorials/Getting-Started/Setting-up-the-editor/" class="md-nav__link">
         ✒️ Setting up the editor
       </a>
     </li>
@@ -533,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../YAML-for-questers/" class="md-nav__link">
+      <a href="../../Tutorials/Getting-Started/YAML-for-questers/" class="md-nav__link">
         📑 YAML for questers
       </a>
     </li>
@@ -545,95 +541,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          🎓 Learn BetonQuest
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tutorials/Getting-Started/Learn-BetonQuest/" class="md-nav__link">
         🎓 Learn BetonQuest
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#checking-out-the-default-example-quest" class="md-nav__link">
-    Checking out the "default" example quest.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-events-and-conditions" class="md-nav__link">
-    Using events and conditions
-  </a>
-  
-    <nav class="md-nav" aria-label="Using events and conditions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#events" class="md-nav__link">
-    Events
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conditions" class="md-nav__link">
-    Conditions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-tags" class="md-nav__link">
-    Basic tags
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-objectives" class="md-nav__link">
-    Creating objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-your-first-conversation" class="md-nav__link">
-    Writing your first conversation
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -684,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frequently-Asked-Questions/" class="md-nav__link">
+      <a href="../../Tutorials/Frequently-Asked-Questions/" class="md-nav__link">
         🤔  General FAQ
       </a>
     </li>
@@ -785,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Reference/" class="md-nav__link">
+      <a href="../../Documentation/Reference/" class="md-nav__link">
         📚   Reference
       </a>
     </li>
@@ -799,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Conversations/" class="md-nav__link">
+      <a href="../../Documentation/Conversations/" class="md-nav__link">
         💬  Conversations
       </a>
     </li>
@@ -813,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Menus/" class="md-nav__link">
+      <a href="../../Documentation/Menus/" class="md-nav__link">
            📱     Menus
       </a>
     </li>
@@ -874,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Objectives-List/" class="md-nav__link">
+      <a href="../../Documentation/Objectives-List/" class="md-nav__link">
         ✔️ Objectives List
       </a>
     </li>
@@ -888,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Events-List/" class="md-nav__link">
+      <a href="../../Documentation/Events-List/" class="md-nav__link">
         ⚙️ Events List
       </a>
     </li>
@@ -902,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Conditions-List/" class="md-nav__link">
+      <a href="../../Documentation/Conditions-List/" class="md-nav__link">
           ❓    Conditions List
       </a>
     </li>
@@ -916,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Compatibility/" class="md-nav__link">
+      <a href="../../Documentation/Compatibility/" class="md-nav__link">
         🤝 Compatibility List
       </a>
     </li>
@@ -930,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Variables-List/" class="md-nav__link">
+      <a href="../../Documentation/Variables-List/" class="md-nav__link">
         🔮   Variables List
       </a>
     </li>
@@ -985,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Notification-Settings/" class="md-nav__link">
+      <a href="../../Documentation/Notification-Settings/" class="md-nav__link">
         🔊   Settings
       </a>
     </li>
@@ -999,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Notification-IO%27s-%26-Categories/" class="md-nav__link">
+      <a href="../../Documentation/Notification-IO%27s-%26-Categories/" class="md-nav__link">
         🏷️   IO's & Categories
       </a>
     </li>
@@ -1058,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Commands-and-permissions/" class="md-nav__link">
+      <a href="../../Documentation/Commands-and-permissions/" class="md-nav__link">
         🔒 Permissions & Commands
       </a>
     </li>
@@ -1072,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Updating-and-Backups/" class="md-nav__link">
+      <a href="../../Documentation/Updating-and-Backups/" class="md-nav__link">
         📥 Updating
       </a>
     </li>
@@ -1086,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/Configuration/" class="md-nav__link">
+      <a href="../../Documentation/Configuration/" class="md-nav__link">
         🔧  Configuration
       </a>
     </li>
@@ -1100,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Documentation/CHANGELOG/" class="md-nav__link">
+      <a href="../../Documentation/CHANGELOG/" class="md-nav__link">
         🗃️ Changelog
       </a>
     </li>
@@ -1127,12 +1039,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -1163,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../API/Overview/" class="md-nav__link">
+      <a href="../Overview/" class="md-nav__link">
         🤝 Overview
       </a>
     </li>
@@ -1177,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../API/API/" class="md-nav__link">
+      <a href="../API/" class="md-nav__link">
         ⚙️ API
       </a>
     </li>
@@ -1189,11 +1103,87 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../API/Logging/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          📑 Logging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         📑 Logging
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-a-custom-logger" class="md-nav__link">
+    Why a custom Logger?
+  </a>
+  
+    <nav class="md-nav" aria-label="Why a custom Logger?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    Advantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtaining-a-betonquestlogger-instance" class="md-nav__link">
+    Obtaining a BetonQuestLogger Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-betonquestlogger" class="md-nav__link">
+    Using the BetonQuestLogger
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the BetonQuestLogger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-overview" class="md-nav__link">
+    Method Overview
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1249,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Overview/" class="md-nav__link">
+      <a href="../../Participate/Overview/" class="md-nav__link">
         🤝 Overview
       </a>
     </li>
@@ -1263,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Setup-Project/" class="md-nav__link">
+      <a href="../../Participate/Setup-Project/" class="md-nav__link">
         🚩 Setup Project
       </a>
     </li>
@@ -1317,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Create-a-new-Branch/" class="md-nav__link">
+      <a href="../../Participate/Process/Create-a-new-Branch/" class="md-nav__link">
         🧬 Create a new Branch
       </a>
     </li>
@@ -1354,7 +1344,7 @@
         
         
         <div class="md-nav__link md-nav__link--container ">
-          <a href="../../../Participate/Process/Code/">👨‍🔧 Changing Code</a>
+          <a href="../../Participate/Process/Code/">👨‍🔧 Changing Code</a>
           <label for="__nav_5_3_2">
             <span class="md-nav__icon md-icon"></span>
           </label>
@@ -1376,7 +1366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Code/Checking-Requirements/" class="md-nav__link">
+      <a href="../../Participate/Process/Code/Checking-Requirements/" class="md-nav__link">
         🕵️‍♂️  Checking Requirements
       </a>
     </li>
@@ -1390,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Code/Adding-a-new-Dependency/" class="md-nav__link">
+      <a href="../../Participate/Process/Code/Adding-a-new-Dependency/" class="md-nav__link">
         📥 Adding a Dependency
       </a>
     </li>
@@ -1404,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Code/Writing-JUnit-Tests/" class="md-nav__link">
+      <a href="../../Participate/Process/Code/Writing-JUnit-Tests/" class="md-nav__link">
         📋    Writing JUnit Tests
       </a>
     </li>
@@ -1446,7 +1436,7 @@
         
         
         <div class="md-nav__link md-nav__link--container ">
-          <a href="../../../Participate/Process/Docs/">👨‍🏫 Changing Docs</a>
+          <a href="../../Participate/Process/Docs/">👨‍🏫 Changing Docs</a>
           <label for="__nav_5_3_3">
             <span class="md-nav__icon md-icon"></span>
           </label>
@@ -1468,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Docs/Principles/" class="md-nav__link">
+      <a href="../../Participate/Process/Docs/Principles/" class="md-nav__link">
         ✒️ Fundamental Principles
       </a>
     </li>
@@ -1482,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Docs/Guidelines/" class="md-nav__link">
+      <a href="../../Participate/Process/Docs/Guidelines/" class="md-nav__link">
         📚 Guidelines
       </a>
     </li>
@@ -1503,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Maintaining-the-Changelog/" class="md-nav__link">
+      <a href="../../Participate/Process/Maintaining-the-Changelog/" class="md-nav__link">
         📑 Maintaining the Changelog
       </a>
     </li>
@@ -1517,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Process/Submitting-Changes/" class="md-nav__link">
+      <a href="../../Participate/Process/Submitting-Changes/" class="md-nav__link">
         🏁 Submitting Changes
       </a>
     </li>
@@ -1570,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Participate/Misc/Versioning-and-Releasing/" class="md-nav__link">
+      <a href="../../Participate/Misc/Versioning-and-Releasing/" class="md-nav__link">
         🏭 Versioning & Releasing
       </a>
     </li>
@@ -1615,30 +1605,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#checking-out-the-default-example-quest" class="md-nav__link">
-    Checking out the "default" example quest.
+  <a href="#why-a-custom-logger" class="md-nav__link">
+    Why a custom Logger?
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-events-and-conditions" class="md-nav__link">
-    Using events and conditions
-  </a>
-  
-    <nav class="md-nav" aria-label="Using events and conditions">
+    <nav class="md-nav" aria-label="Why a custom Logger?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#events" class="md-nav__link">
-    Events
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conditions" class="md-nav__link">
-    Conditions
+  <a href="#advantages" class="md-nav__link">
+    Advantages
   </a>
   
 </li>
@@ -1649,23 +1625,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-tags" class="md-nav__link">
-    Basic tags
+  <a href="#obtaining-a-betonquestlogger-instance" class="md-nav__link">
+    Obtaining a BetonQuestLogger Instance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-objectives" class="md-nav__link">
-    Creating objectives
+  <a href="#using-the-betonquestlogger" class="md-nav__link">
+    Using the BetonQuestLogger
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the BetonQuestLogger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-overview" class="md-nav__link">
+    Method Overview
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-your-first-conversation" class="md-nav__link">
-    Writing your first conversation
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1681,191 +1663,139 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/docs/Tutorials/Getting-Started/Learn-BetonQuest.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/docs/API/Logging.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
                 
-                  <h1>🎓 Learn BetonQuest</h1>
+                  <h1>📑 Logging</h1>
                 
-                <p>There are two ways to get started with BetonQuest:</p>
-<ol>
-<li>Full beginner guide: A step-by-step tutorial to learn everything you need to know in an order which makes sense to a new BetonQuest user.</li>
-<li>Quick-Start-Tutorial: Provides a brief overview about the building blocks. Recommended for experienced plugin scripters and programmers. </li>
-</ol>
-<p><a class="md-button md-button--primary" href="https://mcmodels.net/how-to-tutorials/betonquest-tutorials/betonquest-full-beginners-guide/?wpam_id=3">Full beginner guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></span></a>
-<a class="md-button md-button--primary" href="#checking-out-the-default-example-quest">Quick start tutorial <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5.75.75A.75.75 0 0 1 6.5 0h3a.75.75 0 0 1 0 1.5h-.75v1l-.001.041a6.718 6.718 0 0 1 3.464 1.435l.007-.006.75-.75a.75.75 0 1 1 1.06 1.06l-.75.75-.006.007a6.75 6.75 0 1 1-10.548 0L2.72 5.03l-.75-.75a.75.75 0 0 1 1.06-1.06l.75.75.007.006A6.718 6.718 0 0 1 7.25 2.541a.756.756 0 0 1 0-.041v-1H6.5a.75.75 0 0 1-.75-.75zM8 14.5A5.25 5.25 0 1 0 8 4a5.25 5.25 0 0 0 0 10.5zm.389-6.7 1.33-1.33a.75.75 0 1 1 1.061 1.06L9.45 8.861A1.502 1.502 0 0 1 8 10.75a1.5 1.5 0 1 1 .389-2.95z"/></svg></span></a></p>
-<h2 id="checking-out-the-default-example-quest">Checking out the "default" example quest.<a class="headerlink" href="#checking-out-the-default-example-quest" title="Permanent link">🔗</a></h2>
-<p>Let's start by checking out the build in example quest. You can find it in the BetonQuest directory that has been
-generated in your plugins folder. The folder you are looking for is named "<em>default</em>".</p>
-<p>Open it up and find a file called <em>main.yml</em>. It contains a lot of options, but you only need to look at this section:
+                <details class="warning">
+<summary>API State: <code>Draft</code></summary>
+<p><strong>BetonQuest 2.0 is currently in development.</strong><br />
+This will take some time. Any part of the API may change more than once during development.
+Sure, any API is supposed to be stable. But we cannot guarantee this - BetonQuest 2.0 includes many redesigns
+of core concepts. It's possible that these turn out to be flawed.<br />
+However, API states help you understand how finalized an API part is.</p>
+<p><h3><u>Unfinished</u> </h3>
+This part of the API is brand-new.
+It will be changed if there are any bugs, missing features or usability improvements.</p>
+<p><strong>It is not recommended relying on this part of the API, it will most likely change.</strong></p>
+<p><h3><u>Draft</u></h3>
+Our own usage and testing has shown that this part of the API is complete and seems bug free.
+However, other plugins may have other use cases which are not covered by our testing.
+Therefore, please go ahead and use this API part. Let us know if there are missing features or bugs.
+This API part will be changed if there are more bugs, missing features or usability improvements.</p>
+<p><strong>Please use this part of the API and give us feedback!</strong></p>
+<p><h3><u>Stable</u></h3>
+Both our own and third party testing showed that this part of the API is complete.
+Only bugs and major conceptual problems would lead to more changes.</p>
+<p><strong>This part of the API should be safe to use. We try to keep it compatible with previous versions if changes are needed.</strong></p>
+</details>
+<hr />
+<p>This page shows you everything you need to know about the BetonQuest logger, no matter if you are working on BetonQuest 
+itself or an integration / addon.</p>
+<h2 id="why-a-custom-logger">Why a custom Logger?<a class="headerlink" href="#why-a-custom-logger" title="Permanent link">🔗</a></h2>
+<p>The main advantage is that it is <strong>easier to use</strong>.
+It provides an easy interface that enables custom logging features and respects our logging conventions. 
+This helps to provide a great user experience and keeps the log consistent.</p>
+<h3 id="advantages">Advantages<a class="headerlink" href="#advantages" title="Permanent link">🔗</a></h3>
+<p>These advantages are mainly for BetonQuest, but it is also very useful for 3<sup>rd</sup> party integrations. </p>
+<details class="info">
+<summary>In-Game Logging</summary>
+<p>Users can see all log messages send, using the BetonQuestLogger in-game.
+Additionally, these messages can be filtered by quest package and log level.</p>
+</details>
+<details class="info">
+<summary>Debug Logging</summary>
+<p>BetonQuest has its own <code>log</code> folder in which a <code>latest.log</code> file is written if debug logging is enabled.
+It contains our own log messages and messages from 3<sup>rd</sup> party integrations.
+Additional debug messages are logged next to everything that is displayed on the console already.
+You can send debug log messages directly to that log when you use the BetonQuestLogger in your addon.
+This will make it a lot easier to see how your plugin integrates with BetonQuest's mechanics if a bug occurs.</p>
+</details>
+<details class="info">
+<summary>Log History</summary>
+<p>It happens very often that a user experiences a bug while debug logging is not enabled.
+We keep the last <code>x</code> configured minutes of the debug log history saved in memory.
+Therefore, the history will be written to <code>latest.log</code> once you enable "Debug Logging" via command. </p>
+</details>
+<details class="info">
+<summary>Logger Topics</summary>
+<p>The BetonQuestLogger supports topics, which give your log messages a prefix like <code>(Database)</code>.
+You can use a topic for each class or for each BetonQuestLogger instance.
+Topics are supposed to give important log messages extra attention by making them stand out.</p>
+</details>
+<h2 id="obtaining-a-betonquestlogger-instance">Obtaining a BetonQuestLogger Instance<a class="headerlink" href="#obtaining-a-betonquestlogger-instance" title="Permanent link">🔗</a></h2>
+<div class="admonition note">
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Using Lombock</label><div class="tabbed-content">
+<p>Using Lombock enables you to use the handy
+<a href="https://projectlombok.org/features/log" target="_blank">@CustomLog</a>
+annotation on each class you want a logger for.
+This requires a Lombock setup in your project and in your IDE.</p>
+<div class="admonition abstract">
+<p class="admonition-title">1. Setup</p>
+<p>The first step is to install a Lombok plugin in your IDE. IntelliJ contains it by default.</p>
+<p>All 3<sup>rd</sup> party plugins need to create a new file named <code>lombok.config</code> in their projects root.
+Copy the following to the file:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">npcs</span><span class="p">:</span>
-  <span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">innkeeper</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>lombok.log.custom.declaration = org.betonquest.betonquest.api.BetonQuestLogger org.betonquest.betonquest.api.BetonQuestLogger.create(TYPE)(TYPE,TOPIC)
+lombok.log.fieldName = LOG
 </code></pre></div>
 </td></tr></table>
-You will need to change the <code>'0'</code> to the ID of the Citizens NPC you want to learn Beton with. 
-You obtain a NPC's ID by selecting it with <strong>/npc sel</strong> while looking at it and then running <strong>/npc id</strong>. <br />
-Execute <strong>/q reload</strong> and right-click the NPC.</p>
-<p>The conversation should start. If it did not, check if you correctly assigned the ID. Ask the Innkeeper for some quests.
-He will tell you to cut some trees. If you want, type <strong>/journal</strong> to get the journal and see a new entry.
-Now, don't try to place any wood blocks. BetonQuest will detect that and increase the number of blocks to destroy.
-Just go and find some trees that you can cut down. Now you can return to the Innkeeper and give him the wood.
-You will receive the reward.</p>
-<h2 id="using-events-and-conditions">Using events and conditions<a class="headerlink" href="#using-events-and-conditions" title="Permanent link">🔗</a></h2>
-<p>Now that you know how a (very) simple quest looks like time to start learning how to write something similar. 
-Let's start with events. We won't do conversations just now, since they heavily use events and conditions, 
-so you need to know them first. You can read complete reference to events in the <a href="../../../Documentation/Reference/#events">Reference chapter</a>.
-Do that now or just continue with this tutorial.</p>
-<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">🔗</a></h3>
-<p>Let's just open <em>events.yml</em> file inside the <em>default</em> package. Add a new line at the bottom:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<p>This is an event instruction. BetonQuest will use it to determine what type of event is used and what exactly it should do.
-<code>mega</code> is the event's name, <code>notify</code> is the events type and <code>Hello world!</code> tells the notify event what it needs to display.
-In this case, if you run <code>mega</code> event, it will display <code>Hello world!</code> as a chat message. Now save the file,
-issue <strong>/q reload</strong> command and run the event with <strong>/q e {name} default.mega</strong> command (<code>q</code> is shortcut for <code>quest</code>,
-<code>e</code> is shortcut for <code>event</code>, <code>{name}</code> is your Minecraft name without the brackets, <code>default</code> is the package/quest
-and <code>mega</code> is the name of the event we've just created). It should show you a <code>Hello world!</code> notification in the chat.</p>
-<p>Let's create another event, a more complicated one. <code>teleport</code> seems complicated enough.
-As you can read in the <a href="../../../Documentation/Events-List/">Events list</a>, it needs a single argument, the location.
-Press F3 and check out your current location (it's shown on the left, three numbers, <code>x</code>, <code>y</code> and <code>z</code>).
-Now add in <em>events.yml</em> another line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">tp</span><span class="p">:</span> <span class="s">&quot;teleport</span><span class="nv"> </span><span class="s">100;200;300;world&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<p>and replace <code>100</code> with your <code>x</code> coordinate, <code>200</code> with <code>y</code> and <code>300</code> with <code>z</code>. <code>world</code> needs to be replaced with your 
-current world's name. Save the file, reload the plugin (<strong>/q reload</strong>) and run this event with a command described
-before. It should teleport you to the location you have specified.</p>
-<p>Congratulations, you have just created your first events. Go ahead and do some experiments with other event types. 
-You can find them in <a href="../../../Documentation/Events-List/">Events list</a> chapter.
-Once you're done let's start learning conditions.</p>
-<h3 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">🔗</a></h3>
-<p>Open the <em>conditions.yml</em> file and add a new line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<p>Can you see how we named the <code>mega</code> condition in the same way as the <code>mega</code> event? They are not connected in any way.
-Condition names and event names are separated, so you can give them the same name without any problems. Now let's
-look at the instruction string. As you can suspect, <code>location</code> is a type of the condition. This one means that we'll be 
-checking if the player is near that location (you should change the location to the place where you're standing right now,
-so you don't have to run around the world). Note that at the end of location argument there is an additional number, <code>5</code>.
-This is the maximum distance you can be away from the location to meet the condition. Alright, save the file and reload the plugin.</p>
-<p>Now walk to the location you have defined in the condition. Try to stand on the exact block corresponding to that location. 
-Issue <strong>/q c {name} default.mega</strong> command (<code>c</code> is shortcut for <code>condition</code>). It should show you "Condition blah blah
-blah: <strong>true</strong>". We're focusing on that last word, <strong>true</strong>. This means that you're meeting the condition: you're standing within
-5 block radius of the location. Now move 2 blocks away and issue that command again. You should still be meeting the condition. 
-Walk 4 more blocks away and try now. It should show <strong>false</strong>. You are now outside of that 5 block radius. Get it? Great.</p>
-<p>Now I'll show you the simplest use of those conditions. Open the <em>events.yml</em> file again, and at the end of <code>mega</code> 
-instruction add <code>conditions:mega</code> argument. By the way, rename your events to something that actually fits the type
-of the event, otherwise it will get confusing really fast. Example:</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">events.yml</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1"># This is a comment btw</span>
-<span class="c1"># Old:</span>
-<span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!&quot;</span>
-
-<span class="c1"># New:</span>
-<span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:isAtSpawn&quot;</span>
-</code></pre></div>
+Additionally, Lombock also needs to be setup for the project. The exact configuration depends on your project
+setup.</p>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">conditions.yml</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1"># Old:</span>
-<span class="nt">mega</span><span class="p">:</span> <span class="s">&quot;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5&quot;</span>
-
-<span class="c1"># New:</span>
-<span class="nt">isAtSpawn</span><span class="p">:</span> <span class="s">&quot;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5&quot;</span>
-</code></pre></div>
-</div>
-</div>
-<p>Now <code>sayHello</code> event will run only if it meets <code>isAtSpawn</code> condition. Reload the plugin, walk outside of the 5 block
-radius and try to run <code>sayHello</code> event. Puff, nothing happens. It's because you're not meeting <code>isAtSpawn</code> condition.
-Walk into the radius again and try to run that event now. It should happily display the <code>Hello world!</code> notification.</p>
-<p>It's very nice that we can add such conditions, but the problem is: what if you wanted to display the notification only if the
-player is <em>outside</em> the radius? Don't worry, you don't have to specify <code>inverted_location</code> condition or anything like that.
-You can simply negate the condition. Negation makes the condition behave in the exact opposite way, in this case it
-<code>isAtSpawn</code> will be met only if the player is outside of the 5 block radius, and it won't be met if he's inside.
-Open the <em>events.yml</em> and add an exclamation mark before the <code>isAtSpawn</code> condition, so it looks like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">sayHello</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">world!</span><span class="nv"> </span><span class="s">conditions:!isAtSpawn&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<p>This means "display the <code>Hello world!</code> notification if the <code>isAtSpawn</code> condition is <em>not met</em>". Save the file, reload the plugin
-and run the event inside and outside of the radius to see how it works.</p>
-<h2 id="basic-tags">Basic tags<a class="headerlink" href="#basic-tags" title="Permanent link">🔗</a></h2>
-<p>Now that you know how to use events and conditions I'll show you what tags are. Create new events:</p>
+<div class="admonition abstract">
+<p class="admonition-title">2. Usage</p>
+<p>Simply add the <code>@CustomLog</code> annotation to any class definition. This will <strong>not</strong> work on any class that
+extends <code>Plugin</code>, see the warning box below for more information. </p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Without topic</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">add_beton_tag</span><span class="p">:</span> <span class="s">&quot;tag</span><span class="nv"> </span><span class="s">add</span><span class="nv"> </span><span class="s">beton&quot;</span>
-<span class="nt">del_beton_tag</span><span class="p">:</span> <span class="s">&quot;tag</span><span class="nv"> </span><span class="s">del</span><span class="nv"> </span><span class="s">beton&quot;</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@CustomLog</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">MyCustomEvent</span> <span class="p">{</span>
 </code></pre></div>
 </td></tr></table>
-<p>It's a good practice to give your events names that describe what they are doing. Imagine you have 100 events, <code>foo24</code>,
-<code>bar65</code>, <code>baz12</code> etc. You would get lost pretty quickly. So, <code>add_beton_tag</code> event here simply adds <code>beton</code> tag to the
-player, <code>del_beton_tag</code> removes it. Save the file, reload the plugin and run this event. Nothing happens... or does it?
-Issue <strong>/q t {name}</strong> command (<code>t</code> is shortcut for <code>tags</code>). It should show you a list with few entries.
-Right now focus on <code>default.beton</code>, the rest are used by the default quest for Innkeeper. Alright, <code>default</code> is the name
-of the package in which the tag is, and <code>beton</code> is the name of the tag, as defined in <code>add_beton_tag</code> event.
-Now run <code>del_beton_tag</code> event. Guess what, <code>default.beton</code> disappeared from the list! And that's it, you know how to
-add and remove tags. Pretty useless.</p>
-<p>Nothing could be more wrong. Tags are one the most powerful things in BetonQuest. They just need to be used with <code>tag</code>
-condition. Open <em>conditions.yml</em> and add</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">has_beton_tag</span><span class="p">:</span> <span class="s">&quot;tag</span><span class="nv"> </span><span class="s">beton&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<p>line. As you can imagine, <code>tag</code> is the type of condition (the same as <code>tag</code> event, but these are not the same things - one
-is an event, the other one is a condition) and <code>beton</code> is the name of the tag. You don't have to specify <code>default.beton</code>,
-but you can if you want. Now save, reload and check it with a command. It should show <strong>false</strong>, since you have removed
-the tag with <code>del_beton_tag</code> event. Add it again with <code>add_beton_tag</code> event and check the <code>has_beton_tag</code> condition again.
-Now it will show <strong>true</strong>.</p>
-<p>Now you probably understand how powerful this system is. You could for example set a tag on the first time the player
-talks with an NPC, and if the NPC sees that tag next time they talk, he will tell something different, like "welcome back".</p>
-<h2 id="creating-objectives">Creating objectives<a class="headerlink" href="#creating-objectives" title="Permanent link">🔗</a></h2>
-<p>Time to write some objectives! Open the <em>objectives.yml</em> file and add a new line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">kill_creepers</span><span class="p">:</span> <span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">CREEPER</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">events:tp</span><span class="nv"> </span><span class="s">conditions:has_beton_tag&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<p>Now let's analyze it. <code>kill_creepers</code> is a name of the objective. <code>mobkill</code> is a type. In this case, to complete the
-objective the player will have to kill some mobs. <code>creeper</code> is a type of the mob, so we know that these mobs will have
-to be Creepers. <code>3</code> is the amount. It means that the player has to kill 3 Creepers. <code>events:tp</code> means than once the
-player kills those Creepers, the <code>tp</code> event will be run.
-<code>conditions:has_beton_tag</code> tells us that the player will have to have <code>beton</code> tag while killing Creepers to complete the objective.
-Save it, reload the plugin and issue <strong>/q o {name} add default.kill_creepers</strong> command (<code>o</code> is for <code>objective</code>, <code>add</code>
-tells the plugin to add an objective).</p>
-<p>Now you can check if you actually have this objective with <strong>/q o {name}</strong> command, it will show you all your active
-objectives. It should show <code>default.kill_creepers</code>. Alright, remove (yes, remove!) the <code>beton</code> tag from you and find
-some Creepers to kill. Once you killes 3 of them you will notice that nothing happened. It's because <code>has_beton_tag</code>
-condtion is not met, so the objective does not count your progress. Now add the tag again and kill another Creepers.
-When the third is dead you should be teleported to the location defined in <code>tp</code> event.</p>
-<p>Congratulations, now you know how to use objectives. You should experiment with other types now, since objectives will
-be used very often in your quests. Once you're done check out the <em>Writing your first conversation</em> chapter to use your
-knowledge to write your fisrt conversation.</p>
-<h2 id="writing-your-first-conversation">Writing your first conversation<a class="headerlink" href="#writing-your-first-conversation" title="Permanent link">🔗</a></h2>
-<p>Now that you have seen BetonQuest in action and understood events, conditions and objectives, it's time for writing your
-first conversation. There's a <em>conversations</em> directory inside the default package. It contains a single file,
-<em>innkeeper.yml</em>. This is the conversation with Innkeeper, the one who asks you to cut some trees. Open it, we'll use
-that for reference. Now create a new file, let's say <em>miner.yml</em>. Now type
-(don't copy-paste it, you'll learn better while typing) that into the file:</p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">With topic</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">quester</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Miner</span>
-<span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">greeting</span>
-<span class="nt">NPC_options</span><span class="p">:</span>
-  <span class="nt">greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi there, traveler!</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@CustomLog</span><span class="p">(</span><span class="n">topic</span> <span class="o">=</span> <span class="s">&quot;MyCustomTopic&quot;</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">MyCustomEvent</span> <span class="p">{</span>
 </code></pre></div>
 </td></tr></table>
-<p>It's the most basic conversation possible. The NPC named <code>Miner</code> upon starting the conversation will use <code>greeting</code> option,
-which means he will say <code>Hi there, traveler!</code>. Then the conversation will end, because there are no player options defined.
-Now you need to link the conversation with an NPC. For that you now need to create or select another NPC.
-Then you link your conversation to the npc in the <em>main.yml</em> file. Open it now. As you can see the previous NPC
-conversation is linked to <code>Innkeeper</code> word. Now add another line under the Innkeeper:
-<code>'1': miner</code>, save the file and reload the server. This will link our new conversation with the NPC with the id "1".
-Now click on that NPC.</p>
-<p>Guess what, the conversation finished right after it started. 
-The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the conversation file and edit it
-(again, manually, no copy-paste!) so the options look like this:</p>
+</div>
+</div>
+</div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Using plain Java</label><div class="tabbed-content">
+<div class="admonition abstract">
+<p>This method works without Lombok.
+Simply create a BetonQuestLogger instance.</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Without topic</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">MyCustomEvent</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">BetonQuestLogger</span> <span class="n">LOG</span> <span class="o">=</span> <span class="n">BetonQuestLogger</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="n">MyCustomEvent</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">With topic</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">MyCustomEvent</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">BetonQuestLogger</span> <span class="n">LOG</span> <span class="o">=</span> <span class="n">BetonQuestLogger</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="n">MyCustomEvent</span><span class="p">.</span><span class="na">class</span><span class="p">,</span> <span class="s">&quot;MyCustomTopic&quot;</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Get the logger in your JavaPlugin class</p>
+<p>The methods described above don't work for your plugin's main class (or any other class that extends <code>Plugin</code>). 
+Create the logger instance in the <code>onEnable()</code> method instead.</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Without topic</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1873,137 +1803,81 @@ The Miner just said <code>Hi there, traveler!</code>, as expected. Now go to the
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">NPC_options</span><span class="p">:</span>
-  <span class="nt">greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi there, traveler!</span>
-    <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello,bye</span>
-<span class="nt">player_options</span><span class="p">:</span>
-  <span class="nt">hello</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hello!</span>
-  <span class="nt">bye</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">I need to go, sorry.</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">BetonQuestAddon</span> <span class="kd">extends</span> <span class="n">JavaPlugin</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">BetonQuestLogger</span> <span class="n">log</span><span class="p">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">log</span> <span class="o">=</span> <span class="n">BetonQuestLogger</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>When you save the file, reload the plugin and start the conversation again you will notice that there are two options
-for you to choose: <code>Hello!</code> and <code>I need to go, sorry.</code> Choosing any of them will end the conversation, because these
-options did not specify any pointers.</p>
-<p>Now add a new NPC option, for example <code>weather</code> with text <code>Nice weather.</code> and make <code>hello</code> player option point to it.
-When you save&amp;reload, the Miner should say <code>Nice weather.</code> when you tell him <code>Hello!</code>. I think you get how it works.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">NPC_options</span><span class="p">:</span>
-  <span class="nt">greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi there, traveler!</span>
-    <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello,bye</span>
-  <span class="nt">weather</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Nice weather.</span>
-<span class="nt">player_options</span><span class="p">:</span>
-  <span class="nt">hello</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hello!</span>
-    <span class="nt">pointer</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">weather</span>
-  <span class="nt">bye</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">I need to go, sorry.</span>
-</code></pre></div>
-</td></tr></table>
-<p>Now, every time you talk to the Miner, he will say the same thing. It would be nice if the second time you talk to him
-he knew your name. We can do that with tags. Define a <code>meet_miner</code> event and <code>has_met_miner</code> condition. When you talk
-to the Miner for the first time, he will check if you have met him. If not, he will meet you (with that event) and next
-time you talk, the condition will be passed and he will use your name.</p>
-<p>Now, rename <code>greeting</code> NPC option to <code>first_greeting</code>. Add <code>meet_miner</code> event and negated <code>has_met_miner</code> condition
-(negated because this option should only show if the player has not met the Miner yet). You will need to surround the
-condition with <code>''</code>, because strings cannot start with exclamation marks in YAML. It should look like this:</p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">With topic</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting</span>
-<span class="nt">NPC_options</span><span class="p">:</span>
-  <span class="nt">first_greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi there, traveler!</span>
-    <span class="nt">condition</span><span class="p">:</span> <span class="s">&#39;!has_met_miner&#39;</span>
-    <span class="nt">event</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">meet_miner</span>
-    <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello,bye</span> 
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">BetonQuestAddon</span> <span class="kd">extends</span> <span class="n">JavaPlugin</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">BetonQuestLogger</span> <span class="n">log</span><span class="p">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">log</span> <span class="o">=</span> <span class="n">BetonQuestLogger</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MyCustomTopic&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>This means: <code>first_greeting</code> should be used if the player <strong>does not</strong> pass <code>has_met_miner</code> condition (meaning he
-doesn't have a tag because he haven't talked to the NPC yet). When this option is used, it will fire <code>meet_miner</code> event
-and display <code>hello</code> and <code>bye</code> options. Alright, but what happens if the player met the Miner and now negated
-<code>has_met_miner</code> condition doesn't work? NPC will try to use next option defined in <code>first</code> setting. There is none yet,
-so let's add it.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting,regular_greeting</span>
-<span class="nt">NPC_options</span><span class="p">:</span>
-  <span class="nt">regular_greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi %player%!</span>
-    <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello,bye</span>
-</code></pre></div>
-</td></tr></table>
-<p>This option does not have any conditions, so if the <code>first_greeting</code> fails, the NPC will always choose this one.
-Now take a look at the <code>%player%</code> thing. It's a variable. In this place it will show your name. There are more than this
-one, they are described in <em>Reference</em> chapter. Alright, save&amp;reload and start the conversation. If you did everything
-correctly, the Miner should greet you as a "traveler", and the second time you talk to him, he should greet you with
-your Minecraft name.</p>
-<p>Here's the whole conversation you created, so you can check if you understood everything correctly:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">first</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">first_greeting,regular_greeting</span>
-<span class="nt">NPC_options</span><span class="p">:</span>
-  <span class="nt">first_greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi there, traveler!</span>
-    <span class="nt">condition</span><span class="p">:</span> <span class="s">&#39;!has_met_miner&#39;</span>
-    <span class="nt">event</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">meet_miner</span>
-    <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello,bye</span> 
-  <span class="nt">regular_greeting</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hi %player%!</span>
-    <span class="nt">pointers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello,bye</span>
-  <span class="nt">weather</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Nice weather.</span>
-<span class="nt">player_options</span><span class="p">:</span>
-  <span class="nt">hello</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Hello!</span>
-    <span class="nt">pointer</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">weather</span>
-  <span class="nt">bye</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">I need to go, sorry.</span>
-</code></pre></div>
-</td></tr></table>
-<p>Now you should experiment some more with this conversation, you can help yourself by looking at the
-<a href="https://github.com/BetonQuest/BetonQuest/blob/master/src/main/resources/default/conversations/innkeeper.yml" target="_blank">innkeeper.yml</a> file.
-Try to understand how that conversation works step by step. As the excercise you should complete the Miner NPC, so he
-asks you to mine some iron ore, then smelt it in the furnace, next craft an armor with it and return to him wearing this armor.</p>
-<p>You might want to check out the <a href="../../../Documentation/Reference/">Reference</a> chapter to see how to handle items in 
-your quests and how to add entries to the journal. If you want to use Citizens NPCs instead of the ones made with clay 
-you will find information you need in that chapter too. To find out more about events, conditions, objectives and variables,
-take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
+</div>
+</div>
+</div>
+<h2 id="using-the-betonquestlogger">Using the BetonQuestLogger<a class="headerlink" href="#using-the-betonquestlogger" title="Permanent link">🔗</a></h2>
+<p>A BetonQuestLogger will be available as the variable <code>LOG</code> once you <a href="#obtaining-a-betonquestlogger-instance">obtained a BetonQuestLogger instance</a>. 
+It has a bunch of methods for all use cases. Its JavaDocs explain when and how to use these.
+Make sure to give the JavaDocs a quick read! </p>
+<h3 id="method-overview">Method Overview<a class="headerlink" href="#method-overview" title="Permanent link">🔗</a></h3>
+<p>All methods come in multiple variants. Always provide a package if possible, as this makes it possible to filter the log
+message.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Use Case</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="🤫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f92b.svg" title=":shushing_face:" /> Debug</td>
+<td>Used to display internal states or events that may be beneficial for bug-fixing. These messages are only be visible in the debug log.</td>
+<td>An event has been fired.</td>
+</tr>
+<tr>
+<td><img alt="ℹ" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2139.svg" title=":information_source:" /> Info</td>
+<td>Use this for normal log information in the server's console.</td>
+<td>A new integration was successfully hooked.</td>
+</tr>
+<tr>
+<td><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /> Warning</td>
+<td>You can provide useful information how to fix the underlying problem.</td>
+<td>The user wrote an event with syntax errors.</td>
+</tr>
+<tr>
+<td><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /> Error</td>
+<td>The underlying problem affects the servers security or functionality. Usage is also allowed if you don't know how the user can fix the underlying problem.</td>
+<td>An error occurred while loading an integration.</td>
+</tr>
+<tr>
+<td><img alt="🚨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a8.svg" title=":rotating_light:" /> Report Exception</td>
+<td>Only use this in cases that should never occur and indicate an error that must be reported to the projects issue tracker.</td>
+<td>You need to catch an exception that you know should never occur unless something is horribly wrong.</td>
+</tr>
+</tbody>
+</table>
                 
                   
                     
@@ -2012,7 +1886,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-13T20:50:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-13</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-11-17T09:59:28+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-11-17</span>
       
     
   </small>
@@ -2043,7 +1917,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../YAML-for-questers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📑 YAML for questers" rel="prev">
+        <a href="../API/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ⚙️ API" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2052,20 +1926,20 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              📑 YAML for questers
+              ⚙️ API
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Frequently-Asked-Questions/" class="md-footer__link md-footer__link--next" aria-label="Next: 🤔  General FAQ" rel="next">
+        <a href="../../Participate/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: 🤝 Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              🤔  General FAQ
+              🤝 Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -2215,16 +2089,16 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var form=document.forms.consent;form.addEventListener("submit",function(n){n.preventDefault(),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(n){return[n,!0]}))),location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1afabad3.min.js"></script>
+      <script src="../../assets/javascripts/bundle.1afabad3.min.js"></script>
       
-        <script src="../../../js/timeago.min.js"></script>
+        <script src="../../js/timeago.min.js"></script>
       
-        <script src="../../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../js/timeago_mkdocs_material.js"></script>
       
-        <script src="../../../_webCode/js/copyLinkToClipboard.js"></script>
+        <script src="../../_webCode/js/copyLinkToClipboard.js"></script>
       
     
   </body>

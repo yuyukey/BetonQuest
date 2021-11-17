@@ -16,7 +16,7 @@
       
         
       
-      <link rel="icon" href="../../../media/brand/Icon/Icon32.ico">
+      <link rel="icon" href="../../../_media/brand/Icon/Icon32.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.2.1+insiders-2.12.0">
     
     
@@ -55,15 +55,15 @@
     
       <link rel="stylesheet" href="../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/admonition.css">
+      <link rel="stylesheet" href="../../../_webCode/css/admonition.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/button.css">
+      <link rel="stylesheet" href="../../../_webCode/css/button.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/centered.css">
+      <link rel="stylesheet" href="../../../_webCode/css/centered.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/contentAreaFullWidth.css">
+      <link rel="stylesheet" href="../../../_webCode/css/contentAreaFullWidth.css">
     
-      <link rel="stylesheet" href="../../../webCode/css/superFences.css">
+      <link rel="stylesheet" href="../../../_webCode/css/superFences.css">
     
     <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../../..":"../../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
@@ -132,7 +132,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="BetonQuest" class="md-header__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../../media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -301,7 +301,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../API/API/" class="md-tabs__link">
+      <a href="../../../API/Overview/" class="md-tabs__link">
         🔌 API
       </a>
     </li>
@@ -355,7 +355,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="BetonQuest" class="md-nav__button md-logo" aria-label="BetonQuest" data-md-component="logo">
       
-  <img src="../../../media/brand/Icon/Icon1K.png" alt="logo">
+  <img src="../../../_media/brand/Icon/Icon1K.png" alt="logo">
 
     </a>
     BetonQuest
@@ -1051,6 +1051,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -1071,8 +1075,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../API/Overview/" class="md-nav__link">
+        🤝 Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../API/API/" class="md-nav__link">
         ⚙️ API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../API/Logging/" class="md-nav__link">
+        📑 Logging
       </a>
     </li>
   
@@ -1231,6 +1263,8 @@
         
           
         
+          
+        
       
       
         
@@ -1259,7 +1293,7 @@
   
     <li class="md-nav__item">
       <a href="../Code/Checking-Requirements/" class="md-nav__link">
-        🕵️‍♂️ Checking Requirements
+        🕵️‍♂️  Checking Requirements
       </a>
     </li>
   
@@ -1274,6 +1308,20 @@
     <li class="md-nav__item">
       <a href="../Code/Adding-a-new-Dependency/" class="md-nav__link">
         📥 Adding a Dependency
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code/Writing-JUnit-Tests/" class="md-nav__link">
+        📋    Writing JUnit Tests
       </a>
     </li>
   
@@ -1628,21 +1676,33 @@ so the issue is automatically closed when the pull request is merged.</p>
 <p>The list below contains typical problems that we will check during the review.
 Do not click any of these boxes on GitHub, we will do that. </p>
 <p><strong>Please make sure that you fulfill these requirements. Did you...</strong></p>
-<details class="success"><summary>... run Maven verify?</summary><p>The most basic check is <a href="../Code/Checking-Requirements/">Maven Verify</a>. Run it in you IDE and make sure it succeeds!</p>
+<details class="success">
+<summary>... run Maven verify?</summary>
+<p>The most basic check is <a href="../Code/Checking-Requirements/">Maven Verify</a>. Run it in you IDE and make sure it succeeds!</p>
 </details>
-<details class="success"><summary>... test your changes?</summary><p>Always test your changes in-game! Keep in mind, that there could be some special case in your code that needs to be
+<details class="success">
+<summary>... test your changes?</summary>
+<p>Always test your changes in-game! Keep in mind, that there could be some special case in your code that needs to be
 tested specifically.</p>
 </details>
-<details class="success"><summary>... update the changelog?</summary><p>Don't forget to add a changelog entry for every change you made.
+<details class="success">
+<summary>... update the changelog?</summary>
+<p>Don't forget to add a changelog entry for every change you made.
 Read <a href="../Maintaining-the-Changelog/">maintaining the changelog</a> for more information.</p>
 </details>
-<details class="success"><summary>... update the documentation?</summary><p>You need to adjust the documentation everytime you changed, added or removed any feature. Remember: Things that 
+<details class="success">
+<summary>... update the documentation?</summary>
+<p>You need to adjust the documentation everytime you changed, added or removed any feature. Remember: Things that 
 aren't documented don't exist to the user. There can also be other reasons why you should update the documentation,
 like writing a new tutorial or adjusting a bad example.</p>
 </details>
-<details class="success"><summary><del>... adjust the ConfigUpdater?</del></summary><p>Currently not relevant. We are working on a new updater.</p>
+<details class="success">
+<summary><del>... adjust the ConfigUpdater?</del></summary>
+<p>Currently not relevant. We are working on a new updater.</p>
 </details>
-<details class="success"><summary>... solve all TODOs?</summary><p>You shouldn't have any TODOs in your code because it indicates that your code is not finished. Unfinished
+<details class="success">
+<summary>... solve all TODOs?</summary>
+<p>You shouldn't have any TODOs in your code because it indicates that your code is not finished. Unfinished
 code is not added to the plugin.
 Let's see what to do with different types of TODOs / comments:</p>
 <ul>
@@ -1652,13 +1712,19 @@ Let's see what to do with different types of TODOs / comments:</p>
 <li><code>NOT IMPLEMENTED</code>: Delete it -&gt; Implement or leave empty.</li>
 </ul>
 </details>
-<details class="success"><summary>... remove any commented out code?</summary><p>We use the version control system Git - it will remember any code.
+<details class="success">
+<summary>... remove any commented out code?</summary>
+<p>We use the version control system Git - it will remember any code.
 So don't even start committing commented out code.</p>
 </details>
-<details class="success"><summary>... add debug messages?</summary><p>In general, BetonQuest already has a lot of debug messages. So normally you do not need to add anything.
+<details class="success">
+<summary>... add debug messages?</summary>
+<p>In general, BetonQuest already has a lot of debug messages. So normally you do not need to add anything.
 It may be beneficial for new or complicated things.</p>
 </details>
-<details class="success"><summary>... clean the commit history?</summary><p>You did multiple commits, that look like <code>progress fixing the bug</code>? Or you did a commit with a wrong description?  </p>
+<details class="success">
+<summary>... clean the commit history?</summary>
+<p>You did multiple commits, that look like <code>progress fixing the bug</code>? Or you did a commit with a wrong description?  </p>
 <p>Then you now need to do an <code>Interactive Rebase</code>. This changes the commit history. Here is the general
 <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History" target="_blank">git documentation</a>
 for changing the history. But if you use IntelliJ, you should read
@@ -1886,7 +1952,7 @@ This indicates, that this pull request is not finished, and you can click on <co
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var form=document.forms.consent;form.addEventListener("submit",function(n){n.preventDefault(),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(n){return[n,!0]}))),location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "search.share", "navigation.indexes", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.74af7bc3.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.1afabad3.min.js"></script>
@@ -1895,7 +1961,7 @@ This indicates, that this pull request is not finished, and you can click on <co
       
         <script src="../../../js/timeago_mkdocs_material.js"></script>
       
-        <script src="../../../webCode/js/copyLinkToClipboard.js"></script>
+        <script src="../../../_webCode/js/copyLinkToClipboard.js"></script>
       
     
   </body>
