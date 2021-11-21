@@ -1561,7 +1561,9 @@ in the <em>messages.yml</em> for all built-in notifications. </p>
 <p><strong>Check the <a href="../Events-List/#notification-notify">notification event documentation </a> on how to use the notify event!</strong></p>
 <h3 id="chat">Chat<a class="headerlink" href="#chat" title="Permanent link">🔗</a></h3>
 <p>Writes the notification in the players chat.</p>
-<details class="info"><summary>Preview</summary><p><img alt="chat image" src="../../media/content/User-Documentation/Notifications/chat.png" /></p>
+<details class="info">
+<summary>Preview</summary>
+<p><img alt="chat image" src="../../media/content/User-Documentation/Notifications/chat.png" /></p>
 </details>
 <table>
 <thead>
@@ -1583,7 +1585,9 @@ It's not possible to stop this sound from playing - if you want to get rid of it
 that sound from your server's ressource pack.
 You can still add your own additional sound as usual though.
 It will then be played together with the default advancement sound.</p>
-<details class="info"><summary>Preview</summary><p><img alt="advancement image" src="../../media/content/User-Documentation/Notifications/advancement.png" /></p>
+<details class="info">
+<summary>Preview</summary>
+<p><img alt="advancement image" src="../../media/content/User-Documentation/Notifications/advancement.png" /></p>
 </details>
 <table>
 <thead>
@@ -1609,7 +1613,9 @@ It will then be played together with the default advancement sound.</p>
 </table>
 <h3 id="actionbar">Actionbar<a class="headerlink" href="#actionbar" title="Permanent link">🔗</a></h3>
 <p>Shows the notification using the actionbar.</p>
-<details class="info"><summary>Preview</summary><p><img alt="actionbar image" src="../../media/content/User-Documentation/Notifications/actionbar.png" /></p>
+<details class="info">
+<summary>Preview</summary>
+<p><img alt="actionbar image" src="../../media/content/User-Documentation/Notifications/actionbar.png" /></p>
 </details>
 <table>
 <thead>
@@ -1627,7 +1633,9 @@ It will then be played together with the default advancement sound.</p>
 </table>
 <h3 id="bossbar">Bossbar<a class="headerlink" href="#bossbar" title="Permanent link">🔗</a></h3>
 <p>Shows the notification using a bossbar at the top of the players screen.</p>
-<details class="info"><summary>Preview</summary><p><div style="text-align: center">
+<details class="info">
+<summary>Preview</summary>
+<p><div style="text-align: center">
 <img alt="bossbar image" src="../../media/content/User-Documentation/Notifications/bossbar.png" />
 </div></p>
 </details>
@@ -1673,7 +1681,9 @@ It will then be played together with the default advancement sound.</p>
 <p>Shows the notification using a title.
 A subtitle can be played simultaneously by adding <code>\n</code> to the notification text.
 Anything after these characters will be shown in the subtitle.</p>
-<details class="info"><summary>Preview</summary><p><img alt="title" src="../../media/content/User-Documentation/Notifications/title.png" /></p>
+<details class="info">
+<summary>Preview</summary>
+<p><img alt="title" src="../../media/content/User-Documentation/Notifications/title.png" /></p>
 </details>
 <table>
 <thead>
@@ -1703,7 +1713,9 @@ Anything after these characters will be shown in the subtitle.</p>
 </table>
 <h3 id="subtitle">SubTitle<a class="headerlink" href="#subtitle" title="Permanent link">🔗</a></h3>
 <p>Shows the notification using a subtitle.</p>
-<details class="info"><summary>Preview</summary><p><img alt="subtitle" src="../../media/content/User-Documentation/Notifications/subtitle.png" /></p>
+<details class="info">
+<summary>Preview</summary>
+<p><img alt="subtitle" src="../../media/content/User-Documentation/Notifications/subtitle.png" /></p>
 </details>
 <table>
 <thead>
@@ -1777,7 +1789,9 @@ Keep that in mind when creating sounds close to a player. They can move around t
 <code>soundplayeroffset</code>.
 The sound will be at the actual location if the player is closer to the soundlocation
 then the <code>soundplayeroffset</code> would allow.</p>
-<details class="info"><summary>Visual Explanation</summary><p><div style="text-align: center">
+<details class="info">
+<summary>Visual Explanation</summary>
+<p><div style="text-align: center">
 <img alt="offset image" src="../../media/content/User-Documentation/Notifications/offset.png" />
 </div></p>
 <p>This shows how the sound will be played at the <code>soundlocation</code> if the <code>soundplayeroffset</code> is bigger then the current
@@ -1792,7 +1806,9 @@ distance between the player and the <code>soundlocation</code>
 A vector has to be in the format<code>(x;y;z)</code>. This system will use the players relative coordinate system.
 This means that the vectors x axis is right / left from the players head, the y axis is up or down from where ever the players face is
 and the z axis is before / behind the players face. It will move along the players  head.</p>
-<details class="info"><summary>Visual Explanation</summary><p>In contrast to their global counterparts, relative x,y,z axes do not change their orientation relative to the player.
+<details class="info">
+<summary>Visual Explanation</summary>
+<p>In contrast to their global counterparts, relative x,y,z axes do not change their orientation relative to the player.
 Example: The positive x-axis will always point left from the perspective of the player.
 <div style="text-align: center">
 <img alt="relativeAxis image" src="../../media/content/User-Documentation/Notifications/relativeAxis.png" />
@@ -1801,7 +1817,9 @@ Example: The positive x-axis will always point left from the perspective of the 
 <p>This makes it possible to go crazy with sounds. Just one example: A halloween special
 where the player hears a <img alt="👻" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f47b.svg" title=":ghost:" /> whispering into his left ear - no matter where he is or how he turns his head... 🎃</p>
 <p>Here is a small example:</p>
-<details class="info"><summary>Video Example</summary><p>blue line = direction the player is looking in  <br />
+<details class="info">
+<summary>Video Example</summary>
+<p>blue line = direction the player is looking in  <br />
 🟢 = soundlocation argument  <br />
 🔴  = the actual location the sound is played at  <br />
 <em>soundplayeroffset = (0,0,5)</em></p>
