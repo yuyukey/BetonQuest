@@ -1957,18 +1957,27 @@
 .bq-inline-example-container {
   width: clamp(300px,50%,100%) !important;
 }
-.bq-highlight {
-  font-weight: 700;
-  text-decoration: underline;
-}
 td, th{
   vertical-align: middle !important;
+}
+tr:nth-child(1), a p {
+  font-size: medium !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
 }
 td:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.2);
 }
-tr:nth-child(10) {
-  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+tr:nth-child(11) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+tr:nth-child(11):hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+tr:nth-child(11), p {
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: underline;
 }
 </style>
 
@@ -2034,7 +2043,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <table>
 <thead>
 <tr>
-<th>Feature</th>
+<th><p>Feature</p></th>
 <th align="center"><a href="https://www.spigotmc.org/resources/betonquest.2117/">BetonQuest</a></th>
 <th align="center"><a href="https://www.spigotmc.org/resources/quests.3711/">Quests by PikaMug</a></th>
 <th align="center"><a href="https://www.spigotmc.org/resources/quests.23696/">Quests by LMBishop</a></th>
@@ -2077,7 +2086,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 </tr>
 <tr>
 <td>Version Support</td>
-<td align="center">1.13 - 1.17.1</td>
+<td align="center">1.13 - 1.18</td>
 <td align="center">1.7 - 1.17.1</td>
 <td align="center">1.7 - 1.17.1</td>
 <td align="center">1.11 - 1.16.5</td>
@@ -2146,7 +2155,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
-<td><span class="bq-highlight">Unique Features</span></td>
+<td><p>Unique Features</p></td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
