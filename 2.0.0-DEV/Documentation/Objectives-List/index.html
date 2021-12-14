@@ -65,6 +65,8 @@
     
       <link rel="stylesheet" href="../../_webCode/css/superFences.css">
     
+      <link rel="stylesheet" href="../../_webCode/css/coloredIcons.css">
+    
     <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../..":"../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
       
@@ -998,8 +1000,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jump-jump" class="md-nav__link">
-    Jump!: jump
+  <a href="#player-must-jump-jump" class="md-nav__link">
+    Player must Jump: jump
   </a>
   
 </li>
@@ -1014,6 +1016,13 @@
         <li class="md-nav__item">
   <a href="#run-a-command-command" class="md-nav__link">
     Run a Command: command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equip-armor-item-equip" class="md-nav__link">
+    Equip Armor Item: equip
   </a>
   
 </li>
@@ -1944,8 +1953,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jump-jump" class="md-nav__link">
-    Jump!: jump
+  <a href="#player-must-jump-jump" class="md-nav__link">
+    Player must Jump: jump
   </a>
   
 </li>
@@ -1960,6 +1969,13 @@
         <li class="md-nav__item">
   <a href="#run-a-command-command" class="md-nav__link">
     Run a Command: command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equip-armor-item-equip" class="md-nav__link">
+    Equip Armor Item: equip
   </a>
   
 </li>
@@ -2329,8 +2345,9 @@ notification interval after a colon.</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">tame WOLF 2 events:wolfs_tamed</span>
 </code></pre></div>
 </div>
-<h2 id="jump-jump">Jump!: <code>jump</code><a class="headerlink" href="#jump-jump" title="Permanent link">🔗</a></h2>
-<p>To complete this objective player must jump. The only argument is amount. You can use the <code>notify</code> keyword to display a
+<h2 id="player-must-jump-jump">Player must Jump: <code>jump</code><a class="headerlink" href="#player-must-jump-jump" title="Permanent link">🔗</a></h2>
+<p><strong><span class="twemoji task"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/></svg></span> Objective  ·  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg></span> Requires <a href="https://papermc.io">Paper</a></strong></p>
+<p>To complete this objective the player must jump. The only argument is amount. You can use the <code>notify</code> keyword to display a
 message each time the player advances the objective, optionally with the notification interval after a colon.</p>
 <p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of jumps already done,
 <code>left</code> is the amount of jumps still needed and <code>total</code> is the amount of jumps initially required.</p>
@@ -2387,6 +2404,14 @@ One backslash (<code>\</code>) is required when using no quoting at all (<code>.
 <code>eventName: <mark class="critic">'</mark>command /enchant_@s_minecraft:aqua_affinity<mark class="critic">'</mark></code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: <mark class="critic">'</mark>command /enchant_@s_minecraft:aqua<ins class="critic">\</ins>_affinity<mark class="critic">'</mark></code><br>
 <code>eventName: <mark class="critic">"</mark>command /enchant_@s_minecraft:aqua_affinity<mark class="critic">"</mark></code> <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code>eventName: <mark class="critic">"</mark>command /enchant_@s_minecraft:aqua<ins class="critic">\\</ins>_affinity<mark class="critic">"</mark></code><br></p>
 </div>
+<h2 id="equip-armor-item-equip">Equip Armor Item: <code>equip</code><a class="headerlink" href="#equip-armor-item-equip" title="Permanent link">🔗</a></h2>
+<p><strong><span class="twemoji task"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/></svg></span> Objective  ·  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg></span> Requires <a href="https://papermc.io">Paper</a></strong></p>
+<p>The player must equip the specified quest item in the specified slot.
+The item must be any quest item as defined in <em>items.yml</em>.
+Available slot types: <code>HEAD</code>, <code>CHEST</code>, <code>LEGS</code>, <code>FEET</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">equip HEAD amazing_helmet events:event1,event2</span>
+<span class="l l-Scalar l-Scalar-Plain">equip CHEST amazing_armor events:event1,event2</span>
+</code></pre></div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
 <p>This objective is different. You cannot complete it, it will also ignore defined events and conditions. You can start it and that's it.
 While this objective is active though, everything the player types in chat (and matches special pattern) will become a variable.
@@ -2410,7 +2435,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-13T20:50:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-13</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-12-14T13:00:10+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-12-14</span>
       
     
   </small>
