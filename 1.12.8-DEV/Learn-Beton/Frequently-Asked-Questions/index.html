@@ -60,6 +60,13 @@
       
     
     
+<style>
+  .header-icon {
+    display:inline-block; width: 1.3em; height: 1.3em;
+    position: relative; top: 0.2em; left: 0.2em;
+  }
+</style>
+
   </head>
   
   
@@ -89,6 +96,23 @@
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+<a href="https://mcmodels.net/new-year-new-mobs-giveaway/?wpam_id=3">
+  <p style="color: white; size: 1em">
+    Check out the <i>New Year - New Mobs</i> <strong>MCModels.net Giveaway </strong>
+    <!-- mcmodels.net anvil icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.79 452.63" class="header-icon"><defs><style>.cls-1 { fill: #dc0d1f; }</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M398.54,264c2.12,0,4.23.1,6.25.29V238H120v12.79H0c12.59,40.94,70.44,73.42,143.87,81.2a49.18,49.18,0,0,1-20.09,94.09,24.8,24.8,0,0,1-3.75-.19v26.71H404.79V426.4c-2,.19-4.13.29-6.25.29a81.36,81.36,0,0,1,0-162.71Z"/><path class="cls-1" d="M40.26,162.92a12.53,12.53,0,0,0,16.24,7l8.21-3.29,17.1,42.63a22,22,0,0,0,28.58,12.15L130,213.49A22,22,0,0,0,142.29,185l-17.1-42.64,241-96.65a12.47,12.47,0,0,0,6.95-16.24l-8.62-21.5a12.56,12.56,0,0,0-16.28-7l-241,96.66L90.17,55A22,22,0,0,0,61.55,42.76a43.15,43.15,0,0,0-24,56.11l9.19,22.93-8.2,3.29a12.6,12.6,0,0,0-6.91,16.33Z"/><path class="cls-1" d="M272.39,154c-2.38-5.52-5.54-4.56-9.69-2.69q-52.77,23.82-105.61,47.5l1.09,2.67Q213.38,182.23,268.6,163C273.56,161.29,274.5,158.91,272.39,154Z"/><path class="cls-1" d="M327.65,191.44c6.13-1.1,5.05-4.42,4.28-8.69-1.25-7-5.67-4.21-9.22-3.25q-56,15.09-111.9,30.38c.07,1,.15,2,.22,3C249.9,205.68,288.75,198.44,327.65,191.44Z"/></g></g></svg>
+    <span class="md-button md-button--primary" style="padding: 0.2em 0.2em; position:relative; left: .5em">
+      Go to Giveaway
+    </span>
+  </p>
+</a>
+
+          </div>
+        </aside>
       
     </div>
     
@@ -1728,29 +1752,29 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 </li>
 </ul>
 <p>Here is an example for the block objective.
-<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span>
-<span class="nt">mineStone</span><span class="p">:</span> <span class="s">&quot;block</span><span class="nv"> </span><span class="s">stone</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">persistent</span><span class="nv"> </span><span class="s">events:blockBroken&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span><span class="w"></span>
+<span class="nt">mineStone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;block</span><span class="nv"> </span><span class="s">stone</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">persistent</span><span class="nv"> </span><span class="s">events:blockBroken&quot;</span><span class="w"></span>
 
-<span class="c1">#events.yml</span>
-<span class="nt">blockBroken</span><span class="p">:</span> <span class="s">&quot;folder</span><span class="nv"> </span><span class="s">addPoint,sendNotify,checkForCompletion&quot;</span>
+<span class="c1">#events.yml</span><span class="w"></span>
+<span class="nt">blockBroken</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;folder</span><span class="nv"> </span><span class="s">addPoint,sendNotify,checkForCompletion&quot;</span><span class="w"></span>
 
-<span class="nt">addPoint</span><span class="p">:</span> <span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">1&quot;</span>
-<span class="nt">sendNotify</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">&amp;a%point.blockCounter.amount%&amp;8/&amp;210</span><span class="nv"> </span><span class="s">&amp;7stone</span><span class="nv"> </span><span class="s">broken.</span><span class="nv"> </span><span class="s">io:chat&quot;</span>
+<span class="nt">addPoint</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">1&quot;</span><span class="w"></span>
+<span class="nt">sendNotify</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">&amp;a%point.blockCounter.amount%&amp;8/&amp;210</span><span class="nv"> </span><span class="s">&amp;7stone</span><span class="nv"> </span><span class="s">broken.</span><span class="nv"> </span><span class="s">io:chat&quot;</span><span class="w"></span>
 
-<span class="nt">checkForCompletion</span><span class="p">:</span> <span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">remove</span><span class="nv"> </span><span class="s">mineStone</span><span class="nv"> </span><span class="s">^deletepoint</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">conditions:has10Points&quot;</span>
+<span class="nt">checkForCompletion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">remove</span><span class="nv"> </span><span class="s">mineStone</span><span class="nv"> </span><span class="s">^deletepoint</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">conditions:has10Points&quot;</span><span class="w"></span>
 
-<span class="c1">#conditions.yml</span>
-<span class="nt">has10Points</span><span class="p">:</span> <span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">10&quot;</span>
+<span class="c1">#conditions.yml</span><span class="w"></span>
+<span class="nt">has10Points</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">10&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="how-can-i-let-the-npc-say-things-across-multiple-lines">How can I let the NPC say things across multiple lines?<a class="headerlink" href="#how-can-i-let-the-npc-say-things-across-multiple-lines" title="Permanent link">🔗</a></h2>
 <p>You need to use the PIPE <code>|</code> character at the start of the multiline string.
-<div class="highlight"><pre><span></span><code><span class="nt">text</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-  <span class="no">This is line one.</span>
-  <span class="no">This is line two.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">  </span><span class="no">This is line one.</span><span class="w"></span>
+<span class="w">  </span><span class="no">This is line two.</span><span class="w"></span>
 
-          <span class="no">You</span>
-        <span class="no">can also</span>
-  <span class="no">format this using spaces.</span>
+<span class="w">          </span><span class="no">You</span><span class="w"></span>
+<span class="w">        </span><span class="no">can also</span><span class="w"></span>
+<span class="w">  </span><span class="no">format this using spaces.</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="how-to-deal-with-unresolvable-variables-that-show-0">How to deal with unresolvable variables that show "0"?<a class="headerlink" href="#how-to-deal-with-unresolvable-variables-that-show-0" title="Permanent link">🔗</a></h2>
 <p>You can just add them together using <code>math.calc</code>.
@@ -1761,31 +1785,31 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 items.yml file that matches items based of their names. 
 More specifically, you can have a <a href="../../User-Documentation/Reference/#block-selectors"><em>Block Selector</em></a> that is a <em>regex</em>.
 It would look like this in the example:
-<div class="highlight"><pre><span></span><code><span class="c1">#items.yml</span>
-<span class="nt">anyPotato</span><span class="p">:</span> <span class="s">&quot;.*potato.*&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#items.yml</span><span class="w"></span>
+<span class="nt">anyPotato</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;.*potato.*&quot;</span><span class="w"></span>
 
-<span class="c1">#conditions.yml</span>
-<span class="nt">hasAnyPotato</span><span class="p">:</span> <span class="s">&quot;item</span><span class="nv"> </span><span class="s">anyPotato&quot;</span>
+<span class="c1">#conditions.yml</span><span class="w"></span>
+<span class="nt">hasAnyPotato</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;item</span><span class="nv"> </span><span class="s">anyPotato&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="how-to-store-custom-text-in-a-variable-how-to-use-the-variable-objective">How to store custom text in a variable / How to use the variable objective?<a class="headerlink" href="#how-to-store-custom-text-in-a-variable-how-to-use-the-variable-objective" title="Permanent link">🔗</a></h2>
 <ol>
 <li>
 <p>Start a variable objective for the player. It serves as a variable storage:
-<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span>
- <span class="nt">myVariableStorage</span><span class="p">:</span> <span class="s">&quot;variable</span><span class="nv"> </span><span class="s">no-chat&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span><span class="w"></span>
+<span class="w"> </span><span class="nt">myVariableStorage</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">no-chat&quot;</span><span class="w"></span>
 </code></pre></div></p>
 </li>
 <li>
 <p>Assign values to that storage using a key and a value. Both can be any text you like:
-<div class="highlight"><pre><span></span><code><span class="c1">#events.yml</span>
-<span class="nt">addBlock</span><span class="p">:</span> <span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">blockName</span><span class="nv"> </span><span class="s">REDSTONE&quot;</span>
-<span class="nt">addLocation</span><span class="p">:</span> <span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">location</span><span class="nv"> </span><span class="s">123;456;789;world&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#events.yml</span><span class="w"></span>
+<span class="nt">addBlock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">blockName</span><span class="nv"> </span><span class="s">REDSTONE&quot;</span><span class="w"></span>
+<span class="nt">addLocation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">location</span><span class="nv"> </span><span class="s">123;456;789;world&quot;</span><span class="w"></span>
 </code></pre></div></p>
 </li>
 <li>
 <p>Read from your variable storage using the storages name and the data key.
-<div class="highlight"><pre><span></span><code><span class="c1">#conditions.yml</span>
-<span class="nt">hasHeartBlock</span><span class="p">:</span> <span class="s">&quot;testforblock</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.location%</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.blockName%&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#conditions.yml</span><span class="w"></span>
+<span class="nt">hasHeartBlock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;testforblock</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.location%</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.blockName%&quot;</span><span class="w"></span>
 </code></pre></div></p>
 </li>
 </ol>
@@ -1820,7 +1844,7 @@ It would trigger a <code>globalpoint</code> event that increases some globalpoin
 That globalpoint variable tracks the players combined progress as it is the same for all of them.
 Therefore, there must also be some sort of <code>globalpoint</code>condition that checks whether the "global objective" has been completed.
 It must be checked in a "checkCompletion" event that is run alongside the globalpoint event. It could look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">checkCompletion</span><span class="p">:</span> <span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">globalQuest</span><span class="nv"> </span><span class="s">^folder</span><span class="nv"> </span><span class="s">giveRewards,notifyRewards</span><span class="nv"> </span><span class="s">conditions:globalObjectiveDone&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">checkCompletion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">globalQuest</span><span class="nv"> </span><span class="s">^folder</span><span class="nv"> </span><span class="s">giveRewards,notifyRewards</span><span class="nv"> </span><span class="s">conditions:globalObjectiveDone&quot;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="make-the-npc-react-randomly">Make the NPC react randomly<a class="headerlink" href="#make-the-npc-react-randomly" title="Permanent link">🔗</a></h2>
 <p>Imagine you want to lie to NPC and he has 15% chance of believing you completely, 35% of being suspicious and 50% of not believing at all. The common denominator for those percentages is 20, so we can write it as 3/20, 7/20 and 10/20. The NPC will check options one after another until it finds one which meets all conditions. We will use <code>random</code> condition with our options. The first one will have <code>3-20</code> chance (that's the format used by <code>random</code> condition). If this condition fails, the NPC will check next option. But it won't be <code>7-20</code>, because we already "used" 3 of 20. If you wrote it like that, the chance would be too low. That's why it will be <code>7-17</code>. The third option should have <code>10-10</code> (because <code>17 - 7 = 10</code> and 50% is 10/20), but as you can see it will always be true. It's because we want the last option to be shown if both previous fail. You don't have to add the last condition at all.</p>
@@ -1966,7 +1990,7 @@ It must be checked in a "checkCompletion" event that is run alongside the global
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest", "announce.dismiss"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>

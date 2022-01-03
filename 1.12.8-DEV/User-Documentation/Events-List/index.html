@@ -60,6 +60,13 @@
       
     
     
+<style>
+  .header-icon {
+    display:inline-block; width: 1.3em; height: 1.3em;
+    position: relative; top: 0.2em; left: 0.2em;
+  }
+</style>
+
   </head>
   
   
@@ -89,6 +96,23 @@
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+<a href="https://mcmodels.net/new-year-new-mobs-giveaway/?wpam_id=3">
+  <p style="color: white; size: 1em">
+    Check out the <i>New Year - New Mobs</i> <strong>MCModels.net Giveaway </strong>
+    <!-- mcmodels.net anvil icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.79 452.63" class="header-icon"><defs><style>.cls-1 { fill: #dc0d1f; }</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M398.54,264c2.12,0,4.23.1,6.25.29V238H120v12.79H0c12.59,40.94,70.44,73.42,143.87,81.2a49.18,49.18,0,0,1-20.09,94.09,24.8,24.8,0,0,1-3.75-.19v26.71H404.79V426.4c-2,.19-4.13.29-6.25.29a81.36,81.36,0,0,1,0-162.71Z"/><path class="cls-1" d="M40.26,162.92a12.53,12.53,0,0,0,16.24,7l8.21-3.29,17.1,42.63a22,22,0,0,0,28.58,12.15L130,213.49A22,22,0,0,0,142.29,185l-17.1-42.64,241-96.65a12.47,12.47,0,0,0,6.95-16.24l-8.62-21.5a12.56,12.56,0,0,0-16.28-7l-241,96.66L90.17,55A22,22,0,0,0,61.55,42.76a43.15,43.15,0,0,0-24,56.11l9.19,22.93-8.2,3.29a12.6,12.6,0,0,0-6.91,16.33Z"/><path class="cls-1" d="M272.39,154c-2.38-5.52-5.54-4.56-9.69-2.69q-52.77,23.82-105.61,47.5l1.09,2.67Q213.38,182.23,268.6,163C273.56,161.29,274.5,158.91,272.39,154Z"/><path class="cls-1" d="M327.65,191.44c6.13-1.1,5.05-4.42,4.28-8.69-1.25-7-5.67-4.21-9.22-3.25q-56,15.09-111.9,30.38c.07,1,.15,2,.22,3C249.9,205.68,288.75,198.44,327.65,191.44Z"/></g></g></svg>
+    <span class="md-button md-button--primary" style="padding: 0.2em 0.2em; position:relative; left: .5em">
+      Go to Giveaway
+    </span>
+  </p>
+</a>
+
+          </div>
+        </aside>
       
     </div>
     
@@ -2045,7 +2069,7 @@
 Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in <em>main.yml</em></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cancel wood</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cancel wood</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="chat-player-message-chat">Chat player message <code>chat</code><a class="headerlink" href="#chat-player-message-chat" title="Permanent link">🔗</a></h2>
@@ -2055,9 +2079,9 @@ Additional messages can be defined by separating them with <code>|</code> charac
 <p>If a plugin does not work with the sudo / command event you need to use this event.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="nt">sendMSG</span><span class="p">:</span> <span class="s">&quot;chat</span><span class="nv"> </span><span class="s">Hello!&quot;</span>
-<span class="nt">sendMultipleMSGs</span><span class="p">:</span> <span class="s">&quot;chat</span><span class="nv"> </span><span class="s">Hi</span><span class="nv"> </span><span class="s">%player%|ban</span><span class="nv"> </span><span class="s">%player%|pardon</span><span class="nv"> </span><span class="s">%player%&quot;</span>
-<span class="nt">sendPluginCommand</span><span class="p">:</span> <span class="s">&quot;chat</span><span class="nv"> </span><span class="s">/someCommand</span><span class="nv"> </span><span class="s">x</span><span class="nv"> </span><span class="s">y</span><span class="nv"> </span><span class="s">z&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">sendMSG</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;chat</span><span class="nv"> </span><span class="s">Hello!&quot;</span><span class="w"></span>
+<span class="nt">sendMultipleMSGs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;chat</span><span class="nv"> </span><span class="s">Hi</span><span class="nv"> </span><span class="s">%player%|ban</span><span class="nv"> </span><span class="s">%player%|pardon</span><span class="nv"> </span><span class="s">%player%&quot;</span><span class="w"></span>
+<span class="nt">sendPluginCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;chat</span><span class="nv"> </span><span class="s">/someCommand</span><span class="nv"> </span><span class="s">x</span><span class="nv"> </span><span class="s">y</span><span class="nv"> </span><span class="s">z&quot;</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="chest-clear-chestclear">Chest Clear: <code>chestclear</code><a class="headerlink" href="#chest-clear-chestclear" title="Permanent link">🔗</a></h2>
@@ -2065,7 +2089,7 @@ Additional messages can be defined by separating them with <code>|</code> charac
 <p>This event removes all items from a chest at specified location. The only argument is a location.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestclear 100;200;300;world</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestclear 100;200;300;world</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="chest-give-chestgive">Chest Give: <code>chestgive</code><a class="headerlink" href="#chest-give-chestgive" title="Permanent link">🔗</a></h2>
@@ -2073,7 +2097,7 @@ Additional messages can be defined by separating them with <code>|</code> charac
 <p>This works the same as <code>give</code> event, but it puts the items in a chest at specified location. The first argument is a location, the second argument is a list of items, like in <code>give</code> event. If the chest is full, the items will be dropped on the ground. The chest can be any other block with inventory, i.e. a hopper or a dispenser. BetonQuest will log an error to the console when this event is fired but there is no chest at specified location.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestgive 100;200;300;world emerald:5,sword</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestgive 100;200;300;world emerald:5,sword</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="chest-take-chesttake">Chest Take: <code>chesttake</code><a class="headerlink" href="#chest-take-chesttake" title="Permanent link">🔗</a></h2>
@@ -2081,30 +2105,30 @@ Additional messages can be defined by separating them with <code>|</code> charac
 <p>This event works the same as <code>take</code> event, but it takes items from a chest at specified location. The instruction string is defined in the same way as in <code>chestgive</code> event.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chesttake 100;200;300;world emerald:5,sword</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chesttake 100;200;300;world emerald:5,sword</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="clear-entities-clear">Clear entities: <code>clear</code><a class="headerlink" href="#clear-entities-clear" title="Permanent link">🔗</a></h2>
 <p>This event removes all specified mobs from the specified area. The first required argument is a list of mobs (taken from <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">here</a>) separated by commas. Next is location. After that there is the radius around the location (a positive number or a variable). You can also optionally specify <code>name:</code> argument, followed by name which removed mobs must have. You can use <code>marked:</code> argument to remove only mobs marked in <code>spawn</code> event.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">clear ZOMBIE,CREEPER 100;200;300;world 10 name:Monster</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">clear ZOMBIE,CREEPER 100;200;300;world 10 name:Monster</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="compass-compass">Compass: <code>compass</code><a class="headerlink" href="#compass-compass" title="Permanent link">🔗</a></h2>
 <p>When you run this event, you can add or remove a compass destination for the player. You may also directly set the players's compass destination as well. When a destination is added the player will be able to select a specified location as a target of his compass. To select the target the player must open his backpack and click on the compass icon. The first argument is <code>add</code>,<code>del</code> or <code>set</code>, and second one is the name of the target, as defined in <em>main.yml</em>. Note that if you set a target the player will not automatically have it added to their choices.</p>
 <p>The destination must be defined in the <em>main.yml</em> file in <code>compass</code> section. You can specify a name for the target in each language or just give a general name, and optionally add a custom item (from <em>items.yml</em>) to be displayed in the backpack. Example of a compass target:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">compass</span><span class="p">:</span>
-  <span class="nt">beton</span><span class="p">:</span>
-    <span class="nt">name</span><span class="p">:</span>
-      <span class="nt">en</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Target</span>
-      <span class="nt">pl</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cel</span>
-    <span class="nt">location</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100;200;300;world</span>
-    <span class="nt">item</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">scroll</span>
+<div class="highlight"><pre><span></span><code><span class="nt">compass</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">beton</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">en</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Target</span><span class="w"></span>
+<span class="w">      </span><span class="nt">pl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cel</span><span class="w"></span>
+<span class="w">    </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100;200;300;world</span><span class="w"></span>
+<span class="w">    </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scroll</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">compass add beton</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">compass add beton</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="command-command">Command: <code>command</code><a class="headerlink" href="#command-command" title="Permanent link">🔗</a></h2>
@@ -2115,21 +2139,21 @@ and the player is offline now. You can define additional commands by separating 
 If you want to use a <code>|</code> character in the command use <code>\|</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command kill %player%|ban %player%</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command kill %player%|ban %player%</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="conversation-conversation">Conversation: <code>conversation</code><a class="headerlink" href="#conversation-conversation" title="Permanent link">🔗</a></h2>
 <p>Starts a conversation at location of the player. The only argument is ID of the conversation. This bypasses the conversation permission!</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">conversation village_smith</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">conversation village_smith</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="damage-player-damage">Damage player: <code>damage</code><a class="headerlink" href="#damage-player-damage" title="Permanent link">🔗</a></h2>
 <p>Damages the player by specified amount of damage. The only argument is a number (can have floating point).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">damage 20</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">damage 20</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="delete-point-deletepoint">Delete Point: <code>deletepoint</code><a class="headerlink" href="#delete-point-deletepoint" title="Permanent link">🔗</a></h2>
@@ -2137,7 +2161,7 @@ If you want to use a <code>|</code> character in the command use <code>\|</code>
 <p>Delete the player points in a specified category.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">deletepoint npc_attitude</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">deletepoint npc_attitude</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="door-door">Door: <code>door</code><a class="headerlink" href="#door-door" title="Permanent link">🔗</a></h2>
@@ -2145,21 +2169,21 @@ If you want to use a <code>|</code> character in the command use <code>\|</code>
 <p>This event can open and close doors, trapdoors and fence gates. The syntax is exactly the same as in <code>lever</code> event above.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">door 100;200;300;world off</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">door 100;200;300;world off</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="remove-potion-effect-deleffect">Remove Potion Effect: <code>deleffect</code><a class="headerlink" href="#remove-potion-effect-deleffect" title="Permanent link">🔗</a></h2>
 <p>Removes the specified potion effects from the player. Use <code>any</code> instead of a list of types to remove all potion effects from the player.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">deleffect ABSORPTION,BLINDNESS</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">deleffect ABSORPTION,BLINDNESS</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="potion-effect-effect">Potion Effect: <code>effect</code><a class="headerlink" href="#potion-effect-effect" title="Permanent link">🔗</a></h2>
 <p>Adds a specified potion effect to player. First argument is potion type. You can find all available types <a href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">here</a>. Second is integer defining how long the effect will last in seconds. Third argument, also integer, defines level of the effect (1 means first level). Add a parameter <code>ambient</code> to make potion particles appear more invisible (just like beacon effects). To hide particles add a parameter <code>hidden</code>. To hide the icon for the effect add <code>noicon</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">effect BLINDNESS 30 1 ambient icon</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">effect BLINDNESS 30 1 ambient icon</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="explosion-explosion">Explosion: <code>explosion</code><a class="headerlink" href="#explosion-explosion" title="Permanent link">🔗</a></h2>
@@ -2167,7 +2191,7 @@ If you want to use a <code>|</code> character in the command use <code>\|</code>
 <p>Creates an explosion. It can make fire and destroy blocks. You can also define power, so be careful not to blow your server away. Default TNT power is 4, while Wither on creation is 7. First argument can be 0 or 1 and states if explosion will generate fire (like Ghast’s fireball). Second is also 0 or 1 but this defines if block will be destroyed or not. Third argument is the power (float number). At the end (4<sup>th</sup> attribute) there is location.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">explosion 0 1 4 100;64;-100;survival</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">explosion 0 1 4 100;64;-100;survival</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="folder-folder">Folder: <code>folder</code><a class="headerlink" href="#folder-folder" title="Permanent link">🔗</a></h2>
@@ -2183,21 +2207,21 @@ Delay and Period is a number of seconds. Delay is the time before execution and 
 Random is the amount of events, that will be randomly chosen to fire. It's optional and leaving it blank or omit it will fire all events.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">folder event1,event2,event3 delay:5 period:5 random:1</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">folder event1,event2,event3 delay:5 period:5 random:1</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="give-items-give">Give Items: <code>give</code><a class="headerlink" href="#give-items-give" title="Permanent link">🔗</a></h2>
 <p>Gives the player predefined items. They are specified exactly as in <code>item</code> condition - list separated by commas, every item can have amount separated by colon. Default amount is 1. If the player doesn't have required space in the inventory, the items are dropped on the ground, unless they are quest items. Then they will be put into the backpack. You can also specify <code>notify</code> keyword to display a simple message to the player about receiving items.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">give emerald:5,emerald_block:9</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">give emerald:5,emerald_block:9</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="give-journal-givejournal">Give journal: <code>givejournal</code><a class="headerlink" href="#give-journal-givejournal" title="Permanent link">🔗</a></h2>
 <p>This event simply gives the player his journal. It acts the same way as <strong>/j</strong> command would.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">givejournal</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">givejournal</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="global-point-globalpoint">Global point: <code>globalpoint</code><a class="headerlink" href="#global-point-globalpoint" title="Permanent link">🔗</a></h2>
@@ -2205,7 +2229,7 @@ Random is the amount of events, that will be randomly chosen to fire. It's optio
 <p>This works the same way as the normal point event but instead to manipulating the points for a category of a specific player it manipulates points in a global category. These global categories are player independent, so you could for example add a point to such a global category every time a player does a quest and give some special rewards for the 100<sup>th</sup> player who does the quest.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">globalpoint global_knownusers 1</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">globalpoint global_knownusers 1</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="global-tag-globaltag">Global tag: <code>globaltag</code><a class="headerlink" href="#global-tag-globaltag" title="Permanent link">🔗</a></h2>
@@ -2213,14 +2237,14 @@ Random is the amount of events, that will be randomly chosen to fire. It's optio
 <p>Works the same way as a normal tag event, but instead of setting a tag for one player it sets it globaly for all players.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">globaltag add global_areNPCsAgressive</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">globaltag add global_areNPCsAgressive</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="if-else-if">If else: <code>if</code><a class="headerlink" href="#if-else-if" title="Permanent link">🔗</a></h2>
 <p>This event will check a condition, and based on the outcome it will run the first or second event. The instruction string is <code>if condition event1 else event2</code>, where <code>condition</code> is a condition ID and <code>event1</code> and <code>event2</code> are event IDs. <code>else</code> keyword is mandatory between events for no practical reason.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">if sun rain else sun</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">if sun rain else sun</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="journal-journal">Journal: <code>journal</code><a class="headerlink" href="#journal-journal" title="Permanent link">🔗</a></h2>
@@ -2234,9 +2258,9 @@ also reload the journal.</p>
 - <code>update</code>: Refreshes the journal. This is especially useful when you need to update the main page.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">journal add quest_started</span>
-<span class="l l-Scalar l-Scalar-Plain">journal delete quest_available</span>
-<span class="l l-Scalar l-Scalar-Plain">journal update</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">journal add quest_started</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">journal delete quest_available</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">journal update</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="kill-kill">Kill: <code>kill</code><a class="headerlink" href="#kill-kill" title="Permanent link">🔗</a></h2>
@@ -2252,14 +2276,14 @@ argument followed by the keyword.</p>
 <p>Only mobs that are in loaded chunks can be killed by using this event.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">killmob ZOMBIE 100;200;300;world 40 name:Bolec</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">killmob ZOMBIE 100;200;300;world 40 name:Bolec</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="language-event-language">Language Event: <code>language</code><a class="headerlink" href="#language-event-language" title="Permanent link">🔗</a></h2>
 <p>This event changes player's language to the specified one. There is only one argument, the language name.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">language en</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">language en</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="lever-lever">Lever: <code>lever</code><a class="headerlink" href="#lever-lever" title="Permanent link">🔗</a></h2>
@@ -2267,7 +2291,7 @@ argument followed by the keyword.</p>
 <p>This event can switch a lever. The first argument is a location and the second one is state: <code>on</code>, <code>off</code> or <code>toggle</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">lever 100;200;300;world toggle</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">lever 100;200;300;world toggle</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="lightning-lightning">Lightning: <code>lightning</code><a class="headerlink" href="#lightning-lightning" title="Permanent link">🔗</a></h2>
@@ -2275,7 +2299,7 @@ argument followed by the keyword.</p>
 <p>Strikes a lightning at given location. The only argument is the location.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">lightning 100;64;-100;survival</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">lightning 100;64;-100;survival</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="message-message">Message: <code>message</code><a class="headerlink" href="#message-message" title="Permanent link">🔗</a></h2>
@@ -2284,7 +2308,7 @@ argument followed by the keyword.</p>
 <p><del>This event simply displays a message to the player. The instruction string is the message. All <code>&amp;</code> color codes are respected. You can add additional translations by starting them with <code>{lang}</code> argument, just like in the example. The player will see his language or the default one if it's not defined. You can use conversation variables with this event. Just make sure not to use <code>%npc%</code>.</del></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">message {en} &amp;4You are banned, %player%! {pl} &amp;4Jestes zbanowany, %player%! {de}&amp;4Ich weiß nicht.</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">message {en} &amp;4You are banned, %player%! {pl} &amp;4Jestes zbanowany, %player%! {de}&amp;4Ich weiß nicht.</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="notification-notify">Notification: <code>notify</code><a class="headerlink" href="#notification-notify" title="Permanent link">🔗</a></h2>
@@ -2329,7 +2353,7 @@ One backslash (<code>\</code>) is required when using no quoting at all (<code>.
 <p>The fallback NotifyIO is <code>chat</code> if no argument other than <code>message</code> is specified.  <br />
 <code>message</code> is the only argument of this event that is not <code>key:value</code> based. You can freely add any text with spaces there.</p>
 <p>It also allows you to provide multiple translations using a special syntax: 
-<div class="highlight"><pre><span></span><code><span class="nt">example</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">{en}</span><span class="nv"> </span><span class="s">ABC</span><span class="nv"> </span><span class="s">{de}</span><span class="nv"> </span><span class="s">DEF&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">example</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">{en}</span><span class="nv"> </span><span class="s">ABC</span><span class="nv"> </span><span class="s">{de}</span><span class="nv"> </span><span class="s">DEF&quot;</span><span class="w"></span>
 </code></pre></div>
 The value in <code>{}</code> is a language key from messages.yml. Any text after the language key until the next language key
 belongs to the specified language. There must be a space between the language key and the message.
@@ -2339,30 +2363,30 @@ In this example, english users would see <code>ABC</code> and german ones would 
 <p>Check out the documentation about <a href="../Notification-IO%27s-%26-Categories/#categories">Notify Categories</a> and 
 <a href="../Notification-IO%27s-%26-Categories/#notify-ios">Notify IO options</a> if you haven't yet. You must understand these two if
 you want to use the Notify system to it's full extend.
-<div class="highlight"><pre><span></span><code><span class="c1">#The simplest of all notify events. Just a chat message:</span>
-<span class="nt">customEvent</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">%player%!&quot;</span>  
+<div class="highlight"><pre><span></span><code><span class="c1">#The simplest of all notify events. Just a chat message:</span><span class="w"></span>
+<span class="nt">customEvent</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">%player%!&quot;</span><span class="w">  </span>
 
-<span class="c1">#It&#39;s the same as this one since &#39;chat&#39; is the default IO.</span>
-<span class="nt">theSame</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">%player%!</span><span class="nv"> </span><span class="s">io:chat&quot;</span>
+<span class="c1">#It&#39;s the same as this one since &#39;chat&#39; is the default IO.</span><span class="w"></span>
+<span class="nt">theSame</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">%player%!</span><span class="nv"> </span><span class="s">io:chat&quot;</span><span class="w"></span>
 
-<span class="c1">#This one displays a title and a subtile:</span>
-<span class="nt">myTitle</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">title.\nThis</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">subtitle.</span><span class="nv"> </span><span class="s">io:title&quot;</span>
+<span class="c1">#This one displays a title and a subtile:</span><span class="w"></span>
+<span class="nt">myTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">title.\nThis</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">subtitle.</span><span class="nv"> </span><span class="s">io:title&quot;</span><span class="w"></span>
 
-<span class="c1">#Plays a sound:</span>
-<span class="nt">mySound</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">io:sound</span><span class="nv"> </span><span class="s">sound:x.y.z&quot;</span>
+<span class="c1">#Plays a sound:</span><span class="w"></span>
+<span class="nt">mySound</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">io:sound</span><span class="nv"> </span><span class="s">sound:x.y.z&quot;</span><span class="w"></span>
 
-<span class="c1">#This one explicitly defines an io (bossbar) and adds one bossbarIO option + one soundIO option:</span>
-<span class="nt">myBar</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">custom</span><span class="nv"> </span><span class="s">message.</span><span class="nv"> </span><span class="s">io:bossbar</span><span class="nv"> </span><span class="s">barColor:red</span><span class="nv"> </span><span class="s">sound:block.anvil.use&quot;</span>
+<span class="c1">#This one explicitly defines an io (bossbar) and adds one bossbarIO option + one soundIO option:</span><span class="w"></span>
+<span class="nt">myBar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">custom</span><span class="nv"> </span><span class="s">message.</span><span class="nv"> </span><span class="s">io:bossbar</span><span class="nv"> </span><span class="s">barColor:red</span><span class="nv"> </span><span class="s">sound:block.anvil.use&quot;</span><span class="w"></span>
 
-<span class="c1">#Some events with categories.</span>
-<span class="nt">myEvent1</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">custom</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:info&quot;</span>
-<span class="nt">myEvent2</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">custom</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:firstChoice,secondChoice&quot;</span>
+<span class="c1">#Some events with categories.</span><span class="w"></span>
+<span class="nt">myEvent1</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">custom</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:info&quot;</span><span class="w"></span>
+<span class="nt">myEvent2</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">custom</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:firstChoice,secondChoice&quot;</span><span class="w"></span>
 
-<span class="c1">#You can also override category settings:</span>
-<span class="nt">myEvent3</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Another</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:info</span><span class="nv"> </span><span class="s">io:advancement</span><span class="nv"> </span><span class="s">frame:challenge&quot;</span>
+<span class="c1">#You can also override category settings:</span><span class="w"></span>
+<span class="nt">myEvent3</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">Another</span><span class="nv"> </span><span class="s">message!</span><span class="nv"> </span><span class="s">category:info</span><span class="nv"> </span><span class="s">io:advancement</span><span class="nv"> </span><span class="s">frame:challenge&quot;</span><span class="w"></span>
 
-<span class="c1">#Use multiple languages:</span>
-<span class="nt">multilanguage</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">{en}</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">english</span><span class="nv"> </span><span class="s">person!</span><span class="nv"> </span><span class="s">{de}</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">german</span><span class="nv"> </span><span class="s">person!</span><span class="nv"> </span><span class="s">{es}</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">spanish</span><span class="nv"> </span><span class="s">person!&quot;</span>
+<span class="c1">#Use multiple languages:</span><span class="w"></span>
+<span class="nt">multilanguage</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">{en}</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">english</span><span class="nv"> </span><span class="s">person!</span><span class="nv"> </span><span class="s">{de}</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">german</span><span class="nv"> </span><span class="s">person!</span><span class="nv"> </span><span class="s">{es}</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">spanish</span><span class="nv"> </span><span class="s">person!&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="broadcast-notifyall">Broadcast: <code>notifyall</code><a class="headerlink" href="#broadcast-notifyall" title="Permanent link">🔗</a></h2>
 <p>This events works just like the <a href="#notification-notify">notify</a> event but shows the notification for all online players.</p>
@@ -2373,7 +2397,7 @@ you want to use the Notify system to it's full extend.
 <p>Using this in static contexts only works when removing objectives!</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">objective start wood</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">objective start wood</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="opsudo-opsudo">OPsudo: <code>opsudo</code><a class="headerlink" href="#opsudo-opsudo" title="Permanent link">🔗</a></h2>
@@ -2382,14 +2406,14 @@ Additional commands can be defined by separating them with <code>|</code> charac
 <p>Looking for <a href="#sudo-sudo">run as normal player</a>?</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">opsudo spawn</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">opsudo spawn</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="party-event-party">Party event: <code>party</code><a class="headerlink" href="#party-event-party" title="Permanent link">🔗</a></h2>
 <p>Runs the specified list of events (third argument) for every player in a party. More info about parties in "Party" chapter in <strong>Reference</strong> section.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">party 10 has_tag1,!has_tag2 give_reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">party 10 has_tag1,!has_tag2 give_reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="pick-random-pickrandom">Pick random: <code>pickrandom</code><a class="headerlink" href="#pick-random-pickrandom" title="Permanent link">🔗</a></h2>
@@ -2402,8 +2426,8 @@ Note that only as many events as specified can be picked and <code>amount:0</cod
 <p>There must be two <code>%%</code> before the event's name if variables are used, one is from the variable and the other one from the event's syntax.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">pickrandom 20.5%event1,0.5%event2,79%event3 amount:2</span>
-<span class="l l-Scalar l-Scalar-Plain">pickrandom %point.factionXP.amount%%event1,0.5%event2,79%event3,1%event4 amount:3</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">pickrandom 20.5%event1,0.5%event2,79%event3 amount:2</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">pickrandom %point.factionXP.amount%%event1,0.5%event2,79%event3,1%event4 amount:3</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="play-sound-playsound">Play sound: <code>playsound</code><a class="headerlink" href="#play-sound-playsound" title="Permanent link">🔗</a></h2>
@@ -2414,7 +2438,7 @@ Note that only as many events as specified can be picked and <code>amount:0</cod
 <code>volume:</code> is a decimal responsible for the sound's volume, <code>pitch:</code> specifies the pitch and <code>location:</code> makes the sound play at specified location.</del></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="nt">playsound</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">playsound minecraft:entity.ender_dragon.hurt category:MASTER volume:0.8 pitch:0.8 location:-60;69;-336;World`</span>
+<div class="highlight"><pre><span></span><code><span class="nt">playsound</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">playsound minecraft:entity.ender_dragon.hurt category:MASTER volume:0.8 pitch:0.8 location:-60;69;-336;World`</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="point-point">Point: <code>point</code><a class="headerlink" href="#point-point" title="Permanent link">🔗</a></h2>
@@ -2425,12 +2449,12 @@ First argument after the event name must be a category, and the second one - amo
 This event also supports an optional <code>notify</code> argument that will display information about the change using the notification system.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">point npc_attitude 10</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">point npc_attitude 10</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">point village_reputation *0.75</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">point village_reputation *0.75</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="run-events-run">Run events: <code>run</code><a class="headerlink" href="#run-events-run" title="Permanent link">🔗</a></h2>
@@ -2441,14 +2465,14 @@ specify the actual instruction, not an event name. It is also fired on the same 
 Don't use conditions here, it behaves strangely. We will fix this in 2.0.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">run ^tag add beton ^give emerald:5 ^entry add beton ^kill</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">run ^tag add beton ^give emerald:5 ^entry add beton ^kill</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="scoreboard-score">Scoreboard: <code>score</code><a class="headerlink" href="#scoreboard-score" title="Permanent link">🔗</a></h2>
 <p>This event works in the same way as <code>point</code> event, the only difference is that is uses scoreboards instead of points. You can add, subtract, multiply and divide scores in objectives on the scoreboard. The first argument is the name of the objective, second one is a number. It can be positive for additon, negative for subtraction or prefixed with an asterisk for multiplication. Multiplying by fractions is the same as dividing.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">score kills 1</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">score kills 1</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="set-block-setblock">Set Block: <code>setblock</code><a class="headerlink" href="#set-block-setblock" title="Permanent link">🔗</a></h2>
@@ -2458,7 +2482,7 @@ The first argument is a <a href="../Reference/#block-selectors">Block Selector</
 Very powerful if used to trigger redstone contraptions.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">setblock REDSTONE_BLOCK 100;200;300;world</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">setblock REDSTONE_BLOCK 100;200;300;world</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="spawn-mob-spawn">Spawn Mob: <code>spawn</code><a class="headerlink" href="#spawn-mob-spawn" title="Permanent link">🔗</a></h2>
@@ -2467,12 +2491,12 @@ Very powerful if used to trigger redstone contraptions.</p>
 <p>You can specify armor which the mob will wear and items it will hold with <code>h:</code> (helmet), <code>c:</code> (chestplate), <code>l:</code> (leggings), <code>b:</code> (boots), <code>m:</code> (main hand) and <code>o:</code> (off hand) optional arguments. These take a single item without amount, as defined in <em>items.yml</em>. You can also add a list of drops with <code>drops:</code> argument, followed by a list of items with amounts after colons, separated by commas.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">spawn 100;200;300;world SKELETON 5 marked:targets</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">spawn 100;200;300;world SKELETON 5 marked:targets</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">spawn 100;200;300;world ZOMBIE name:Bolec 1 h:blue_hat c:red_vest drops:emerald:10,bread:2</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">spawn 100;200;300;world ZOMBIE name:Bolec 1 h:blue_hat c:red_vest drops:emerald:10,bread:2</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="sudo-sudo">Sudo: <code>sudo</code><a class="headerlink" href="#sudo-sudo" title="Permanent link">🔗</a></h2>
@@ -2481,7 +2505,7 @@ Additional commands can be defined by separating them with <code>|</code> charac
 <p>Looking for <a href="#opsudo-opsudo">run as admin</a>? </p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">sudo spawn</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">sudo spawn</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="tag-tag">Tag: <code>tag</code><a class="headerlink" href="#tag-tag" title="Permanent link">🔗</a></h2>
@@ -2490,7 +2514,7 @@ Additional commands can be defined by separating them with <code>|</code> charac
 Next goes the tag name. It can't contain spaces (though <code>_</code> is fine). Additional tags can be added, separated by commas (without spaces).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">tag add quest_started,new_entry</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">tag add quest_started,new_entry</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="take-items-take">Take Items: <code>take</code><a class="headerlink" href="#take-items-take" title="Permanent link">🔗</a></h2>
@@ -2504,11 +2528,11 @@ Validate it on the NPC’s reaction!</p>
 <p>You can also specify <code>notify</code> keyword to display a simple message to the player about loosing items.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">take emerald:120,sword</span>
-<span class="l l-Scalar l-Scalar-Plain">take nugget:6 notify</span>
-<span class="l l-Scalar l-Scalar-Plain">take wand notify invOrder:Backpack</span>
-<span class="l l-Scalar l-Scalar-Plain">take money:50 invOrder:Backpack,Inventory</span>
-<span class="l l-Scalar l-Scalar-Plain">take armor invOrder:Armor,Offhand,Inventory,Backpack</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">take emerald:120,sword</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">take nugget:6 notify</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">take wand notify invOrder:Backpack</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">take money:50 invOrder:Backpack,Inventory</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">take armor invOrder:Armor,Offhand,Inventory,Backpack</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="time-time">Time: <code>time</code><a class="headerlink" href="#time-time" title="Permanent link">🔗</a></h2>
@@ -2517,7 +2541,7 @@ in 24 hours format. Subtracting time is done by adding more time (if you think o
 Minutes can be achieved with floating point.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">time +6</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">time +6</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="title-title">Title: <code>title</code><a class="headerlink" href="#title-title" title="Permanent link">🔗</a></h2>
@@ -2530,7 +2554,7 @@ which supports multiple languages, color codes and variables.
 Keep in mind that the subtitle will only appear if the title is visible - that's how Minecraft works.</del></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">title subtitle 0;0;0 {en} Lobby joined! {pl} Dołączono do lobby!</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">title subtitle 0;0;0 {en} Lobby joined! {pl} Dołączono do lobby!</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="teleport-teleport">Teleport: <code>teleport</code><a class="headerlink" href="#teleport-teleport" title="Permanent link">🔗</a></h2>
@@ -2538,7 +2562,7 @@ Keep in mind that the subtitle will only appear if the title is visible - that's
 if the player has one active.The first and only argument must be location. It's a good idea to use yaw and pitch here.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">teleport 123;32;-789;world_the_nether;180;45</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">teleport 123;32;-789;world_the_nether;180;45</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
@@ -2549,22 +2573,22 @@ value to set. Both the name and value can use <code>%...%</code> variables. To d
 storing variables.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable some_var_obj name %player%</span>
-<span class="l l-Scalar l-Scalar-Plain">variable other_var_obj desc &quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable some_var_obj name %player%</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">variable other_var_obj desc &quot;&quot;</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="weather-weather">Weather: <code>weather</code><a class="headerlink" href="#weather-weather" title="Permanent link">🔗</a></h2>
 <p>Sets weather. The argument is <code>sun</code>, <code>rain</code> or <code>storm</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">weather rain</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">weather rain</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="give-experience-experience">Give experience: <code>experience</code><a class="headerlink" href="#give-experience-experience" title="Permanent link">🔗</a></h2>
 <p>Gives the specified amount of experience points to the player. You can give whole levels by adding the <code>level</code> argument.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">experience 4 level</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">experience 4 level</span><span class="w"></span>
 </code></pre></div>
 </div>
                 
@@ -2707,7 +2731,7 @@ storing variables.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest", "announce.dismiss"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>

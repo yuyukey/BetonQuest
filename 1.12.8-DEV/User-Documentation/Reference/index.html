@@ -60,6 +60,13 @@
       
     
     
+<style>
+  .header-icon {
+    display:inline-block; width: 1.3em; height: 1.3em;
+    position: relative; top: 0.2em; left: 0.2em;
+  }
+</style>
+
   </head>
   
   
@@ -89,6 +96,23 @@
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+<a href="https://mcmodels.net/new-year-new-mobs-giveaway/?wpam_id=3">
+  <p style="color: white; size: 1em">
+    Check out the <i>New Year - New Mobs</i> <strong>MCModels.net Giveaway </strong>
+    <!-- mcmodels.net anvil icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.79 452.63" class="header-icon"><defs><style>.cls-1 { fill: #dc0d1f; }</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M398.54,264c2.12,0,4.23.1,6.25.29V238H120v12.79H0c12.59,40.94,70.44,73.42,143.87,81.2a49.18,49.18,0,0,1-20.09,94.09,24.8,24.8,0,0,1-3.75-.19v26.71H404.79V426.4c-2,.19-4.13.29-6.25.29a81.36,81.36,0,0,1,0-162.71Z"/><path class="cls-1" d="M40.26,162.92a12.53,12.53,0,0,0,16.24,7l8.21-3.29,17.1,42.63a22,22,0,0,0,28.58,12.15L130,213.49A22,22,0,0,0,142.29,185l-17.1-42.64,241-96.65a12.47,12.47,0,0,0,6.95-16.24l-8.62-21.5a12.56,12.56,0,0,0-16.28-7l-241,96.66L90.17,55A22,22,0,0,0,61.55,42.76a43.15,43.15,0,0,0-24,56.11l9.19,22.93-8.2,3.29a12.6,12.6,0,0,0-6.91,16.33Z"/><path class="cls-1" d="M272.39,154c-2.38-5.52-5.54-4.56-9.69-2.69q-52.77,23.82-105.61,47.5l1.09,2.67Q213.38,182.23,268.6,163C273.56,161.29,274.5,158.91,272.39,154Z"/><path class="cls-1" d="M327.65,191.44c6.13-1.1,5.05-4.42,4.28-8.69-1.25-7-5.67-4.21-9.22-3.25q-56,15.09-111.9,30.38c.07,1,.15,2,.22,3C249.9,205.68,288.75,198.44,327.65,191.44Z"/></g></g></svg>
+    <span class="md-button md-button--primary" style="padding: 0.2em 0.2em; position:relative; left: .5em">
+      Go to Giveaway
+    </span>
+  </p>
+</a>
+
+          </div>
+        </aside>
       
     </div>
     
@@ -1826,8 +1850,8 @@
 <p>All the content you create is organized into packages. Each package must contain the <em>main.yml</em> file with package-specific settings. Additionally it can have <em>conversations</em> directory with conversation files, <em>events.yml</em>, <em>conditions.yml</em>, <em>objectives.yml</em>, <em>items.yml</em> and <em>journal.yml</em>. The default package is called simply "default". It is always present, and if you delete it, it will be regenerated with a sample quest.</p>
 <p>If you want, you can simply ignore the existence of packages and write all your quests in the default one. You will however come to a point, when your files contain hundreds of lines and it gets a little bit confusing. That's why it's better to split your quests into multiple packages, for example "main" for the quests in the main city, "dungeon" for some interesting dungeon story etc.</p>
 <p>Each package can be disabled/enabled in the <em>main.yml</em> file, by setting <code>enabled</code> to <code>true</code> or <code>false</code>.
-<div class="highlight"><pre><span></span><code><span class="c1">#Add this to the package main.yml</span>
-<span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#Add this to the package main.yml</span><span class="w"></span>
+<span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div></p>
 <p>It would be limiting if you couldn't interact between packages. That's why you can always access stuff from other packages by prefixing its name with package name. If you're writing a conversation in package <code>village</code> and you want to fire an event <code>reward</code> from package <code>beton</code>, you simply name the event as <code>beton.reward</code>. The plugin will search for <code>reward</code> in <code>beton</code> package instead of the one in which the conversation is defined. All events, conditions, objectives, items and conversations behave this way. Note that you can't cross-reference journal entries!</p>
 <p>Packages can be nested together in folders. A folder can either contain packages or be a package, never both. The name of such nested package is prefixed by names of all folders, separated with a dash. This directory tree (<em>main.yml</em> represents a package):</p>
@@ -1861,9 +1885,9 @@
 <h2 id="global-variables">Global variables<a class="headerlink" href="#global-variables" title="Permanent link">🔗</a></h2>
 <p>You can insert a global variable in any instruction string. It looks like this: <code>$beton$</code> (and this one would be called "beton"). When the plugin loads that instruction string it will replace those variables with values assigned to them in <em>main.yml</em> file <strong>before</strong> the instruction string is parsed. This is useful for example when installing a package containing a WorldEdit schematic of the quest building. Instead of going through the whole code to set those locations, names or texts you will only have to specify a few variables (that is, of course, if the author of the package used those variables properly in his code).</p>
 <p>Note that these variables are something entirely different than conversation variables. Global ones use <code>$</code> characters and conversation ones use <code>%</code> characters. The former is resolved before the instruction string is parsed while the latter is resolved when the quests are running, usually on a per-player basis.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">variables</span><span class="p">:</span>
-  <span class="nt">village_location</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100;200;300;world</span>
-  <span class="nt">village_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Concrete</span>
+<div class="highlight"><pre><span></span><code><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">village_location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100;200;300;world</span><span class="w"></span>
+<span class="w">  </span><span class="nt">village_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concrete</span><span class="w"></span>
 </code></pre></div>
 <h2 id="canceling-quests">Canceling quests<a class="headerlink" href="#canceling-quests" title="Permanent link">🔗</a></h2>
 <p>If you want to let your players cancel their quest there is a function for that. In <em>main.yml</em> file there is <code>cancel</code> branch. You can specify there quests, which can be canceled, as well as actions that need to be done to actually cancel them. You can find an example in the <code>default</code> package. The arguments you can specify are:</p>
@@ -1884,7 +1908,7 @@
 These tags follow syntax <code>&lt;package&gt;.global-&lt;id&gt;</code>, where <code>&lt;id&gt;</code> is the objectives id and <code>&lt;package&gt;</code> the package where the objective is located.</p>
 <p>Possible use cases would be a quest which starts if a player reaches a specific location or breaks a specific block.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><span class="nt">start_quest_mine</span><span class="p">:</span> <span class="s">&#39;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">events:start_quest_mine_folder</span><span class="nv"> </span><span class="s">global&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">start_quest_mine</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">events:start_quest_mine_folder</span><span class="nv"> </span><span class="s">global&#39;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="static-events">Static events<a class="headerlink" href="#static-events" title="Permanent link">🔗</a></h2>
 <p>Static events are events that will fire at the specified time of the day.
@@ -1895,10 +1919,10 @@ Also, static events cannot have conditions defined (<code>event-conditions:</cod
 as the plugin cannot check any condition without the player.
 Events, that can be used as static are flagged with <code>static</code> keyword in this documentation.
 You can define your static events in <em>main.yml</em> file under <code>static</code> section, as such:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">static</span><span class="p">:</span>
-  <span class="s">&#39;09:00&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">beton</span>
-  <span class="s">&#39;23:59&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">lightning_strike</span>
-  <span class="s">&#39;11:23&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some_command,command_announcement</span>
+<div class="highlight"><pre><span></span><code><span class="nt">static</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;09:00&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">beton</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;23:59&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lightning_strike</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;11:23&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">some_command,command_announcement</span><span class="w"></span>
 </code></pre></div>
 <p>The hour must be in <code>''</code> to avoid problems, it needs leading zero if less than 10.
 <code>beton</code>, <code>lightnint_strike</code> etc. are IDs of events.</p>
@@ -1909,13 +1933,13 @@ You can define your static events in <em>main.yml</em> file under <code>static</
 <p>You can control behavior of the journal in <em>config.yml</em> file, in <code>journal</code> section. <code>chars_per_page</code> specifies how many characters will be placed on a single page. If you set it too high, the text will overflow outside of the page, too low, there will be too much pages. <code>one_entry_per_page</code> allows you to place every entry on a single page. The <code>chars_per_page</code> setting is in this case ignored, BetonQuest will put entire entry on that page. <code>reversed_order</code> allows you to reverse order of entries and <code>hide_date</code> lets you remove the date from journal entries.</p>
 <p>You can control colors in the journal in <code>journal_colors</code> section in <em>config.yml</em>: <code>date</code> is a color of date of every entry, <code>line</code> is a color of lines separating entries and <code>text</code> is just a color of a text. You need to use standard color codes without <code>&amp;</code> (eg. <code>'4'</code> for dark red).</p>
 <p>You can also add a main page to the journal. It's a list of texts, which will show only if specified conditions are met. You can define them in the <em>main.yml</em> file, in the <code>journal_main_page</code> section:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">journal_main_page</span><span class="p">:</span>
-  <span class="nt">title</span><span class="p">:</span>
-    <span class="nt">priority</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-    <span class="nt">text</span><span class="p">:</span>
-      <span class="nt">en</span><span class="p">:</span> <span class="s">&#39;&amp;eThe</span><span class="nv"> </span><span class="s">Journal&#39;</span>
-      <span class="nt">pl</span><span class="p">:</span> <span class="s">&#39;&amp;eDziennik&#39;</span>
-    <span class="nt">conditions</span><span class="p">:</span> <span class="s">&#39;quest_started,!quest_completed&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">journal_main_page</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">en</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&amp;eThe</span><span class="nv"> </span><span class="s">Journal&#39;</span><span class="w"></span>
+<span class="w">      </span><span class="nt">pl</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&amp;eDziennik&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">conditions</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;quest_started,!quest_completed&#39;</span><span class="w"></span>
 </code></pre></div>
 <p>Each string can have text in different languages, list of conditions separated by commas (these must be met for the text to show in the journal) and <code>priority</code>, which controls the order of texts. You can use conversation variables in the texts, but they will only be updated when the player gets his journal with the <strong>/journal</strong> command. Color codes are supported.</p>
 <p>If you want your main page take a separate page (so entries will be displayed on next free page), set <code>full_main_page</code> in <em>config.yml</em> to "true".
@@ -1926,9 +1950,9 @@ If you want to manually wrap the page, use the pipe <code>|</code> character. Us
 <p>Points are like tags, but with amount. You can earn them for doing quest, talking with NPC’s, basically for everything you want. You can also take the points away, even to negative numbers. Points can be divided to categories, so the ones from <em>beton</em> category won’t mix with points from <em>quests</em> group. Of course then you can check if player has (or doesn’t have) certain amount and do something based on this condition. They can be used as counter for specific number of quest done, as a reputation system in villages and even NPC’s attitude to player.</p>
 <h2 id="npcs">NPCs<a class="headerlink" href="#npcs" title="Permanent link">🔗</a></h2>
 <p>Conversations can be assigned to NPCs created with Citizens. You do it in the <em>main.yml</em> file inside a package, in <code>npcs</code> section:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">npcs</span><span class="p">:</span>
-  <span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">innkeeper</span>
-  <span class="s">&#39;4&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">woodcutter</span>
+<div class="highlight"><pre><span></span><code><span class="nt">npcs</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">innkeeper</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;4&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">woodcutter</span><span class="w"></span>
 </code></pre></div>
 <p>The first string is the ID of the NPC (<em>don't try to put Citizens NPC's name here, it must be the ID</em>), second one is
 the corresponding conversation file name (<em>without <code>.yml</code> at the end</em>). To acquire the NPCs ID select the NPC and type
@@ -1940,7 +1964,7 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 </div>
 <h2 id="items">Items<a class="headerlink" href="#items" title="Permanent link">🔗</a></h2>
 <p>Items in BetonQuest are defined in <em>items.yml</em> file. Each item has an instruction string, similarly to events, conditions etc. Basic syntax is very simple:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">item</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BLOCK_SELECTOR other arguments...</span>
+<div class="highlight"><pre><span></span><code><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BLOCK_SELECTOR other arguments...</span><span class="w"></span>
 </code></pre></div>
 <p><a href="#block-selectors">BLOCK_SELECTOR</a> is a type of the item. It doesn't have to be all in uppercase. Other arguments specify data like name of the item, lore, enchantments or potion effects. There are two categories of these arguments: the ones you can apply to every item and type specific arguments. Examples would be name (for every item type) and text (only in books).</p>
 <p>Every argument is used in two ways: when creating an item and when checking if some existing item matches the instruction. The first case is pretty straightforward - BetonQuest takes all data you specified and creates an item, simple as that. Second case is more complicated. You can require some property of the item to exist, other not to exist, or skip this property check altogether. You can also accept an item only if some value (like enchantment level) is greater/less than <em>x</em>. You can use wildcards in the BLOCK_SELECTOR to match multiple types of items.</p>
@@ -1970,16 +1994,16 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 </li>
 </ul>
 <p><strong>Examples</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">name:&amp;4Sword_made_of_Holy_Concrete</span>
-<span class="l l-Scalar l-Scalar-Plain">name:none</span>
-<span class="l l-Scalar l-Scalar-Plain">lore:&amp;cOnly_this_sword_can_kill_the_Lord_Ruler</span>
-<span class="l l-Scalar l-Scalar-Plain">lore:&amp;2Quest_Item lore-containing</span>
-<span class="l l-Scalar l-Scalar-Plain">lore:none</span>
-<span class="l l-Scalar l-Scalar-Plain">enchants:damage_all:3+,none-knockback</span>
-<span class="l l-Scalar l-Scalar-Plain">enchants:power:? enchants-containing</span>
-<span class="l l-Scalar l-Scalar-Plain">enchants:none</span>
-<span class="l l-Scalar l-Scalar-Plain">unbreakable</span>
-<span class="l l-Scalar l-Scalar-Plain">unbreakable:false</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">name:&amp;4Sword_made_of_Holy_Concrete</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">name:none</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">lore:&amp;cOnly_this_sword_can_kill_the_Lord_Ruler</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">lore:&amp;2Quest_Item lore-containing</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">lore:none</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">enchants:damage_all:3+,none-knockback</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">enchants:power:? enchants-containing</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">enchants:none</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">unbreakable</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">unbreakable:false</span><span class="w"></span>
 </code></pre></div>
 <p>These are the arguments that can be applied only to specific item types:</p>
 <h3 id="books">Books<a class="headerlink" href="#books" title="Permanent link">🔗</a></h3>
@@ -1996,9 +2020,9 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 </li>
 </ul>
 <p><strong>Examples</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">title:Malleus_Maleficarum</span>
-<span class="l l-Scalar l-Scalar-Plain">author:&amp;eGallus_Anonymus</span>
-<span class="l l-Scalar l-Scalar-Plain">text:Lorem_ipsum_dolor_sit_amet,\nconsectetur_adipiscing_elit.|Pellentesque_ligula_urna(...)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">title:Malleus_Maleficarum</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">author:&amp;eGallus_Anonymus</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">text:Lorem_ipsum_dolor_sit_amet,\nconsectetur_adipiscing_elit.|Pellentesque_ligula_urna(...)</span><span class="w"></span>
 </code></pre></div>
 <h3 id="potions">Potions<a class="headerlink" href="#potions" title="Permanent link">🔗</a></h3>
 <p><em>This applies to potions, splash potions and lingering potions.</em></p>
@@ -2025,11 +2049,11 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 </li>
 </ul>
 <p><strong>Examples</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">type:instant_heal</span>
-<span class="l l-Scalar l-Scalar-Plain">extended</span>
-<span class="l l-Scalar l-Scalar-Plain">upgraded:false</span>
-<span class="l l-Scalar l-Scalar-Plain">effects:poison:1+:?,slow:?:45-</span>
-<span class="l l-Scalar l-Scalar-Plain">effects:none-weakness,invisibility:?:? effects-containing</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">type:instant_heal</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">extended</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">upgraded:false</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">effects:poison:1+:?,slow:?:45-</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">effects:none-weakness,invisibility:?:? effects-containing</span><span class="w"></span>
 </code></pre></div>
 <h3 id="heads">Heads<a class="headerlink" href="#heads" title="Permanent link">🔗</a></h3>
 <p><em>This applies to human heads.</em></p>
@@ -2037,8 +2061,8 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 <li><code>owner</code> - this is the name of the head owner. It will <strong>not</strong> use color codes nor replace underscores with spaces. If you want to check for heads without any owner, use <code>none</code> keyword.</li>
 </ul>
 <p><strong>Examples</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">owner:Co0sh</span>
-<span class="l l-Scalar l-Scalar-Plain">owner:none</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">owner:Co0sh</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">owner:none</span><span class="w"></span>
 </code></pre></div>
 <h3 id="leather-armor">Leather armor<a class="headerlink" href="#leather-armor" title="Permanent link">🔗</a></h3>
 <p><em>This applies to all parts of leather armor.</em></p>
@@ -2046,9 +2070,9 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 <li><code>color</code> - this is the color of the armor piece. It can be either one of <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/DyeColor.html">these values</a>, a hexadecimal RGB value prefixed with <code>#</code> character or its decimal representation without the prefix. You can also check if the armor piece doesn't have any color with <code>none</code> keyword.</li>
 </ul>
 <p><strong>Examples</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">color:light_blue</span>
-<span class="l l-Scalar l-Scalar-Plain">color:#ff00ff</span>
-<span class="l l-Scalar l-Scalar-Plain">color:none</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">color:light_blue</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">color:#ff00ff</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">color:none</span><span class="w"></span>
 </code></pre></div>
 <h3 id="fireworks">Fireworks<a class="headerlink" href="#fireworks" title="Permanent link">🔗</a></h3>
 <p><em>This applies to fireworks.</em></p>
@@ -2071,12 +2095,12 @@ the corresponding conversation file name (<em>without <code>.yml</code> at the e
 </li>
 </ul>
 <p><strong>Examples</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">firework:ball:red;white:green;blue:true:true,ball_large:green;yellow:pink;black:false:false</span>
-<span class="l l-Scalar l-Scalar-Plain">firework:burst:?:none:?:? firework-containing</span>
-<span class="l l-Scalar l-Scalar-Plain">firework:none-creeper firework-containing</span>
-<span class="l l-Scalar l-Scalar-Plain">firework:none</span>
-<span class="l l-Scalar l-Scalar-Plain">power:3</span>
-<span class="l l-Scalar l-Scalar-Plain">power:2+</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">firework:ball:red;white:green;blue:true:true,ball_large:green;yellow:pink;black:false:false</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">firework:burst:?:none:?:? firework-containing</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">firework:none-creeper firework-containing</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">firework:none</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">power:3</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">power:2+</span><span class="w"></span>
 </code></pre></div>
 <h3 id="firework-charges">Firework charges<a class="headerlink" href="#firework-charges" title="Permanent link">🔗</a></h3>
 <p><em>This applies to firework charges.</em></p>
@@ -2090,7 +2114,7 @@ Such an item wouldn't be dropped (on death), instead it would be placed in the p
 The translation of the line can be found in <em>messages.yml</em> if a different default language is configured. It's also possible to change the translation. </p>
 <p>Note that this must be an entirely new line in the lore!  <br />
 <strong>Example</strong>:
-<div class="highlight"><pre><span></span><code><span class="nt">important_sword</span><span class="p">:</span> <span class="s">&quot;DIAMOND_SWORD</span><span class="nv"> </span><span class="s">name:Sword_for_destroying__The_Concrete</span><span class="nv"> </span><span class="s">lore:Made_of_pure_Mithril;&amp;2Quest_Item&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">important_sword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DIAMOND_SWORD</span><span class="nv"> </span><span class="s">name:Sword_for_destroying__The_Concrete</span><span class="nv"> </span><span class="s">lore:Made_of_pure_Mithril;&amp;2Quest_Item&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <p>To open your backpack just type <strong>/j</strong> command. The inventory window will open, displaying your stored items. The first slot is always the journal, and if you get it, the slot will stay empty. You can transfer quest items back and forth between inventories by clicking on them. Left click will transfer just one item, right click will try to transfer all items. Normal items cannot be stored into the backpack, so it's not an infinite inventory.</p>
 <p>If you will ever have more than one page of quest items, the buttons will appear. You can customize those buttons by creating <code>previous_button</code> and <code>next_button</code> items in <em>items.yml</em> file. Their name will be overwritten with the one defined in <em>messages.yml</em>.</p>
@@ -2099,7 +2123,7 @@ The translation of the line can be found in <em>messages.yml</em> if a different
 <h2 id="party">Party<a class="headerlink" href="#party" title="Permanent link">🔗</a></h2>
 <p>Parties are very simple. So simple, that they are hard to understand if you already know some other party system. Basically, they don't even have to be created before using them. Parties are defined directly in conditions/events (<code>party</code> event, <code>party</code> conditions, check them out in the reference lists below). In such instruction strings the first argument is a number - range. It defines the radius where the party members will be looked for. Second is a list of conditions. Only the players that meet those conditions will be considered as members of the party. It's most intuitive for players, as they don't have to do anything to be in a party - no commands, no GUIs, just starting the same quest or having the same item - you choose what and when makes the party.</p>
 <p>To understand better how it works I will show you an example of <code>party</code> event. Let's say that every player has an objective of pressing a button. When one of them presses it, this event is fired:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">party_reward</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">party 50 quest_started cancel_button,teleport_to_dungeon</span>
+<div class="highlight"><pre><span></span><code><span class="nt">party_reward</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">party 50 quest_started cancel_button,teleport_to_dungeon</span><span class="w"></span>
 </code></pre></div>
 <p>Now, it means that all players that: are in radius of 50 blocks around the player who pressed the button AND meet <code>quest_started</code> condition will receive <code>cancel_button</code> and <code>teleport_to_dungeon</code> events. The first one will cancel the quest for pressing the button for the others (it's no longer needed), the second one will teleport them somewhere. Now, imagine there is a player on the other side of the world who also meets <code>quest_started</code> condition - he won't be teleported into the dungeon, because he was not with the other players (not in 50 blocks range). Now, there were a bunch of other players running around the button, but they didn't meet the <code>quest_started</code> condition. They also won't be teleported (they didn't start this quest).</p>
 <h2 id="block-selectors">Block Selectors<a class="headerlink" href="#block-selectors" title="Permanent link">🔗</a></h2>
@@ -2184,16 +2208,16 @@ You can configure the interval which checks the conditions in the <a href="../Co
 <li>A player that meets the <code>source_player</code>conditions can't be pushed anymore by other players.</li>
 <li>By leaving the e.g. <code>source_player</code> argument empty it will match all players.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">player_hider</span><span class="p">:</span>
-  <span class="nt">example_hider</span><span class="p">:</span>  <span class="c1">#All players in a special region cannot see any other players in that region.</span>
-    <span class="nt">source_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span>
-    <span class="nt">target_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span>
-  <span class="nt">another_hider</span><span class="p">:</span> <span class="c1">#No one can see any players inside a secret room.</span>
-    <span class="c1">#The source_player argument is left out to match all players.    </span>
-    <span class="nt">target_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_secretRoom</span>
-  <span class="nt">empty_hider</span><span class="p">:</span> <span class="c1">#in_Lobby is a world condition. Therefore, the lobby world appears empty for everyone that is in it.</span>
-    <span class="nt">source_player</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">in_Lobby</span>
-    <span class="c1">#The target_player argument is left out to match all players.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">player_hider</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">example_hider</span><span class="p">:</span><span class="w">  </span><span class="c1">#All players in a special region cannot see any other players in that region.</span><span class="w"></span>
+<span class="w">    </span><span class="nt">source_player</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span><span class="w"></span>
+<span class="w">    </span><span class="nt">target_player</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span><span class="w"></span>
+<span class="w">  </span><span class="nt">another_hider</span><span class="p">:</span><span class="w"> </span><span class="c1">#No one can see any players inside a secret room.</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#The source_player argument is left out to match all players.    </span><span class="w"></span>
+<span class="w">    </span><span class="nt">target_player</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">in_secretRoom</span><span class="w"></span>
+<span class="w">  </span><span class="nt">empty_hider</span><span class="p">:</span><span class="w"> </span><span class="c1">#in_Lobby is a world condition. Therefore, the lobby world appears empty for everyone that is in it.</span><span class="w"></span>
+<span class="w">    </span><span class="nt">source_player</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">in_Lobby</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#The target_player argument is left out to match all players.</span><span class="w"></span>
 </code></pre></div>
                 
                   
@@ -2335,7 +2359,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "search.share", "search.suggest", "announce.dismiss"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d10a1f1d.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.f3077d77.min.js"></script>
