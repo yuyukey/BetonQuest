@@ -2019,8 +2019,8 @@ One could make a magic wand using this.</p>
 show the radius.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">action right DOOR conditions:holding_key loc:100;200;300;world range:5</span>
-<span class="l l-Scalar l-Scalar-Plain">action any any conditions:holding_magicWand events:fireSpell</span> <span class="c1">#Custom click listener for a wand</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">action right DOOR conditions:holding_key loc:100;200;300;world range:5</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">action any any conditions:holding_magicWand events:fireSpell</span><span class="w"> </span><span class="c1">#Custom click listener for a wand</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="arrow-shooting-arrow">Arrow Shooting: <code>arrow</code><a class="headerlink" href="#arrow-shooting-arrow" title="Permanent link">🔗</a></h2>
@@ -2030,7 +2030,7 @@ of an arrow after hit is on the wall of a <em>full</em> block, which means that 
 give accurate results. Experiment with this objective a bit to make sure you've set the numbers correctly.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">arrow 100.5;200.5;300.5;world 1.1 events:reward conditions:correct_player_position</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">arrow 100.5;200.5;300.5;world 1.1 events:reward conditions:correct_player_position</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="block-block">Block: <code>block</code><a class="headerlink" href="#block-block" title="Permanent link">🔗</a></h2>
@@ -2044,7 +2044,7 @@ needed.
 Note that it follows the same rules as the amount argument, meaning that blocks to break are a negative number!</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">block LOG -16 events:reward notify:5</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">block LOG -16 events:reward notify:5</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="breed-animals-breed">Breed animals: <code>breed</code><a class="headerlink" href="#breed-animals-breed" title="Permanent link">🔗</a></h2>
@@ -2057,7 +2057,7 @@ objective will be completable only for breedable ones.</p>
 <code>left</code> is the amount of animals still needed to breed and <code>total</code> is the amount of animals initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">breed cow 10 notify:2 events:reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">breed cow 10 notify:2 events:reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="put-items-in-a-chest-chestput">Put items in a chest: <code>chestput</code><a class="headerlink" href="#put-items-in-a-chest-chestput" title="Permanent link">🔗</a></h2>
@@ -2067,7 +2067,7 @@ items after a colon. The items will be removed upon completing the objective unl
 argument.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestput 100;200;300;world emerald:5,sword events:tag,message</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">chestput 100;200;300;world emerald:5,sword events:tag,message</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="eatdrink-consume">Eat/drink: <code>consume</code><a class="headerlink" href="#eatdrink-consume" title="Permanent link">🔗</a></h2>
@@ -2075,7 +2075,7 @@ argument.</p>
 of an item from <em>items.yml</em>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">consume tawny_owl events:faster_endurance_regen</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">consume tawny_owl events:faster_endurance_regen</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="crafting-craft">Crafting: <code>craft</code><a class="headerlink" href="#crafting-craft" title="Permanent link">🔗</a></h2>
@@ -2086,7 +2086,7 @@ objective, optionally with the notification interval after a colon.</p>
 <code>left</code> is the amount of items still needed to craft and <code>total</code> is the amount of items initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">craft saddle 5 events:reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">craft saddle 5 events:reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="enchant-item-enchant">Enchant item: <code>enchant</code><a class="headerlink" href="#enchant-item-enchant" title="Permanent link">🔗</a></h2>
@@ -2096,7 +2096,7 @@ item name, as defined it <em>items.yml</em>. Second one is the
 with a colon. If you need to check for multiple enchantments you can add a list of them, separated by colons.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">enchant sword damage_all:1,knockback:1 events:reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">enchant sword damage_all:1,knockback:1 events:reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="experience-experience">Experience: <code>experience</code><a class="headerlink" href="#experience-experience" title="Permanent link">🔗</a></h2>
@@ -2108,7 +2108,7 @@ time the player advances the objective, optionally with the notification interva
 <code>left</code> is the amount of experience still needed and <code>total</code> is the amount of experience required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">experience 25 level events:reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">experience 25 level events:reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="delay-delay">Delay: <code>delay</code><a class="headerlink" href="#delay-delay" title="Permanent link">🔗</a></h2>
@@ -2125,7 +2125,7 @@ completed (i.e. <code>23 days, 5 hours and 45 minutes</code>), the second one wi
 formatted using <code>date_format</code> setting in <em>config.yml</em> (it will look like the one above every journal entry).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">delay 1000 ticks interval:5 events:event1,event2</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">delay 1000 ticks interval:5 events:event1,event2</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="death-die">Death: <code>die</code><a class="headerlink" href="#death-die" title="Permanent link">🔗</a></h2>
@@ -2135,7 +2135,7 @@ which is optional, and <code>respawn:</code>, which is also optional and only us
 add them right after type of objective.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">die cancel respawn:100;200;300;world;90;0 events:teleport</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">die cancel respawn:100;200;300;world;90;0 events:teleport</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="fishing-fish">Fishing: <code>fish</code><a class="headerlink" href="#fishing-fish" title="Permanent link">🔗</a></h2>
@@ -2147,7 +2147,7 @@ progress, optionally with the notification interval after a colon.</p>
 already caught fish and <code>total</code> is the initially required amount of fish needed to be caught.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fish SALMON 5 notify events:tag_fish_caught</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fish SALMON 5 notify events:tag_fish_caught</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="interact-with-entity-interact">Interact with entity: <code>interact</code><a class="headerlink" href="#interact-with-entity-interact" title="Permanent link">🔗</a></h2>
@@ -2167,7 +2167,7 @@ with, <code>left</code> is the amount of entities still needed to be interacted 
 initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">interact right creeper 1 marked:sick condition:syringeInHand cancel</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">interact right creeper 1 marked:sick condition:syringeInHand cancel</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="kill-player-kill">Kill player: <code>kill</code><a class="headerlink" href="#kill-player-kill" title="Permanent link">🔗</a></h2>
@@ -2179,7 +2179,7 @@ and <code>notify</code> will display notifications when a player is killed, opti
 already killed players and <code>total</code> is the initially required amount to kill.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">kill 5 required:team_B</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">kill 5 required:team_B</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="location-location">Location: <code>location</code><a class="headerlink" href="#location-location" title="Permanent link">🔗</a></h2>
@@ -2188,7 +2188,7 @@ argument after objective's name must be location, the second - radius around the
 <p>Location objective contains one property, <code>location</code>. It's a string formatted like <code>X: 100, Y: 200, Z:300</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">location 100;200;300;world 5 condition:test1,!test2 events:test1,test2</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">location 100;200;300;world 5 condition:test1,!test2 events:test1,test2</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="login-login">Login: <code>login</code><a class="headerlink" href="#login-login" title="Permanent link">🔗</a></h2>
@@ -2198,7 +2198,7 @@ If you use <code>persistent</code> it will be permanent.
 Don't forget that if you use global and persistent you can still remove the objective explicitly.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">login events:welcome_message</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">login events:welcome_message</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="logout-logout">Logout: <code>logout</code><a class="headerlink" href="#logout-logout" title="Permanent link">🔗</a></h2>
@@ -2206,7 +2206,7 @@ Don't forget that if you use global and persistent you can still remove the obje
 will make it run in "persistent" mode, since the player is offline on the next tick.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">logout events:delete_objective</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">logout events:delete_objective</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="password-password">Password: <code>password</code><a class="headerlink" href="#password-password" title="Permanent link">🔗</a></h2>
@@ -2247,7 +2247,7 @@ The password consists of a prefix followed by the actual secret word:
 </ol>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">password beton ignoreCase prefix:secret fail:failEvent1,failEvent2 events:message,reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">password beton ignoreCase prefix:secret fail:failEvent1,failEvent2 events:message,reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="pickup-item-pickup">Pickup item: <code>pickup</code><a class="headerlink" href="#pickup-item-pickup" title="Permanent link">🔗</a></h2>
@@ -2261,8 +2261,8 @@ display a message each time the player advances the objective, optionally with t
 <code>left</code> is the amount of items still needed to pick up and <code>total</code> is the amount of items initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">pickup emerald amount:3 events:reward notify</span>
-<span class="l l-Scalar l-Scalar-Plain">pickup emerald,diamond amount:6 events:reward notify</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">pickup emerald amount:3 events:reward notify</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">pickup emerald,diamond amount:6 events:reward notify</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="mob-kill-mobkill">Mob Kill: <code>mobkill</code><a class="headerlink" href="#mob-kill-mobkill" title="Permanent link">🔗</a></h2>
@@ -2277,7 +2277,7 @@ keyword used in that event.</p>
 <code>left</code> is the amount of mobs still needed to kill and <code>total</code> is the amount of mobs initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mobkill ZOMBIE 5 name:Uber_Zombie conditions:night</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mobkill ZOMBIE 5 name:Uber_Zombie conditions:night</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="potion-brewing-brew">Potion brewing: <code>brew</code><a class="headerlink" href="#potion-brewing-brew" title="Permanent link">🔗</a></h2>
@@ -2291,7 +2291,7 @@ created potions are counted.</p>
 <code>left</code> is the amount of potions still needed to brew and <code>total</code> is the amount of potions initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">brew weird_concoction 4 event:add_tag</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">brew weird_concoction 4 event:add_tag</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="sheep-shearing-shear">Sheep shearing: <code>shear</code><a class="headerlink" href="#sheep-shearing-shear" title="Permanent link">🔗</a></h2>
@@ -2305,9 +2305,9 @@ optionally with the notification interval after a colon.</p>
 <code>left</code> is the amount of sheep still needed to shear and <code>total</code> is the amount of sheep initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">shear 1 name:Bob color:black</span>
-<span class="l l-Scalar l-Scalar-Plain">shear 1 name:jeb\_</span>
-<span class="l l-Scalar l-Scalar-Plain">&quot;shear 1 name:jeb\\_&quot;</span> <span class="c1">#Use two backslashes if quoted</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">shear 1 name:Bob color:black</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">shear 1 name:jeb\_</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">&quot;shear 1 name:jeb\\_&quot;</span><span class="w"> </span><span class="c1">#Use two backslashes if quoted</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="smelting-smelt">Smelting: <code>smelt</code><a class="headerlink" href="#smelting-smelt" title="Permanent link">🔗</a></h2>
@@ -2319,7 +2319,7 @@ advances the objective, optionally with the notification interval after a colon.
 <code>left</code> is the amount of items still needed to smelt and <code>total</code> is the amount of items initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">smelt IRON_INGOT 5 events:reward</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">smelt IRON_INGOT 5 events:reward</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="step-on-pressure-plate-step">Step on pressure plate: <code>step</code><a class="headerlink" href="#step-on-pressure-plate-step" title="Permanent link">🔗</a></h2>
@@ -2330,7 +2330,7 @@ objective will not be completable and will log errors in the console.</p>
 formatted like <code>X: 100, Y: 200, Z:300</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">step 100;200;300;world events:done</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">step 100;200;300;world events:done</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="taming-tame">Taming: <code>tame</code><a class="headerlink" href="#taming-tame" title="Permanent link">🔗</a></h2>
@@ -2342,7 +2342,7 @@ notification interval after a colon.</p>
 <code>left</code> is the amount of animals still needed to tame and <code>total</code> is the amount of animals initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">tame WOLF 2 events:wolfs_tamed</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">tame WOLF 2 events:wolfs_tamed</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="player-must-jump-jump">Player must Jump: <code>jump</code><a class="headerlink" href="#player-must-jump-jump" title="Permanent link">🔗</a></h2>
@@ -2353,7 +2353,7 @@ message each time the player advances the objective, optionally with the notific
 <code>left</code> is the amount of jumps still needed and <code>total</code> is the amount of jumps initially required.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">jump 15 events:legExerciseDone</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">jump 15 events:legExerciseDone</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="ride-an-entity-ride">Ride an entity: <code>ride</code><a class="headerlink" href="#ride-an-entity-ride" title="Permanent link">🔗</a></h2>
@@ -2362,8 +2362,8 @@ message each time the player advances the objective, optionally with the notific
 <code>any</code> is also a valid input and matches any entity.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">ride horse</span>
-<span class="l l-Scalar l-Scalar-Plain">ride any</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">ride horse</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">ride any</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="run-a-command-command">Run a Command: <code>command</code><a class="headerlink" href="#run-a-command-command" title="Permanent link">🔗</a></h2>
@@ -2374,8 +2374,8 @@ and also supports using placeholders. The second required argument is a list of 
 met.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command /warp_%player%_farms events:event1,event2</span>
-<span class="l l-Scalar l-Scalar-Plain">command //replace_oak\_wood events:event1,event2</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command /warp_%player%_farms events:event1,event2</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">command //replace_oak\_wood events:event1,event2</span><span class="w"></span>
 </code></pre></div>
 </div>
 <p>With this configuration, the command objective requires the player to execute <code>/warp MyName farms</code> to be completed. The
@@ -2390,7 +2390,7 @@ command objective matches from the start of the command that was executed, there
 </ul>
 <div class="admonition complex example">
 <p class="admonition-title">Complex</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command /warp_%player%_farms ignoreCase exact cancel failEvents:failEvent1,failEvent2 events:event1,event2</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">command /warp_%player%_farms ignoreCase exact cancel failEvents:failEvent1,failEvent2 events:event1,event2</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="admonition warning">
@@ -2409,8 +2409,8 @@ One backslash (<code>\</code>) is required when using no quoting at all (<code>.
 <p>The player must equip the specified quest item in the specified slot.
 The item must be any quest item as defined in <em>items.yml</em>.
 Available slot types: <code>HEAD</code>, <code>CHEST</code>, <code>LEGS</code>, <code>FEET</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">equip HEAD amazing_helmet events:event1,event2</span>
-<span class="l l-Scalar l-Scalar-Plain">equip CHEST amazing_armor events:event1,event2</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">equip HEAD amazing_helmet events:event1,event2</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">equip CHEST amazing_armor events:event1,event2</span><span class="w"></span>
 </code></pre></div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
 <p>This objective is different. You cannot complete it, it will also ignore defined events and conditions. You can start it and that's it.
@@ -2424,7 +2424,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <p>You can also use <code>variable</code> event to change variables stored in this objective. There is one optional argument, <code>no-chat</code>. If you use it, the objective won't be modified by what players type in chat.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable</span><span class="w"></span>
 </code></pre></div>
 </div>
                 

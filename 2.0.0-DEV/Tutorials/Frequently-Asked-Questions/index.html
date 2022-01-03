@@ -1960,29 +1960,29 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 </li>
 </ul>
 <p>Here is an example for the block objective.
-<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span>
-<span class="nt">mineStone</span><span class="p">:</span> <span class="s">&quot;block</span><span class="nv"> </span><span class="s">stone</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">persistent</span><span class="nv"> </span><span class="s">events:blockBroken&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span><span class="w"></span>
+<span class="nt">mineStone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;block</span><span class="nv"> </span><span class="s">stone</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">persistent</span><span class="nv"> </span><span class="s">events:blockBroken&quot;</span><span class="w"></span>
 
-<span class="c1">#events.yml</span>
-<span class="nt">blockBroken</span><span class="p">:</span> <span class="s">&quot;folder</span><span class="nv"> </span><span class="s">addPoint,sendNotify,checkForCompletion&quot;</span>
+<span class="c1">#events.yml</span><span class="w"></span>
+<span class="nt">blockBroken</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;folder</span><span class="nv"> </span><span class="s">addPoint,sendNotify,checkForCompletion&quot;</span><span class="w"></span>
 
-<span class="nt">addPoint</span><span class="p">:</span> <span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">1&quot;</span>
-<span class="nt">sendNotify</span><span class="p">:</span> <span class="s">&quot;notify</span><span class="nv"> </span><span class="s">&amp;a%point.blockCounter.amount%&amp;8/&amp;210</span><span class="nv"> </span><span class="s">&amp;7stone</span><span class="nv"> </span><span class="s">broken.</span><span class="nv"> </span><span class="s">io:chat&quot;</span>
+<span class="nt">addPoint</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">1&quot;</span><span class="w"></span>
+<span class="nt">sendNotify</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify</span><span class="nv"> </span><span class="s">&amp;a%point.blockCounter.amount%&amp;8/&amp;210</span><span class="nv"> </span><span class="s">&amp;7stone</span><span class="nv"> </span><span class="s">broken.</span><span class="nv"> </span><span class="s">io:chat&quot;</span><span class="w"></span>
 
-<span class="nt">checkForCompletion</span><span class="p">:</span> <span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">remove</span><span class="nv"> </span><span class="s">mineStone</span><span class="nv"> </span><span class="s">^deletepoint</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">conditions:has10Points&quot;</span>
+<span class="nt">checkForCompletion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">remove</span><span class="nv"> </span><span class="s">mineStone</span><span class="nv"> </span><span class="s">^deletepoint</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">conditions:has10Points&quot;</span><span class="w"></span>
 
-<span class="c1">#conditions.yml</span>
-<span class="nt">has10Points</span><span class="p">:</span> <span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">10&quot;</span>
+<span class="c1">#conditions.yml</span><span class="w"></span>
+<span class="nt">has10Points</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">10&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="how-can-i-let-the-npc-say-things-across-multiple-lines">How can I let the NPC say things across multiple lines?<a class="headerlink" href="#how-can-i-let-the-npc-say-things-across-multiple-lines" title="Permanent link">🔗</a></h2>
 <p>You need to use the PIPE <code>|</code> character at the start of the multiline string.
-<div class="highlight"><pre><span></span><code><span class="nt">text</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-  <span class="no">This is line one.</span>
-  <span class="no">This is line two.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">  </span><span class="no">This is line one.</span><span class="w"></span>
+<span class="w">  </span><span class="no">This is line two.</span><span class="w"></span>
 
-          <span class="no">You</span>
-        <span class="no">can also</span>
-  <span class="no">format this using spaces.</span>
+<span class="w">          </span><span class="no">You</span><span class="w"></span>
+<span class="w">        </span><span class="no">can also</span><span class="w"></span>
+<span class="w">  </span><span class="no">format this using spaces.</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="how-to-deal-with-unresolvable-variables-that-show-0">How to deal with unresolvable variables that show "0"?<a class="headerlink" href="#how-to-deal-with-unresolvable-variables-that-show-0" title="Permanent link">🔗</a></h2>
 <p>You can just add them together using <code>math.calc</code>.
@@ -1993,31 +1993,31 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 items.yml file that matches items based of their names. 
 More specifically, you can have a <a href="../../Documentation/Reference/#block-selectors"><em>Block Selector</em></a> that is a <em>regex</em>.
 It would look like this in the example:
-<div class="highlight"><pre><span></span><code><span class="c1">#items.yml</span>
-<span class="nt">anyPotato</span><span class="p">:</span> <span class="s">&quot;.*potato.*&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#items.yml</span><span class="w"></span>
+<span class="nt">anyPotato</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;.*potato.*&quot;</span><span class="w"></span>
 
-<span class="c1">#conditions.yml</span>
-<span class="nt">hasAnyPotato</span><span class="p">:</span> <span class="s">&quot;item</span><span class="nv"> </span><span class="s">anyPotato&quot;</span>
+<span class="c1">#conditions.yml</span><span class="w"></span>
+<span class="nt">hasAnyPotato</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;item</span><span class="nv"> </span><span class="s">anyPotato&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="how-to-store-custom-text-in-a-variable-how-to-use-the-variable-objective">How to store custom text in a variable / How to use the variable objective?<a class="headerlink" href="#how-to-store-custom-text-in-a-variable-how-to-use-the-variable-objective" title="Permanent link">🔗</a></h2>
 <ol>
 <li>
 <p>Start a variable objective for the player. It serves as a variable storage:
-<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span>
- <span class="nt">myVariableStorage</span><span class="p">:</span> <span class="s">&quot;variable</span><span class="nv"> </span><span class="s">no-chat&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span><span class="w"></span>
+<span class="w"> </span><span class="nt">myVariableStorage</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">no-chat&quot;</span><span class="w"></span>
 </code></pre></div></p>
 </li>
 <li>
 <p>Assign values to that storage using a key and a value. Both can be any text you like:
-<div class="highlight"><pre><span></span><code><span class="c1">#events.yml</span>
-<span class="nt">addBlock</span><span class="p">:</span> <span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">blockName</span><span class="nv"> </span><span class="s">REDSTONE&quot;</span>
-<span class="nt">addLocation</span><span class="p">:</span> <span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">location</span><span class="nv"> </span><span class="s">123;456;789;world&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#events.yml</span><span class="w"></span>
+<span class="nt">addBlock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">blockName</span><span class="nv"> </span><span class="s">REDSTONE&quot;</span><span class="w"></span>
+<span class="nt">addLocation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">location</span><span class="nv"> </span><span class="s">123;456;789;world&quot;</span><span class="w"></span>
 </code></pre></div></p>
 </li>
 <li>
 <p>Read from your variable storage using the storages name and the data key.
-<div class="highlight"><pre><span></span><code><span class="c1">#conditions.yml</span>
-<span class="nt">hasHeartBlock</span><span class="p">:</span> <span class="s">&quot;testforblock</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.location%</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.blockName%&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#conditions.yml</span><span class="w"></span>
+<span class="nt">hasHeartBlock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;testforblock</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.location%</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.blockName%&quot;</span><span class="w"></span>
 </code></pre></div></p>
 </li>
 </ol>
@@ -2050,27 +2050,27 @@ on your server where your player's need to fish 100 salmons. The quest package i
 <p>Create an objective that is immediately fired upon the first interaction (this means setting the amount to one for most objectives).
 That objective must be <code>persistent</code> so it restarts immediately upon completion. It also has to be <code>global</code> so every
 player will receive it upon joining the server.
-<div class="highlight"><pre><span></span><code><span class="c1"># fish a salmon to progress the global quest</span>
-<span class="nt">gQuest</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fish SALMON 1 events:gQuestProgress global persistent</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># fish a salmon to progress the global quest</span><span class="w"></span>
+<span class="nt">gQuest</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fish SALMON 1 events:gQuestProgress global persistent</span><span class="w"></span>
 </code></pre></div>
 The objective would trigger a folder event that increases a <code>globalpoint</code> variable by one and tries to run the
 events that are fired upon completion. That globalpoint variable tracks the players combined progress.
 The "completion events" must be limited by a <code>globalpoint</code> condition that checks whether the <code>globalpoint</code> variable has
 reached a certain value.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">events.yml</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1"># 1. increase the global variable 2. wait one tick for the change to process 3. attempt to run the completion events</span>
-<span class="nt">gQuestProgress</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">folder gQuestIncrementCounter,gQuestCheckCompletion period:1 ticks</span>
-<span class="c1"># Adds 1 to the global variable</span>
-<span class="nt">gQuestIncrementCounter</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">globalpoint gQuest 1</span>
-<span class="c1"># Runs completion events only when the condition is met (= the global variable reached X points)</span>
-<span class="nt">gQuestCheckCompletion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">folder gQuestNotify,gQuestOnCompletion,gDeleteObjective condition:gQuestComplete</span>
-<span class="c1"># Deletes the objective from everyone that fished a salmon after the goal was met</span>
-<span class="nt">qDeleteObjective</span><span class="p">:</span> <span class="s">&quot;objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">gQuest&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. increase the global variable 2. wait one tick for the change to process 3. attempt to run the completion events</span><span class="w"></span>
+<span class="nt">gQuestProgress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">folder gQuestIncrementCounter,gQuestCheckCompletion period:1 ticks</span><span class="w"></span>
+<span class="c1"># Adds 1 to the global variable</span><span class="w"></span>
+<span class="nt">gQuestIncrementCounter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">globalpoint gQuest 1</span><span class="w"></span>
+<span class="c1"># Runs completion events only when the condition is met (= the global variable reached X points)</span><span class="w"></span>
+<span class="nt">gQuestCheckCompletion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">folder gQuestNotify,gQuestOnCompletion,gDeleteObjective condition:gQuestComplete</span><span class="w"></span>
+<span class="c1"># Deletes the objective from everyone that fished a salmon after the goal was met</span><span class="w"></span>
+<span class="nt">qDeleteObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">gQuest&quot;</span><span class="w"></span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">conditions.yml</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1"># Complete at one hundred collected</span>
-<span class="nt">gquest_complete</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">globalpoint gquest 100</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Complete at one hundred collected</span><span class="w"></span>
+<span class="nt">gquest_complete</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">globalpoint gquest 100</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
@@ -2090,15 +2090,15 @@ remove the event package after the event.</p>
 </ul>
 <p>Such a package holds the original objective and clean-up objective:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">objectives.yml</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1"># Old objective just without global &amp; persistent to make sure no one get&#39;s it automatically</span>
-<span class="nt">gQuest</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fish SALMON 1 events:gQuestProgress</span>
-<span class="c1"># Cleanup objective that is immediately completed when someone joins</span>
-<span class="l l-Scalar l-Scalar-Plain">login events:deleteOldObjective global</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Old objective just without global &amp; persistent to make sure no one get&#39;s it automatically</span><span class="w"></span>
+<span class="nt">gQuest</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fish SALMON 1 events:gQuestProgress</span><span class="w"></span>
+<span class="c1"># Cleanup objective that is immediately completed when someone joins</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">login events:deleteOldObjective global</span><span class="w"></span>
 </code></pre></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">events.yml</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1"># Deletes the old objective from the current player</span>
-<span class="nt">deleteOldObjective</span><span class="p">:</span> <span class="s">&quot;objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">gQuest&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Deletes the old objective from the current player</span><span class="w"></span>
+<span class="nt">deleteOldObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">gQuest&quot;</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>

@@ -1680,9 +1680,9 @@ Each notification in <em>messages.yml</em> has a special category with a reserve
 <li>Add a file named <em>custom.yml</em> to your package.</li>
 <li>Add this to the file: </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span>        <span class="c1">#General header for all notification settings</span>
-  <span class="nt">language_changed</span><span class="p">:</span>   <span class="c1">#Name of the category, same as in messages.yml</span>
-    <span class="nt">io</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actionbar</span>     <span class="c1">#Setting the Notify IO to &quot;actionbar&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span><span class="w">        </span><span class="c1">#General header for all notification settings</span><span class="w"></span>
+<span class="w">  </span><span class="nt">language_changed</span><span class="p">:</span><span class="w">   </span><span class="c1">#Name of the category, same as in messages.yml</span><span class="w"></span>
+<span class="w">    </span><span class="nt">io</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actionbar</span><span class="w">     </span><span class="c1">#Setting the Notify IO to &quot;actionbar&quot;</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1690,13 +1690,13 @@ Each notification in <em>messages.yml</em> has a special category with a reserve
 Therefore, you should probably create just one custom.yml with all your settings. We will improve this in BQ 2.0.</strong></p>
 </div>
 <p>You can add any other <a href="../Notification-IO%27s-%26-Categories/#notify-ios">Notify IO setting</a> to the category like so:
-<div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span>       
-  <span class="nt">language_changed</span><span class="p">:</span>   
-    <span class="nt">io</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actionbar</span>     
-    <span class="nt">sound</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">entity.blaze.hurt</span>  <span class="c1">#Plays a sound while showing the notification</span>
+<div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span><span class="w">       </span>
+<span class="w">  </span><span class="nt">language_changed</span><span class="p">:</span><span class="w">   </span>
+<span class="w">    </span><span class="nt">io</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actionbar</span><span class="w">     </span>
+<span class="w">    </span><span class="nt">sound</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">entity.blaze.hurt</span><span class="w">  </span><span class="c1">#Plays a sound while showing the notification</span><span class="w"></span>
 
-  <span class="nt">changelog</span><span class="p">:</span> <span class="c1">#This is another category. They all need to be inside the &#39;notifications:&#39; section.</span>
-    <span class="nt">sound</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">entity.experience_orb.pickup</span>      
+<span class="w">  </span><span class="nt">changelog</span><span class="p">:</span><span class="w"> </span><span class="c1">#This is another category. They all need to be inside the &#39;notifications:&#39; section.</span><span class="w"></span>
+<span class="w">    </span><span class="nt">sound</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">entity.experience_orb.pickup</span><span class="w">      </span>
 </code></pre></div>
 A full list of all reserved names can be found on the <a href="../Notification-IO%27s-%26-Categories/#built-in-categories">IO's &amp; Categories</a> page.</p>
 <p>This feature can be used to disable build-in notifications:  <br />
@@ -1707,7 +1707,7 @@ If you do so, the objective will send a notification to the player if they progr
 You can also add an intervall (<code>notify:5</code>) - in this case the player will get a notification every 5 steps
 towards the completion of the objective.</p>
 <p>The messages.yml values of these notifications look a bit strange:
-<div class="highlight"><pre><span></span><code><span class="nt">blocks_to_break</span><span class="p">:</span> <span class="s">&#39;&amp;2{1}</span><span class="nv"> </span><span class="s">blocks</span><span class="nv"> </span><span class="s">left</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">break&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">blocks_to_break</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&amp;2{1}</span><span class="nv"> </span><span class="s">blocks</span><span class="nv"> </span><span class="s">left</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">break&#39;</span><span class="w"></span>
 </code></pre></div>
 <code>{1}</code> is just an internal variable (similar to the color codes) that will be replaced with a number based on the
 player's progression.</p>
