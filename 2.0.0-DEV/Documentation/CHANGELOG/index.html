@@ -1051,11 +1051,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#200-dev-230-2022-01-13" class="md-nav__link">
-    [2.0.0-DEV-230] - 2022-01-13
+  <a href="#200-dev-231-2022-01-18" class="md-nav__link">
+    [2.0.0-DEV-231] - 2022-01-18
   </a>
   
-    <nav class="md-nav" aria-label="[2.0.0-DEV-230] - 2022-01-13">
+    <nav class="md-nav" aria-label="[2.0.0-DEV-231] - 2022-01-18">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2483,11 +2483,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#200-dev-230-2022-01-13" class="md-nav__link">
-    [2.0.0-DEV-230] - 2022-01-13
+  <a href="#200-dev-231-2022-01-18" class="md-nav__link">
+    [2.0.0-DEV-231] - 2022-01-18
   </a>
   
-    <nav class="md-nav" aria-label="[2.0.0-DEV-230] - 2022-01-13">
+    <nav class="md-nav" aria-label="[2.0.0-DEV-231] - 2022-01-18">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3419,10 +3419,10 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="200-dev-230-2022-01-13">[2.0.0-DEV-230] - 2022-01-13<a class="headerlink" href="#200-dev-230-2022-01-13" title="Permanent link">🔗</a></h2>
+<h2 id="200-dev-231-2022-01-18">[2.0.0-DEV-231] - 2022-01-18<a class="headerlink" href="#200-dev-231-2022-01-18" title="Permanent link">🔗</a></h2>
 <h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Logging</li>
+<li>Logging<ul>
 <li>Ingame logging<ul>
 <li>Log during <code>/q reload</code></li>
 <li>New command <code>/q debug ingame</code></li>
@@ -3430,6 +3430,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </li>
 <li>Debug logging<ul>
 <li>Log history length can be freely configured </li>
+</ul>
+</li>
 </ul>
 </li>
 <li>NotifyIO "totemIO"</li>
@@ -3440,20 +3442,26 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>player attribute to QuestCompassTargetChangeEvent</li>
 <li>Vietnamese translation</li>
 <li>added invOrder setting to (mmoitem)take event</li>
-<li>the mmoitemtake event &amp; mmoitem condition now also check the backpack</li>
+<li>the mmoitemtake event &amp; mmoitem condition now also check the backpack<ul>
 <li>this will not work until the item rework / until the backpack contains NBT data</li>
+</ul>
+</li>
 <li>added PlayerObjectiveChangeEvent, PlayerJournalAddEvent, PlayerJournalDeleteEvent</li>
 <li>Version checks for ProtocolLib and Shopkeepers support</li>
 <li>Allow %player% variable for PLAYER_HEAD quest items</li>
 <li>allow access to objective variable properties from other packages</li>
 <li>allow point variables from other packages</li>
-<li>add AureliumSkills Compatiblity</li>
+<li>add AureliumSkills Compatiblity<ul>
 <li>added AureliumSkillsLevelCondition</li>
 <li>All existing users must add aureliumskills: 'true' to their config.yml's hook section.</li>
 <li>added AureliumStatsLevelCondition</li>
 <li>added AureliumSkillsLevelExperienceEvent</li>
-<li>add LuckPerms context integration for tags</li>
+</ul>
+</li>
+<li>add LuckPerms context integration for tags<ul>
 <li>All existing users must add luckperms: 'true' to their config.yml's hook section.</li>
+</ul>
+</li>
 <li>ProtocolLib compatibility feature: <code>freeze</code> event. Blocks the player from moving for the specified amount of ticks.</li>
 <li>added CommandObjective</li>
 <li>API method in objective API that starts and stops it per player</li>
@@ -3565,10 +3573,12 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h2 id="1120-2021-01-10">[1.12.0] - 2021-01-10<a class="headerlink" href="#1120-2021-01-10" title="Permanent link">🔗</a></h2>
 <h3 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Tags and Objectives can now be removed with a static event for all players, even if they are not online</li>
+<li>Tags and Objectives can now be removed with a static event for all players, even if they are not online<ul>
 <li>deletepoint event can now also be called to delete all points for all players</li>
 <li>journal del event can now also be called as static</li>
-<li>Added integration for TeamRequiem plugins (MMOCore, MMOItems, MMOLib)</li>
+</ul>
+</li>
+<li>Added integration for TeamRequiem plugins (MMOCore, MMOItems, MMOLib)<ul>
 <li>Conditions:<ul>
 <li>MMOClass condition (type &amp; class)</li>
 <li>MMOProfession condition</li>
@@ -3598,6 +3608,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 -️️ Add class points
 -️️ Give Item ️
 -️ Take Item</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>equal argument for condition 'empty'</li>
