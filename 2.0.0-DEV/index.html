@@ -1959,27 +1959,52 @@
 .bq-inline-example-container {
   width: clamp(300px,50%,100%) !important;
 }
-td th{
+/* compare table - vertical middle */
+tr td {
   vertical-align: middle !important;
 }
-tr:nth-child(1) a, tr:nth-child(1) p {
-  font-size: medium !important;
-  font-weight: 700 !important;
-  text-decoration: underline !important;
+/* compare table - header - color */
+thead a, thead p, tr:nth-child(1) th {
+  background-color: var(--md-primary-fg-color) !important;
 }
-td:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-tr:nth-child(11) {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-tr:nth-child(11):hover {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-}
-tr:nth-child(11) p {
+/* compare table - header - text formatting */
+thead a, thead p {
   font-size: medium;
   font-weight: 700;
   text-decoration: underline;
+  color: var(--md-primary-bg-color) !important;
+}
+
+/* compare table - div - set fixed size */
+.md-typeset__table {
+  width: 100%;
+}
+/* compare table - first colum - set sticky */
+tbody td:nth-child(1), th:nth-child(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: var(--md-default-bg-color) !important;
+}
+/* compare table - second colum - highlight BQ */
+tbody td:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* compare table - 11 row - set background and force it for colum 1 */
+tbody tr:nth-child(11), tr:nth-child(11) td:nth-child(1) {
+  background-color: var(--md-primary-fg-color) !important;
+}
+/* compare table - 11 row - format heading */
+tbody tr:nth-child(11) p {
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* compare table - header - span format */
+thead span {
+  text-decoration: none;
+  font-weight: 400;
+
 }
 </style>
 
@@ -2047,8 +2072,9 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <tr>
 <th><p>Feature</p></th>
 <th align="center"><a href="https://www.spigotmc.org/resources/betonquest.2117/">BetonQuest</a></th>
-<th align="center"><a href="https://www.spigotmc.org/resources/quests.3711/">Quests by PikaMug</a></th>
-<th align="center"><a href="https://www.spigotmc.org/resources/quests.23696/">Quests by LMBishop</a></th>
+<th align="center"><a href="https://www.spigotmc.org/resources/quests.3711/">Quests</a><span> PikaMug</span></th>
+<th align="center"><a href="https://www.spigotmc.org/resources/quests.23696/">Quests</a><span> LMBishop</span></th>
+<th align="center"><a href="https://www.spigotmc.org/resources/notquests.95872/">NotQuests</a></th>
 <th align="center"><a href="https://www.spigotmc.org/resources/beautyquests.39255/">BeautyQuests</a></th>
 <th align="center"><a href="https://github.com/Cutiemango/MangoQuest">MangoQuest</a></th>
 <th align="center"><a href="https://www.spigotmc.org/resources/questcreator.38734/">QuestCreator</a></th>
@@ -2058,6 +2084,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <tbody>
 <tr>
 <td>Free</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
@@ -2073,11 +2100,13 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
 <td>API</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
@@ -2091,6 +2120,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center">1.13 - 1.18</td>
 <td align="center">1.7 - 1.18</td>
 <td align="center">1.7 - 1.18</td>
+<td align="center">1.17 - 1.18</td>
 <td align="center">1.11 - 1.18</td>
 <td align="center">1.13 - 1.17.1</td>
 <td align="center">1.7 - 1.18</td>
@@ -2101,16 +2131,29 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center">31</td>
 <td align="center">13</td>
 <td align="center">1</td>
+<td align="center">19</td>
 <td align="center">15</td>
 <td align="center">6</td>
 <td align="center">30</td>
 <td align="center">1</td>
 </tr>
 <tr>
+<td>BetonQuest integration</td>
+<td align="center"></td>
+<td align="center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42z"/></svg></span> <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+</tr>
+<tr>
 <td>Ingame Editor</td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center">Chat &amp; GUI(Paid)</td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center">GUI</td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center">GUI</td>
@@ -2125,12 +2168,14 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
 <td>Database Support</td>
 <td align="center">SQLite &amp; MySQL</td>
 <td align="center">MySQL</td>
 <td align="center">MySQL</td>
+<td align="center">SQLite &amp; MySQL</td>
 <td align="center">MySQL</td>
 <td align="center">MySQL</td>
 <td align="center">MySQL</td>
@@ -2145,12 +2190,14 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
 <td><abbr title="Can multiple folders and files be used to organize your quests?">Organized File Structure</abbr></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
@@ -2165,12 +2212,14 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
 <td><abbr title="Do Conversations have multiple answers that can be chosen by a player?">Multi-Path Conversations</abbr></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42z"/></svg></span> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
@@ -2181,6 +2230,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
@@ -2193,12 +2243,14 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42z"/></svg></span> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
 </tr>
 <tr>
 <td><abbr title="Are there special items that cannot be dropped, eaten, lost etc. and must be used in a quest?">Quest Items</abbr></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
@@ -2215,6 +2267,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
 <td><abbr title="Can players choose their language for most gameplay elements (dialogs, notifications etc.)?">Per Player Language</abbr></td>
@@ -2225,10 +2278,12 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
 <td><abbr title="Is it possible to show NPCs only for certain players based on conditions?">Clientside NPCs</abbr></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
@@ -2245,10 +2300,12 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 </tr>
 <tr>
 <td><abbr title="Can HolographicDisplays holograms be hidden using conditions?">Clientside Holograms</abbr></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
@@ -2259,6 +2316,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 <tr>
 <td><abbr title="Can particles for NPCs etc. be displayed exclusively to players that meet certain conditions?">Clientside Particles</abbr></td>
 <td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td align="center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42z"/></svg></span> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></td>
@@ -2443,6 +2501,9 @@ Any additional money has to be re-invested in the project.</p>
 </li>
 <li id="fn:4">
 <p>Only particles above NPCs and a limited configuration.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Integration from the BetonQuest side.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
