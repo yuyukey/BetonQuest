@@ -1690,34 +1690,34 @@
                 
                 
                 <h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">🔗</a></h1>
-<p>If you have any questions please read this page first. You can easily look for your questions using the table of contents 
-to the right. It's very likely that it has been already asked and answered. 
-If not, feel free to ask us in the
+<p>If you have any questions please read this page first. You can easily look for your questions using the table of
+contents to the right. It's very likely that it has been already asked and answered. If not, feel free to ask us in the
 <a href="https://discordapp.com/invite/rK6mfHq" target="_blank">discord <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg></span></a> !.</p>
 <h2 id="where-is-the-command-for-creating-quests">Where is the command for creating quests?<a class="headerlink" href="#where-is-the-command-for-creating-quests" title="Permanent link">🔗</a></h2>
-<p>There is no such command. BetonQuest is too complex to edit it using commands or chest GUI's.
-We have a <a href="../Getting-Started/Setting-up-the-editor/">VSCode addon</a> to make editing easier.</p>
+<p>There is no such command. BetonQuest is too complex to edit it using commands or chest GUI's. We have
+a <a href="../Getting-Started/Setting-up-the-editor/">VSCode addon</a> to make editing easier.</p>
 <h2 id="can-you-add-particles-over-npcs-heads-like-in-quests-plugin">Can you add particles over NPCs' heads like in "Quests" plugin?<a class="headerlink" href="#can-you-add-particles-over-npcs-heads-like-in-quests-plugin" title="Permanent link">🔗</a></h2>
 <p>Yes! Check out the <a href="../User-Documentation/Compatibility/#effectlib">EffectLib</a> compatibility documentation.</p>
 <h2 id="can-i-assign-multiple-conversation-files-to-one-npc">Can I assign multiple conversation files to one NPC?<a class="headerlink" href="#can-i-assign-multiple-conversation-files-to-one-npc" title="Permanent link">🔗</a></h2>
-<p>No. You can use <a href="../../User-Documentation/Conversations/#cross-conversation-pointers">cross-conversation-pointers</a> though.</p>
+<p>No. You can use <a href="../../User-Documentation/Conversations/#cross-conversation-pointers">cross-conversation-pointers</a>
+though.</p>
 <h2 id="can-i-delete-all-tags-from-a-player-at-once">Can I delete all tags from a player at once?<a class="headerlink" href="#can-i-delete-all-tags-from-a-player-at-once" title="Permanent link">🔗</a></h2>
-<p>No. You either need to run all <code>/q t del PLAYER PACKAGE.TAG</code> commands, or you can use <code>/q purge PLAYER</code> to reset an entire player profile.
-If you want this as a scripted part of your quest however:
-Either use a folder event that holds all tag-deleting events.
-Or use a <code>run</code> event in which you specify all tag-deleting events at once.
+<p>No. You either need to run all <code>/q t del PLAYER PACKAGE.TAG</code> commands, or you can use <code>/q purge PLAYER</code> to reset an
+entire player profile. If you want this as a scripted part of your quest however:
+Either use a folder event that holds all tag-deleting events. Or use a <code>run</code> event in which you specify all tag-deleting
+events at once.
 (We will improve this don't worry)</p>
 <h2 id="how-do-i-start-an-objective-from-a-conversation">How do I start an objective from a conversation?<a class="headerlink" href="#how-do-i-start-an-objective-from-a-conversation" title="Permanent link">🔗</a></h2>
 <p>Use the <a href="../User-Documentation/Events-List.md/#objective-objective">objective event</a>.</p>
 <h2 id="why-is-x-thing-not-working">Why is X thing not working?<a class="headerlink" href="#why-is-x-thing-not-working" title="Permanent link">🔗</a></h2>
 <p>If something stopped working before asking for help please do /q reload and READ THE OUTPUT IN CONSOLE!
-You will be able to see which events etc. loaded and which didn't with the reasons why.
-You may be able to fix it yourself from this or use this information, so we can better help you!</p>
-<p>Also double check you saved your files and if needed reupload them to your server.
-This is insanely common and can be overlooked!</p>
+You will be able to see which events etc. loaded and which didn't with the reasons why. You may be able to fix it
+yourself from this or use this information, so we can better help you!</p>
+<p>Also double check you saved your files and if needed reupload them to your server. This is insanely common and can be
+overlooked!</p>
 <h2 id="i-have-an-error-which-says-cannot-load-pluginsbetonquestsomefileyml-what-is-wrong">I have an error which says "Cannot load plugins/BetonQuest/{someFile}.yml", what is wrong?<a class="headerlink" href="#i-have-an-error-which-says-cannot-load-pluginsbetonquestsomefileyml-what-is-wrong" title="Permanent link">🔗</a></h2>
-<p>You have incorrect YAML syntax in your conversation file.
-Usually it's because you started a line with <code>!</code> or <code>&amp;</code>, forgot colons or made some weird things with apostrophes.</p>
+<p>You have incorrect YAML syntax in your conversation file. Usually it's because you started a line with <code>!</code> or <code>&amp;</code>,
+forgot colons or made some weird things with apostrophes.</p>
 <h2 id="how-to-get-a-formatted-version-of-the-blockobjectives-variables">How to get a formatted version of the BlockObjective's variables?<a class="headerlink" href="#how-to-get-a-formatted-version-of-the-blockobjectives-variables" title="Permanent link">🔗</a></h2>
 <p>The math variable is perfect for this.
 <code>/papi parse USER %betonquest_BlockVar:math.calc:|objective.test.left|%</code></p>
@@ -1729,19 +1729,19 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 <p>An objective always has an amount of 1 as we want to show a message upon each progression towards our goal.</p>
 </li>
 <li>
-<p>The objective instantly restarts after it is finished thanks to the <code>persistent</code> argument. 
-  It will be deleted using the objective event once it's finished.</p>
+<p>The objective instantly restarts after it is finished thanks to the <code>persistent</code> argument. It will be deleted using
+  the objective event once it's finished.</p>
 </li>
 <li>
-<p>The systems logic is essentially just a point variable that is increased on each completion and a notify event being run.
-  That notify event displays a the current objective progress.</p>
+<p>The systems logic is essentially just a point variable that is increased on each completion and a notify event being
+  run. That notify event displays a the current objective progress.</p>
 </li>
 <li>
-<p>The objective gets reset with an event that has a condition bound to it. That means that the event will only be run once
-  the condition is true. in this case the player needs 10 points / needs to have mined 10 blocks.</p>
+<p>The objective gets reset with an event that has a condition bound to it. That means that the event will only be run
+  once the condition is true. in this case the player needs 10 points / needs to have mined 10 blocks.</p>
 </li>
 </ul>
-<p>Here is an example for the block objective.
+<p>Here is an example for the block objective.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span><span class="w"></span>
 <span class="nt">mineStone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;block</span><span class="nv"> </span><span class="s">stone</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">persistent</span><span class="nv"> </span><span class="s">events:blockBroken&quot;</span><span class="w"></span>
 
@@ -1755,9 +1755,9 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 
 <span class="c1">#conditions.yml</span><span class="w"></span>
 <span class="nt">has10Points</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;point</span><span class="nv"> </span><span class="s">blockCounter</span><span class="nv"> </span><span class="s">10&quot;</span><span class="w"></span>
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="how-can-i-let-the-npc-say-things-across-multiple-lines">How can I let the NPC say things across multiple lines?<a class="headerlink" href="#how-can-i-let-the-npc-say-things-across-multiple-lines" title="Permanent link">🔗</a></h2>
-<p>You need to use the PIPE <code>|</code> character at the start of the multiline string.
+<p>You need to use the PIPE <code>|</code> character at the start of the multiline string.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
 <span class="w">  </span><span class="no">This is line one.</span><span class="w"></span>
 <span class="w">  </span><span class="no">This is line two.</span><span class="w"></span>
@@ -1765,81 +1765,115 @@ Usually it's because you started a line with <code>!</code> or <code>&amp;</code
 <span class="w">          </span><span class="no">You</span><span class="w"></span>
 <span class="w">        </span><span class="no">can also</span><span class="w"></span>
 <span class="w">  </span><span class="no">format this using spaces.</span><span class="w"></span>
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="how-to-deal-with-unresolvable-variables-that-show-0">How to deal with unresolvable variables that show "0"?<a class="headerlink" href="#how-to-deal-with-unresolvable-variables-that-show-0" title="Permanent link">🔗</a></h2>
-<p>You can just add them together using <code>math.calc</code>.
+<p>You can just add them together using <code>math.calc</code>.</p>
 <div class="highlight"><pre><span></span><code>%math.calc:objective.PickWheat1.left+objective.PickWheat2.left+objective.PickWheat3.left+objective.PickWheat4.left&#39;
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="how-to-match-different-items-with-just-one-condition">How to match different items with just one condition?<a class="headerlink" href="#how-to-match-different-items-with-just-one-condition" title="Permanent link">🔗</a></h2>
-<p>If you want a player to have e.g. <code>potato + poisonous_potato = 64</code> in his inventory you can make a special item in your 
-items.yml file that matches items based of their names. 
-More specifically, you can have a <a href="../../User-Documentation/Reference/#block-selectors"><em>Block Selector</em></a> that is a <em>regex</em>.
-It would look like this in the example:
+<p>If you want a player to have e.g. <code>potato + poisonous_potato = 64</code> in his inventory you can make a special item in your
+items.yml file that matches items based of their names. More specifically, you can have a <a href="../../User-Documentation/Reference/#block-selectors"><em>Block
+Selector</em></a> that is a <em>regex</em>. It would look like this in the
+example:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#items.yml</span><span class="w"></span>
 <span class="nt">anyPotato</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;.*potato.*&quot;</span><span class="w"></span>
 
 <span class="c1">#conditions.yml</span><span class="w"></span>
 <span class="nt">hasAnyPotato</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;item</span><span class="nv"> </span><span class="s">anyPotato&quot;</span><span class="w"></span>
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="how-to-store-custom-text-in-a-variable-how-to-use-the-variable-objective">How to store custom text in a variable / How to use the variable objective?<a class="headerlink" href="#how-to-store-custom-text-in-a-variable-how-to-use-the-variable-objective" title="Permanent link">🔗</a></h2>
 <ol>
-<li>
-<p>Start a variable objective for the player. It serves as a variable storage:
+<li>Start a variable objective for the player. It serves as a variable storage:</li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="c1">#objectives.yml</span><span class="w"></span>
-<span class="w"> </span><span class="nt">myVariableStorage</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">no-chat&quot;</span><span class="w"></span>
-</code></pre></div></p>
-</li>
-<li>
-<p>Assign values to that storage using a key and a value. Both can be any text you like:
+<span class="nt">myVariableStorage</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">no-chat&quot;</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>Assign values to that storage using a key and a value. Both can be any text you like:</li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="c1">#events.yml</span><span class="w"></span>
 <span class="nt">addBlock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">blockName</span><span class="nv"> </span><span class="s">REDSTONE&quot;</span><span class="w"></span>
 <span class="nt">addLocation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;variable</span><span class="nv"> </span><span class="s">myVariableStorage</span><span class="nv"> </span><span class="s">location</span><span class="nv"> </span><span class="s">123;456;789;world&quot;</span><span class="w"></span>
-</code></pre></div></p>
-</li>
-<li>
-<p>Read from your variable storage using the storages name and the data key.
+</code></pre></div>
+<ol>
+<li>Read from your variable storage using the storages name and the data key.</li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="c1">#conditions.yml</span><span class="w"></span>
 <span class="nt">hasHeartBlock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;testforblock</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.location%</span><span class="nv"> </span><span class="s">%objective.myVariableStorage.blockName%&quot;</span><span class="w"></span>
-</code></pre></div></p>
-</li>
-</ol>
+</code></pre></div>
 <h2 id="error-quester-is-not-defined">Error "Quester is not defined"<a class="headerlink" href="#error-quester-is-not-defined" title="Permanent link">🔗</a></h2>
-<p>You either actually did not define the <code>quester: someName</code> option at the top of your conversation, or your YAML syntax is invalid.
-YAML Syntax Errors are the HUGE red lines that you see when you do /q reload.
-They lead to the file not being properly read -&gt; All kinds of errors like "can't find quester etc."
-Copy your file into <a href="http://www.yamllint.com/">http://www.yamllint.com/</a> to confirm that it is actually a YAML error and fix your syntax.
-Best practise is to define all options like this: <code>myOptionName: "myData"</code> The double quotes prevent YAMl issues with e.g. <code>!</code>.</p>
+<p>You either actually did not define the <code>quester: someName</code> option at the top of your conversation, or your YAML syntax
+is invalid. YAML Syntax Errors are the HUGE red lines that you see when you do /q reload. They lead to the file not
+being properly read -&gt; All kinds of errors like "can't find quester etc."
+Copy your file into <a href="http://www.yamllint.com/">http://www.yamllint.com/</a> to confirm that it is actually a YAML error and fix your syntax. Best
+practise is to define all options like this: <code>myOptionName: "myData"</code> The double quotes prevent YAMl issues with
+e.g. <code>!</code>.</p>
 <h2 id="other-plugins-override-betonquest-commands-betonquest-overrides-other-commands">Other plugins override BetonQuest commands / BetonQuest overrides other commands!<a class="headerlink" href="#other-plugins-override-betonquest-commands-betonquest-overrides-other-commands" title="Permanent link">🔗</a></h2>
 <p>You can change which command is used using a Bukkit feature: <a href="https://bukkit.gamepedia.com/Commands.yml">https://bukkit.gamepedia.com/Commands.yml</a></p>
 <h2 id="handling-death-in-your-quests">Handling death in your quests<a class="headerlink" href="#handling-death-in-your-quests" title="Permanent link">🔗</a></h2>
-<p>Sometimes, while writing a dangerous quest you will want something specific to happen when the player dies. If it's a boss battle you may want to fail the quest, if it's a dungeon you may want to respawn the player at the beginning of a level etc. You can do that with <code>die</code> objective - simply start it for the player at the beginning of the quest and make it fire events that will do the thing you want (like teleporting the player to desired respawn point, removing tags set during the quest etc). You can add <code>persistent</code> argument to the objective instruction string to make it active even after completing it. Remember to <code>delete</code> it after the quest is done!</p>
+<p>Sometimes, while writing a dangerous quest you will want something specific to happen when the player dies. If it's a
+boss battle you may want to fail the quest, if it's a dungeon you may want to respawn the player at the beginning of a
+level etc. You can do that with <code>die</code> objective - simply start it for the player at the beginning of the quest and make
+it fire events that will do the thing you want (like teleporting the player to desired respawn point, removing tags set
+during the quest etc). You can add <code>persistent</code> argument to the objective instruction string to make it active even
+after completing it. Remember to <code>delete</code> it after the quest is done!</p>
 <h2 id="creating-regions-for-one-player-at-the-time">Creating regions for one player at the time<a class="headerlink" href="#creating-regions-for-one-player-at-the-time" title="Permanent link">🔗</a></h2>
-<p>Imagine you have a room to which the player is teleported. Then suddenly mobs start to spawn and the player must kill them (because it's a trap or something). The player has killed all the mobs, he got a tag and wants to proceed but all of the sudden another player teleports into the room and all the mobs start to spawn again. The first player is quickly killed and the second one easily kills all mobs. You can prevent such situations by using <code>party</code> condition. Just check with it if the party consisting of "players inside the room" has greater amount of players that 1. Set the range to something big enough so it covers the room and the party condition can be tag or location.</p>
+<p>Imagine you have a room to which the player is teleported. Then suddenly mobs start to spawn and the player must kill
+them (because it's a trap or something). The player has killed all the mobs, he got a tag and wants to proceed but all
+of the sudden another player teleports into the room and all the mobs start to spawn again. The first player is quickly
+killed and the second one easily kills all mobs. You can prevent such situations by using <code>party</code> condition. Just check
+with it if the party consisting of "players inside the room" has greater amount of players that 1. Set the range to
+something big enough so it covers the room and the party condition can be tag or location.</p>
 <h2 id="racing-with-folder-event">Racing with folder event<a class="headerlink" href="#racing-with-folder-event" title="Permanent link">🔗</a></h2>
-<p>Since <code>folder</code> event can run <code>tag</code> events even for offline players you can create races. Create <code>location</code> objective where you want the finish line to be and condition it with negated "race_failed" tag (or similar). It will mean that "if the player has not failed the race, he can win it by reaching the location". Now when the race starts fire <code>folder</code> event with the amount of time you want to give your players to complete the race. This event should set "race_failed" tag. If the player reaches the location before this tag is set, he will fire all events in that <code>location</code> objective, but if the time has passed, the objective will not be completed. You can figure the rest out for yourself.</p>
+<p>Since <code>folder</code> event can run <code>tag</code> events even for offline players you can create races. Create <code>location</code> objective
+where you want the finish line to be and condition it with negated "race_failed" tag (or similar). It will mean that "if
+the player has not failed the race, he can win it by reaching the location". Now when the race starts fire <code>folder</code>
+event with the amount of time you want to give your players to complete the race. This event should set "race_failed"
+tag. If the player reaches the location before this tag is set, he will fire all events in that <code>location</code> objective,
+but if the time has passed, the objective will not be completed. You can figure the rest out for yourself.</p>
 <h2 id="random-daily-quests">Random daily quests<a class="headerlink" href="#random-daily-quests" title="Permanent link">🔗</a></h2>
-<p>Starting the random quest must be blocked with a special tag. If there is no such tag, the conversation option should appear. Create a few quests, each of them started with single <code>folder</code> event (they <strong>must</strong> be started by single event!). Now add those events to another <code>folder</code> event and make it <code>random:1</code>. At the end of every quest add <code>delay</code> which will reset the special blocking tag. Now add that <code>folder</code> event to the conversation option. When the player chooses it he will start one random quest, and the conversation option will become available after defined in <code>delay</code> objective time after completing the quest.</p>
+<p>Starting the random quest must be blocked with a special tag. If there is no such tag, the conversation option should
+appear. Create a few quests, each of them started with single <code>folder</code> event (they <strong>must</strong> be started by single event!)
+. Now add those events to another <code>folder</code> event and make it <code>random:1</code>. At the end of every quest add <code>delay</code> which
+will reset the special blocking tag. Now add that <code>folder</code> event to the conversation option. When the player chooses it
+he will start one random quest, and the conversation option will become available after defined in <code>delay</code> objective
+time after completing the quest.</p>
 <h2 id="the-same-random-daily-quest-for-every-player">The same random daily quest for every player<a class="headerlink" href="#the-same-random-daily-quest-for-every-player" title="Permanent link">🔗</a></h2>
-<p>To do this use something called "<a href="../../User-Documentation/Reference/#static-events">Static event</a>".
-Run a static <code>folder</code> event every day at some late hour (for example 4am).
-The <code>folder</code> event should be <code>random:1</code> and contain several different <code>globaltag</code> events.
-These events will set a specific tag. Now when the player starts the conversation and asks about the daily quest the NPC
-should check (using the <code>globaltag</code> condition) which tag is currently set and give the player different quests based on that.
-Of course, the static folder event also needs to remove the the current tag before setting a new one.</p>
+<p>To do this use something called "<a href="../../User-Documentation/Reference/#static-events">Static event</a>". Run a
+static <code>folder</code> event every day at some late hour (for example 4am). The <code>folder</code> event should be <code>random:1</code> and contain
+several different <code>globaltag</code> events. These events will set a specific tag. Now when the player starts the conversation
+and asks about the daily quest the NPC should check (using the <code>globaltag</code> condition) which tag is currently set and
+give the player different quests based on that. Of course, the static folder event also needs to remove the the current
+tag before setting a new one.</p>
 <h2 id="global-quests-all-players-work-together">Global Quests (all players work together)<a class="headerlink" href="#global-quests-all-players-work-together" title="Permanent link">🔗</a></h2>
 <p>There is no super easy way to do this yet. One would do this:
-Create an objective that is immediately fired upon the first action (this means setting the amount to one for most objectives).
-That objective must be <code>persistent</code> so it restarts immediately upon completion.
-It would trigger a <code>globalpoint</code> event that increases some globalpoint variable by one.
-That globalpoint variable tracks the players combined progress as it is the same for all of them.
-Therefore, there must also be some sort of <code>globalpoint</code>condition that checks whether the "global objective" has been completed.
-It must be checked in a "checkCompletion" event that is run alongside the globalpoint event. It could look like this:</p>
+Create an objective that is immediately fired upon the first action (this means setting the amount to one for most
+objectives). That objective must be <code>persistent</code> so it restarts immediately upon completion. It would trigger
+a <code>globalpoint</code> event that increases some globalpoint variable by one. That globalpoint variable tracks the players
+combined progress as it is the same for all of them. Therefore, there must also be some sort of <code>globalpoint</code>condition
+that checks whether the "global objective" has been completed. It must be checked in a "checkCompletion" event that is
+run alongside the globalpoint event. It could look like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">checkCompletion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;run</span><span class="nv"> </span><span class="s">^objective</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">globalQuest</span><span class="nv"> </span><span class="s">^folder</span><span class="nv"> </span><span class="s">giveRewards,notifyRewards</span><span class="nv"> </span><span class="s">conditions:globalObjectiveDone&quot;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="make-the-npc-react-randomly">Make the NPC react randomly<a class="headerlink" href="#make-the-npc-react-randomly" title="Permanent link">🔗</a></h2>
-<p>Imagine you want to lie to NPC and he has 15% chance of believing you completely, 35% of being suspicious and 50% of not believing at all. The common denominator for those percentages is 20, so we can write it as 3/20, 7/20 and 10/20. The NPC will check options one after another until it finds one which meets all conditions. We will use <code>random</code> condition with our options. The first one will have <code>3-20</code> chance (that's the format used by <code>random</code> condition). If this condition fails, the NPC will check next option. But it won't be <code>7-20</code>, because we already "used" 3 of 20. If you wrote it like that, the chance would be too low. That's why it will be <code>7-17</code>. The third option should have <code>10-10</code> (because <code>17 - 7 = 10</code> and 50% is 10/20), but as you can see it will always be true. It's because we want the last option to be shown if both previous fail. You don't have to add the last condition at all.</p>
+<p>Imagine you want to lie to NPC and he has 15% chance of believing you completely, 35% of being suspicious and 50% of not
+believing at all. The common denominator for those percentages is 20, so we can write it as 3/20, 7/20 and 10/20. The
+NPC will check options one after another until it finds one which meets all conditions. We will use <code>random</code> condition
+with our options. The first one will have <code>3-20</code> chance (that's the format used by <code>random</code> condition). If this
+condition fails, the NPC will check next option. But it won't be <code>7-20</code>, because we already "used" 3 of 20. If you wrote
+it like that, the chance would be too low. That's why it will be <code>7-17</code>. The third option should have <code>10-10</code> (
+because <code>17 - 7 = 10</code> and 50% is 10/20), but as you can see it will always be true. It's because we want the last option
+to be shown if both previous fail. You don't have to add the last condition at all.</p>
 <h2 id="quest-gui">Quest GUI<a class="headerlink" href="#quest-gui" title="Permanent link">🔗</a></h2>
-<p>If you want your players to be able to choose a quest everywhere, every time, then you can create a conversation which can be started with an item. This one is a little hacky but it shows flexibility of BetonQuest. First you need a conversation which behaves as a quest choosing GUI. Name the NPC "Quester", add one option for each quest etc. Now you need an objective which will start this conversation using <code>conversation</code> event. It should be <code>action</code> objective, set to right click on any block. Add <code>hand</code> condition to make it accept only clicks with a specific item and make the objective <code>persistent</code> (so players can use it multiple times). The item used here should be marked as Quest Item so players can't drop it. Now define new global location covering your whole map and using it start the objective and give players the item. This way all players (existing and new) will get the quest item, which opens a GUI with quests when right clicked.</p>
+<p>If you want your players to be able to choose a quest everywhere, every time, then you can create a conversation which
+can be started with an item. This one is a little hacky but it shows flexibility of BetonQuest. First you need a
+conversation which behaves as a quest choosing GUI. Name the NPC "Quester", add one option for each quest etc. Now you
+need an objective which will start this conversation using <code>conversation</code> event. It should be <code>action</code> objective, set to
+right click on any block. Add <code>hand</code> condition to make it accept only clicks with a specific item and make the
+objective <code>persistent</code> (so players can use it multiple times). The item used here should be marked as Quest Item so
+players can't drop it. Now define new global location covering your whole map and using it start the objective and give
+players the item. This way all players (existing and new) will get the quest item, which opens a GUI with quests when
+right clicked.</p>
 <h2 id="non-linear-objectives-in-quests">Non-Linear Objectives in Quests<a class="headerlink" href="#non-linear-objectives-in-quests" title="Permanent link">🔗</a></h2>
 <p>If ever you're making a quest that has the player completing multiple objectives at once in order to complete the quest
 itself, you may want to add the option of being able to complete the objectives in a non-linear fashion (Objective C -&gt;
@@ -1847,27 +1881,29 @@ Objective A -&gt; Objective B -&gt; Completed). There are multiple ways of doing
 Firstly, create as many objectives as you want. We are going to be working with three objectives:</p>
 <div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">objectives.yml</label><div class="tabbed-content"></div>
 </div>
-<p><code>``YAML Objective_A: Objective_Arguments events:Rewards Objective_B: Objective_Arguments events:Rewards Objective_C: Objective_Arguments events:Rewards
+<p>```YAML Objective_A: Objective_Arguments events:Rewards Objective_B: Objective_Arguments events:Rewards Objective_C: Objective_Arguments events:Rewards
 <div class="highlight"><pre><span></span><code>Now that the player has been given these three objectives, we will also create three `objective` conditions that check
 the player for these objectives:
 
 === &quot;conditions.yml&quot;
+
 ```YAML Has_Objective_A: objective Objective_A Has_Objective_B: objective Objective_B Has_Objective_C: objective Objective_C
-</code></pre></div>
-We will also create one</code>and<code>condition, which means a player must (or must not, depending on negation)  meet all
-conditions in order for it to return as true. In this case, the player must *not* be in the process of completing these
-objectives. The</code>!<code>in front of the ConditionIDs negates the arguments within the condition. Make sure you have wrapped
-the condition with</code>'<code>or</code>"` depending on your preferences.</p>
+</code></pre></div></p>
+<p>We will also create one <code>and</code> condition, which means a player must (or must not, depending on negation)  meet all
+conditions in order for it to return as true. In this case, the player must <em>not</em> be in the process of completing these
+objectives. The <code>!</code> in front of the ConditionIDs negates the arguments within the condition. Make sure you have wrapped
+the condition with <code>'</code> or <code>"</code> depending on your preferences.</p>
 <div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">conditions.yml</label><div class="tabbed-content"></div>
 </div>
-<p>```YAML All_Objectives_Done: 'and !Has_Objective_A,!Has_Objective_B,!Has_Objective_C'
-<div class="highlight"><pre><span></span><code>Finally, create the event that you wanted to use to give the quest rewards to the player. To this event, you will add
-the `All_Objectives_Done` condition. This ensures that the event will not be fired unless the player has completed all
-objectives.
-
-=== &quot;events.yml&quot;
-```YAML Rewards: RewardEventArguments condition:All_Objectives_Done
-</code></pre></div></p>
+<div class="highlight"><pre><span></span><code><span class="nt">All_Objectives_Done</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;and</span><span class="nv"> </span><span class="s">!Has_Objective_A,!Has_Objective_B,!Has_Objective_C&#39;</span><span class="w"></span>
+</code></pre></div>
+<p>Finally, create the event that you wanted to use to give the quest rewards to the player. To this event, you will add
+the <code>All_Objectives_Done</code> condition. This ensures that the event will not be fired unless the player has completed all
+objectives.</p>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">events.yml</label><div class="tabbed-content"></div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="nt">Rewards</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RewardEventArguments condition:All_Objectives_Done</span><span class="w"></span>
+</code></pre></div>
 <p>Now, simply add this <code>Rewards</code> event to every one of your objectives and you have now created a way for players to
 complete a quest's objective in a non-linear fashion! You can add as many or as little objectives as you want, you just
 have to add the additional objectives to the conditions.</p>
@@ -1879,7 +1915,7 @@ have to add the additional objectives to the conditions.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1644437634000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1644517869000' locale='en'></span>
     
   </small>
 </div>
