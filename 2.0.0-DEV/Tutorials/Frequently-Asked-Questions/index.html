@@ -2125,29 +2125,39 @@ remove the event package after the event.</p>
 itself, you may want to add the option of being able to complete the objectives in a non-linear fashion (Objective C -&gt;
 Objective A -&gt; Objective B -&gt; Completed). There are multiple ways of doing this but this one is probably the simplest.
 Firstly, create as many objectives as you want. We are going to be working with three objectives:</p>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">objectives.yml</label><div class="tabbed-content"></div>
-</div>
-<p><code>``YAML Objective_A: Objective_Arguments events:Rewards Objective_B: Objective_Arguments events:Rewards Objective_C: Objective_Arguments events:Rewards
-<div class="highlight"><pre><span></span><code>Now that the player has been given these three objectives, we will also create three `objective` conditions that check
-the player for these objectives:
-
-=== &quot;conditions.yml&quot;
-```YAML Has_Objective_A: objective Objective_A Has_Objective_B: objective Objective_B Has_Objective_C: objective Objective_C
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">objectives.yml</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">Objective_A</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Objective_Arguments events:Rewards</span><span class="w"></span>
+<span class="nt">Objective_B</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Objective_Arguments events:Rewards</span><span class="w"></span>
+<span class="nt">Objective_C</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Objective_Arguments events:Rewards</span><span class="w"></span>
 </code></pre></div>
-We will also create one</code>and<code>condition, which means a player must (or must not, depending on negation)  meet all
-conditions in order for it to return as true. In this case, the player must *not* be in the process of completing these
-objectives. The</code>!<code>in front of the ConditionIDs negates the arguments within the condition. Make sure you have wrapped
-the condition with</code>'<code>or</code>"` depending on your preferences.</p>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">conditions.yml</label><div class="tabbed-content"></div>
 </div>
-<p>```YAML All_Objectives_Done: 'and !Has_Objective_A,!Has_Objective_B,!Has_Objective_C'
-<div class="highlight"><pre><span></span><code>Finally, create the event that you wanted to use to give the quest rewards to the player. To this event, you will add
-the `All_Objectives_Done` condition. This ensures that the event will not be fired unless the player has completed all
-objectives.
-
-=== &quot;events.yml&quot;
-```YAML Rewards: RewardEventArguments condition:All_Objectives_Done
-</code></pre></div></p>
+</div>
+<p>Now that the player has been given these three objectives, we will also create three <code>objective</code> conditions that check
+the player for these objectives:</p>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">conditions.yml</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">Has_Objective_A</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">objective Objective_A</span><span class="w"></span>
+<span class="nt">Has_Objective_B</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">objective Objective_B</span><span class="w"></span>
+<span class="nt">Has_Objective_C</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">objective Objective_C</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+<p>We will also create one <code>and</code> condition, which means a player must (or must not, depending on negation)  meet all
+conditions in order for it to return as true. In this case, the player must <em>not</em> be in the process of completing these
+objectives. The <code>!</code> in front of the ConditionIDs negates the arguments within the condition. Make sure you have wrapped
+the condition with <code>'</code> or <code>"</code> depending on your preferences.</p>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">conditions.yml</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">All_Objectives_Done</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;and</span><span class="nv"> </span><span class="s">!Has_Objective_A,!Has_Objective_B,!Has_Objective_C&#39;</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+<p>Finally, create the event that you wanted to use to give the quest rewards to the player. To this event, you will add
+the <code>All_Objectives_Done</code> condition. This ensures that the event will not be fired unless the player has completed all
+objectives.</p>
+<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">events.yml</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">Rewards</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RewardEventArguments condition:All_Objectives_Done</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
 <p>Now, simply add this <code>Rewards</code> event to every one of your objectives and you have now created a way for players to
 complete a quest's objective in a non-linear fashion! You can add as many or as little objectives as you want, you just
 have to add the additional objectives to the conditions.</p>
@@ -2159,7 +2169,7 @@ have to add the additional objectives to the conditions.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-09T21:32:26+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-09</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-10T19:24:35+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-10</span>
       
     
   </small>
