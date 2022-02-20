@@ -989,10 +989,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1051,11 +1099,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#200-dev-238-2022-02-15" class="md-nav__link">
-    [2.0.0-DEV-238] - 2022-02-15
+  <a href="#200-dev-239-2022-02-20" class="md-nav__link">
+    [2.0.0-DEV-239] - 2022-02-20
   </a>
   
-    <nav class="md-nav" aria-label="[2.0.0-DEV-238] - 2022-02-15">
+    <nav class="md-nav" aria-label="[2.0.0-DEV-239] - 2022-02-20">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2483,11 +2531,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#200-dev-238-2022-02-15" class="md-nav__link">
-    [2.0.0-DEV-238] - 2022-02-15
+  <a href="#200-dev-239-2022-02-20" class="md-nav__link">
+    [2.0.0-DEV-239] - 2022-02-20
   </a>
   
-    <nav class="md-nav" aria-label="[2.0.0-DEV-238] - 2022-02-15">
+    <nav class="md-nav" aria-label="[2.0.0-DEV-239] - 2022-02-20">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3417,40 +3465,21 @@
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">🔗</a></h1>
 <p>All notable changes to this project will be documented in this file.</p>
-<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
-and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="200-dev-238-2022-02-15">[2.0.0-DEV-238] - 2022-02-15<a class="headerlink" href="#200-dev-238-2022-02-15" title="Permanent link">🔗</a></h2>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and this project adheres
+to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="200-dev-239-2022-02-20">[2.0.0-DEV-239] - 2022-02-20<a class="headerlink" href="#200-dev-239-2022-02-20" title="Permanent link">🔗</a></h2>
 <h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Logging<ul>
 <li>Ingame logging<ul>
-<li>Log during <code>/q reload</code></li>
+<li>Logging during <code>/q reload</code></li>
+</ul>
+</li>
 <li>New command <code>/q debug ingame</code></li>
+<li>Debug logging to separate file</li>
+<li>Log history length can be freely configured</li>
 </ul>
 </li>
-<li>Debug logging<ul>
-<li>Log history length can be freely configured </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>NotifyIO "totemIO"</li>
-<li>Support for MythicLib</li>
-<li>FastAsyncWorldEdit compatibility</li>
-<li>craft objective variable <code>total</code></li>
-<li>curly braces in math.calc variables for using variables with math symbols</li>
-<li>player attribute to QuestCompassTargetChangeEvent</li>
-<li>Vietnamese translation</li>
-<li>added invOrder setting to (mmoitem)take event</li>
-<li>the mmoitemtake event &amp; mmoitem condition now also check the backpack<ul>
-<li>this will not work until the item rework / until the backpack contains NBT data</li>
-</ul>
-</li>
-<li>added PlayerObjectiveChangeEvent, PlayerJournalAddEvent, PlayerJournalDeleteEvent</li>
-<li>Version checks for ProtocolLib and Shopkeepers support</li>
-<li>Allow %player% variable for PLAYER_HEAD quest items</li>
-<li>allow access to objective variable properties from other packages</li>
-<li>allow point variables from other packages</li>
 <li>add AureliumSkills Compatiblity<ul>
 <li>added AureliumSkillsLevelCondition</li>
 <li>All existing users must add aureliumskills: 'true' to their config.yml's hook section.</li>
@@ -3462,95 +3491,138 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>All existing users must add luckperms: 'true' to their config.yml's hook section.</li>
 </ul>
 </li>
-<li>ProtocolLib compatibility feature: <code>freeze</code> event. Blocks the player from moving for the specified amount of ticks.</li>
-<li>added CommandObjective</li>
+<li>NotifyIO "totemIO"</li>
+<li>Support for MythicLib</li>
+<li>player attribute to QuestCompassTargetChangeEvent</li>
+<li>added PlayerObjectiveChangeEvent, PlayerJournalAddEvent, PlayerJournalDeleteEvent</li>
+<li>Allow %player% variable for PLAYER_HEAD quest items</li>
+<li>allow access to objective variable properties from other packages</li>
+<li>allow point variables from other packages</li>
 <li>API method in objective API that starts and stops it per player</li>
-<li>added EquipItemObjective</li>
-<li>variable support to delay objective</li>
-<li>opsudo event now supports variables</li>
-<li><code>variable</code> condition now supports variables</li>
+<li><code>freeze</code> event - ProtocolLib compatibility feature: Blocks the player from moving for the specified amount of ticks.</li>
+<li><code>command</code> objective</li>
+<li><code>equip</code> objective</li>
+<li><code>delay</code> objective - now support variables</li>
+<li><code>opsudo</code> event - now supports variables</li>
+<li><code>variable</code> condition - now supports variables</li>
+<li>Things that are also added in 1.12.X:<ul>
+<li>FastAsyncWorldEdit compatibility</li>
+<li>curly braces in math.calc variables for using variables with math symbols</li>
+<li>Vietnamese translation</li>
+<li>added invOrder setting to (mmoitem)take event</li>
+<li>Version checks for ProtocolLib and Shopkeepers support</li>
+<li><code>mmoitemtake</code> event and <code>mmoitem</code> condition - now also check the backpack<ul>
+<li>this will not work until the item rework / until the backpack contains NBT data</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">🔗</a></h3>
 <ul>
-<li>math variable now allows rounding output with the ~ operator</li>
+<li>Java 17 is now required</li>
 <li>changed package names from <code>pl.betoncraft.betonquest</code> to <code>org.betonquest.betonquest</code></li>
+<li>Changed quest package structure<ul>
+<li>Quest packages are now searched and loaded from the folder <code>BetonQuest/QuestPackages/</code></li>
+<li>Quest packages can now contain more quest packages in sub folders</li>
+<li>Relative paths can now navigate downwards and not only upwards</li>
+<li><code>main.yml</code> was renamed to <code>package.yml</code></li>
+<li>Any file and folder structure with any file and folder names is now allowed, except <code>package.yml</code>, as that file
+  indicates a quest package</li>
+<li><code>events</code>, <code>objectives</code>, <code>conditions</code>, <code>journal</code> and <code>items</code> are now defined in a config section matching their
+  names</li>
+<li><code>conversations</code> and <code>menus</code> are now defined in a config section matching their names and a unique identifier like
+  the file name before</li>
+</ul>
+</li>
 <li>all objectives that can be advanced without directly completing now support notify</li>
-<li>all objectives that can be advanced without directly completing now support <code>left</code>, <code>amount</code> and <code>total</code> variables</li>
-<li><code>action</code> objective cancels now the event, before other plugins check for it (better third-party support)</li>
-<li>the French translation has been updated</li>
+<li>all objectives that can be advanced without directly completing now support <code>left</code>, <code>amount</code> and <code>total</code> variables<ul>
+<li>the <code>left</code> and <code>amount</code> variables of some objectives were swapped and have been corrected: <code>left</code> is the amount
+  left, <code>amount</code> is the amount done</li>
+</ul>
+</li>
 <li>AureliumSkills updated to version Beta1.2.5</li>
 <li>PikaMug Quests updated to version 4.1.3</li>
+<li>Things that are also changed in 1.12.X:<ul>
+<li>math variable now allows rounding output with the ~ operator</li>
+<li>French translation has been updated</li>
+<li><code>action</code> objective - cancels now the event, before other plugins check for it (better third-party support)</li>
+</ul>
+</li>
 </ul>
 <h3 id="deprecated">Deprecated<a class="headerlink" href="#deprecated" title="Permanent link">🔗</a></h3>
 <h3 id="removed">Removed<a class="headerlink" href="#removed" title="Permanent link">🔗</a></h3>
 <ul>
+<li>deprecated internals, code and old features</li>
+<li>Support for MMOLib</li>
 <li><code>message</code> event</li>
 <li><code>title</code> event</li>
 <li><code>playsound</code> event</li>
-<li>more deprecated stuff</li>
-<li>Support for MMOLib</li>
 </ul>
 <h3 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">🔗</a></h3>
 <ul>
+<li>q version now works again</li>
+<li>fix RPGMenu error when teleport events are used as click events</li>
+<li>fix RPGMenu bound items not always working</li>
+<li><code>brew</code> objective - now counts newly brewed potions even if there were already some potions of the desired type in
+  other slots present</li>
+<li><code>menu</code>(open) event - showed the previous menu again</li>
+<li>Things that are also fixed in 1.12.X:<ul>
 <li>parsing of math variable</li>
-<li><code>npcrange</code> objective is triggered at wrong time</li>
 <li>Citizens compatibility for not spawned NPCs</li>
 <li>NotifyIOs are case-sensitive</li>
 <li>all mmo objectives trigger for everyone</li>
-<li>command event includes 'conditions:...' into the command</li>
 <li>tags and points are now thread safe</li>
 <li>compatibility for packet interceptor on papermc</li>
-<li>craft objective: multi-craft, drop-craft, hotbar/offhand-craft, shift-Q-craft and any illegal crafting is correctly detected,</li>
-<li>q version now works again</li>
 <li>NPC hider for not spawned NPCs</li>
 <li>Conversation IO Chest load NPC skull async from Citizens instead of sync</li>
 <li>block selector didn't respect regex boundary</li>
 <li>block selector regex errors are now properly handled</li>
 <li><code>default_journal_slot: -1</code> now uses the first free slot instead of the last hotbar slot</li>
-<li>mmobkill objective notify argument not working correctly</li>
-<li><code>fish</code> objective didn't count the amount of fish caught in one go (if modified by e.g. mcMMO)</li>
-<li>fixed smelt objective: only taking out normally did count, shift-extract got canceled</li>
-<li>empty values in <code>variable</code> objective now don't break on player join</li>
 <li>PacketInterceptor sync wait lag</li>
-<li>the <code>left</code> and <code>amount</code> variables of some objectives were swapped and have been corrected: <code>left</code> is the amount left, <code>amount</code> is the amount done</li>
-<li>brew objective now counts newly brewed potions even if there were already some potions of the desired type in other slots present</li>
 <li>notifications using the chatIO were catched by the conversation interceptor</li>
-<li>case insensitive <code>password</code> objective did not work if the password contained upper case letters</li>
 <li>global variables didn't work in quester names</li>
 <li>quest items couldn't interact with any blocks, which also prevented them from mining blocks</li>
-<li>the shear objective's sheep couldn't have underscores in their names</li>
 <li>backpack passing references instead of clones</li>
-<li>compass event now allows global variables</li>
 <li>fixed combat event packet that changed with MC 1.17</li>
-<li>MMOCoreClassCondition used the class display name instead of the class ID to compare classes.</li>
-<li>fixed TotemIO on 1.17.1</li>
 <li>fixed hooking in ProtocolLib</li>
 <li>max_npc_distance was set to 5.3 to prevent instant quiting of conversations</li>
 <li>conversation IO menu sometimes leave an armorstand spawned</li>
 <li>sometimes messages in a conversation are not send when packet interceptor is used</li>
 <li>added missing config options to the default config</li>
-<li><code>menu open</code> event does not show the previous menu again anymore</li>
 <li>quest item empty name comparison</li>
 <li>customized built-in messages that use the advancementIO</li>
 <li>fix books not parsing color codes</li>
-<li>fix RPGMenu error when teleport events are used as click events</li>
 <li>BlockSelector without a namespace but starting with <code>:</code> did not work and threw an exception</li>
 <li>exception during reload, when npc_holograms are disabled</li>
-<li><code>entities</code> condition and <code>clear</code> event now support not living entities</li>
 <li>mmoitems item creation only worked with uppercase id's</li>
-<li>fix RPGMenu bound items not always working</li>
-<li>reload with an invalid PlayerHider causes a NPE </li>
-<li>QuestItems could be eaten, this was caused by a change mc behaviour</li>
-<li>command, sudo and opsudo events didn't work with conditions</li>
-<li>interact objective did not work with armorstands</li>
-<li>MMOItemsGiveEvent did not check if item actually exists</li>
-<li>action objective for any block ignored location</li>
+<li>reload with an invalid PlayerHider causes a NPE</li>
+<li>QuestItems could be eaten, this was caused by a changed mc behaviour</li>
+<li><code>npcrange</code> objective - is triggered at wrong time</li>
+<li><code>command</code> event - includes 'conditions:...' into the command</li>
+<li><code>craft</code> objective - multi-craft, drop-craft, hotbar/offhand-craft, shift-Q-craft and any illegal crafting is
+  correctly detected</li>
+<li><code>mmobkill</code> objective - notify argument not working correctly</li>
+<li><code>mmoclass</code> condition - used the class display name instead of the class ID to compare classes</li>
+<li><code>mmoitemgive</code> event - did not check if the item actually exists</li>
+<li><code>fish</code> objective - didn't count the amount of fish caught in one go (if modified by e.g. mcMMO)</li>
+<li><code>smelt</code> objective - only taking out normally did count, shift-extract got canceled</li>
+<li><code>variable</code> objective - empty values don't break on player join</li>
+<li><code>password</code> objective - case insensitive did not work if the password contained upper case letters</li>
+<li><code>shear</code> objective - sheep couldn't have underscores in their names</li>
+<li><code>compass</code> event - now allows global variables</li>
+<li><code>entities</code> condition and <code>clear</code> event - now support not living entities</li>
+<li><code>command</code>, <code>sudo</code> and <code>opsudo</code> events - didn't work with conditions</li>
+<li><code>interact</code> objective - did not work with armorstands</li>
+<li><code>action</code> objective - for <code>any</code> block ignored location</li>
+</ul>
+</li>
 </ul>
 <h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">🔗</a></h3>
 <ul>
 <li>it was possible to put a QuestItem into a chest</li>
-<li>the take event is now threadsafe</li>
 <li>bump log4j dependency 2.15.0 to fix CVE-2021-44228</li>
+<li><code>take</code> event - is now threadsafe</li>
 </ul>
 <h2 id="1121-2021-02-05">[1.12.1] - 2021-02-05<a class="headerlink" href="#1121-2021-02-05" title="Permanent link">🔗</a></h2>
 <h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">🔗</a></h3>
@@ -3605,14 +3677,14 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 <li>Events:<ul>
-<li>Add mmo class level or exp
--️ Add mmo professional level or exp
--️️ Add Skill points
--️️ Add attribute points
--️️ Add attribute reallocation points
--️️ Add class points
--️️ Give Item ️
--️ Take Item</li>
+<li>Add mmo class level or exp</li>
+<li>Add mmo professional level or exp</li>
+<li>Add Skill points</li>
+<li>Add attribute points</li>
+<li>Add attribute reallocation points</li>
+<li>Add class points</li>
+<li>Give Item ️</li>
+<li>Take Item</li>
 </ul>
 </li>
 </ul>
@@ -3643,7 +3715,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Added "acceptNPCLeftClick: true / false" config option</li>
 <li>Added optional "minlevel" and "maxlevel" arguments to mmobkill objective</li>
 <li>Added new options 'inside/outside' for npcrange objective, support for multiple npcs and improved performance</li>
-<li>Added new Event QuestCompassTargetChangeEvent that is triggered when a new CompassTarget is set. It is also possible to cancel it</li>
+<li>Added new Event QuestCompassTargetChangeEvent that is triggered when a new CompassTarget is set. It is also possible
+  to cancel it</li>
 <li>added multi language support for Notify system</li>
 <li>Added 'notifyall' event to broadcast a notification</li>
 <li>Added new notification IO 'sound'</li>
@@ -3731,19 +3804,22 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>fixed when PlaceholderAPI variables contains dots</li>
 <li>fixed quester name not support &amp; as color code</li>
 <li>fixed Region Objective listen to player teleport event</li>
-<li>packet Interceptor stops 1 second AFTER the end of the conversation to allow slow messages to still have its chat protection</li>
+<li>packet Interceptor stops 1 second AFTER the end of the conversation to allow slow messages to still have its chat
+  protection</li>
 <li>fixed notify couldn't use variables that contain <code>:</code></li>
 <li>improved stability for brew objective when other plugins affect brewing</li>
 <li>fixed region and npcregion condition</li>
 <li>fixed debugging dose not start on server startup</li>
 <li>fixed ghost holograms caused by reloading BQ</li>
-<li>fixed deadlock(Server crash) in Conversations with a large amount of npc and player options with a large amount of conditions</li>
+<li>fixed deadlock(Server crash) in Conversations with a large amount of npc and player options with a large amount of
+  conditions</li>
 <li>fixed door event not working correctly</li>
 <li>fixed <code>1 give</code> command exceptions</li>
 </ul>
 <h3 id="security_2">Security<a class="headerlink" href="#security_2" title="Permanent link">🔗</a></h3>
 <ul>
-<li>fixed issue, where objectives that count things are out of sync with the database. This has also affected BungeeCord support</li>
+<li>fixed issue, where objectives that count things are out of sync with the database. This has also affected BungeeCord
+  support</li>
 </ul>
 <h2 id="1110-2020-01-02">[1.11.0] - 2020-01-02<a class="headerlink" href="#1110-2020-01-02" title="Permanent link">🔗</a></h2>
 <h3 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">🔗</a></h3>
@@ -3778,7 +3854,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>Event 'effect' can have 'ambient', 'hidden' and 'noicon' parameters</li>
 <li>Event 'effect' has '--ambient' parameter deprecated with a non fatal warning.</li>
-<li>Priority for 'journal_main_page' entries not unique anymore, it only orders the entries. Same priority sort it alphabetic</li>
+<li>Priority for 'journal_main_page' entries not unique anymore, it only orders the entries. Same priority sort it
+  alphabetic</li>
 <li>Objective 'interact' can have 'loc', 'range' parameters</li>
 <li>Objective 'region' can optionally have 'entry' and/or 'exit' to only trigger when entering or exiting named region</li>
 <li>The old 'Debug' class was replaced by a more useful and powerful 'LogUtils' class</li>
@@ -3801,7 +3878,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h3 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">🔗</a></h3>
 <ul>
 <li>npc holograms above the head that follow the npc (requires HolographicDisplays)</li>
-<li>New 'facing' condition - check if player is facing a direction </li>
+<li>New 'facing' condition - check if player is facing a direction</li>
 <li>New 'looking' condition - check if player looks at a block</li>
 <li>New 'deleffect' event - delete potion effects of a player</li>
 <li>New '%citizen%' variable - display a npcs name or coordinates (requires Citizens)</li>
@@ -3815,14 +3892,14 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>New 'dayofweek' condition - check if its weekend or monday</li>
 <li>New 'realtime' condition - check if its a specific time</li>
 <li>New 'xp' event - give a player xp.</li>
-<li>Global objecties (objectives that  are active for all players directly after start)</li>
+<li>Global objecties (objectives that are active for all players directly after start)</li>
 <li>Global tags and points (tags ad points that are not set for one specific player)</li>
-<li>New 'globaltag' event </li>
+<li>New 'globaltag' event</li>
 <li>New 'globaltag' condition</li>
-<li>New 'globalpoint' event </li>
+<li>New 'globalpoint' event</li>
 <li>New 'globalpoint' condition</li>
 <li>New 'opsudo' event - Sudo commands with op permissions</li>
-<li>Brewery integration ('drunk', 'drunkquality' and 'hasbrew'conditions, 'givebrew' and 'takebrew' events) </li>
+<li>Brewery integration ('drunk', 'drunkquality' and 'hasbrew'conditions, 'givebrew' and 'takebrew' events)</li>
 <li>New 'title' event - display titles without the whole command hassle</li>
 <li>New 'playsound' event - plays a sound</li>
 <li>New 'fly' condition - check if the player is flying with Elytra</li>
@@ -3909,9 +3986,12 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h2 id="19-2017-04-03">[1.9] - 2017-04-03<a class="headerlink" href="#19-2017-04-03" title="Permanent link">🔗</a></h2>
 <p>Notes:
-- This version breaks compatibility with plugins hooking into BetonQuest. I'm sorry for that. Ask devs to update these plugins.
-- The error reporting feature was improved. If you see a lot of error messages when reloading the plugin (not stack traces, just regular, human-readable messages), it's probably because there are real problems in your quests.
-- BetonQuest won't accept ".yml" extensions at the end of conversation names in "main.yml". If your conversations aren't working (the plugin says they don't exist), check if you have these extensions IN THE "MAIN.YML" file and remove them.</p>
+- This version breaks compatibility with plugins hooking into BetonQuest. I'm sorry for that. Ask devs to update these
+  plugins.
+- The error reporting feature was improved. If you see a lot of error messages when reloading the plugin (not stack
+  traces, just regular, human-readable messages), it's probably because there are real problems in your quests.
+- BetonQuest won't accept ".yml" extensions at the end of conversation names in "main.yml". If your conversations aren't
+  working (the plugin says they don't exist), check if you have these extensions IN THE "MAIN.YML" file and remove them.</p>
 <h3 id="fixed_9">Fixed<a class="headerlink" href="#fixed_9" title="Permanent link">🔗</a></h3>
 <ul>
 <li>'action' objective now detects fire interaction</li>
@@ -3928,7 +4008,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="changes_3">Changes<a class="headerlink" href="#changes_3" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Complete rewrite of item conditioning - read the docs to discover new features (previous syntax is still working without any behavior changes)</li>
+<li>Complete rewrite of item conditioning - read the docs to discover new features (previous syntax is still working
+  without any behavior changes)</li>
 <li>Books in items.yml now automatically wrap pages, like the journal and main page</li>
 <li>Main page and entries in the journal can manually split pages with '|' character</li>
 <li>New lines in conversations can be made with "\n"</li>
@@ -4006,7 +4087,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="changes_4">Changes<a class="headerlink" href="#changes_4" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Updater is now based on GitHub Releases, no longer downloads major updates automatically, it is more configurable and can also download development versions with "/q update --dev"</li>
+<li>Updater is now based on GitHub Releases, no longer downloads major updates automatically, it is more configurable and
+  can also download development versions with "/q update --dev"</li>
 </ul>
 <h3 id="added_6">Added<a class="headerlink" href="#added_6" title="Permanent link">🔗</a></h3>
 <ul>
@@ -4030,7 +4112,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h2 id="18-2016-02-13">[1.8] - 2016-02-13<a class="headerlink" href="#18-2016-02-13" title="Permanent link">🔗</a></h2>
 <p>Notes:
-- As always in big updates, compatibility with plugins hooking into BetonQuest is broken. You need to check if everything is working.</p>
+- As always in big updates, compatibility with plugins hooking into BetonQuest is broken. You need to check if
+  everything is working.</p>
 <h3 id="fixed_15">Fixed<a class="headerlink" href="#fixed_15" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Die objective now reacts to death caused by other plugins</li>
@@ -4096,7 +4179,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Packages can now be moved to another directories</li>
 <li>Quest cancelers are now defined in a more convenient way</li>
 <li>/q command renamed to /betonquest, /j to /journal; previous forms are now aliases</li>
-<li>Conditions and events in objective instructions (and conditions in event instructions) can now be defined with "condition:" and "event:" argument (without "s" at the end)</li>
+<li>Conditions and events in objective instructions (and conditions in event instructions) can now be defined with "
+  condition:" and "event:" argument (without "s" at the end)</li>
 </ul>
 <h2 id="176-2015-10-17">[1.7.6] - 2015-10-17<a class="headerlink" href="#176-2015-10-17" title="Permanent link">🔗</a></h2>
 <h3 id="fixed_16">Fixed<a class="headerlink" href="#fixed_16" title="Permanent link">🔗</a></h3>
@@ -4115,7 +4199,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h2 id="174-2015-08-29">[1.7.4] - 2015-08-29<a class="headerlink" href="#174-2015-08-29" title="Permanent link">🔗</a></h2>
 <h3 id="fixed_18">Fixed<a class="headerlink" href="#fixed_18" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Fixed error when player was quitting with active "stop" conversation while he had not changed his language with /ql command</li>
+<li>Fixed error when player was quitting with active "stop" conversation while he had not changed his language with /ql
+  command</li>
 </ul>
 <h3 id="changes_6">Changes<a class="headerlink" href="#changes_6" title="Permanent link">🔗</a></h3>
 <ul>
@@ -4128,7 +4213,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="changes_7">Changes<a class="headerlink" href="#changes_7" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Options in conversation can also be defined using "event:", "condition:" and "pointers:" argument names (with and without 's' at the end). "text:" argument is unchanged.</li>
+<li>Options in conversation can also be defined using "event:", "condition:" and "pointers:" argument names (with and
+  without 's' at the end). "text:" argument is unchanged.</li>
 </ul>
 <h2 id="172-2015-07-27">[1.7.2] - 2015-07-27<a class="headerlink" href="#172-2015-07-27" title="Permanent link">🔗</a></h2>
 <h3 id="fixed_20">Fixed<a class="headerlink" href="#fixed_20" title="Permanent link">🔗</a></h3>
@@ -4205,7 +4291,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h2 id="162-2015-04-10">[1.6.2] - 2015-04-10<a class="headerlink" href="#162-2015-04-10" title="Permanent link">🔗</a></h2>
 <ul>
 <li>Fixed errors on data loading when MySQL is being used.</li>
-<li>Changes messages system to use simple file as default. If you want to use advanced translation just rename "advanced-messages.yml" to "messages.yml".</li>
+<li>Changes messages system to use simple file as default. If you want to use advanced translation just rename "
+  advanced-messages.yml" to "messages.yml".</li>
 </ul>
 <h2 id="161-2015-03-26">[1.6.1] - 2015-03-26<a class="headerlink" href="#161-2015-03-26" title="Permanent link">🔗</a></h2>
 <ul>
@@ -4213,15 +4300,19 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h2 id="16-2015-03-16">[1.6] - 2015-03-16<a class="headerlink" href="#16-2015-03-16" title="Permanent link">🔗</a></h2>
 <p>Notes:
-- There is a bug/feature in 1.8 which adds '§0' at the end of every line in books generated by plugins. This breaks the conditions/events based on books with more than one line of text. The detailed instruction on how to work it around is in "Other important stuff" chapter, in the part about items.</p>
+- There is a bug/feature in 1.8 which adds '§0' at the end of every line in books generated by plugins. This breaks the
+  conditions/events based on books with more than one line of text. The detailed instruction on how to work it around is
+  in "Other important stuff" chapter, in the part about items.</p>
 <h3 id="fixed_23">Fixed<a class="headerlink" href="#fixed_23" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Items given by event that don't fit in the inventory will now drop instead of being deleted This does not apply to quest items, they will be added to backpack</li>
+<li>Items given by event that don't fit in the inventory will now drop instead of being deleted This does not apply to
+  quest items, they will be added to backpack</li>
 <li>Events fired from conversations won't throw async errors</li>
 <li>Conversation can be started after plugin's reload without relogging</li>
 <li>/q reload no longer lags the server</li>
 <li>Corrected description in /q command</li>
-<li>Added input validation for global locations - if event is incorrect it will display an error instead of breaking the whole functionality</li>
+<li>Added input validation for global locations - if event is incorrect it will display an error instead of breaking the
+  whole functionality</li>
 <li>The plugin should run fine on machines not supporting some special characters</li>
 <li>Inverted item condition now behave correctly</li>
 <li>Time condition now checks time correctly</li>
@@ -4230,7 +4321,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>Added backpack for storing quest items, which cannot be dropped in any way</li>
 <li>Added database backups</li>
-<li>Added prefix for the database. New installations will use "betonquest_" prefix for tables, existing configuration will use empty prefix to maintain compatibility with other programs</li>
+<li>Added prefix for the database. New installations will use "betonquest_" prefix for tables, existing configuration will
+  use empty prefix to maintain compatibility with other programs</li>
 <li>Players can chat while in conversations by prefixing their messages with '#' character</li>
 <li>New "random" condition - true with specified probability</li>
 <li>New "sneak" condition - true if player is sneaking</li>
@@ -4262,14 +4354,18 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Using color codes in journal entries is now possible</li>
 <li>Give/take events and item condition can now check for multiple items with syntax 'give stick:2,stone:4,sword'</li>
 <li>Give/take events and item/hand conditions can now check for items only without enchantments/effects/name/lore etc.</li>
-<li>Inverting condition is now done by prefixing their name with "!" (in the place where you use them, like conversation, not in conditions.yml)</li>
+<li>Inverting condition is now done by prefixing their name with "!" (in the place where you use them, like conversation,
+  not in conditions.yml)</li>
 <li>Configuration updater is no longer based on plugin's version</li>
 <li>Backup files are now kept in "backups" directory, old ones are moved to it</li>
-<li>Changed internal structure of the code (may matter to developers - QuestEvent, Condition and Objective classes has been moved from "core" package to "api", update your imports)</li>
+<li>Changed internal structure of the code (may matter to developers - QuestEvent, Condition and Objective classes has
+  been moved from "core" package to "api", update your imports)</li>
 </ul>
 <h2 id="154-2015-03-12">[1.5.4] - 2015-03-12<a class="headerlink" href="#154-2015-03-12" title="Permanent link">🔗</a></h2>
 <ul>
-<li>This version is almost the same as 1.5.3. The only difference is that it can load database backups created by 1.6 version. When updating to 1.6, the database format will change, so it won't be possible to go back, unless by loading the backup using this version of the plugin.</li>
+<li>This version is almost the same as 1.5.3. The only difference is that it can load database backups created by 1.6
+  version. When updating to 1.6, the database format will change, so it won't be possible to go back, unless by loading
+  the backup using this version of the plugin.</li>
 </ul>
 <h2 id="153-2014-12-26">[1.5.3] - 2014-12-26<a class="headerlink" href="#153-2014-12-26" title="Permanent link">🔗</a></h2>
 <ul>
@@ -4277,7 +4373,8 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h2 id="152-2014-12-23">[1.5.2] - 2014-12-23<a class="headerlink" href="#152-2014-12-23" title="Permanent link">🔗</a></h2>
 <ul>
-<li>Fixed errors that were spamming the console when a player with active Location objective was teleporting to other worlds.</li>
+<li>Fixed errors that were spamming the console when a player with active Location objective was teleporting to other
+  worlds.</li>
 </ul>
 <h2 id="151-2014-12-22">[1.5.1] - 2014-12-22<a class="headerlink" href="#151-2014-12-22" title="Permanent link">🔗</a></h2>
 <h3 id="changes_11">Changes<a class="headerlink" href="#changes_11" title="Permanent link">🔗</a></h3>
@@ -4292,23 +4389,37 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h3 id="changes_12">Changes<a class="headerlink" href="#changes_12" title="Permanent link">🔗</a></h3>
 <ul>
 <li>Added support for MythicMobs and Vault (see wiki for more info)</li>
-<li>AutoUpdater is now enabled by default! If you want you can change this and reload the plugin, nothing will be downloaded in that case</li>
-<li>Books saving format has changed. All books were automatically converted, but you need to check them if everything looks like it's supposed to.</li>
+<li>AutoUpdater is now enabled by default! If you want you can change this and reload the plugin, nothing will be
+  downloaded in that case</li>
+<li>Books saving format has changed. All books were automatically converted, but you need to check them if everything
+  looks like it's supposed to.</li>
 <li>Command event accepts multiple commands separated by "|", eg. "command say beton|say quest"</li>
-<li>Event command now accepts optional <name> argument at the end; this will fire event for <name> player. eg. "/q event wood_reward Steve"</li>
+<li>Event command now accepts optional <name> argument at the end; this will fire event for <name> player. eg. "/q event
+  wood_reward Steve"</li>
 <li>Journal title and lore can now use colors (&amp;4 etc.) and journal is colorful; options in config.yml</li>
 <li>Added aliases for /q command: bq, bquest, bquests, betonquest, betonquests, quest, quests</li>
 <li>Added aliases for /j command: bj, journal, bjournal, betonjournal</li>
-<li>Objectives are now defined directly in event instruction, not in objectives.yml (which was deleted, if you want to restore something check the backup)</li>
+<li>Objectives are now defined directly in event instruction, not in objectives.yml (which was deleted, if you want to
+  restore something check the backup)</li>
 <li>Replies in conversations are now optionally clickable (tellraw option in config.yml)</li>
 <li>Added permission for starting a conversation: betonquest.conversation</li>
-<li>Conversation starting/ending, updating journal, plugin's update and full inventory can now make sounds; you can find a list of possible values here: jd.bukkit.org/rb/apidocs/org/bukkit/Sound.html</li>
-<li>Conditions for events are now defined as 'event_conditions:' instead of simply 'conditions:'. This is to distinguish conditions for objectives and for events, as both of them can exist in one instruction</li>
+<li>Conversation starting/ending, updating journal, plugin's update and full inventory can now make sounds; you can find a
+  list of possible values here: jd.bukkit.org/rb/apidocs/org/bukkit/Sound.html</li>
+<li>Conditions for events are now defined as 'event_conditions:' instead of simply 'conditions:'. This is to distinguish
+  conditions for objectives and for events, as both of them can exist in one instruction</li>
 <li>Updater is now run when disabling the plugin (it does matter if your server restarts every night)
-Notes:</li>
-<li>All Objective events has been converted to new format. The objectives.yml file has been deleted, so if it contained any objectives that weren't covered by an event they may seem lost. However there is a backup file and you can easily extract everything from it. Please refer to the wiki to learn how objectives are now defined or just study converted ones (it's pretty straightforward).</li>
-<li>AutoUpdater is now enabled by default. Every future update will be working exactly like before, all changes will be automatically updated by a converter, there is always a backup and you are informed about all changes in this file. So it's pretty safe to say that keeping this plugin up to date won't give you any trouble. If you don't want to have latest fixes and features you can disable updating but this will make the developer sad.</li>
-<li>Because of changes in how books behave since 1.8 you may experience some strange bugs with saving books to items.yml. Generally you should open a book before saving it using /q item command. And don't start or end your books with " character, as it's part of a workaround of this bug/feature.</li>
+  Notes:</li>
+<li>All Objective events has been converted to new format. The objectives.yml file has been deleted, so if it contained
+  any objectives that weren't covered by an event they may seem lost. However there is a backup file and you can easily
+  extract everything from it. Please refer to the wiki to learn how objectives are now defined or just study converted
+  ones (it's pretty straightforward).</li>
+<li>AutoUpdater is now enabled by default. Every future update will be working exactly like before, all changes will be
+  automatically updated by a converter, there is always a backup and you are informed about all changes in this file. So
+  it's pretty safe to say that keeping this plugin up to date won't give you any trouble. If you don't want to have
+  latest fixes and features you can disable updating but this will make the developer sad.</li>
+<li>Because of changes in how books behave since 1.8 you may experience some strange bugs with saving books to items.yml.
+  Generally you should open a book before saving it using /q item command. And don't start or end your books with "
+  character, as it's part of a workaround of this bug/feature.</li>
 </ul>
 <h2 id="143-2014-12-15">[1.4.3] - 2014-12-15<a class="headerlink" href="#143-2014-12-15" title="Permanent link">🔗</a></h2>
 <ul>
@@ -4329,7 +4440,8 @@ Notes:</li>
 <li>Conversations are now divided into multiple files in "conversations" directory</li>
 <li>Items are now saved to items.yml file and referenced by "take", "give", "item" and "hand" events/conditions</li>
 <li>Added /q item <itemID> command which saves currently held item to the config as specified itemID</li>
-<li>Added location to Action objective, which checks the location of the block (unlike location condition which checks location of the player)</li>
+<li>Added location to Action objective, which checks the location of the block (unlike location condition which checks
+  location of the player)</li>
 <li>Added /q event <eventID> command which fires specified event</li>
 <li>Fixed multiple bugs with conversation starting and ending</li>
 <li>Block NPCs can now be used with Citizens enabled</li>
@@ -4342,12 +4454,16 @@ Notes:</li>
 <li>Can be used to detect book reading (with help of updated Hand condition)</li>
 </ul>
 </li>
-<li>Added AutoUpdater; it's disabled by default
-Notes:</li>
-<li>Conversion of configuration should have been done automatically, you don't have to worry about anything. If something went wrong you can revert changes from generated backup file, which contains all your previous configs.</li>
-<li>You can enable AutoUpdater by setting "autoupdate" to true in config.yml. It is completely safe because all next versions will generate backups and convert all files automatically. You will be notified on joining the server about new changelog file.</li>
-<li>Please refer to the wiki for changes in formatting instruction strings for various things: <a href="https://github.com/Co0sh/BetonQuest/wiki">https://github.com/Co0sh/BetonQuest/wiki</a></li>
-<li>You probably should also change names of converted items to something else than "item12". But that works too of course.</li>
+<li>Added AutoUpdater; it's disabled by default Notes:</li>
+<li>Conversion of configuration should have been done automatically, you don't have to worry about anything. If something
+  went wrong you can revert changes from generated backup file, which contains all your previous configs.</li>
+<li>You can enable AutoUpdater by setting "autoupdate" to true in config.yml. It is completely safe because all next
+  versions will generate backups and convert all files automatically. You will be notified on joining the server about
+  new changelog file.</li>
+<li>Please refer to the wiki for changes in formatting instruction strings for various
+  things: <a href="https://github.com/Co0sh/BetonQuest/wiki">https://github.com/Co0sh/BetonQuest/wiki</a></li>
+<li>You probably should also change names of converted items to something else than "item12". But that works too of
+  course.</li>
 </ul>
 <h2 id="13-2014-11-30">[1.3] - 2014-11-30<a class="headerlink" href="#13-2014-11-30" title="Permanent link">🔗</a></h2>
 <h3 id="changes_14">Changes<a class="headerlink" href="#changes_14" title="Permanent link">🔗</a></h3>
@@ -4357,15 +4473,20 @@ Notes:</li>
 <li>Global, long and persistent delay for events (as an objective)</li>
 <li>Folder event for multiple events, with optional short delay</li>
 <li>French translation (thanks to fastlockel)</li>
-<li>If you want to convert names to UUIDs run the plugin once and then change in the config "uuid: false" to true. Do not touch the "convert: true" option unless you want your database wiped! Conversion will happen on next plugin reload (eg. /q reload). This is not revertable!</li>
+<li>If you want to convert names to UUIDs run the plugin once and then change in the config "uuid: false" to true. Do not
+  touch the "convert: true" option unless you want your database wiped! Conversion will happen on next plugin reload (
+  eg. /q reload). This is not revertable!</li>
 <li>Remember to backup your config files before updating! It shouldn't destroy anything but you never know.</li>
 </ul>
 <h2 id="12-2014-11-23">[1.2] - 2014-11-23<a class="headerlink" href="#12-2014-11-23" title="Permanent link">🔗</a></h2>
 <ul>
-<li>Global locations now automatically run only once, no need for blocking it with tags and conditions. They use however tags that follow the syntax "global_<tag>", where <tag> is global location objective tag.</li>
-<li>Added optional respawn location for cancelled death objective, just add "respawn:100.5;200;300.5;world;90;0" to instruction string.</li>
+<li>Global locations now automatically run only once, no need for blocking it with tags and conditions. They use however
+  tags that follow the syntax "global_<tag>", where <tag> is global location objective tag.</li>
+<li>Added optional respawn location for cancelled death objective, just add "respawn:100.5;200;300.5;world;90;0" to
+  instruction string.</li>
 <li>Added German translation, thanks to coalaa!</li>
-<li>Added optional movement blocking while in conversation, just add option "stop: true" or "stop: false" in every conversation.</li>
+<li>Added optional movement blocking while in conversation, just add option "stop: true" or "stop: false" in every
+  conversation.</li>
 <li>Changed priority of conversation chat event to lowest, should work even for muted players.</li>
 <li>Fixed data values in block objective.</li>
 <li>Added metrics, you can disable them by setting "metrics: false" in config.yml</li>

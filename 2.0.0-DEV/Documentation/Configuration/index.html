@@ -989,10 +989,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2064,17 +2112,20 @@ English (en), Polish (pl), German (de), French (fr), Spanish (es), Chinese (cn),
 <h3 id="updating">Updating<a class="headerlink" href="#updating" title="Permanent link">🔗</a></h3>
 <p>The <code>update</code> section controls the Auto-Updater. It has the following settings:</p>
 <ul>
-<li><code>enabled</code> (default <code>true</code>). Enables or disables the Updater. If set to false, it is not possible to update with the updater and no version checks are executed.</li>
-<li><code>strategy</code> (default <code>MINOR</code>). The update strategy is the most important feature of the Auto-Updater. An explanation is available <a href="../Updating-and-Backups/">here</a>.</li>
+<li><code>enabled</code> (default <code>true</code>). Enables or disables the Updater. If set to false, it is not possible to update with the
+  updater and no version checks are executed.</li>
+<li><code>strategy</code> (default <code>MINOR</code>). The update strategy is the most important feature of the Auto-Updater. An explanation is
+  available <a href="../Updating/#choose-an-update-strategy">here</a>.</li>
 <li><code>automatic</code> (default <code>true</code>). If true the updater will download new Versions automatically. Otherwise, the updater
-    will only download new versions when the update command is executed.</li>
+  will only download new versions when the update command is executed. Advice is
+  available <a href="../Updating/#enable-or-disable-automatic-updates">here</a>.</li>
 </ul>
 <h3 id="journal-slots">Journal slots<a class="headerlink" href="#journal-slots" title="Permanent link">🔗</a></h3>
 <p><code>default_journal_slot</code> is the inventory slot in which the journal will appear after using the <code>/journal</code> command.
 BetonQuest will try to move items out of the way if the slot is occupied. If the inventory is full the journal will not
 be added. You can disable this behaviour by setting the option to <code>-1</code>. BetonQuest will then just use any free slot.</p>
 <h3 id="citizens-identifier">Citizens identifier<a class="headerlink" href="#citizens-identifier" title="Permanent link">🔗</a></h3>
-<p><code>citizens_npcs_by_name</code> sets whether NPCs from Citizens 2 should be identified in main.yml by their name instead of
+<p><code>citizens_npcs_by_name</code> sets whether NPCs from Citizens 2 should be identified in package.yml by their name instead of
 their id. This is a dangerous setting as two different NPC's at the opposite edges of your world that share the same
 name by accident will trigger the same quest.</p>
 <h3 id="citizens-left-click">Citizens left click<a class="headerlink" href="#citizens-left-click" title="Permanent link">🔗</a></h3>
@@ -2197,7 +2248,7 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-13T20:50:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-13</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
       
     
   </small>
@@ -2228,7 +2279,7 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Updating-and-Backups/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📥 Updating" rel="prev">
+        <a href="../Updating/Migration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📤 Migration" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2237,7 +2288,7 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
               <span class="md-footer__direction">
                 Previous
               </span>
-              📥 Updating
+              📤 Migration
             </div>
           </div>
         </a>

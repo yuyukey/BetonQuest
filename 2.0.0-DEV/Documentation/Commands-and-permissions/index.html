@@ -1050,10 +1050,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1658,14 +1706,11 @@
 <li><strong>/q condition {playerName} {package.conditionID}</strong> - shows if the player meet specified condition or not</li>
 <li><strong>/q item {package.itemID}</strong> - creates an item based on what you're holding in hand</li>
 <li><strong>/q give {package.itemID}</strong> - gives you an item defined in the configuration</li>
-<li><strong>/q config {set/add/read} {path} [value]</strong> - sets, adds or reads values from configuration</li>
 <li><strong>/q purge {playerName}</strong> - deletes all player's data from the database</li>
 <li><strong>/q rename {tag/point/globalpoint/objective/entry} {oldName} {newName}</strong> - renames all specified things in the database</li>
 <li><strong>/q delete {tag/point/objective/entry} {name}</strong> - deletes all specified things in the database</li>
 <li><strong>/q backup</strong> - creates a backup of configuration files and database</li>
 <li><strong>/q update</strong> - updates the plugin to the newest version.</li>
-<li><strong>/q create {package}</strong>: creates new package with given name, filled with default quest</li>
-<li><strong>/q vector {packname.variable} {newvariable}</strong>: calculates the vector from first location variable to you position and saves it as second variable</li>
 <li><strong>/q version</strong>: displays the versions of BetonQuest, the server and all hooked plugins</li>
 <li><strong>/q debug [true/false/ingame]</strong>: enable debug mode and write all down in a log file or disable the debug mode</li>
 <li><strong>/questlang {lang}</strong> - changes the language for the player (and globally if used from console). <code>default</code> language will use the language defined in <em>config.yml</em>.</li>
@@ -1716,7 +1761,7 @@
 <p>Path in this command is like an address of the value. Next branches are separated by dots. For example language setting in main configuration has path <code>config.language</code>, and a text in "bye" player option in default quest has path <code>default.conversations.innkeeper.player_options.bye.text</code></p>
 <p>You can purge specific player with '<code>/q purge Beton</code>' command, where Beton is the name of the player. To purge the entire database at once simply change the prefix in <em>config.yml</em> or delete <em>database.db</em> file.</p>
 <p>Delete command ('<code>/q delete</code>') allows you to delete from the database every tag, point, objective or journal entry with specified name.</p>
-<p>Rename command ('<code>/q rename</code>') allows you to rename every tag, point, globalpoint, objective or journal entry in the database. In case of an objective it will also rename the objective in <em>objectives.yml</em>, so it continues to work correctly.</p>
+<p>Rename command ('<code>/q rename</code>') allows you to rename every tag, point, globalpoint, objective or journal entry in the database. In case of an objective it will also rename the objective in <em>objectives</em> section in the configuration file, so it continues to work correctly.</p>
 <p>If you want to backup your configuration and database make sure that your server is empty (this process requires all data to be saved to database -&gt; all players offline) and run '<code>/q backup</code>' command. You will get a zip file containing all your data, ready to be unzipped for restoring the plugin.</p>
 <p>Update command ('<code>/q update</code>') will try to download the newest version of the plugin and save it to the update folder. This folder is then handled by Spigot to update the plugin. If you accidentally use this command but do not wish to update the plugin, you should remove <code>BetonQuest.jar</code> file from the <code>plugins/update</code> folder before restarting/reloading the server.</p>
 <p>Using '<code>/q create beton</code>' command you will create new package named '<code>beton</code>'. It will contain the default quest.</p>
@@ -1745,7 +1790,7 @@ Beware though, the debug level might be spammy.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-11-17T19:28:03+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-11-17</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-19T15:05:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-19</span>
       
     
   </small>
@@ -1792,13 +1837,13 @@ Beware though, the debug level might be spammy.</p>
       
       
         
-        <a href="../Updating-and-Backups/" class="md-footer__link md-footer__link--next" aria-label="Next: 📥 Updating" rel="next">
+        <a href="../Updating/" class="md-footer__link md-footer__link--next" aria-label="Next: Index" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              📥 Updating
+              Index
             </div>
           </div>
           <div class="md-footer__button md-icon">

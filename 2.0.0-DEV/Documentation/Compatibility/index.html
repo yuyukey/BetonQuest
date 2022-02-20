@@ -2381,10 +2381,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -4312,7 +4360,6 @@ mcMMO, MythicLib, MMOCore, MMOItems, MythicMobs, PlaceholderAPI, ProtocolLib, Qu
 Shopkeepers, SkillAPI, Skript, Vault, WorldEdit, FastAsyncWorldEdit and WorldGuard.</em></p>
 <p>Some plugins also hook into BetonQuest and provide support by themselves:<br />
 <a href="https://www.spigotmc.org/resources/13863/"><em>nuNPCDestinations</em></a>,
-<a href="https://www.spigotmc.org/resources/55170/"><em>RPGMenu</em></a>,
 <a href="https://www.spigotmc.org/resources/82674/"><em>CalebCompass</em></a>,
 <a href="https://www.spigotmc.org/resources/95872/">NotQuests</a></p>
 <p>There are also plugins that hook into BetonQuest that require a clientside mod:<br />
@@ -4382,7 +4429,7 @@ it's NPCs are way more immersive. Having Citizens also allows you to use NPCKill
 setting <code>acceptNPCLeftClick</code> in the config.yml to <code>true</code>.</p>
 <div class="admonition notice">
 <p class="admonition-title">Notice</p>
-<p>You need to specify the ID of the NPC instead of it's name in the main.yml when using Citizens!</p>
+<p>You need to specify the ID of the NPC instead of it's name in the package.yml when using Citizens!</p>
 </div>
 <h3 id="conditions_2">Conditions<a class="headerlink" href="#conditions_2" title="Permanent link">🔗</a></h3>
 <h4 id="npc-distance-npcdistance">NPC distance: <code>npcdistance</code><a class="headerlink" href="#npc-distance-npcdistance" title="Permanent link">🔗</a></h4>
@@ -4490,9 +4537,9 @@ This means that <code>enter</code> is not completed when the player gets the obj
 <a href="https://reference.elmakers.com/#effectlib" target="_blank">wiki</a> for EffectLib.
 It does contain a few magic specific settings though so please don't be confused if some stuff does not work.
 There is also a <a href="https://sandbox.elmakers.com/#betonquestEffectLibTemplate" target="_blank">magic editor</a> with autocompletion for EffectLib.</p>
-<p>You can control the behaviour of particles around the NPCs in <em>custom.yml</em> file, in <code>npc_effects</code> section.
+<p>You can control the behaviour of particles around the NPCs in the <code>npc_effects</code> section.
 Each effect is defined as a separate subsection and consists of EffectLib options (described on the EffectLib page) and several BetonQuest settings.
-<code>npcs</code> is a list of all NPCs on which this effect can be displayed. If no <code>npcs</code> are specified it will use the package NPCs from <em>main.yml</em>.
+<code>npcs</code> is a list of all NPCs on which this effect can be displayed. If no <code>npcs</code> are specified it will use the package NPCs from <em>package.yml</em>.
 <code>conditions</code> is a list of conditions the player has to meet in order to see the effect.
 BetonQuest will find the first effect which can be displayed and show it to the player.
 <code>interval</code> controls how often the effect is displayed (in ticks). The effect will be fired from the exact location of the NPC, upwards.</p>
@@ -4516,16 +4563,15 @@ BetonQuest will find the first effect which can be displayed and show it to the 
 </code></pre></div>
 <h3 id="events_4">Events<a class="headerlink" href="#events_4" title="Permanent link">🔗</a></h3>
 <h4 id="particle-particle">Particle: <code>particle</code><a class="headerlink" href="#particle-particle" title="Permanent link">🔗</a></h4>
-<p>This event will load an effect defined in <code>effects</code> section in
-<em>custom.yml</em> file and display it on player's location. The only argument
+<p>This event will load an effect defined in <code>effects</code> section
+and display it on player's location. The only argument
 is the name of the effect. You can optionally add <code>loc:</code> argument
 followed by a location written like <code>100;200;300;world;180;-90</code> to put
 it on that location. If you add <code>private</code> argument the effect will only
 be displayed to the player for which you ran the event.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p><strong>In custom.yml</strong>
-<div class="highlight"><pre><span></span><code><span class="nt">effects</span><span class="p">:</span><span class="w"></span>
+<p><div class="highlight"><pre><span></span><code><span class="nt">effects</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">beton</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HelixEffect</span><span class="w"></span>
 <span class="w">    </span><span class="nt">iterations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span><span class="w"></span>
@@ -4534,9 +4580,9 @@ be displayed to the player for which you ran the event.</p>
 <span class="w">    </span><span class="nt">circles</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w"></span>
 <span class="w">    </span><span class="nt">grow</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
 <span class="w">    </span><span class="nt">radius</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w"></span>
-</code></pre></div></p>
-<p><strong>In events.yml</strong>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">particle beton loc:100;200;300;world;180;-90 private</span><span class="w"></span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nt">events</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">playEffect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">particle beton loc:100;200;300;world;180;-90 private</span><span class="w"></span>
 </code></pre></div></p>
 </div>
 <h2 id="heroes"><a href="http://dev.bukkit.org/bukkit-plugins/heroes/">Heroes</a><a class="headerlink" href="#heroes" title="Permanent link">🔗</a></h2>
@@ -4567,7 +4613,7 @@ be displayed to the player for which you ran the event.</p>
 <h2 id="holographicdisplays"><a href="http://dev.bukkit.org/bukkit-plugins/holographic-displays/">HolographicDisplays</a><a class="headerlink" href="#holographicdisplays" title="Permanent link">🔗</a></h2>
 <h3 id="hidden-holograms">Hidden Holograms<a class="headerlink" href="#hidden-holograms" title="Permanent link">🔗</a></h3>
 <p>Installing this plugin will enable you to create hidden holograms, which will be shown to players only if they meet specified conditions. Note that you need to have <a href="https://www.spigotmc.org/resources/protocollib.1997/">ProtocolLib</a> installed in order to hide holograms from certain players.</p>
-<p>In order to create a hologram, you have to add <code>holograms</code> section in your <em>custom.yml</em> file. Add a node named as your hologram to this section and define <code>lines</code>, <code>conditions</code> and <code>location</code> subnodes. The fist one should be a list of texts - these will be the lines of a hologram. Color codes are supported. Second is a list of conditions separated by commas. Third is a location in a standard format, like in <code>teleport</code> event. An example of such hologram definition:</p>
+<p>In order to create a hologram, you have to add a <code>holograms</code> section. Add a node named as your hologram to this section and define <code>lines</code>, <code>conditions</code> and <code>location</code> subnodes. The fist one should be a list of texts - these will be the lines of a hologram. Color codes are supported. Second is a list of conditions separated by commas. Third is a location in a standard format, like in <code>teleport</code> event. An example of such hologram definition:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">holograms</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">beton</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">lines</span><span class="p">:</span><span class="w"></span>
@@ -4579,10 +4625,10 @@ be displayed to the player for which you ran the event.</p>
 <span class="w">    </span><span class="c1"># How often to check conditions (optional)</span><span class="w"></span>
 <span class="w">    </span><span class="nt">check_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w"></span>
 </code></pre></div>
-<p>A line can also represent a floating item. To do so enter the line as 'item:<code>custom_item</code>'. It will be replaced with the <code>custom_item</code> defined defined in items.yml. If the Item is defined for example as map, a floating map will be seen between two lines of text.</p>
+<p>A line can also represent a floating item. To do so enter the line as 'item:<code>custom_item</code>'. It will be replaced with the <code>custom_item</code> defined in the <code>items</code> section. If the Item is defined for example as map, a floating map will be seen between two lines of text.</p>
 <p>The holograms are updated every 10 seconds. If you want to make it faster, add <code>hologram_update_interval</code> option in <em>config.yml</em> file and set it to a number of ticks you want to pass between updates (one second is 20 ticks). Don't set it to 0 or negative numbers, it will result in an error.</p>
 <h3 id="npc-holograms">NPC Holograms<a class="headerlink" href="#npc-holograms" title="Permanent link">🔗</a></h3>
-<p>If Citizens is also installed then you can have holograms configured relative to an npc. Add the following to <em>custom.yml</em>.</p>
+<p>If Citizens is also installed then you can have holograms configured relative to an npc. Add the following:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">npc_holograms</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="c1"># How often to check conditions</span><span class="w"></span>
 <span class="w">  </span><span class="nt">check_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span><span class="w"></span>
@@ -4958,7 +5004,7 @@ The <code>variable</code> part is just a BetonQuest variable without percentage 
 <h2 id="protocollib"><a href="https://www.spigotmc.org/resources/protocollib.1997/">ProtocolLib</a><a class="headerlink" href="#protocollib" title="Permanent link">🔗</a></h2>
 <h3 id="hiding-npcs">Hiding NPC's<a class="headerlink" href="#hiding-npcs" title="Permanent link">🔗</a></h3>
 <p>Having ProtocolLib installed will let you hide Citizens NPCs if specified conditions are met.
-You can do that by adding a <code>hide_npcs</code> section to the <em>custom.yml</em> file in your package. 
+You can do that by adding a <code>hide_npcs</code> section in your package. 
 It allows you to assign conditions to specific NPC IDs like so:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">hide_npcs</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">41</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">killedAlready,questStarted</span><span class="w"></span>
@@ -4976,7 +5022,7 @@ on large servers if used together with the <a href="../Configuration/#npc-hider-
  Sorry, your browser doesn't support embedded videos.
  </video>
 
-<p>Customize how it looks by adding the following lines to custom.yml:</p>
+<p>Customize how it looks by adding the following lines:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">menu_conv_io</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">line_length</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50</span><span class="w"></span>
 <span class="w">  </span><span class="nt">refresh_delay</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">180</span><span class="w"></span>
@@ -5101,20 +5147,21 @@ on large servers if used together with the <a href="../Configuration/#npc-hider-
 <p class="admonition-title">Example</p>
 <p><strong>In your script</strong>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">on betonquest event &quot;concrete&quot;</span><span class="p p-Indicator">:</span><span class="w"></span>
-</code></pre></div></p>
-<p><strong>In events.yml</strong>
-<div class="highlight"><pre><span></span><code><span class="nt">fire_concrete_script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">skript concrete</span><span class="w"></span>
+</code></pre></div>
+<strong>In BetonQuest</strong>
+<div class="highlight"><pre><span></span><code><span class="nt">events</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">fire_concrete_script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">skript concrete</span><span class="w"></span>
 </code></pre></div></p>
 </div>
 <h3 id="skript-condition">Skript condition<a class="headerlink" href="#skript-condition" title="Permanent link">🔗</a></h3>
-<p>You can check BetonQuest conditions in your scripts by using the syntax <code>player meets [betonquest] condition "id"</code>. <code>betonquest</code> is optional, and <code>id</code> is the name of the condition, as defined in <em>conditions.yml</em>.</p>
+<p>You can check BetonQuest conditions in your scripts by using the syntax <code>player meets [betonquest] condition "id"</code>. <code>betonquest</code> is optional, and <code>id</code> is the name of the condition, as defined in the <em>conditions</em> section.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p><strong>In your script</strong>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">player meets condition &quot;has_ore&quot;</span><span class="w"></span>
-</code></pre></div></p>
-<p><strong>In conditions.yml</strong>
- <div class="highlight"><pre><span></span><code><span class="nt">has_ore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">item iron_ore:5</span><span class="w"></span>
+</code></pre></div>
+<strong>In BetonQuest</strong>
+<div class="highlight"><pre><span></span><code><span class="nt">has_ore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">item iron_ore:5</span><span class="w"></span>
 </code></pre></div></p>
 </div>
 <h3 id="skript-event">Skript event<a class="headerlink" href="#skript-event" title="Permanent link">🔗</a></h3>
@@ -5123,9 +5170,10 @@ on large servers if used together with the <a href="../Configuration/#npc-hider-
 <p class="admonition-title">Example</p>
 <p><strong>In your script</strong>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fire event &quot;give_emeralds&quot; for player</span><span class="w"></span>
-</code></pre></div></p>
-<p><strong>In events.yml</strong>
-<div class="highlight"><pre><span></span><code><span class="nt">give_emeralds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">give emerald:5</span><span class="w"></span>
+</code></pre></div>
+<strong>In BetonQuest</strong>
+<div class="highlight"><pre><span></span><code><span class="nt">events</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">give_emeralds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">give emerald:5</span><span class="w"></span>
 </code></pre></div></p>
 </div>
 <h2 id="vault"><a href="http://dev.bukkit.org/bukkit-plugins/vault/">Vault</a><a class="headerlink" href="#vault" title="Permanent link">🔗</a></h2>
@@ -5196,7 +5244,7 @@ If you have only a <code>.schem</code> schematic, simply append <code>.schem</co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-01-23T01:36:50+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-01-23</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
       
     
   </small>

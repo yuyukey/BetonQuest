@@ -1052,10 +1052,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1675,19 +1723,15 @@ This message is defined in <em>messages.yml</em> along with other default plugin
 <a href="../Notification-IO%27s-%26-Categories/#categories">notification categories</a> to change this behaviour.
 These categories are pretty much just pre-defined <a href="../Notification-IO%27s-%26-Categories/#notify-ios">NotifyIO settings</a>.  <br />
 Each notification in <em>messages.yml</em> has a special category with a reserved name assigned to it.</p>
-<p>For example: If you would like to have the "language_changed" notification displayed as an actionbar message you would:</p>
-<ul>
-<li>Add a file named <em>custom.yml</em> to your package.</li>
-<li>Add this to the file: </li>
-</ul>
+<p>For example: If you would like to have the "language_changed" notification displayed as an actionbar message you define the following:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span><span class="w">        </span><span class="c1">#General header for all notification settings</span><span class="w"></span>
 <span class="w">  </span><span class="nt">language_changed</span><span class="p">:</span><span class="w">   </span><span class="c1">#Name of the category, same as in messages.yml</span><span class="w"></span>
 <span class="w">    </span><span class="nt">io</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actionbar</span><span class="w">     </span><span class="c1">#Setting the Notify IO to &quot;actionbar&quot;</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>A note about the custom.yml: This is a strange file. BetonQuest searches through all packages and just uses the first one it finds.
-Therefore, you should probably create just one custom.yml with all your settings. We will improve this in BQ 2.0.</strong></p>
+<p><strong>A note about the <code>notifications</code> section: BetonQuest searches through all packages and just uses the first one it finds.
+Therefore, you should probably create just one <code>notifications</code> section. We will improve this in BQ 2.0.</strong></p>
 </div>
 <p>You can add any other <a href="../Notification-IO%27s-%26-Categories/#notify-ios">Notify IO setting</a> to the category like so:
 <div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span><span class="w">       </span>
@@ -1720,7 +1764,7 @@ player's progression.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-29T20:16:24+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-29</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
       
     
   </small>

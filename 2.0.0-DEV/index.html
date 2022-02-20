@@ -1265,10 +1265,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="Documentation/Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="Documentation/Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="Documentation/Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1959,6 +2007,18 @@
 .bq-inline-example-container {
   width: clamp(300px,50%,100%) !important;
 }
+.examples {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 1000px) {
+  .examples { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 2000px) {
+  .examples { grid-template-columns: repeat(3, 1fr); }
+}
 /* compare table - vertical middle */
 tr td {
   vertical-align: middle !important;
@@ -1974,7 +2034,6 @@ thead a, thead p {
   text-decoration: underline;
   color: var(--md-primary-bg-color) !important;
 }
-
 /* compare table - div - set fixed size */
 .md-typeset__table {
   width: 100%;
@@ -2004,7 +2063,6 @@ tbody tr:nth-child(12) p {
 thead span {
   text-decoration: none;
   font-weight: 400;
-
 }
 </style>
 
@@ -2128,7 +2186,7 @@ proper RPG experience needs to check this plugin out. Quest on!!</p>
 </tr>
 <tr>
 <td>Integrated Plugins</td>
-<td align="center">31</td>
+<td align="center">30</td>
 <td align="center">13</td>
 <td align="center">1</td>
 <td align="center">19</td>
@@ -2347,14 +2405,13 @@ integration for such scripting plugins.</p>
 </div>
 <p><br></p>
 <h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">🔗</a></h1>
-<div class="admonition example inline end bq-inline-example-container">
-<p class="admonition-title">Example</p>
-<p><video controls loop src="_media/content/Documentation/Conversations/MenuConvIO.mp4"
+<h2 id="beautiful-multi-path-conversations">Beautiful multi-path Conversations<a class="headerlink" href="#beautiful-multi-path-conversations" title="Permanent link">🔗</a></h2>
+<div class="admonition example inline end bq-inline-example-container note"></div>
+<video controls loop src="_media/content/Documentation/Conversations/MenuConvIO.mp4"
 width="100%">
 Sorry, your browser doesn't support embedded videos.
-</video></p>
-</div>
-<h2 id="beautiful-multi-path-conversations">Beautiful multi-path Conversations<a class="headerlink" href="#beautiful-multi-path-conversations" title="Permanent link">🔗</a></h2>
+</video>
+
 <p>Players can have immersive conversation with NPC's by utilizing BetonQuests Multi-Path-Conversation System. Questers can
 freely define multi-path stories, narrated with NPC conversations, and with multiple endings that affect a player's
 gameplay. Questers can also choose between five different styles to display their conversations.</p>
@@ -2364,14 +2421,13 @@ more advanced ones such as EffectLib. It also offers support for other quest plu
 quests and create further additions to your quest lines based upon the progress in your old plugin. If just Beton isn't
 enough you can always just hook into Skript or Denizen too.</p>
 <p>See the full list of integrations <a href="Documentation/Compatibility/">here</a>.</p>
-<div class="admonition example inline end bq-inline-example-container">
-<p class="admonition-title">Example</p>
-<p><video controls loop src="_media/content/Documentation/Notifications/NotifySystemOverview.mp4"
+<h2 id="custom-notification-system">Custom Notification System<a class="headerlink" href="#custom-notification-system" title="Permanent link">🔗</a></h2>
+<div class="admonition example inline end bq-inline-example-container note"></div>
+<video controls loop src="_media/content/Documentation/Notifications/NotifySystemOverview.mp4"
 width="100%">
 Sorry, your browser doesn't support embedded videos.
-</video></p>
-</div>
-<h2 id="custom-notification-system">Custom Notification System<a class="headerlink" href="#custom-notification-system" title="Permanent link">🔗</a></h2>
+</video>
+
 <ul>
 <li>
 <p>Questers can make use of BetonQuests notifyIO system that provides access to all of Minecafts GUI elements to display
@@ -2386,14 +2442,13 @@ Sorry, your browser doesn't support embedded videos.
   you can write content based on the players actions.</p>
 </li>
 </ul>
-<div class="admonition example inline end bq-inline-example-container">
-<p class="admonition-title">Example</p>
-<p><video controls loop src="_media/content/Documentation/Compatibility/PlayerHider.mp4"
+<h2 id="player-npc-and-hologram-hider">Player, NPC and Hologram Hider<a class="headerlink" href="#player-npc-and-hologram-hider" title="Permanent link">🔗</a></h2>
+<div class="admonition example inline end bq-inline-example-container note"></div>
+<video controls loop src="_media/content/Documentation/Compatibility/PlayerHider.mp4"
 width="100%">
 Sorry, your browser doesn't support embedded videos.
-</video></p>
-</div>
-<h2 id="player-npc-and-hologram-hider">Player, NPC and Hologram Hider<a class="headerlink" href="#player-npc-and-hologram-hider" title="Permanent link">🔗</a></h2>
+</video>
+
 <p>BetonQuest allows you to hide players from each other based on conditions. This can be used to create story-regions
 where players are always alone.<br />
 It's also possible to hide entire Citizens NPC's and HolographicDisplays holograms.</p>
@@ -2406,7 +2461,7 @@ by staff learning / developing quests.</p>
 <p>Our community created a lot of cool stuff!
 Some members even made machines with this quest plugin - that really shows that your imagination is the only limit.
 Take a look at this handpicked selection:</p>
-<div style="display: grid; grid-column-gap: 50px; grid-template-columns: auto auto;"> 
+<div class="examples"> 
     <div>
       <h3> Wandering Trader by Ley </h3>
         <video controls loop
@@ -2485,7 +2540,11 @@ Any additional money has to be re-invested in the project.</p>
 <p style="font-size:medium;">You donate a small amount of the sales price by purchasing on mcmodels.net using our affiliate links. </p>
 
 <h3 id="our-community-sponsors">Our Community Sponsors<a class="headerlink" href="#our-community-sponsors" title="Permanent link">🔗</a></h3>
-<object type="image/svg+xml" data="https://opencollective.com/betonquest/badge.svg?&button=false"></object>
+<p style="text-align: center">
+  <a rel="noreferrer noopener" href="https://opencollective.com/betonquest#category-CONTRIBUTE" target="_blank">
+    <img src="https://opencollective.com/betonquest/backers.svg?&button=false&avatarHeight=70&width=1000">
+  </a>
+</p>
 
 <div class="footnote">
 <hr />

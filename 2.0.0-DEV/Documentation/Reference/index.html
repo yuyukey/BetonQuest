@@ -778,8 +778,56 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-features" class="md-nav__link">
+    Defining features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-across-packages" class="md-nav__link">
+    Working across Packages
+  </a>
+  
+    <nav class="md-nav" aria-label="Working across Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-level-packages" class="md-nav__link">
+    Top-Level Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages-in-sub-folders" class="md-nav__link">
+    Packages in Sub-folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#relative-paths" class="md-nav__link">
     Relative paths
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-packages" class="md-nav__link">
+    Disabling Packages
   </a>
   
 </li>
@@ -1249,10 +1297,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1837,8 +1933,56 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-features" class="md-nav__link">
+    Defining features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-across-packages" class="md-nav__link">
+    Working across Packages
+  </a>
+  
+    <nav class="md-nav" aria-label="Working across Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-level-packages" class="md-nav__link">
+    Top-Level Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages-in-sub-folders" class="md-nav__link">
+    Packages in Sub-folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#relative-paths" class="md-nav__link">
     Relative paths
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-packages" class="md-nav__link">
+    Disabling Packages
   </a>
   
 </li>
@@ -2042,63 +2186,211 @@
                 <h1 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">🔗</a></h1>
 <p>This chapter describes all aspects of BetonQuest in one place. You should read it at least once to know what you're dealing with and where to search for information if you ever have any problems.</p>
 <h2 id="conditions-events-and-objectives">Conditions, Events and Objectives<a class="headerlink" href="#conditions-events-and-objectives" title="Permanent link">🔗</a></h2>
-<p>Conditions, events and objectives are defined with an "instruction string". It's a piece of text, formatted in a specific way, containing the instruction for the condition/event/objective. Thanks to this string they know what should they do. To define the instruction string you will need a reference, few pages below. It describes how something behaves and how it should be created. All instruction strings are defined in appropriate files, for example all conditions are in <em>conditions.yml</em> config. The syntax used to define them looks like this: <code>name: 'the instruction string containing the data'</code>. Apostrophes are optional in most cases, you can find out when to use them by looking up "YAML syntax" in Google.</p>
+<p>Conditions, events and objectives are defined with an "instruction string". It's a piece of text, formatted in a specific way, containing the instruction for the condition/event/objective. Thanks to this string they know what should they do. To define the instruction string you will need a reference, few pages below. It describes how something behaves and how it should be created. All instruction strings are defined in appropriate sections, for example all conditions are in the <em>conditions</em> section. The syntax used to define them looks like this: <code>name: 'the instruction string containing the data'</code>. Apostrophes are optional in most cases, you can find out when to use them by looking up "YAML syntax" in Google.</p>
 <h3 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">🔗</a></h3>
 <p>Conditions are the most versatile and useful tools in creating advanced quests. They allow you to control what options are available to player in conversations, how the NPC responds or if the objective will be completed. The reference of all possible conditions is down below.</p>
-<p>You can negate the condition (revert its output) by adding an exclamation mark (<code>!</code>) at the beginning of it's name (in the place you use it, i.e. in conversations, not in the <em>conditions.yml</em> file).</p>
+<p>You can negate the condition (revert its output) by adding an exclamation mark (<code>!</code>) at the beginning of it's name (in the place you use it, i.e. in conversations, not in the <em>conditions</em> section).</p>
 <p>You can use conversation variables instead of numeric arguments in conditions. If the variable fails to resolve (i.e. it will return an empty string) BetonQuest will use 0 instead.</p>
 <h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">🔗</a></h3>
 <p>In certain moments you will want something to happen. Updating the journal, setting tags, giving rewards, all these are done using events. You define them just like conditions, by specifying a name and instruction string. You can find instruction strings to all events in the event reference. At the end of the instruction string you can add <code>conditions:</code> or <code>condition:</code> (with or without <code>s</code> at the end) attribute followed by a list of condition names separated by commas, like <code>conditions:angry,!quest_started</code>. This will make an event fire only when these conditions are met.</p>
 <p>You can use conversation variables instead of numeric arguments in events. If the variable fails to resolve (i.e. it will return an empty string) BetonQuest will use 0 instead.</p>
 <h3 id="objectives">Objectives<a class="headerlink" href="#objectives" title="Permanent link">🔗</a></h3>
-<p>Objectives are the main things you will use when creating complex quests. You start them with a special event, <code>objective</code>. You define them in the <em>objectives.yml</em> file, just as you would conditions or events. At the end of the instruction string you can add conditions and events for the objective. Conditions will limit when the objective can be completed (e.g. killing zombies only at given location in quest for defending city gates), and events will fire when the objective is completed (e.g. giving a reward, or setting a tag which will enable collecting a reward from an NPC). You define these like that: <code>conditions:con1,con2 events:event1,event2</code> at the end of instruction string . Separate them by commas and never use spaces! You can also use singular forms of these arguments: <code>condition:</code> and <code>event:</code>.</p>
-<p>If you want to start an objective right after it was completed (for example <code>die</code> objective: when you die, teleport you to a special spawnpoint and start <code>die</code> objective again), you can add <code>persistent</code> argument at the end of an instruction string. It will prevent the objective from being completed, although it will run all its events. To cancel such objective you will need to use <code>objective delete</code> event.</p>
-<p>Objectives are loaded at start-up, but they do not consume resources without player actually having them active. This means that if you have 100 objectives defined, and 20 players doing one objective, 20 another players doing second objective, and the rest objectives are inactive (no one does them), then only 2 objectives will be consuming your server resources, not 100, not 40.</p>
+<p>Objectives are the main things you will use when creating complex quests. You start them with a special
+event, <code>objective</code>. You define them in the <em>objectives.yml</em> file, just as you would conditions or events. At the end of
+the instruction string you can add conditions and events for the objective. Conditions will limit when the objective can
+be completed (e.g. killing zombies only at given location in quest for defending city gates), and events will fire when
+the objective is completed (e.g. giving a reward, or setting a tag which will enable collecting a reward from an NPC).
+You define these like that: <code>conditions:con1,con2 events:event1,event2</code> at the end of instruction string . Separate them
+by commas and never use spaces! You can also use singular forms of these arguments: <code>condition:</code> and <code>event:</code>.</p>
+<p>If you want to start an objective right after it was completed (for example <code>die</code> objective: when you die, teleport you
+to a special spawnpoint and start <code>die</code> objective again), you can add <code>persistent</code> argument at the end of an instruction
+string. It will prevent the objective from being completed, although it will run all its events. To cancel such
+objective you will need to use <code>objective delete</code> event.</p>
+<p>Objectives are loaded at start-up, but they do not consume resources without player actually having them active. This
+means that if you have 100 objectives defined, and 20 players doing one objective, 20 another players doing second
+objective, and the rest objectives are inactive (no one does them), then only 2 objectives will be consuming your server
+resources, not 100, not 40.</p>
 <h2 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">🔗</a></h2>
-<p>All the content you create is organized into packages. Each package must contain the <em>main.yml</em> file with package-specific settings. Additionally it can have <em>conversations</em> directory with conversation files, <em>events.yml</em>, <em>conditions.yml</em>, <em>objectives.yml</em>, <em>items.yml</em> and <em>journal.yml</em>. The default package is called simply "default". It is always present, and if you delete it, it will be regenerated with a sample quest.</p>
-<p>If you want, you can simply ignore the existence of packages and write all your quests in the default one. You will however come to a point, when your files contain hundreds of lines and it gets a little bit confusing. That's why it's better to split your quests into multiple packages, for example "main" for the quests in the main city, "dungeon" for some interesting dungeon story etc.</p>
-<p>Each package can be disabled/enabled in the <em>main.yml</em> file, by setting <code>enabled</code> to <code>true</code> or <code>false</code>.
-<div class="highlight"><pre><span></span><code><span class="c1">#Add this to the package main.yml</span><span class="w"></span>
-<span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-</code></pre></div></p>
-<p>It would be limiting if you couldn't interact between packages. That's why you can always access stuff from other packages by prefixing its name with package name. If you're writing a conversation in package <code>village</code> and you want to fire an event <code>reward</code> from package <code>beton</code>, you simply name the event as <code>beton.reward</code>. The plugin will search for <code>reward</code> in <code>beton</code> package instead of the one in which the conversation is defined. All events, conditions, objectives, items and conversations behave this way. Note that you can't cross-reference journal entries!</p>
-<p>Packages can be nested together in folders. A folder can either contain packages or be a package, never both. The name of such nested package is prefixed by names of all folders, separated with a dash. This directory tree (<em>main.yml</em> represents a package):</p>
-<div class="highlight"><pre><span></span><code>    BetonQuest/
-    ├─default/
-    └─quests/
-      ├─village1/
-      │ ├─quest1/
-      │ │ └─main.yml
-      │ └─quest2/
-      │   └─main.yml
-      └─village2/
-        └─quest1/
-          └─main.yml
+<p>All quests you create are organized into packages. A single package can contain one or multiple quests - it's up to your
+liking. <strong>It is very important to have a good understand of packages. Read this section carefully.</strong></p>
+<h3 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">🔗</a></h3>
+<p>A package is a folder with a <em>package.yml</em> file. It must be placed inside the <code>BetonQuest/QuestPackages</code> directory. <br />
+Additionally, you can create extra files or sub-folders inside a package to organize your quest the way you want.
+Sub-folders of packages that contain a <em>package.yml</em> are separate packages, they do not interact with the surrounding
+package in any way. </p>
+<p>It is allowed to create folders that are not packages anywhere in your <code>QuestPackages</code> directory. </p>
+<p>Let's take a look at a few examples:</p>
+<div class="admonition example">
+<p class="admonition-title">Structure Examples</p>
+<p>Every quest package is surrounded with a blue box.</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Simple Package</label><div class="tabbed-content">
+<p>A very simple package. It's defined by the <em>package.yml</em> and has two additional files.     <br />
+<img src="../../_media/content/Documentation/Reference/PackageSimple.png" width=450></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Complex Package</label><div class="tabbed-content">
+<p>The package <code>storyLine</code> is defined by the <em>package.yml</em>. It contains two sub-folders, both of them
+(including their files) are part of the package.<br>
+<img src="../../_media/content/Documentation/Reference/PackageComplex.png" width=450></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Nested Packages</label><div class="tabbed-content">
+<p>The package <code>weeklyQuests</code> is defined by the <em>package.yml</em>. It contains two sub-folders, they are <strong>not</strong> part
+of the package. This is the case because they have their own <em>package.yml</em> files. Because of that they are 
+separate packages.<br> 
+<img src="../../_media/content/Documentation/Reference/PackagesNested.png" width=450></p>
+</div>
+</div>
+</div>
+<h3 id="defining-features">Defining features<a class="headerlink" href="#defining-features" title="Permanent link">🔗</a></h3>
+<p>You can freely define features (events, conversations, items etc.) in all files 
+of a quest package. However, they need to be defined in a section that defines their type.</p>
+<p>The names of these features must be unique in that package, no matter which file they are in.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">events</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">teleportPlayer</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;...&quot;</span><span class="w"></span>
+
+<span class="nt">conditions</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hasDiamondArmor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;...&quot;</span><span class="w"></span>
+
+<span class="nt">objectives</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">killCrepper</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;...&quot;</span><span class="w"></span>
+
+<span class="nt">items</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">legendarySword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;...&quot;</span><span class="w"></span>
+
+<span class="nt">conversations</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">bobsConversation</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">quester</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bob</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#...</span><span class="w"></span>
+
+<span class="nt">menus</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">homeMenu</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#...</span><span class="w"></span>
 </code></pre></div>
-<p>contains these packages:</p>
-<ul>
-<li><em>default</em></li>
-<li><em>quests-village1-quest1</em></li>
-<li><em>quests-village1-quest2</em></li>
-<li><em>quests-village2-quest1</em></li>
-</ul>
-<h3 id="relative-paths">Relative paths<a class="headerlink" href="#relative-paths" title="Permanent link">🔗</a></h3>
-<p>You don't have to always specify a full package name. In the example above, if you wanted to reference package <code>quests-village1-quest2</code> from <code>quests-village1-quest1</code>, you could write it as <code>_-quest2</code> - this means "from the current package (<code>quest1</code>) go up one time and find there package <code>quest2</code>". Name <code>_</code> has special meaning here. Analogously, if you wanted to reference <code>quests-village2-quest1</code> from that package, you would use <code>_-_-village2-quest1</code>. Using <code>_</code> twice will get you to <code>quests</code> package, and from there you're going into <code>village2</code> and then <code>quest1</code>.</p>
-<p>Relative paths can be useful if you want to move your packages between directories. Instead of rewriting every package name to match current directory tree, you can use relative paths and it will just work. It can also be useful if you want to create a downloadable quest package which can be placed anywhere and not just on the root directory (<em>BetonQuest/</em>) or when working with BetonQuest-Editor + BetonQuestUploader combo - quest writers don't have to prefix every package call with their name (this feature will work soon, needs an update in the editor).</p>
+</details>
+<h3 id="working-across-packages">Working across Packages<a class="headerlink" href="#working-across-packages" title="Permanent link">🔗</a></h3>
+<p>Accessing features from other packages can be very helpful to link quests together.
+All events, conditions, objectives, items and conversations can be accessed. Just journal entries only work in their own
+package. </p>
+<p>You never need to access a specific file since feature names are unique within a package.</p>
+<h4 id="top-level-packages">Top-Level Packages<a class="headerlink" href="#top-level-packages" title="Permanent link">🔗</a></h4>
+<p>You can access <strong>top-level packages</strong> (placed directly in <code>QuestPackages</code>) by prefixing the feature's name with a
+dot and the package name. </p>
+<details class="example">
+<summary>Example</summary>
+<p>Let's assume you have a <code>rewards</code> package that contains player reward events.<br />
+Let's run the <code>easyMobObjective</code> event of the <code>rewards</code> package from another package:</p>
+<ol>
+<li>Add a dot (<code>.</code>) before the event name <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">.</mark>easyMobObjective</code></li>
+<li>Add the package name infront of the dot <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">rewards</mark>.easyMobObjective</code></li>
+</ol>
+<p>An example usage could look like this:
+<div class="highlight"><pre><span></span><code><span class="nt">zombieObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">events:<mark class="critic">rewards.easyMobObjective</mark>&quot;</span><span class="w"></span>
+</code></pre></div>
+Note that this only works for top-level packages (the <code>rewards</code> package is placed directly in the <code>QuestPackages</code>
+folder).
+Check the next paragraph to see how it's done for other packages.</p>
+</details>
+<h4 id="packages-in-sub-folders">Packages in Sub-folders<a class="headerlink" href="#packages-in-sub-folders" title="Permanent link">🔗</a></h4>
+<p>You can access packages in sub-folders by prefixing the feature's name with
+the package name and the path from the <code>QuestPackages</code> folder to the package.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">One Nested Package</label><div class="tabbed-content">
+<p>Let's assume you have a <code>dailyQuests</code> package that contains a <code>dailyQuestOne</code> package. The <code>dailyQuests</code> package
+is located in the <code>QuestPackages</code> folder.
+Let's run the <code>startDailyQuest</code> event of the <code>dailyQuestOne</code> package from a third package:</p>
+<ol>
+<li>Combine the event name with the package name <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">dailyQuestOne.</mark>startDailyQuest</code></li>
+<li>Add the path from the <code>QuestPackages</code> folder to the <code>dailyQuestOne</code> package seperated by dashes (<code>-</code>).
+<img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">dailyQuests-</mark>dailyQuestOne.startDailyQuest</code></li>
+</ol>
+<p>An example usage could look like this:
+<div class="highlight"><pre><span></span><code><span class="nt">zombieObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">events:<mark class="critic">dailyQuests-dailyQuestOne.startDailyQuest</mark>&quot;</span><span class="w"></span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Multiple Nested Packages</label><div class="tabbed-content">
+<p>Let's assume you have a <code>dailyQuests</code> package that contains a <code>dailyQuestOne</code> package. The <code>dailyQuests</code> package
+is contained inside a folder called <code>repeatable</code> which is located in the <code>QuestPackages</code> folder.
+Let's run the <code>startDailyQuest</code> event of the <code>dailyQuestOne</code> package from a third package:</p>
+<ol>
+<li>Combine the event name with the package name <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">dailyQuestOne.</mark>startDailyQuest</code></li>
+<li>Add the path from the <code>QuestPackages</code> folder to the <code>dailyQuestOne</code> package seperated by dashes (<code>-</code>).
+<img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">repetable-dailyQuests-</mark>dailyQuestOne.startDailyQuest</code></li>
+</ol>
+<p>An example usage could look like this:
+<div class="highlight"><pre><span></span><code><span class="nt">zombieObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">events:<mark class="critic">repetable-dailyQuests-dailyQuestOne.startDailyQuest</mark>&quot;</span><span class="w"></span>
+</code></pre></div></p>
+</div>
+</div>
+</details>
+<h4 id="relative-paths">Relative paths<a class="headerlink" href="#relative-paths" title="Permanent link">🔗</a></h4>
+<p>You can specify relative paths to a package instead of full paths. The underscore (<code>_</code>) means "one folder up" from 
+the current packages <em>package.yml</em>. In turn, a leading dash (<code>-</code>) combined with a folder name navigates 
+"one folder down" into the given folder.
+Each package in the path must be seperated by a dash.</p>
+<p>This can be useful when distributing or moving packages. Instead of rewriting every package path
+to match the current location, relative paths will still work.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Going Upwards</label><div class="tabbed-content">
+<p>Let's assume you have a <code>weeklyQuests</code> folder that contains a <code>weeklyQuestOne</code> and a <code>weeklyQuestTwo</code> package.
+Let's run the <code>startQuestTwo</code> event of the <code>weeklyQuestTwo</code> package from the <code>weeklyQuestOne</code> package.</p>
+<ol>
+<li>Combine the event name with the package name <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">weeklyQuestTwo.</mark>startQuestTwo</code></li>
+<li>Add the path from the current <em>package.yml</em> to the folder the package of interested lies in. This is done using
+underscores ("go one folder up"). A dash must be added after each underscore (<code>-</code>).
+<img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">_-</mark>weeklyQuestTwo.startQuestTwo</code></li>
+</ol>
+<p>An example usage could look like this:
+<div class="highlight"><pre><span></span><code><span class="nt">zombieObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE</span><span class="nv"> </span><span class="s">50</span><span class="nv"> </span><span class="s">events:<mark class="critic">_-weeklyQuestTwo.startQuestTwo</mark>&quot;</span><span class="w"></span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Going Downwards</label><div class="tabbed-content">
+<p>Let's assume you have a <code>weeklyQuests</code> package that contains a <code>weeklyQuestTwo</code> package which contains another
+package called <code>subQuest</code>.
+Let's run the <code>startQuest</code> event of the <code>subQuest</code> package from the <code>weeklyQuests</code> package.</p>
+<ol>
+<li>Combine the event name with the package name <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">subQuest.</mark>startQuest</code></li>
+<li>Add the path from the current <em>package.yml</em> to the folder the package of interest lies in. Package names 
+must be seperated by dashes (<code>-</code>). The path must also be started with a dash to signal "from the current package
+downwards". <img alt="➡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/27a1.svg" title=":arrow_right:" /> <code><mark class="critic">-weeklyQuestTwo-</mark>subQuest.startQuest</code></li>
+</ol>
+<p>An example usage could look like this:
+<div class="highlight"><pre><span></span><code><span class="nt">zombieObjective</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE</span><span class="nv"> </span><span class="s">50</span><span class="nv"> </span><span class="s">events:<mark class="critic">-weeklyQuestTwo-subQuest.startQuest</mark>&quot;</span><span class="w"></span>
+</code></pre></div></p>
+</div>
+</div>
+</details>
+<h3 id="disabling-packages">Disabling Packages<a class="headerlink" href="#disabling-packages" title="Permanent link">🔗</a></h3>
+<p>Each package can be disabled/enabled in the <em>package.yml</em> file, by setting <code>enabled</code> to <code>true</code> or <code>false</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Add this to the package.yml</span><span class="w"></span>
+<span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+</code></pre></div>
 <h2 id="unified-location-formating">Unified location formating<a class="headerlink" href="#unified-location-formating" title="Permanent link">🔗</a></h2>
 <p>Whenever you want to define some location in your events, conditions, objectives or any other things, you will define it with this specific format. The location can consist of 2 things: base and vector. Only the base is always required.</p>
 <p>The base is a core location. Currently there are two types: absolute coordinates and variables. Absolute coordinates are defined like <code>100;200;300;world</code>, where <code>100</code> is X coordinate, <code>200</code> is Y, <code>300</code> is Z and <code>world</code> is the name of the world. These can have decimal values. If you want you can also add two more numbers at the end, yaw and pitch (these are controlling the rotation, for example in teleportation event, both are needed if you decide to add them; example: <code>0.5;64;0.5;world;90;-270</code>).</p>
 <p>To use a variable as the location's base it must resolve to a valid absolute coordinates. An example of such variable is <code>%location%</code>, which shows player's exact location. Simply place it instead of coordinates. There is one rule though: you can't use variable base types in events running without players (for example static events or the ones run from folder event after their player left the server). BetonQuest won't be able to resolve the location variable without the player!</p>
 <p>The vector is a modification of the location. It will be useful if you use global variables instead of base (described in the next subsection) or the base itself is variable, like <code>player</code>. Vectors look like <code>-&gt;(10;2.5;-13)</code> and are added to the end of the base. This will modify the location, X by 10, Y by 2.5 and Z by -13. For example, location written as <code>100;200;300;world_nether-&gt;(10;2.5;-13)</code> will generate a location with X=110, Y=202.5 and Z=287 on <code>world_nether</code> world.</p>
 <h2 id="global-variables">Global variables<a class="headerlink" href="#global-variables" title="Permanent link">🔗</a></h2>
-<p>You can insert a global variable in any instruction string. It looks like this: <code>$beton$</code> (and this one would be called "beton"). When the plugin loads that instruction string it will replace those variables with values assigned to them in <em>main.yml</em> file <strong>before</strong> the instruction string is parsed. This is useful for example when installing a package containing a WorldEdit schematic of the quest building. Instead of going through the whole code to set those locations, names or texts you will only have to specify a few variables (that is, of course, if the author of the package used those variables properly in his code).</p>
-<p>Note that these variables are something entirely different than conversation variables. Global ones use <code>$</code> characters and conversation ones use <code>%</code> characters. The former is resolved before the instruction string is parsed while the latter is resolved when the quests are running, usually on a per-player basis.</p>
+<p>You can insert a global variable in any instruction string. It looks like this: <code>$beton$</code> (and this one would be
+called "beton"). When the plugin loads that instruction string it will replace those variables with values assigned to
+them in <em>package.yml</em> file <strong>before</strong> the instruction string is parsed. This is useful for example when installing a
+package containing a WorldEdit schematic of the quest building. Instead of going through the whole code to set those
+locations, names or texts you will only have to specify a few variables (that is, of course, if the author of the
+package used those variables properly in his code).</p>
+<p>Note that these variables are something entirely different than conversation variables. Global ones use <code>$</code> characters
+and conversation ones use <code>%</code> characters. The former is resolved before the instruction string is parsed while the
+latter is resolved when the quests are running, usually on a per-player basis.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">village_location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100;200;300;world</span><span class="w"></span>
 <span class="w">  </span><span class="nt">village_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concrete</span><span class="w"></span>
 </code></pre></div>
 <h2 id="canceling-quests">Canceling quests<a class="headerlink" href="#canceling-quests" title="Permanent link">🔗</a></h2>
-<p>If you want to let your players cancel their quest there is a function for that. In <em>main.yml</em> file there is <code>cancel</code> branch. You can specify there quests, which can be canceled, as well as actions that need to be done to actually cancel them. You can find an example in the <code>default</code> package. The arguments you can specify are:</p>
+<p>If you want to let your players cancel their quest there is a function for that. In <em>package.yml</em> file there is <code>cancel</code>
+branch. You can specify there quests, which can be canceled, as well as actions that need to be done to actually cancel
+them. You can find an example in the <code>default</code> package. The arguments you can specify are:</p>
 <ul>
 <li><code>name</code> - this will be the name displayed to the player. All <code>_</code> characters will be converted to spaces. If you want to include other languages you can add here additional options (<code>en</code> for English etc.)</li>
 <li><code>conditions</code> - this is a list of conditions separated by commas. The player needs to meet all those conditions to be able to cancel this quest. Place there the ones which detect that the player has started the quest, but he has not finished it yet. </li>
@@ -2119,14 +2411,12 @@ These tags follow syntax <code>&lt;package&gt;.global-&lt;id&gt;</code>, where <
 <div class="highlight"><pre><span></span><code><span class="nt">start_quest_mine</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;location</span><span class="nv"> </span><span class="s">100;200;300;world</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">events:start_quest_mine_folder</span><span class="nv"> </span><span class="s">global&#39;</span><span class="w"></span>
 </code></pre></div></p>
 <h2 id="static-events">Static events<a class="headerlink" href="#static-events" title="Permanent link">🔗</a></h2>
-<p>Static events are events that will fire at the specified time of the day.
-It is possible to address multiple events with a <code>,</code> separated list.
-They are not tied to a specific player, so not all event types can be used as static.
+<p>Static events are events that will fire at the specified time of the day. It is possible to address multiple events with
+a <code>,</code> separated list. They are not tied to a specific player, so not all event types can be used as static.
 (Which player should receive a tag or objective? From which one should the items be taken?)
-Also, static events cannot have conditions defined (<code>event-conditions:</code> argument),
-as the plugin cannot check any condition without the player.
-Events, that can be used as static are flagged with <code>static</code> keyword in this documentation.
-You can define your static events in <em>main.yml</em> file under <code>static</code> section, as such:</p>
+Also, static events cannot have conditions defined (<code>event-conditions:</code> argument), as the plugin cannot check any
+condition without the player. Events, that can be used as static are flagged with <code>static</code> keyword in this
+documentation. You can define your static events in <em>package.yml</em> file under <code>static</code> section, as such:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">static</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="s">&#39;09:00&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">beton</span><span class="w"></span>
 <span class="w">  </span><span class="s">&#39;23:59&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lightning_strike</span><span class="w"></span>
@@ -2135,12 +2425,15 @@ You can define your static events in <em>main.yml</em> file under <code>static</
 <p>The hour must be in <code>''</code> to avoid problems, it needs leading zero if less than 10.
 <code>beton</code>, <code>lightnint_strike</code> etc. are IDs of events.</p>
 <h2 id="journal">Journal<a class="headerlink" href="#journal" title="Permanent link">🔗</a></h2>
-<p>The journal is a book in which all your adventures are described. You can obtain it by typing <strong>/j</strong> command or <strong>/b</strong> and selecting it from backpack. You cannot put it into any chests, item frames and so on. If you ever feel the need to get rid of your journal, just drop it - it will return to your backpack. The journal is updated with the <code>journal</code> event, and the text inside is defined in <em>journal.yml</em> config file. If you update these texts and reload the plugin, all players' journals will reflect changes. Colors in the journal can be altered in config.yml. The entries can use color codes, but the color will be lost between pages.</p>
+<p>The journal is a book in which all your adventures are described. You can obtain it by typing <strong>/j</strong> command or <strong>/b</strong> and selecting it from backpack. You cannot put it into any chests, item frames and so on. If you ever feel the need to get rid of your journal, just drop it - it will return to your backpack. The journal is updated with the <code>journal</code> event, and the text inside is defined in the <em>journal</em> section. If you update these texts and reload the plugin, all players' journals will reflect changes. Colors in the journal can be altered in config.yml. The entries can use color codes, but the color will be lost between pages.</p>
 <p>The journal by default appears in the last slot of the hotbar. If you want to change that use <code>default_journal_slot</code> option in <em>config.yml</em>, experiment with different settings until you're ok with it.</p>
 <p>If you want to translate the entry do the same thing as with conversation option - go to new line, add language ID and the journal text for every language you want to include.</p>
 <p>You can control behavior of the journal in <em>config.yml</em> file, in <code>journal</code> section. <code>chars_per_page</code> specifies how many characters will be placed on a single page. If you set it too high, the text will overflow outside of the page, too low, there will be too much pages. <code>one_entry_per_page</code> allows you to place every entry on a single page. The <code>chars_per_page</code> setting is in this case ignored, BetonQuest will put entire entry on that page. <code>reversed_order</code> allows you to reverse order of entries and <code>hide_date</code> lets you remove the date from journal entries.</p>
-<p>You can control colors in the journal in <code>journal_colors</code> section in <em>config.yml</em>: <code>date</code> is a color of date of every entry, <code>line</code> is a color of lines separating entries and <code>text</code> is just a color of a text. You need to use standard color codes without <code>&amp;</code> (eg. <code>'4'</code> for dark red).</p>
-<p>You can also add a main page to the journal. It's a list of texts, which will show only if specified conditions are met. You can define them in the <em>main.yml</em> file, in the <code>journal_main_page</code> section:</p>
+<p>You can control colors in the journal in <code>journal_colors</code> section in <em>config.yml</em>: <code>date</code> is a color of date of every
+entry, <code>line</code> is a color of lines separating entries and <code>text</code> is just a color of a text. You need to use standard
+color codes without <code>&amp;</code> (eg. <code>'4'</code> for dark red).</p>
+<p>You can also add a main page to the journal. It's a list of texts, which will show only if specified conditions are met.
+You can define them in the <em>package.yml</em> file, in the <code>journal_main_page</code> section:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">journal_main_page</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
@@ -2157,21 +2450,21 @@ If you want to manually wrap the page, use the pipe <code>|</code> character. Us
 <h2 id="points">Points<a class="headerlink" href="#points" title="Permanent link">🔗</a></h2>
 <p>Points are like tags, but with amount. You can earn them for doing quest, talking with NPC’s, basically for everything you want. You can also take the points away, even to negative numbers. Points can be divided to categories, so the ones from <em>beton</em> category won’t mix with points from <em>quests</em> group. Of course then you can check if player has (or doesn’t have) certain amount and do something based on this condition. They can be used as counter for specific number of quest done, as a reputation system in villages and even NPC’s attitude to player.</p>
 <h2 id="npcs">NPCs<a class="headerlink" href="#npcs" title="Permanent link">🔗</a></h2>
-<p>Conversations can be assigned to NPCs created with Citizens. You do it in the <em>main.yml</em> file inside a package, in <code>npcs</code> section:</p>
+<p>Conversations can be assigned to NPCs created with Citizens. You do it in the <code>npcs</code> section:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">npcs</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">innkeeper</span><span class="w"></span>
 <span class="w">  </span><span class="s">&#39;4&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">woodcutter</span><span class="w"></span>
 </code></pre></div>
 <p>The first string is the ID of the NPC (<em>don't try to put Citizens NPC's name here, it must be the ID</em>), second one is
-the corresponding conversation file name (<em>without <code>.yml</code> at the end</em>). To acquire the NPCs ID select the NPC and type
-<code>/npc</code> or <code>/npc id</code>.</p>
+the corresponding conversation name as defined in the <code>conversations</code> section. To acquire the NPCs ID select the NPC and type
+<code>/npc</code> or <code>/npc id</code>. </p>
 <p>You can assign the same conversation to multiple NPCs.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Citizens ID must be enclosed in quotes.</p>
 </div>
 <h2 id="items">Items<a class="headerlink" href="#items" title="Permanent link">🔗</a></h2>
-<p>Items in BetonQuest are defined in <em>items.yml</em> file. Each item has an instruction string, similarly to events, conditions etc. Basic syntax is very simple:</p>
+<p>Items in BetonQuest are defined in the <em>items</em> section. Each item has an instruction string, similarly to events, conditions etc. Basic syntax is very simple:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BLOCK_SELECTOR other arguments...</span><span class="w"></span>
 </code></pre></div>
 <p><a href="#block-selectors">BLOCK_SELECTOR</a> is a type of the item. It doesn't have to be all in uppercase. Other arguments specify data like name of the item, lore, enchantments or potion effects. There are two categories of these arguments: the ones you can apply to every item and type specific arguments. Examples would be name (for every item type) and text (only in books).</p>
@@ -2325,7 +2618,7 @@ The translation of the line can be found in <em>messages.yml</em> if a different
 <div class="highlight"><pre><span></span><code><span class="nt">important_sword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DIAMOND_SWORD</span><span class="nv"> </span><span class="s">name:Sword_for_destroying__The_Concrete</span><span class="nv"> </span><span class="s">lore:Made_of_pure_Mithril;&amp;2Quest_Item&quot;</span><span class="w"></span>
 </code></pre></div></p>
 <p>To open your backpack just type <strong>/j</strong> command. The inventory window will open, displaying your stored items. The first slot is always the journal, and if you get it, the slot will stay empty. You can transfer quest items back and forth between inventories by clicking on them. Left click will transfer just one item, right click will try to transfer all items. Normal items cannot be stored into the backpack, so it's not an infinite inventory.</p>
-<p>If you will ever have more than one page of quest items, the buttons will appear. You can customize those buttons by creating <code>previous_button</code> and <code>next_button</code> items in <em>items.yml</em> file. Their name will be overwritten with the one defined in <em>messages.yml</em>.</p>
+<p>If you will ever have more than one page of quest items, the buttons will appear. You can customize those buttons by creating <code>previous_button</code> and <code>next_button</code> items in the <em>items</em> section. Their name will be overwritten with the one defined in <em>messages.yml</em>.</p>
 <p>Quest items cannot be dropped in any way other than using them. This way you can create a quest for eating cookies by giving the player a stack of cookies flagged as quest items and not continuing until there are no more cookies in his inventory/backpack. The player cannot drop the cookies, so he must eat every one of them to complete the quest.</p>
 <p>Don't worry if the item-dropping filter isn't working for your items when you're in creative mode - it's not a bug. It's a feature. Creative-mode players should be able to easily put quest items in containers like TreasureChests.</p>
 <h2 id="party">Party<a class="headerlink" href="#party" title="Permanent link">🔗</a></h2>
@@ -2406,7 +2699,7 @@ width="780">
 Sorry, your browser doesn't support embedded videos.
 </video>
 
-<p>You can also hide players for specific players in the <code>custom.yml</code>. If the <code>source_player</code> meets the conditions
+<p>You can also hide players for specific players. If the <code>source_player</code> meets the conditions
 every player that meets the <code>target_player</code> conditions is completely hidden for him.
 This is really helpful if you want a lonely place on your server,
 or your quests break when multiple players can see or affect each other.
@@ -2435,7 +2728,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-29T20:16:24+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-29</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-19T22:41:13+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-19</span>
       
     
   </small>

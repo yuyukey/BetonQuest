@@ -1232,10 +1232,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2062,7 +2110,7 @@ objective will be completable only for breedable ones.</p>
 </div>
 <h2 id="put-items-in-a-chest-chestput">Put items in a chest: <code>chestput</code><a class="headerlink" href="#put-items-in-a-chest-chestput" title="Permanent link">🔗</a></h2>
 <p>This objective requires the player to put specified items in a specified chest. First argument is a location of the
-chest, second argument is a list of items (from <em>items.yml</em> file), separated with a comma. You can also add amount of
+chest, second argument is a list of items (from <em>items</em> section), separated with a comma. You can also add amount of
 items after a colon. The items will be removed upon completing the objective unless you add <code>items-stay</code> optional
 argument.</p>
 <div class="admonition example">
@@ -2072,14 +2120,14 @@ argument.</p>
 </div>
 <h2 id="eatdrink-consume">Eat/drink: <code>consume</code><a class="headerlink" href="#eatdrink-consume" title="Permanent link">🔗</a></h2>
 <p>This objective is completed by eating specified food or drinking specified potion. The only required argument is the ID
-of an item from <em>items.yml</em>.</p>
+of an item from the <em>items</em> section.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">consume tawny_owl events:faster_endurance_regen</span><span class="w"></span>
 </code></pre></div>
 </div>
 <h2 id="crafting-craft">Crafting: <code>craft</code><a class="headerlink" href="#crafting-craft" title="Permanent link">🔗</a></h2>
-<p>To complete this objective the player must craft specified item. First argument is ID of the item, as in <em>items.yml</em>.
+<p>To complete this objective the player must craft specified item. First argument is ID of the item, as in the <em>items</em> section.
 Next is amount (integer). You can use the <code>notify</code> keyword to display a message each time the player advances the
 objective, optionally with the notification interval after a colon.</p>
 <p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of items already crafted,
@@ -2091,7 +2139,7 @@ objective, optionally with the notification interval after a colon.</p>
 </div>
 <h2 id="enchant-item-enchant">Enchant item: <code>enchant</code><a class="headerlink" href="#enchant-item-enchant" title="Permanent link">🔗</a></h2>
 <p>This objectie is completed when the player enchants specified item with specified enchantment. The first argument is an
-item name, as defined it <em>items.yml</em>. Second one is the
+item name, as defined it the <em>items</em> section. Second one is the
 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html">enchantment</a> and a level, separated
 with a colon. If you need to check for multiple enchantments you can add a list of them, separated by colons.</p>
 <div class="admonition example">
@@ -2252,7 +2300,7 @@ The password consists of a prefix followed by the actual secret word:
 </div>
 <h2 id="pickup-item-pickup">Pickup item: <code>pickup</code><a class="headerlink" href="#pickup-item-pickup" title="Permanent link">🔗</a></h2>
 <p>To complete this objective you need to pickup the specified amount of items. 
-The first argument must be the internal name of an item defined in <code>items.yml</code>. This can also be a comma-separated list of multiple items.
+The first argument must be the internal name of an item defined in the <code>items</code> section. This can also be a comma-separated list of multiple items.
 You can optionally add the <code>amount:</code> argument to specify how many of these items the player needs to pickup. 
 This amount is a total amount though, it does not count per each individual item. You can use the <code>notify</code> keyword to
 display a message each time the player advances the objective, optionally with the notification interval after a colon.</p>
@@ -2282,7 +2330,7 @@ keyword used in that event.</p>
 </div>
 <h2 id="potion-brewing-brew">Potion brewing: <code>brew</code><a class="headerlink" href="#potion-brewing-brew" title="Permanent link">🔗</a></h2>
 <p>To complete this objective the player needs to brew specified amount of specified potions.
-The first argument is a potion ID from <em>items.yml</em>. Second argument is amount of potions.
+The first argument is a potion ID from the <em>items</em> section. Second argument is amount of potions.
 You can optionally add <code>notify</code> argument to make the objective display progress to players,
 optionally with the notification interval after a colon.</p>
 <p>Progress will be counted for the player who last added or changed an item before the brew process completed. Only newly
@@ -2407,7 +2455,7 @@ One backslash (<code>\</code>) is required when using no quoting at all (<code>.
 <h2 id="equip-armor-item-equip">Equip Armor Item: <code>equip</code><a class="headerlink" href="#equip-armor-item-equip" title="Permanent link">🔗</a></h2>
 <p><strong><span class="twemoji task"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/></svg></span> Objective  ·  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg></span> Requires <a href="https://papermc.io">Paper</a></strong></p>
 <p>The player must equip the specified quest item in the specified slot.
-The item must be any quest item as defined in <em>items.yml</em>.
+The item must be any quest item as defined in the <em>items</em> section.
 Available slot types: <code>HEAD</code>, <code>CHEST</code>, <code>LEGS</code>, <code>FEET</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">equip HEAD amazing_helmet events:event1,event2</span><span class="w"></span>
 <span class="l l-Scalar l-Scalar-Plain">equip CHEST amazing_armor events:event1,event2</span><span class="w"></span>
@@ -2416,7 +2464,7 @@ Available slot types: <code>HEAD</code>, <code>CHEST</code>, <code>LEGS</code>, 
 <p>This objective is different. You cannot complete it, it will also ignore defined events and conditions. You can start it and that's it.
 While this objective is active though, everything the player types in chat (and matches special pattern) will become a variable.
 The pattern is <code>key: value</code>. So if you type that, it will create a variable called <code>key</code>, which will resolve to <code>value</code> string.
-These are not global variables, you can access them as objective properties. Let's say you defined this objective as <code>var</code> in your <em>objectives.yml</em> file.
+These are not global variables, you can access them as objective properties. Let's say you defined this objective as <code>var</code> in your <em>objectives</em> section.
 You can access the variable in any conversation, event or condition with <code>%objective.var.key%</code> - and in case of this example, it will resolve to <code>value</code>.
 The player can type something else, and the variable will change its value. Variables are per-player, so my <code>key</code> variable 
 will be different from your <code>key</code> variable, depending on what we were typing in chat. You can have as much variables here as you want.
@@ -2435,7 +2483,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-12-14T13:00:10+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-12-14</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
       
     
   </small>

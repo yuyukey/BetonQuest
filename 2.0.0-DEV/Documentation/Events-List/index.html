@@ -1344,10 +1344,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2232,7 +2280,7 @@
                 <h1 id="events-list">Events List<a class="headerlink" href="#events-list" title="Permanent link">🔗</a></h1>
 <h2 id="cancel-quest-cancel">Cancel quest: <code>cancel</code><a class="headerlink" href="#cancel-quest-cancel" title="Permanent link">🔗</a></h2>
 <p>This event works in the same way as a <a href="../Reference/#canceling-quests">quest canceler in the backpack</a>.
-Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in <em>main.yml</em></p>
+Running it is equal to the player clicking on the bone. The only argument is a name of a quest canceler, as defined in the <em>cancel</em> section</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cancel wood</span><span class="w"></span>
@@ -2282,8 +2330,8 @@ Additional messages can be defined by separating them with <code>|</code> charac
 </code></pre></div>
 </div>
 <h2 id="compass-compass">Compass: <code>compass</code><a class="headerlink" href="#compass-compass" title="Permanent link">🔗</a></h2>
-<p>When you run this event, you can add or remove a compass destination for the player. You may also directly set the players's compass destination as well. When a destination is added the player will be able to select a specified location as a target of his compass. To select the target the player must open his backpack and click on the compass icon. The first argument is <code>add</code>,<code>del</code> or <code>set</code>, and second one is the name of the target, as defined in <em>main.yml</em>. Note that if you set a target the player will not automatically have it added to their choices.</p>
-<p>The destination must be defined in the <em>main.yml</em> file in <code>compass</code> section. You can specify a name for the target in each language or just give a general name, and optionally add a custom item (from <em>items.yml</em>) to be displayed in the backpack. Example of a compass target:</p>
+<p>When you run this event, you can add or remove a compass destination for the player. You may also directly set the player's compass destination as well. When a destination is added the player will be able to select a specified location as a target of his compass. To select the target the player must open his backpack and click on the compass icon. The first argument is <code>add</code>,<code>del</code> or <code>set</code>, and second one is the name of the target, as defined in the <em>compass</em> section. Note that if you set a target the player will not automatically have it added to their choices.</p>
+<p>The destination must be defined in <code>compass</code> section. You can specify a name for the target in each language or just give a general name, and optionally add a custom item (from <em>items</em> section) to be displayed in the backpack. Example of a compass target:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">compass</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">beton</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"></span>
@@ -2416,9 +2464,9 @@ Random is the amount of events, that will be randomly chosen to fire. It's optio
 </div>
 <h2 id="journal-journal">Journal: <code>journal</code><a class="headerlink" href="#journal-journal" title="Permanent link">🔗</a></h2>
 <p><strong>static</strong></p>
-<p>Adds or deletes an entry to/from a player's journal. Journal entries have to be defined in <code>journal.yml</code>. The first
-argument is the action to perform, the second one is the name of the entry if required. Changing journal entries will
-also reload the journal.</p>
+<p>Adds or deletes an entry to/from a player's journal. Journal entries have to be defined in the <code>journal</code> section. The
+first argument is the action to perform, the second one is the name of the entry if required. Changing journal entries
+will also reload the journal.</p>
 <p>Possible actions are:
 - <code>add</code>: Adds a page to the journal.
 - <code>delete</code>: Deletes a page from the journal.
@@ -2551,7 +2599,7 @@ you want to use the Notify system to it's full extend.
 <h2 id="objective-objective">Objective: <code>objective</code><a class="headerlink" href="#objective-objective" title="Permanent link">🔗</a></h2>
 <p><strong>persistent</strong>, <strong>static</strong></p>
 <p>Manages the objectives. Syntax is <code>objective &lt;action&gt; name</code>, where <code>&lt;action&gt;</code> can be <em>start</em>/<em>add</em> (one of the two),
-<em>delete</em>/<em>remove</em> or <em>complete</em>/<em>finish</em>. Name is the name of the objective, as defined in <em>objectives.yml</em>.</p>
+<em>delete</em>/<em>remove</em> or <em>complete</em>/<em>finish</em>. Name is the name of the objective, as defined in the <em>objectives</em> section.</p>
 <p>Using this in static contexts only works when removing objectives!</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -2636,7 +2684,7 @@ Very powerful if used to trigger redstone contraptions.</p>
 <h2 id="spawn-mob-spawn">Spawn Mob: <code>spawn</code><a class="headerlink" href="#spawn-mob-spawn" title="Permanent link">🔗</a></h2>
 <p><strong>persistent</strong>, <strong>static</strong></p>
 <p>Spawns specified amount of mobs of given type at the location. First argument is a location. Next is <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">type of the mob</a>. The last, third argument is integer for amount of mobs to be spawned. You can also specify <code>name:</code> argument, followed by the name of the mob. All <code>_</code> characters will be replaced with spaces. You can also mark the spawned mob with a keyword using <code>marked:</code> argument. It won't show anywhere, and you can check for only marked mobs in <code>mobkill</code> objective.</p>
-<p>You can specify armor which the mob will wear and items it will hold with <code>h:</code> (helmet), <code>c:</code> (chestplate), <code>l:</code> (leggings), <code>b:</code> (boots), <code>m:</code> (main hand) and <code>o:</code> (off hand) optional arguments. These take a single item without amount, as defined in <em>items.yml</em>. You can also add a list of drops with <code>drops:</code> argument, followed by a list of items with amounts after colons, separated by commas.</p>
+<p>You can specify armor which the mob will wear and items it will hold with <code>h:</code> (helmet), <code>c:</code> (chestplate), <code>l:</code> (leggings), <code>b:</code> (boots), <code>m:</code> (main hand) and <code>o:</code> (off hand) optional arguments. These take a single item without amount, as defined in the <em>items</em> section. You can also add a list of drops with <code>drops:</code> argument, followed by a list of items with amounts after colons, separated by commas.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">spawn 100;200;300;world SKELETON 5 marked:targets</span><span class="w"></span>
@@ -2668,7 +2716,7 @@ Next goes the tag name. It can't contain spaces (though <code>_</code> is fine).
 </div>
 <h2 id="take-items-take">Take Items: <code>take</code><a class="headerlink" href="#take-items-take" title="Permanent link">🔗</a></h2>
 <p>Removes items from the player’s inventory, armor slots or backpack.
-The items itself must be defined in the items.yml, optionally with an amount after a colon.
+The items itself must be defined in the <code>items</code> section, optionally with an amount after a colon.
 Which inventory types are checked is defined by the <code>invOrder:</code>
 option. You can use <code>Backpack</code>, <code>Inventory</code>, <code>Offhand</code> and <code>Armor</code> there. One after another will be checked if multiple types are defined.</p>
 <p>Note: If the items aren't quest items don't use <code>take</code>event with player options in conversations!
@@ -2735,7 +2783,7 @@ storing variables.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-01-19T20:55:56+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-01-19</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
       
     
   </small>

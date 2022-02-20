@@ -1121,10 +1121,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--container ">
+          <a href="../Updating/">📥 Updating</a>
+          <label for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        </div>
+      
+      <nav class="md-nav" aria-label="📥 Updating" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          📥 Updating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../Updating-and-Backups/" class="md-nav__link">
-        📥 Updating
+      <a href="../Updating/Migration/" class="md-nav__link">
+        📤 Migration
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2118,11 +2166,11 @@ The sound is always played 5 block away from the soundlocation. The direction is
 <h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link">🔗</a></h2>
 <p>Notify Categories are pre-defined <a href="#notify-ios">NotifyIO settings</a>. They can be applied to any notify event and are used
 by BetonQuests built-in notifications.
-All categories must be defined in the <em>custom.yml</em> file in a section called <code>notifications</code>.</p>
+All categories must be defined in a section called <code>notifications</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>A note about the custom.yml: This is a strange file. BetonQuest searches through all packages and just uses the first one it finds.
-Therefore, you should probably create just one custom.yml with all your settings. We will improve this in BQ 2.0.</strong></p>
+<p><strong>A note about the <code>notifications</code> section: BetonQuest searches through all packages and just uses the first one it finds.
+Therefore, you should probably create just one <code>notifications</code> section. We will improve this in BQ 2.0.</strong></p>
 </div>
 <h3 id="custom-categories">Custom Categories<a class="headerlink" href="#custom-categories" title="Permanent link">🔗</a></h3>
 <p>Custom categories are user defined presets for any notify event. They shorten your events and enable you to change
@@ -2141,7 +2189,7 @@ A full list of all reserved names can be found below.</p>
 <p>The table below contains all build-in notification categories.</p>
 <p>You may notice that the "Categories" column lists two categories.
 These work exactly like the one in the <code>notify</code> event. The first existent category (from left to right) will be used.
-This allows you to change all build-in notifications with just two entries in your <em>custom.yml</em>:
+This allows you to change all build-in notifications with just two entries in your <em>notifications</em> section:
 <div class="highlight"><pre><span></span><code><span class="nt">notifications</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">info</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">io</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actionbar</span><span class="w"></span>
@@ -2263,7 +2311,7 @@ You can override the settings from the info/error category for any specific noti
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-10-29T20:16:24+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-10-29</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
       
     
   </small>
