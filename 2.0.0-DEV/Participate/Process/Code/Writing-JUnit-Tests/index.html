@@ -1434,13 +1434,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#handling-bukkitscheduler" class="md-nav__link">
-    Handling BukkitScheduler
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1686,13 +1679,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#handling-bukkitscheduler" class="md-nav__link">
-    Handling BukkitScheduler
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1748,7 +1734,7 @@ added to the related methods or the entire class.</p>
 class:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="hll"><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">BetonQuestLoggerService</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
-</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestClass</span> <span class="p">{</span>
+</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestFeature</span> <span class="p">{</span>
 </code></pre></div>
 </td></tr></table>
 <p>The test should now work as intended because a new anonymous logger is created everytime the <code>@CustomLog</code> annotation
@@ -1761,7 +1747,7 @@ is used. All these loggers have a silent parent logger - so there are no visible
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">BetonQuestLoggerService</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestClass</span> <span class="p">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestFeature</span> <span class="p">{</span>
 
     <span class="nd">@Test</span>
 <span class="hll">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testCustom</span><span class="p">(</span><span class="n">LogValidator</span> <span class="n">validator</span><span class="p">)</span> <span class="p">{</span>
@@ -1791,7 +1777,7 @@ log messages don't have a predictable order as your tests would be executed in p
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@ExtendWith</span><span class="p">(</span><span class="n">BetonQuestLoggerService</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestClass</span> <span class="p">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestFeature</span> <span class="p">{</span>
     <span class="nd">@Test</span>
 <span class="hll">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testCustom</span><span class="p">(</span><span class="n">LogValidator</span> <span class="n">validator</span><span class="p">,</span> <span class="n">Logger</span> <span class="n">logger</span><span class="p">,</span> <span class="n">BetonQuestLogger</span> <span class="n">log</span><span class="p">)</span> <span class="p">{</span>
 </span></code></pre></div>
@@ -1800,47 +1786,6 @@ log messages don't have a predictable order as your tests would be executed in p
 <p>The <code>log</code> is a new instance of the <code>BetonQuestLogger</code> that you can use to log things during the test.
 This logger has a topic that can be accessed via <code>BetonQuestLoggerService.LOGGER_TOPIC</code>.</p>
 </details>
-<h2 id="handling-bukkitscheduler">Handling BukkitScheduler<a class="headerlink" href="#handling-bukkitscheduler" title="Permanent link">🔗</a></h2>
-<p>If you want to test code that only works with the <code>BukkitScheduler</code>, we even have a ready to use solution for this.
-To use the <code>BukkitSchedulerMock</code> you need to create the following setup:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Test</span>
-<span class="kt">void</span> <span class="n">testMethod</span> <span class="p">{</span>
-<span class="hll">    <span class="kd">final</span> <span class="n">BukkitSchedulerMock</span> <span class="n">scheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BukkitSchedulerMock</span><span class="p">();</span>
-</span><span class="hll">    <span class="k">try</span> <span class="p">(</span><span class="n">MockedStatic</span><span class="o">&lt;</span><span class="n">Bukkit</span><span class="o">&gt;</span> <span class="n">bukkit</span> <span class="o">=</span> <span class="n">mockStatic</span><span class="p">(</span><span class="n">Bukkit</span><span class="p">.</span><span class="na">class</span><span class="p">))</span> <span class="p">{</span>
-</span><span class="hll">        <span class="n">bukkit</span><span class="p">.</span><span class="na">when</span><span class="p">(</span><span class="n">Bukkit</span><span class="p">::</span><span class="n">getScheduler</span><span class="p">).</span><span class="na">thenReturn</span><span class="p">(</span><span class="n">scheduler</span><span class="p">);</span>
-</span>        <span class="p">...</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
-<p>Now you can use the scheduler object for several things. First if you want to perform a single or multiple ticks,
-you can call the methods <code>performTick()</code> or <code>performTicks(long)</code>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">scheduler</span><span class="p">.</span><span class="na">performTick</span><span class="p">();</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">performTicks</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
-</code></pre></div>
-</td></tr></table>
-<p>We also have a method that allows to get the number of ticks since the <code>BukkitSchedulerMock</code> was created.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">scheduler</span><span class="p">.</span><span class="na">getCurrentTick</span><span class="p">();</span>
-</code></pre></div>
-</td></tr></table>
-<p>There are some additional features of this scheduler:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">scheduler</span><span class="p">.</span><span class="na">shutdown</span><span class="p">();</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">setShutdownTimeout</span><span class="p">(</span><span class="kt">long</span><span class="p">);</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">waitAsyncTasksFinished</span><span class="p">();</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">getNumberOfQueuedAsyncTasks</span><span class="p">();</span>
-</code></pre></div>
-</td></tr></table>
                 
                   
                     
@@ -1849,7 +1794,7 @@ you can call the methods <code>performTick()</code> or <code>performTicks(long)<
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-03-12T13:54:40+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-03-12</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2021-11-17T17:25:15+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2021-11-17</span>
       
     
   </small>
