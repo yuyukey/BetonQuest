@@ -2754,10 +2754,11 @@ if the player has one active.The first and only argument must be location. It's 
 the ID of the <code>variable</code> objective. The second argument is the name of the variable to set. The third argument is the
 value to set. Both the name and value can use <code>%...%</code> variables. To delete a variable you can use <code>""</code>. Refer to the
 <a href="../Objectives-List/#variable-variable"><code>variable</code> objective</a> documentation for more information about
-storing variables.</p>
+storing variables. This event will do nothing if the player does not already have a <code>variable</code> objective assigned to them.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable some_var_obj name %player%</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable CustomVariable MyFirstVariable Goodbye!</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">variable variable_objectiveID name %player%</span><span class="w"></span>
 <span class="l l-Scalar l-Scalar-Plain">variable other_var_obj desc &quot;&quot;</span><span class="w"></span>
 </code></pre></div>
 </div>
@@ -2783,7 +2784,7 @@ storing variables.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-04-03T03:53:25+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-04-03</span>
       
     
   </small>
