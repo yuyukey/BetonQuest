@@ -1005,7 +1005,7 @@
       
         <li class="md-nav__item">
   <a href="#hiding-players" class="md-nav__link">
-    Hiding Player's
+    Hiding Players
   </a>
   
 </li>
@@ -2160,7 +2160,7 @@
       
         <li class="md-nav__item">
   <a href="#hiding-players" class="md-nav__link">
-    Hiding Player's
+    Hiding Players
   </a>
   
 </li>
@@ -2692,25 +2692,25 @@ You cannot use a regex in block states when the block selector is used for placi
 Example: <code>fence[facing=north] matches fence[facing=north] and fence[facing=north,waterlogged=true]</code>
 You can add an <code>exactMatch</code> argument if you only want to match blocks that exactly match the block state. 
 A regex is allowed in any block state value when the block selector is used to match blocks.</p>
-<h2 id="hiding-players">Hiding Player's<a class="headerlink" href="#hiding-players" title="Permanent link">🔗</a></h2>
+<h2 id="hiding-players">Hiding Players<a class="headerlink" href="#hiding-players" title="Permanent link">🔗</a></h2>
 <video controls loop
 src="../../_media/content/Documentation/Compatibility/PlayerHider.mp4"
 width="780">
 Sorry, your browser doesn't support embedded videos.
 </video>
 
-<p>You can also hide players for specific players. If the <code>source_player</code> meets the conditions
-every player that meets the <code>target_player</code> conditions is completely hidden for him.
-This is really helpful if you want a lonely place on your server,
+<p>You can also hide players for specific players in the <code>player_hider</code> section of your package. When the <code>source_player</code> meets the conditions,
+every player that meets the <code>target_player</code> conditions will be completely hidden from them. 
+This is really useful if you want a lonely place on your server 
 or your quests break when multiple players can see or affect each other.
 You can configure the interval which checks the conditions in the <a href="../Configuration/#player-hider-interval">config.yml</a>.</p>
 <p>Special behaviour:</p>
 <ul>
-<li>A player that meets the <code>source_player</code>conditions can't be pushed anymore by other players.</li>
+<li>A player that meets the <code>source_player</code>conditions can no longer be pushed by other players.</li>
 <li>By leaving the e.g. <code>source_player</code> argument empty it will match all players.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nt">player_hider</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">example_hider</span><span class="p">:</span><span class="w">  </span><span class="c1">#All players in a special region cannot see any other players in that region.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">example_hider</span><span class="p">:</span><span class="w">  </span><span class="c1">#All players in a special region cannot see any other players in that region. If a player is outside the region, they can still see the `target_player`.</span><span class="w"></span>
 <span class="w">    </span><span class="nt">source_player</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span><span class="w"></span>
 <span class="w">    </span><span class="nt">target_player</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">in_StoryRegion</span><span class="w"></span>
 <span class="w">  </span><span class="nt">another_hider</span><span class="p">:</span><span class="w"> </span><span class="c1">#No one can see any players inside a secret room.</span><span class="w"></span>
@@ -2728,7 +2728,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-21T13:31:23+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-21</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-04-03T20:29:07+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-04-03</span>
       
     
   </small>
