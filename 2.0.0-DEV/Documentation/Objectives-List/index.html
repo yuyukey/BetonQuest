@@ -2462,14 +2462,15 @@ Available slot types: <code>HEAD</code>, <code>CHEST</code>, <code>LEGS</code>, 
 </code></pre></div>
 <h2 id="variable-variable">Variable: <code>variable</code><a class="headerlink" href="#variable-variable" title="Permanent link">🔗</a></h2>
 <p>This objective is different. You cannot complete it, it will also ignore defined events and conditions. You can start it and that's it.
-While this objective is active though, everything the player types in chat (and matches special pattern) will become a variable.
-The pattern is <code>key: value</code>. So if you type that, it will create a variable called <code>key</code>, which will resolve to <code>value</code> string.
-These are not global variables, you can access them as objective properties. Let's say you defined this objective as <code>var</code> in your <em>objectives</em> section.
-You can access the variable in any conversation, event or condition with <code>%objective.var.key%</code> - and in case of this example, it will resolve to <code>value</code>.
-The player can type something else, and the variable will change its value. Variables are per-player, so my <code>key</code> variable 
-will be different from your <code>key</code> variable, depending on what we were typing in chat. You can have as much variables here as you want.
-To remove this objective use <code>objective delete</code> event - there is no other way.</p>
-<p>You can also use <code>variable</code> event to change variables stored in this objective. There is one optional argument, <code>no-chat</code>. If you use it, the objective won't be modified by what players type in chat.</p>
+While this objective is active though, everything the player types in chat (and matches a special pattern) will become a variable.
+The pattern is <code>key: value</code>. So if the player types <code>MyFirstVariable: Hello!</code>, it will create a variable called <code>MyFirstVariable</code>, which will resolve as a <code>Hello!</code> string.
+These are not global variables, you can access them as objective properties. Let's say you defined this objective as <code>CustomVariable</code> in your <em>objectives.yml</em> file.
+You can access the variable in any conversation, event or condition with <code>%objective.CustomVariable.MyFirstVariable%</code> - and in the case of this example, it will resolve to <code>Hello!</code>.
+The player can type something else and the variable will change its value. Variables are per-player, so the value of one player's <code>MyFirstVariable</code>
+will be different from other players' <code>MyFirstVariable</code> values, depending on what they typed in chat. There is no limit to the amount of variables that can be created and assigned to players.
+To remove this objective, use <code>objective delete</code> event - there is no other way.</p>
+<p>You can also use <code>variable</code> event to change variables stored in this objective. There is one optional argument, <code>no-chat</code>. If you use it, the objective won't be modified 
+by what players type in chat which is only useful when you're also using the <code>variable</code> event.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">variable</span><span class="w"></span>
@@ -2483,7 +2484,7 @@ To remove this objective use <code>objective delete</code> event - there is no o
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-02-11T22:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-02-11</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-04-03T19:43:21+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-04-03</span>
       
     
   </small>
