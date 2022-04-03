@@ -1847,14 +1847,14 @@ of all NotifyIO's.</p>
 </div>
 
 <p>Most NotifyIO's have unique settings that somehow change how a notification is displayed.  <br />
-<strong>Additionally, they all allow each setting of the SoundIO to be used!</strong>
-This is the case because every NotifyIO has an internal SoundIO. 
+<strong>Additionally, they all allow any setting from the SoundIO to be used!</strong>
+This is because every NotifyIO has an internal SoundIO. 
 Therefore, you can play a sound whenever a notification is shown.</p>
 <p>The actual message is either defined in the event that triggers the NotifyIO or
 in the <em>messages.yml</em> for all built-in notifications. </p>
 <p><strong>Check the <a href="../Events-List/#notification-notify">notification event documentation</a> on how to use the notify event!</strong></p>
 <h3 id="chat">Chat<a class="headerlink" href="#chat" title="Permanent link">🔗</a></h3>
-<p>Writes the notification in the players chat.</p>
+<p>Writes the notification in the player's chat.</p>
 <details class="info">
 <summary>Preview</summary>
 <p><img alt="chat image" src="../../_media/content/Documentation/Notifications/chat.png" /></p>
@@ -1868,14 +1868,14 @@ in the <em>messages.yml</em> for all built-in notifications. </p>
 </thead>
 <tbody>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="advancement">Advancement<a class="headerlink" href="#advancement" title="Permanent link">🔗</a></h3>
-<p>Shows the notification using an achievement popup. Unfortunately Minecraft does play the default advancement sound here. 
-It's not possible to stop this sound from playing - if you want to get rid of it you would have to override / remove
+<p>Shows the notification using an achievement popup. Unfortunately Minecraft will play the default advancement sound here. 
+It's not possible to stop this sound from playing - if you want to get rid of it, you would have to override / remove
 that sound from your server's ressource pack.
 You can still add your own additional sound as usual though.
 It will then be played together with the default advancement sound.</p>
@@ -1900,8 +1900,8 @@ It will then be played together with the default advancement sound.</p>
 <td>What icon to show. Must be the vanilla name of an item. Example: minecraft:map</td>
 </tr>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1920,8 +1920,8 @@ It will then be played together with the default advancement sound.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1966,8 +1966,8 @@ It will then be played together with the default advancement sound.</p>
 <td>If set, will step the progress of the bar by countdown steps. For example, if set to 10, then 10 times during the time it is on the screen the progress will drop by 1/10</td>
 </tr>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2004,8 +2004,8 @@ Anything after these characters will be shown in the subtitle.</p>
 <td>Ticks to fade the title out. Default 20</td>
 </tr>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2036,8 +2036,8 @@ Anything after these characters will be shown in the subtitle.</p>
 <td>Ticks to fade the title out. Default 20</td>
 </tr>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2067,13 +2067,13 @@ during the animation.</p>
 <td>This CustomModelData will be used.</td>
 </tr>
 <tr>
-<td><a href="#soundio">SoundIO</a></td>
-<td>Any option from the <a href="#soundio">SoundIO</a>.</td>
+<td><a href="#sound">Sound</a></td>
+<td>Any option from the <a href="#sound">SoundIO</a>.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="sound">Sound<a class="headerlink" href="#sound" title="Permanent link">🔗</a></h3>
-<p>This IO just plays a sound. You can use it's options in any other IO.
+<p>This IO just plays a sound. You can use its options in any other IO.
 You should read the <a href="https://minecraft.gamepedia.com/Commands/playsound" target="_blank">wiki page</a> of the playsound command
 as Minecraft's sound system is kinda strange. Just one example: Sound never moves in Minecraft. It's totally static.
 Keep that in mind when creating sounds close to a player. They can move around the sound and make it louder or quieter by walking towards / away from it.</p>
@@ -2165,7 +2165,7 @@ The sound is always played 5 block away from the soundlocation. The direction is
 <p>Does not output any sound or text 🔕. Can be used to remove built-in notifications.</p>
 <h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link">🔗</a></h2>
 <p>Notify Categories are pre-defined <a href="#notify-ios">NotifyIO settings</a>. They can be applied to any notify event and are used
-by BetonQuests built-in notifications.
+by BetonQuest's built-in notifications.
 All categories must be defined in a section called <code>notifications</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -2311,7 +2311,7 @@ You can override the settings from the info/error category for any specific noti
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-03-15T18:26:59+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-03-15</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-04-03T04:23:57+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-04-03</span>
       
     
   </small>
