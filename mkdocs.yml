@@ -190,7 +190,7 @@ nav:
               - 'Objectives': Tutorials/Getting-Started/Basics/Objectives.md
               - 'Conditions': Tutorials/Getting-Started/Basics/Conditions.md
           - 'Tools':
-              - 'VSCode Extension': Tutorials/Tools/VSCode-Extension.md
+              - 'VSCode Editor Setup': Tutorials/Tools/Setting-up-VSCode.md
       - 'Frequently Asked Questions':
           - 'General FAQ': Tutorials/Frequently-Asked-Questions.md
   - 'Documentation':
